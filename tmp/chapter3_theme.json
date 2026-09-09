@@ -1,0 +1,5271 @@
+{
+  "path": "C:\\Users\\Jiang\\Downloads\\第三章：暗礁忧鸣 (1).docx",
+  "sections": [
+    {
+      "width": 7562215,
+      "height": 10689590,
+      "top": 914400,
+      "bottom": 914400,
+      "left": 914400,
+      "right": 914400
+    }
+  ],
+  "paragraphs": [
+    {
+      "i": 0,
+      "style": "Title",
+      "text": "第三章：暗礁忧鸣",
+      "runs": [
+        {
+          "text": "第三章：暗礁忧鸣",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "style": "normal",
+      "text": "备注：【UI】 （旁白）“自白”",
+      "runs": [
+        {
+          "text": "备注：【UI】 （旁白）“自白”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "style": "normal",
+      "text": "【制作说明：本作品中的环境评估报告、调查范围地图、白海豚目击记录均为游戏化模拟数据，不是真实报告的原文内容，不代表真实的调查结论。】",
+      "runs": [
+        {
+          "text": "【制作说明：本作品中的环境评估报告、调查范围地图、白海豚目击记录均为游戏化模拟数据，不是真实报告的原文内容，不代表真实的调查结论。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "style": "normal",
+      "text": "若日后拟将现有资料替换为真实材料，则相关资料尚需进一步补齐，包括报告名称、版本及具体页码、目击记录之原始来源、坐标资料之精度，以及调查范围之绘制方式；另亦应于呈现时明确说明，玩家角色于单次调查中所得之观察结果，仅属个别观察记录，不宜直接视为正式之物种分布数据。以上事项拟于资料正式替换时一并核实及补充，以确保相关内容之来源、呈现方式及数据性质均有明确交代。",
+      "runs": [
+        {
+          "text": "若日后拟将现有资料替换为真实材料，则相关资料尚需进一步补齐，包括报告名称、版本及具体页码、目击记录之原始来源、坐标资料之精度，以及调查范围之绘制方式；另亦应于呈现时明确说明，玩家角色于单次调查中所得之观察结果，仅属个别观察记录，不宜直接视为正式之物种分布数据。以上事项拟于资料正式替换时一并核实及补充，以确保相关内容之来源、呈现方式及数据性质均有明确交代。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "style": "normal",
+      "text": "场景零：身份说明",
+      "runs": [
+        {
+          "text": "场景零：身份说明",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "style": "normal",
+      "text": "【你是\"潮汐观察站\"的一名田野调查志愿者。这是一家独立的民间环境监测组织，不隶属于任何政府部门，也并非执法机构。】",
+      "runs": [
+        {
+          "text": "【你是\"潮汐观察站\"的一名田野调查志愿者。这是一家独立的民间环境监测组织，不隶属于任何政府部门，也并非执法机构。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "style": "normal",
+      "text": "【能做的事：在合法、公开的场所记录你看到、听到的情况；在对方知情同意的前提下记录居民的口述；查阅政府或企业公开发布的资料，比如施工公告、环境评估报告。】",
+      "runs": [
+        {
+          "text": "【能做的事：在合法、公开的场所记录你看到、听到的情况；在对方知情同意的前提下记录居民的口述；查阅政府或企业公开发布的资料，比如施工公告、环境评估报告。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "style": "normal",
+      "text": "【不能做的事：进入非公开区域或私人场所；强迫任何人接受采访；调取没有公开的内部文件；认定某项工程\"违法\"或要求它停工——这些判断和权力属于监管部门和法院，不属于你。】",
+      "runs": [
+        {
+          "text": "【不能做的事：进入非公开区域或私人场所；强迫任何人接受采访；调取没有公开的内部文件；认定某项工程\"违法\"或要求它停工——这些判断和权力属于监管部门和法院，不属于你。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "style": "normal",
+      "text": "【整理的资料会提交给\"潮汐观察站\"内部存档，也可能被分享给其他持续关注这件事的环保组织，作为他们判断是否行动的参考材料之一，但具体会不会被用上、怎么用，不由你决定。】",
+      "runs": [
+        {
+          "text": "【整理的资料会提交给\"潮汐观察站\"内部存档，也可能被分享给其他持续关注这件事的环保组织，作为他们判断是否行动的参考材料之一，但具体会不会被用上、怎么用，不由你决定。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "style": "normal",
+      "text": "场景一：海岸边缘 （2025年5月13日）",
+      "runs": [
+        {
+          "text": "场景一：海岸边缘 （2025年5月13日）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "style": "normal",
+      "text": "【有些声音，你我未必听得见。】",
+      "runs": [
+        {
+          "text": "【有些声音，你我未必听得见。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "style": "normal",
+      "text": "【在海水之下，在引擎的轰鸣声中，在不曾言语的生命里。】",
+      "runs": [
+        {
+          "text": "【在海水之下，在引擎的轰鸣声中，在不曾言语的生命里。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "style": "normal",
+      "text": "（闪屏）",
+      "runs": [
+        {
+          "text": "（闪屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "style": "normal",
+      "text": "“我，在哪”",
+      "runs": [
+        {
+          "text": "“我，在哪”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "style": "normal",
+      "text": "台词说话者暂予留白，旨在暗示其声音或源自白海豚，或由环境本身所发出；声音设计上则拟采用水下闷响、混响等处理，与调查员的清晰人声加以区分。惟若各位成员认为此设计或可能造成玩家理解上的困惑，亦可考虑予以删减，并改由调查员视角直接展开。此项设计仅为艺术表达上的尝试，并无意推卸叙事责任，亦希望听取各方意见，以在艺术表达与信息清晰度之间作出妥适取舍。若有不周之处，尚祈各位同僚理解，并惠予指正。",
+      "runs": [
+        {
+          "text": "台词说话者暂予留白，旨在暗示其声音或源自白海豚，或由环境本身所发出；声音设计上则拟采用水下闷响、混响等处理，与调查员的清晰人声加以区分。惟若各位成员认为此设计或可能造成玩家理解上的困惑，亦可考虑予以删减，并改由调查员视角直接展开。此项设计仅为艺术表达上的尝试，并无意推卸叙事责任，亦希望听取各方意见，以在艺术表达与信息清晰度之间作出妥适取舍。若有不周之处，尚祈各位同僚理解，并惠予指正。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "style": "normal",
+      "text": "（画面引入：天朦朦亮，海面没有一丝波澜，远处看得到施工的船只，你手中拿着相机和记录本。）",
+      "runs": [
+        {
+          "text": "（画面引入：天朦朦亮，海面没有一丝波澜，远处看得到施工的船只，你手中拿着相机和记录本。）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "style": "normal",
+      "text": "“这是你来到围头湾的第三个小时，这里似乎有一项大型的海上工程。”",
+      "runs": [
+        {
+          "text": "“这是你来到围头湾的第三个小时，这里似乎有一项大型的海上工程。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "style": "normal",
+      "text": "“泉州海事局于昨日发布公告，计划于今日在附近海域进行爆破施工，中午与傍晚各一次。”",
+      "runs": [
+        {
+          "text": "“泉州海事局于昨日发布公告，计划于今日在附近海域进行爆破施工，中午与傍晚各一次。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "style": "normal",
+      "text": "“先前，观察站已记录过一次渔民的反映，具体次数与时间尚待核实”",
+      "runs": [
+        {
+          "text": "“先前，观察站已记录过一次渔民的反映，具体次数与时间尚待核实”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "style": "normal",
+      "text": "【新任务：查看现场情况，对当地居民进行采访】",
+      "runs": [
+        {
+          "text": "【新任务：查看现场情况，对当地居民进行采访】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "style": "normal",
+      "text": "（机器轰鸣声）",
+      "runs": [
+        {
+          "text": "（机器轰鸣声）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "style": "normal",
+      "text": "“那是什么？”",
+      "runs": [
+        {
+          "text": "“那是什么？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "style": "normal",
+      "text": "（视角转向海面）",
+      "runs": [
+        {
+          "text": "（视角转向海面）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "style": "normal",
+      "text": "【新任务：请记录现场情况】",
+      "runs": [
+        {
+          "text": "【新任务：请记录现场情况】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "style": "normal",
+      "text": "【注意：请维持在安全，合法的公共区域范围内】",
+      "runs": [
+        {
+          "text": "【注意：请维持在安全，合法的公共区域范围内】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "style": "normal",
+      "text": "【记录本提醒：时间，地点，证人，证词】",
+      "runs": [
+        {
+          "text": "【记录本提醒：时间，地点，证人，证词】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "style": "normal",
+      "text": "【交互：拍摄施工船】",
+      "runs": [
+        {
+          "text": "【交互：拍摄施工船】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "style": "normal",
+      "text": "（视角切换至相机镜头）",
+      "runs": [
+        {
+          "text": "（视角切换至相机镜头）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "style": "normal",
+      "text": "【交互：旋转视角至正确角度，画面中出现施工船，海面及远处的施工区域】",
+      "runs": [
+        {
+          "text": "【交互：旋转视角至正确角度，画面中出现施工船，海面及远处的施工区域】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "style": "normal",
+      "text": "【记录完成】",
+      "runs": [
+        {
+          "text": "【记录完成】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "style": "normal",
+      "text": "【时间： 2025年5月13日 早8:20】",
+      "runs": [
+        {
+          "text": "【时间： 2025年5月13日 早8:20】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "style": "normal",
+      "text": "【地点：围头湾石井作业区附近岸线，营前村沿海岸线】",
+      "runs": [
+        {
+          "text": "【地点：围头湾石井作业区附近岸线，营前村沿海岸线】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "style": "normal",
+      "text": "【观察：施工船作业中】",
+      "runs": [
+        {
+          "text": "【观察：施工船作业中】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "style": "normal",
+      "text": "【证据等级：现场观察】",
+      "runs": [
+        {
+          "text": "【证据等级：现场观察】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "style": "normal",
+      "text": "【待核实：是否确有爆破作业，需要结合官方公告，声音记录或其他证词进行进一步确认】",
+      "runs": [
+        {
+          "text": "【待核实：是否确有爆破作业，需要结合官方公告，声音记录或其他证词进行进一步确认】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "style": "normal",
+      "text": "【交互：拍摄公告】",
+      "runs": [
+        {
+          "text": "【交互：拍摄公告】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "style": "normal",
+      "text": "（视角切换至摄像机镜头，画面中出现张贴的施工公告）",
+      "runs": [
+        {
+          "text": "（视角切换至摄像机镜头，画面中出现张贴的施工公告）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "style": "normal",
+      "text": "【记录完成】",
+      "runs": [
+        {
+          "text": "【记录完成】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "style": "normal",
+      "text": "【时间：2025年5月13日 09:10（上午）】 ",
+      "runs": [
+        {
+          "text": "【时间：2025年5月13日 09:10（上午）】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "style": "normal",
+      "text": "【地点：围头湾石井作业区附近公示栏】 ",
+      "runs": [
+        {
+          "text": "【地点：围头湾石井作业区附近公示栏】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "style": "normal",
+      "text": "【观察：泉州海事局于5月12日公告，预告5月13日进行爆破施工，中午、傍晚各一个作业时段】 ",
+      "runs": [
+        {
+          "text": "【观察：泉州海事局于5月12日公告，预告5月13日进行爆破施工，中午、傍晚各一个作业时段】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "style": "normal",
+      "text": "【证据等级：官方公告原文，目前能确认\"是否会有爆破\"最直接的证据】",
+      "runs": [
+        {
+          "text": "【证据等级：官方公告原文，目前能确认\"是否会有爆破\"最直接的证据】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "style": "normal",
+      "text": "【思考：已核实爆破情况】 ",
+      "runs": [
+        {
+          "text": "【思考：已核实爆破情况】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "style": "normal",
+      "text": "场景二：营前村",
+      "runs": [
+        {
+          "text": "场景二：营前村",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "style": "normal",
+      "text": "“光这样还不够，去听听居民怎么说吧”",
+      "runs": [
+        {
+          "text": "“光这样还不够，去听听居民怎么说吧”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "style": "normal",
+      "text": "【交互：进入营前村】",
+      "runs": [
+        {
+          "text": "【交互：进入营前村】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "style": "normal",
+      "text": "（画面引入：沿岸可以看到红砖古厝依山而建、房屋密集错落，涨潮前的早上海边是大片的滩涂）",
+      "runs": [
+        {
+          "text": "（画面引入：",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "沿岸可以看到红砖古厝依山而建、房屋密集错落，涨潮前的早上海边是大片的滩涂）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "style": "normal",
+      "text": "“那里有个人，去问问他发生了什么吧。”",
+      "runs": [
+        {
+          "text": "“那里有个人，去问问他发生了什么吧。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "style": "normal",
+      "text": "【交互：搭讪】",
+      "runs": [
+        {
+          "text": "【交互：搭讪】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "style": "normal",
+      "text": "“您好，请问可以问您关于最近海上施工的几个问题吗？”",
+      "runs": [
+        {
+          "text": "“您好，请问可以问您关于最近海上施工的几个问题吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "style": "normal",
+      "text": "“你是来查那个爆破的哦？”",
+      "runs": [
+        {
+          "text": "“你是来查那个爆破的哦？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "style": "normal",
+      "text": "“是的，如果您愿意，我想请您接受一个简单的采访。我会记录下您说的内容，如果哪里记不清楚，也请直接告诉我，我会照实记下来。”",
+      "runs": [
+        {
+          "text": "“是的，如果您愿意，我想请您接受一个简单的采访。我会记录下您说的内容，如果哪里记不清楚，也请直接告诉我，我会照实记下来。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "style": "normal",
+      "text": "“可以是可以，我看到的也不一定准，你自己拿捏吧。”",
+      "runs": [
+        {
+          "text": "“可以是可以，我看到的也不一定准，你自己拿捏吧。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "style": "normal",
+      "text": "【记录本打开】",
+      "runs": [
+        {
+          "text": "【记录本打开】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 80,
+      "style": "normal",
+      "text": "【采访前已确认：对方同意接受采访，并已被告知记录内容代表其个人观察与回忆，不代表已核实的事实。】",
+      "runs": [
+        {
+          "text": "【采访前已确认：对方同意接受采访，并已被告知记录内容代表其个人观察与回忆，不代表已核实的事实。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 81,
+      "style": "normal",
+      "text": "【记录身份：当地渔民 （匿名）】",
+      "runs": [
+        {
+          "text": "【记录身份：当地渔民 （匿名）】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 83,
+      "style": "normal",
+      "text": "“请问您上一次看到爆破是什么时候？”",
+      "runs": [
+        {
+          "text": "“请问您上一次看到爆破是什么时候？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 84,
+      "style": "normal",
+      "text": "“上个拜三还是礼拜四吧，中午过后没多久，好像是下午，我记得那天收工比较早。” （具体时间未知）",
+      "runs": [
+        {
+          "text": "“上个拜三还是礼拜四吧，中午过后没多久，好像是下午，我记得那天收工比较早。” （具体时间未知）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 85,
+      "style": "normal",
+      "text": "2025年5月13日前，围头湾11、12号泊位工程已持续施工近一年；据公开资料，该项目早于2024年初即已开工。此处所呈现之回忆声音设定为施工噪音，并非炸礁作业所产生之爆破声。",
+      "runs": [
+        {
+          "text": "2025年5月13日前，围头湾11、12号泊位工程已持续施工近一年；据公开资料，该项目早于2024年初即已开工。此处所呈现之回忆声音设定为施工噪音，并非炸礁作业所产生之爆破声。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 87,
+      "style": "normal",
+      "text": "“请问是您亲眼所见吗？”",
+      "runs": [
+        {
+          "text": "“请问是您亲眼所见吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 88,
+      "style": "normal",
+      "text": "“应该是吧，海面上突然传来很大的一声响声，和平常船开过去的声音不一样，闷闷的一下子。”",
+      "runs": [
+        {
+          "text": "“应该是吧，海面上突然传来很大的一声响声，和平常船开过去的声音不一样，闷闷的一下子。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 89,
+      "style": "normal",
+      "text": "“容我确认一下，请问您是听到了这个声音，还是亲眼看到有东西在爆破？”",
+      "runs": [
+        {
+          "text": "“容我确认一下，请问您是听到了这个声音，还是亲眼看到有东西在爆破？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 90,
+      "style": "normal",
+      "text": "“没看到，就听到声而已，声音那么大，好像是去年开始，就偶尔听人讲有听到这种声音，我自己倒是头一回听到，我也没敢多看，就赶快走了。”",
+      "runs": [
+        {
+          "text": "“没看到，就听到声而已，声音那么大，好像是去年开始，就偶尔听人讲有听到这种声音，我自己倒是头一回听到，我也没敢多看，就赶快走了。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 91,
+      "style": "normal",
+      "text": "“我了解了，那请问您有看见白海豚吗？”",
+      "runs": [
+        {
+          "text": "“我了解了，那请问您有看见白海豚吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 92,
+      "style": "normal",
+      "text": "“有，就在附近，响声过后没多久，附近浮起来几只。”",
+      "runs": [
+        {
+          "text": "“有，就在附近，响声过后没多久，附近浮起来几只。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 93,
+      "style": "normal",
+      "text": "“请问您确定那是白海豚吗？”",
+      "runs": [
+        {
+          "text": "“请问您确定那是白海豚吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 94,
+      "style": "normal",
+      "text": "“我在这里讨海几十年了，白色的、背上一个鳍，我认得出来。不过具体几只、有没有受伤，我没看清楚。”",
+      "runs": [
+        {
+          "text": "“我在这里讨海几十年了，白色的、背上一个鳍，我认得出来。不过具体几只、有没有受伤，我没看清楚。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 95,
+      "style": "normal",
+      "text": "“请问，在施工开始之前，您有听说过当地部门的评估行动吗？”",
+      "runs": [
+        {
+          "text": "“请问，在施工开始之前，您有听说过当地部门的评估行动吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "style": "normal",
+      "text": "“没，没听说过评估，我不太注意这些事。”",
+      "runs": [
+        {
+          "text": "“没，没听说过评估，我不太注意这些事。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 97,
+      "style": "normal",
+      "text": "“好的，谢谢您愿意告诉我这些。”",
+      "runs": [
+        {
+          "text": "“好的，谢谢您愿意告诉我这些。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 99,
+      "style": "normal",
+      "text": "【思考】",
+      "runs": [
+        {
+          "text": "【思考】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "style": "normal",
+      "text": "“渔民听到了巨响，随后看到白海豚浮出水面，爆破，这三件事之间，是巧合，还是有关系？”",
+      "runs": [
+        {
+          "text": "“渔民听到了巨响，随后看到白海豚浮出水面，爆破，这三件事之间，是巧合，还是有关系？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 101,
+      "style": "normal",
+      "text": "【交互：1. 记录：这证明了工程一直在偷偷爆破】",
+      "runs": [
+        {
+          "text": "【交互：1. 记录：这证明了工程一直在偷偷爆破】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 102,
+      "style": "normal",
+      "text": "【记录本提示：这段证词说的是另一次、更早发生的事，没有信息能证明它和明天要进行的这次作业属于同一系列。不要把两件事混为一谈，再想想吧。】",
+      "runs": [
+        {
+          "text": "【记录本提示：这段证词说的是另一次、更早发生的事，没有信息能证明它和明天要进行的这次作业属于同一系列。不要把两件事混为一谈，再想想吧。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 103,
+      "style": "normal",
+      "text": "交互：2. 记录为独立的历史事件，与5月13日的爆破分开标注】（正确）",
+      "runs": [
+        {
+          "text": "交互：2. 记录为独立的历史事件，与5月13日的爆破分开标注】（正确）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 104,
+      "style": "normal",
+      "text": "【记录完毕】 【时间：2025年5月13日 10:40（上午），本次采访记录时间】",
+      "runs": [
+        {
+          "text": "【记录完毕】 【时间：2025年5月13日 10:40（上午），本次采访记录时间】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 105,
+      "style": "normal",
+      "text": "【事件发生时间：渔民描述的事发生在采访前的星期三或星期四，约中午过后（具体日期与钟点未知）2025年5月13日官方公告的爆破是两个不同的事件，不能互相印证】 ",
+      "runs": [
+        {
+          "text": "【事件发生时间：渔民描述的事发生在采访前的星期三或星期四，约中午过后（具体日期与钟点未知）2025年5月13日官方公告的爆破是两个不同的事件，不能互相印证】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 106,
+      "style": "normal",
+      "text": "【来源：当地渔民口述，单一证人，未公开身份，巨响为本人听到；爆破本身未目视；本人称目视白海豚浮出水面】 ",
+      "runs": [
+        {
+          "text": "【来源：当地渔民口述，单一证人，未公开身份，巨响为本人听到；爆破本身未目视；本人称目视白海豚浮出水面】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 107,
+      "style": "normal",
+      "text": "【待核实：声音是否确为爆破所致；具体发生日期；白海豚出现与声响的时间间隔；是否有其他证人可交叉印证；白海豚数量与状态未确认】 ",
+      "runs": [
+        {
+          "text": "【待核实：声音是否确为爆破所致；具体发生日期；白海豚出现与声响的时间间隔；是否有其他证人可交叉印证；白海豚数量与状态未确认】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 108,
+      "style": "normal",
+      "text": "【证据等级：单一证人证词，关于一次独立的历史事件；部分内容有本人直接观察支持，部分为回忆与推测，尚未交叉验证】",
+      "runs": [
+        {
+          "text": "【证据等级：单一证人证词，关于一次独立的历史事件；部分内容有本人直接观察支持，部分为回忆与推测，尚未交叉验证】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 110,
+      "style": "normal",
+      "text": "场景三：回到海边",
+      "runs": [
+        {
+          "text": "场景三：回到海边",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 112,
+      "style": "normal",
+      "text": "“证据还是不足吗”",
+      "runs": [
+        {
+          "text": "“证据还是不足吗”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 113,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 114,
+      "style": "normal",
+      "text": "（画面引入：海浪在乌云下平静地拍在礁石上，远处工程声似乎并没有停止）",
+      "runs": [
+        {
+          "text": "（画面引入：海浪在乌云下平静地拍在礁石上，远处工程声似乎并没有停止）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 116,
+      "style": "normal",
+      "text": "【生态观察】",
+      "runs": [
+        {
+          "text": "【生态观察】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 117,
+      "style": "normal",
+      "text": "【交互：1. 白海豚的食物来源】",
+      "runs": [
+        {
+          "text": "【交互：1. 白海豚的食物来源】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 118,
+      "style": "normal",
+      "text": "“主要以鱼类和其他海洋生物为食，其生活的海域也是许多底栖生物和鱼类的栖息地。”",
+      "runs": [
+        {
+          "text": "“主要以鱼类和其他海洋生物为食，其生活的海域也是许多底栖生物和鱼类的栖息地。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "style": "normal",
+      "text": "【交互：2. 白海豚感知世界的方式】",
+      "runs": [
+        {
+          "text": "【交互：2. 白海豚感知世界的方式】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 121,
+      "style": "normal",
+      "text": "“主要依靠声音感知周围环境，以回声定位的方式寻找食物，判断距离，及判定周围环境。”",
+      "runs": [
+        {
+          "text": "“主要依靠声音感知周围环境，以回声定位的方式寻找食物，判断距离，及判定周围环境。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 122,
+      "style": "normal",
+      "text": "“水下噪声可能干扰海洋哺乳动物的正常活动，而水下爆破会产生强烈的声音压力变化”",
+      "runs": [
+        {
+          "text": "“水下噪声可能干扰海洋哺乳动物的正常活动，而水下爆破会产生强烈的声音压力变化”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 124,
+      "style": "normal",
+      "text": "【交互：3. 白海豚的栖息地】",
+      "runs": [
+        {
+          "text": "【交互：3. 白海豚的栖息地】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 125,
+      "style": "normal",
+      "text": "“船只活动，水质变化，以及海底环境的改变，都可能持续影响白海豚的活动范围和生存环境”",
+      "runs": [
+        {
+          "text": "“船只活动，水质变化，以及海底环境的改变，都可能持续影响白海豚的活动范围和生存环境”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 126,
+      "style": "normal",
+      "text": "“栖息地保护：保护野生动物不止拯救受伤个体，也需要保护它们赖以生存的生存环境”",
+      "runs": [
+        {
+          "text": "“栖息地保护：保护野生动物不止拯救受伤个体，也需要保护它们赖以生存的生存环境”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 128,
+      "style": "normal",
+      "text": "（傍晚）",
+      "runs": [
+        {
+          "text": "（傍晚）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 129,
+      "style": "normal",
+      "text": "（海面越来越暗，云层压得低）",
+      "runs": [
+        {
+          "text": "（海面越来越暗，云层压得低）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 130,
+      "style": "normal",
+      "text": "（你已经等了很久）",
+      "runs": [
+        {
+          "text": "（你已经等了很久）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 131,
+      "style": "normal",
+      "text": "（没人知道白海豚何时出现）",
+      "runs": [
+        {
+          "text": "（没人知道白海豚何时出现）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 132,
+      "style": "normal",
+      "text": "（也没有人应该为了拍到它们而靠近）",
+      "runs": [
+        {
+          "text": "（也没有人应该为了拍到它们而靠近）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 133,
+      "style": "normal",
+      "text": "（不知过了多久）",
+      "runs": [
+        {
+          "text": "（不知过了多久）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 134,
+      "style": "normal",
+      "text": "（一望无际的海面上，出现些许白色的身影）",
+      "runs": [
+        {
+          "text": "（一望无际的海面上，出现些许白色的身影）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 135,
+      "style": "normal",
+      "text": "（一只，两只，然后是更多）",
+      "runs": [
+        {
+          "text": "（一只，两只，然后是更多）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 137,
+      "style": "normal",
+      "text": "【观测到野生动物】 ",
+      "runs": [
+        {
+          "text": "【观测到野生动物】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": "ffffff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 138,
+      "style": "normal",
+      "text": "【请保持距离，请勿投喂，请勿追逐，请勿接触】",
+      "runs": [
+        {
+          "text": "【请保持距离，请勿投喂，请勿追逐，请勿接触】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 139,
+      "style": "normal",
+      "text": "（它们从未注意过你，只是如风一般 从海面游过，如同千百年来的轮回，这片海不是风景，是觅食，休憩，繁衍，是追逐之地，是家）",
+      "runs": [
+        {
+          "text": "（它们从未注意过你，只是如风一般 从海面游过，如同千百年来的轮回，这片海不是风景，是觅食，休憩，繁衍，是追逐之地，是家）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 141,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 143,
+      "style": "normal",
+      "text": "“如果有一日，这里不再有它们的身影...”",
+      "runs": [
+        {
+          "text": "“如果有一日，这里不再有它们的身影...”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 145,
+      "style": "normal",
+      "text": "场景四：家",
+      "runs": [
+        {
+          "text": "场景四：家",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 147,
+      "style": "normal",
+      "text": "“今天先这样吧，回家还有很多事要做。”",
+      "runs": [
+        {
+          "text": "“今天先这样吧，回家还有很多事要做。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 149,
+      "style": "normal",
+      "text": "【交互：回家】",
+      "runs": [
+        {
+          "text": "【交互：回家】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 150,
+      "style": "normal",
+      "text": "“现场资料已经有一些了，还必须知道施工活动的环境考量。”",
+      "runs": [
+        {
+          "text": "“现场资料已经有一些了，还必须知道施工活动的环境考量。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 151,
+      "style": "normal",
+      "text": "（坐到电脑前)  ",
+      "runs": [
+        {
+          "text": "（坐到电脑前) ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": "ffffff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 152,
+      "style": "normal",
+      "text": "（电脑屏幕亮起）",
+      "runs": [
+        {
+          "text": "（电脑屏幕亮起）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 154,
+      "style": "normal",
+      "text": "【资料库：可查看1. 环境评估报告，2. 施工区域地图， 3. 海豚调查记录， 4. 现场观察记录】",
+      "runs": [
+        {
+          "text": "【资料库：可查看1. 环境评估报告，2. 施工区域地图， 3. 海豚调查记录， 4. 现场观察记录】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 155,
+      "style": "normal",
+      "text": "【交互：打开】",
+      "runs": [
+        {
+          "text": "【交互：打开】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 156,
+      "style": "normal",
+      "text": "（报告中列出了调查区域和相关的生态资料） （附件A）",
+      "runs": [
+        {
+          "text": "（报告中列出了调查区域和相关的生态资料）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "（附件A）",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 157,
+      "style": "normal",
+      "text": "【交互：标记调查范围】",
+      "runs": [
+        {
+          "text": "【交互：标记调查范围】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 158,
+      "style": "normal",
+      "text": "【交互：对比目击位置】",
+      "runs": [
+        {
+          "text": "【交互：对比目击位置】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 160,
+      "style": "normal",
+      "text": "（两个区域有部分重叠）",
+      "runs": [
+        {
+          "text": "（两个区域有部分重叠）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 161,
+      "style": "normal",
+      "text": "【新线索：部分白海豚目击记录位于环境评估调查范围之外】",
+      "runs": [
+        {
+          "text": "【新线索：部分白海豚目击记录位于环境评估调查范围之外】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 162,
+      "style": "normal",
+      "text": "【记录本：目击地点与评估调查范围存在差异，具体原因不明（调查范围本身有限，或者白海豚活动范围发生了变化）】",
+      "runs": [
+        {
+          "text": "【记录本：目击地点与评估调查范围存在差异，具体原因不明（调查范围本身有限，或者白海豚活动范围发生了变化）】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 164,
+      "style": "normal",
+      "text": "场景五：证据墙",
+      "runs": [
+        {
+          "text": "场景五：证据墙",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 166,
+      "style": "normal",
+      "text": "（明天去协会里再调查一下吧）",
+      "runs": [
+        {
+          "text": "（明天去协会里再调查一下吧）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 167,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 168,
+      "style": "normal",
+      "text": "（画面引入：走向一处写字楼的路上，进入电梯，进入组织，来到证据墙前）",
+      "runs": [
+        {
+          "text": "（画面引入：走向一处写字楼的路上，进入电梯，进入组织，来到证据墙前）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 170,
+      "style": "normal",
+      "text": "【新任务：整理所有资料，将每个主张链接到一项直接证据，标记证据等级】",
+      "runs": [
+        {
+          "text": "【新任务：整理所有资料，将每个主张链接到一项直接证据，标记证据等级】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 171,
+      "style": "normal",
+      "text": "【系统提醒：不要猜测】",
+      "runs": [
+        {
+          "text": "【系统提醒：不要猜测】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 173,
+      "style": "normal",
+      "text": "【交互：主张1: 2025年5月，围头湾附近发生了爆破施工】",
+      "runs": [
+        {
+          "text": "【交互：主张1: 2025年5月，围头湾附近发生了爆破施工】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 174,
+      "style": "normal",
+      "text": "【链接：现场照片，海事局公告及后续通报】（附件B）",
+      "runs": [
+        {
+          "text": "【链接：现场照片，海事局公告及后续通报】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "（附件B）",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 175,
+      "style": "normal",
+      "text": "【证据状态：多来源指向统一情况，官方报告与通告可以确认爆破实施进度。】",
+      "runs": [
+        {
+          "text": "【证据状态：多来源指向统一情况，官方报告与通告可以确认爆破实施进度。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 176,
+      "style": "normal",
+      "text": "【多方印证，证据充分】",
+      "runs": [
+        {
+          "text": "【多方印证，证据充分】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 178,
+      "style": "normal",
+      "text": "【交互：主张2: 爆破发生在白海豚繁殖季】",
+      "runs": [
+        {
+          "text": "【交互：主张2: 爆破发生在白海豚繁殖季】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 179,
+      "style": "normal",
+      "text": "【链接：生态资料，施工日期】",
+      "runs": [
+        {
+          "text": "【链接：生态资料，施工日期】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 180,
+      "style": "normal",
+      "text": "【相关研究显示，中华白海豚全年都可能繁殖，幼崽全年都可能出生，但春夏两季的出生数量通常高于秋冬；不同海域种群的高峰期并不完全一致（地理位置较近的厦门湾种群，出生高峰集中在3至8月）。围头湾种群的具体规律，需要引用当地研究进一步确认。 5月13日处于多数南方种群繁殖较活跃的季节内。但\"围头湾种群此时正处于繁殖高峰\"这一具体说法，目前没有本地研究支持。】",
+      "runs": [
+        {
+          "text": "【相关研究显示，中华白海豚全年都可能繁殖，幼崽全年都可能出生，但春夏两季的出生数量通常高于秋冬；不同海域种群的高峰期并不完全一致（地理位置较近的厦门湾种群，出生高峰集中在3至8月）。围头湾种群的具体规律，需要引用当地研究进一步确认。 5月13日处于多数南方种群繁殖较活跃的季节内。但\"围头湾种群此时正处于繁殖高峰\"这一具体说法，目前没有本地研究支持。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 181,
+      "style": "normal",
+      "text": "【证据状态：主张有资料支持，证据充分，细节待查。】",
+      "runs": [
+        {
+          "text": "【证据状态：主张有资料支持，证据充分，细节待查。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 183,
+      "style": "normal",
+      "text": "【交互：主张3: 爆破导致了白海豚的死亡】",
+      "runs": [
+        {
+          "text": "【交互：主张3: 爆破导致了白海豚的死亡】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 184,
+      "style": "normal",
+      "text": "【链接：白海豚目击记录】（附件A）  ",
+      "runs": [
+        {
+          "text": "【链接：白海豚目击记录】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "（附件A） ",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": "ffffff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 185,
+      "style": "normal",
+      "text": "【交互：A：标记为：已证实】",
+      "runs": [
+        {
+          "text": "【交互：A：标记为：已证实】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 186,
+      "style": "normal",
+      "text": "【记录本提示：再想想看吧，目前的资料只能证明有人在响声后看到白海豚出现，无法证明白海豚因此受伤或死亡，缺少伤亡报告。】",
+      "runs": [
+        {
+          "text": "【记录本提示：再想想看吧，目前的资料只能证明有人在响声后看到白海豚出现，无法证明白海豚因此受伤或死亡，缺少伤亡报告。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 187,
+      "style": "normal",
+      "text": "【交互：B：标记为：证据不足，需要进一步调查】",
+      "runs": [
+        {
+          "text": "【交互：B：标记为：证据不足，需要进一步调查】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 188,
+      "style": "normal",
+      "text": "【证据状态：因果关系尚未证实，需要专业机构的数据调查】",
+      "runs": [
+        {
+          "text": "【证据状态：因果关系尚未证实，需要专业机构的数据调查】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 190,
+      "style": "normal",
+      "text": "【交互：主张4: 部分白海豚目击地点位于调查范围之外】",
+      "runs": [
+        {
+          "text": "【交互：主张4: 部分白海豚目击地点位于调查范围之外】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 191,
+      "style": "normal",
+      "text": "【链接：白海豚目击记录，环境评估地图】（附件A）",
+      "runs": [
+        {
+          "text": "【链接：白海豚目击记录，环境评估地图】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "（附件A）",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 192,
+      "style": "normal",
+      "text": "【证据状态：有资料支持，值得关注；但目击记录来自渔民和你自己有限次数的观察，不代表白海豚完整的活动范围，建议后续开展更长期、更大范围的调查。】",
+      "runs": [
+        {
+          "text": "【证据状态：有资料支持，值得关注；但目击记录来自渔民和你自己有限次数的观察，不代表白海豚完整的活动范围，建议后续开展更长期、更大范围的调查。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 194,
+      "style": "normal",
+      "text": "【交互：主张5：施工方的事前环境评估】",
+      "runs": [
+        {
+          "text": "【交互：主张5：施工方的事前环境评估】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 195,
+      "style": "normal",
+      "text": "【链接：渔民主张“没听说过评估”， 当地部门此前公开回应”此前对施工进行过评估和风险考量】",
+      "runs": [
+        {
+          "text": "【链接：渔民主张“没听说过评估”， 当地部门此前公开回应”此前对施工进行过评估和风险考量】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 196,
+      "style": "normal",
+      "text": "【系统提示：这两种说法不一定互相矛盾——一个人不知道某份文件存在，不等于这份文件不存在。这里应该拆成三个分别核实的问题，而不是简单判定\"矛盾\"，需要查明这份评估是否充分调查了白海豚及其栖息地；以及当地居民是否真的被告知、是否有机会参与相关的公众意见程序。 建议标记为：待查】",
+      "runs": [
+        {
+          "text": "【系统提示：这两种说法不一定互相矛盾——一个人不知道某份文件存在，不等于这份文件不存在。这里应该拆成三个分别核实的问题，而不是简单判定\"矛盾\"，需要查明这份评估是否充分调查了白海豚及其栖息地；以及当地居民是否真的被告知、是否有机会参与相关的公众意见程序。 建议标记为：待查】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 197,
+      "style": "normal",
+      "text": "【证据状态：待查】",
+      "runs": [
+        {
+          "text": "【证据状态：待查】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 198,
+      "style": "normal",
+      "text": "【系统提示：证据包完成：现场记录（证据等级及局限性说明）、采访记录（知情同意，观察与推测）、环境评估资料对比、白海豚目击记录；待查内容已如是标注，待持续跟进。】",
+      "runs": [
+        {
+          "text": "【系统提示：证据包完成：现场记录（证据等级及局限性说明）、采访记录（知情同意，观察与推测）、环境评估资料对比、白海豚目击记录；待查内容已如是标注，待持续跟进。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 199,
+      "style": "normal",
+      "text": "【调查报告已提交】",
+      "runs": [
+        {
+          "text": "【调查报告已提交】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 201,
+      "style": "normal",
+      "text": "场景六：海面",
+      "runs": [
+        {
+          "text": "场景六：海面",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 203,
+      "style": "normal",
+      "text": "（2025年5月14日清晨，你来到了海边  ",
+      "runs": [
+        {
+          "text": "（2025年5月14日清晨，你来到了海边",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "  ",
+          "highlight": null,
+          "color": "ffffff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 204,
+      "style": "normal",
+      "text": "（施工船停在原处，但没有作业的声音，几名工作人员和一辆公务车停在岸边】",
+      "runs": [
+        {
+          "text": "（施工船停在原处，但没有作业的声音，几名工作人员和一辆公务车停在岸边】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 206,
+      "style": "normal",
+      "text": "“停了？”",
+      "runs": [
+        {
+          "text": "“停了？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 207,
+      "style": "normal",
+      "text": "【系统提示：新消息：据当地相关部门通报，已暂停此次炸礁作业，原因是接到多方反映后，将对施工是否影响中华白海豚栖息地重新进行评估】",
+      "runs": [
+        {
+          "text": "【系统提示：新消息：据当地相关部门通报，已暂停此次炸礁作业，原因是接到多方反映后，将对施工是否影响中华白海豚栖息地重新进行评估】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 208,
+      "style": "normal",
+      "text": "【记录本提醒：这次暂停，是渔民们长期反映、社交媒体上的关注、以及监管部门介入共同促成的结果。】",
+      "runs": [
+        {
+          "text": "【记录本提醒：这次暂停，是渔民们长期反映、社交媒体上的关注、以及监管部门介入共同促成的结果。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 210,
+      "style": "normal",
+      "text": "“原来是这样啊”",
+      "runs": [
+        {
+          "text": "“原来是这样啊”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 211,
+      "style": "normal",
+      "text": "（直觉告诉你事情不会这么简单就结束）",
+      "runs": [
+        {
+          "text": "（直觉告诉你事情不会这么简单就结束）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 213,
+      "style": "normal",
+      "text": "（日子照常过去了，太阳一天天地升起来，又平静地落下，施工船仍停留在原地，似乎再也不会动起来，但没有人知道接下来会怎样）",
+      "runs": [
+        {
+          "text": "（日子照常过去了，太阳一天天地升起来，又平静地落下，施工船仍停留在原地，似乎再也不会动起来，但没有人知道接下来会怎样）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 215,
+      "style": "normal",
+      "text": "（黑屏）",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 217,
+      "style": "normal",
+      "text": "【交互：观察】",
+      "runs": [
+        {
+          "text": "【交互：观察】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 218,
+      "style": "normal",
+      "text": "（船只依然停在原地，附近偶尔有别的渔船经过，工程区域没有恢复动静） ",
+      "runs": [
+        {
+          "text": "（船只依然停在原地，附近偶尔有别的渔船经过，工程区域没有恢复动静） ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 219,
+      "style": "normal",
+      "text": "（一次暂停，不代表白海豚会立刻回到原来的活动范围，也不代表爆破不会在评估之后重新开始）",
+      "runs": [
+        {
+          "text": "（一次暂停，不代表白海豚会立刻回到原来的活动范围，也不代表爆破不会在评估之后重新开始）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 221,
+      "style": "normal",
+      "text": "场景七：几周后",
+      "runs": [
+        {
+          "text": "场景七：几周后",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 223,
+      "style": "normal",
+      "text": "【新的环境信息：施工方申请重新评估，评估结果尚未公开】",
+      "runs": [
+        {
+          "text": "【新的环境信息：施工方申请重新评估，评估结果尚未公开】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 225,
+      "style": "normal",
+      "text": "“果然，是这样吗？”",
+      "runs": [
+        {
+          "text": "“果然，是这样吗？”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 226,
+      "style": "normal",
+      "text": "（已经结束的事情，总像是不歇的潮汐般，一次接一次地打来）",
+      "runs": [
+        {
+          "text": "（已经结束的事情，总像是不歇的潮汐般，一次接一次地打来）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 228,
+      "style": "normal",
+      "text": "【新任务：了解情况】",
+      "runs": [
+        {
+          "text": "【新任务：了解情况】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 229,
+      "style": "normal",
+      "text": "（黑屏） ",
+      "runs": [
+        {
+          "text": "（黑屏）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": "ffffff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 230,
+      "style": "normal",
+      "text": "（画面切入：电脑屏幕出现新闻资料）",
+      "runs": [
+        {
+          "text": "（画面切入：电脑屏幕出现新闻资料）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 231,
+      "style": "normal",
+      "text": "（随着争议的扩大，更多的环保组织开始介入）",
+      "runs": [
+        {
+          "text": "（随着争议的扩大，更多的环保组织开始介入）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 232,
+      "style": "normal",
+      "text": "【记录本：2025年7月，环保组织自然之友就泉州港围头湾石井作业区11号、12号泊位工程涉及的生态问题，向泉州市中级人民法院提交了生态破坏民事公益诉讼材料。该组织同时认为，六月发生了新一轮的炸礁，这也作为其提起诉讼的原因之一。相关材料法院已签收】 ",
+      "runs": [
+        {
+          "text": "【记录本：2025年7月，环保组织自然之友就泉州港围头湾石井作业区11号、12号泊位工程涉及的生态问题，向泉州市中级人民法院提交了生态破坏民事公益诉讼材料。该组织同时认为，六月发生了新一轮的炸礁，这也作为其提起诉讼的原因之一。相关材料法院已签收】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 233,
+      "style": "normal",
+      "text": "【信息来源：自然之友官方网站，发布于2025年7月29日】 ",
+      "runs": [
+        {
+          "text": "【信息来源：自然之友官方网站，发布于2025年7月29日】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 234,
+      "style": "normal",
+      "text": "【记录本提醒：\"法院签收材料\"是指法院收到了诉讼材料，不等于案件已经正式立案审理。后续是否立案、何时开庭，需要持续关注官方或自然之友后续公布的消息，目前不能提前下结论。】",
+      "runs": [
+        {
+          "text": "【记录本提醒：\"法院签收材料\"是指法院收到了诉讼材料，不等于案件已经正式立案审理。后续是否立案、何时开庭，需要持续关注官方或自然之友后续公布的消息，目前不能提前下结论。】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 236,
+      "style": "normal",
+      "text": "（保护环境，并不能得到一个即刻的答案，有的时候，人只得等待。）",
+      "runs": [
+        {
+          "text": "（保护环境，并不能得到一个即刻的答案，有的时候，人只得等待。）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 238,
+      "style": "normal",
+      "text": "场景八：一个月后",
+      "runs": [
+        {
+          "text": "场景八：一个月后",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 240,
+      "style": "normal",
+      "text": "（电脑屏幕逐渐暗淡）",
+      "runs": [
+        {
+          "text": "（电脑屏幕逐渐暗淡）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 241,
+      "style": "normal",
+      "text": "【记录本更新：截至你目前能查到的公开资料，还没有找到这起公益诉讼是否正式立案、是否进入实体审理的最新消息】 ",
+      "runs": [
+        {
+          "text": "【记录本更新：截至你目前能查到的公开资料，还没有找到这起公益诉讼是否正式立案、是否进入实体审理的最新消息】 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 242,
+      "style": "normal",
+      "text": "【记录本提醒：在过去不少类似案件中，环保组织提起公益诉讼时，诉讼资格等程序性问题是比较常见的难点，但这不代表这起案件一定会遇到同样的情况。法律程序推进往往需要很长时间。在没有新的官方或自然之友公告之前，不能把\"暂时没有下文\"当成\"败诉\"或\"不了了之\"，也不能当成\"一定会赢\"】",
+      "runs": [
+        {
+          "text": "【记录本提醒：在过去不少类似案件中，环保组织提起公益诉讼时，诉讼资格等程序性问题是比较常见的难点，但这不代表这起案件一定会遇到同样的情况。法律程序推进往往需要很长时间。在没有新的官方或自然之友公告之前，不能把\"暂时没有下文\"当成\"败诉\"或\"不了了之\"，也不能当成\"一定会赢\"】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 243,
+      "style": "normal",
+      "text": "（人们发现了问题，但发现问题和解决问题之间，有时隔着不短的距离。）",
+      "runs": [
+        {
+          "text": "（人们发现了问题，但发现问题和解决问题之间，有时隔着不短的距离。）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 244,
+      "style": "normal",
+      "text": "（环境保护面对的困难有很多种：有时是污染，有时是栖息地的改变，有时是来自人们对发展，利益，和保护所作出的不同选择。）",
+      "runs": [
+        {
+          "text": "（环境保护面对的困难有很多种：有时是污染，有时是栖息地的改变，有时是来自人们对发展，利益，和保护所作出的不同选择。）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 245,
+      "style": "normal",
+      "text": "“一个人无法保护一整片海，但一个人的关注，总可以成为更多人开始行动的起点。”",
+      "runs": [
+        {
+          "text": "“一个人无法保护一整片海，但一个人的关注，总可以成为更多人开始行动的起点。”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 247,
+      "style": "normal",
+      "text": "尾声",
+      "runs": [
+        {
+          "text": "尾声",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 249,
+      "style": "normal",
+      "text": "2026年，码头仍在往前建，海面上的设施逐渐成形。 即使有人提出质疑，即使有人在研究保护方案，人类的建设仍然在继续。 眼前的海湾，已经和你第一次来这里的时候不一样了——多了码头，多了船只，多了人类的痕迹。 但海水下面，仍然是另一个世界。",
+      "runs": [
+        {
+          "text": "2026年，码头仍在往前建，海面上的设施逐渐成形。 即使有人提出质疑，即使有人在研究保护方案，人类的建设仍然在继续。 眼前的海湾，已经和你第一次来这里的时候不一样了——多了码头，多了船只，多了人类的痕迹。 但海水下面，仍然是另一个世界。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 251,
+      "style": "normal",
+      "text": "（画面引入：海面）",
+      "runs": [
+        {
+          "text": "（画面引入：海面）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 253,
+      "style": "normal",
+      "text": "“今天会有白海豚吗”",
+      "runs": [
+        {
+          "text": "“今天会有白海豚吗”",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 254,
+      "style": "normal",
+      "text": "（你如此思考着）",
+      "runs": [
+        {
+          "text": "（你如此思考着）",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 255,
+      "style": "normal",
+      "text": "你不知道，白海豚今天会不会出现。 你也不知道，几年以后，它们还会不会在这里出现。 你甚至不知道，自己今天做的这一件小事，究竟能不能改变什么？",
+      "runs": [
+        {
+          "text": "你不知道，白海豚今天会不会出现。 你也不知道，几年以后，它们还会不会在这里出现。 你甚至不知道，自己今天做的这一件小事，究竟能不能改变什么？",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 256,
+      "style": "normal",
+      "text": "但至少，你依然在这里，依然做着符合你意愿的事，至少依然有志同道合的伙伴。只要你们还在，这个世界就还有人在意它们的存亡。直至下一次调查开始之前，你们都会一直在这里。",
+      "runs": [
+        {
+          "text": "但至少，你依然在这里，依然做着符合你意愿的事，至少依然有志同道合的伙伴。只要你们还在，这个世界就还有人在意它们的存亡。直至下一次调查开始之前，你们都会一直在这里。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 257,
+      "style": "normal",
+      "text": "海风吹过，又静了下来。",
+      "runs": [
+        {
+          "text": "海风吹过，又静了下来。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 259,
+      "style": "normal",
+      "text": "【感谢游玩】",
+      "runs": [
+        {
+          "text": "【感谢游玩】",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 260,
+      "style": "Subtitle",
+      "text": "附件A",
+      "runs": [
+        {
+          "text": "附件A",
+          "highlight": null,
+          "color": "000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 261,
+      "style": "Heading 2",
+      "text": "1. 环境评估报告",
+      "runs": [
+        {
+          "text": "1. 环境评估报告",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 262,
+      "style": "normal",
+      "text": "报告名称：泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书 ",
+      "runs": [
+        {
+          "text": "报告名称",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 263,
+      "style": "normal",
+      "text": "环评单位：福建海洋工程咨询服务有限公司 ",
+      "runs": [
+        {
+          "text": "环评单位",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：福建海洋工程咨询服务有限公司 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 264,
+      "style": "normal",
+      "text": "建设单位：福建天龙轮船有限公司 ",
+      "runs": [
+        {
+          "text": "建设单位",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：福建天龙轮船有限公司 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 265,
+      "style": "normal",
+      "text": "公示时间：2022年12月22日—12月28日（拟批复公示，5个工作日）；泉州市生态环境局的批复公开于2023年1月3日前后",
+      "runs": [
+        {
+          "text": "公示时间",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：2022年12月22日—12月28日（拟批复公示，5个工作日）；泉州市生态环境局的批复公开于2023年1月3日前后",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 266,
+      "style": "normal",
+      "text": "工程规模：在南安市石井镇东南侧海域新建2个2万吨级多用途泊位，总长430米，年通过能力340万吨（其中集装箱10.5万TEU），配套2座栈桥和139.3米引堤。主要装卸货物为水泥、石材、钢材等。",
+      "runs": [
+        {
+          "text": "工程规模",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：在南安市石井镇东南侧海域新建2个2万吨级多用途泊位，总长430米，年通过能力340万吨（其中集装箱10.5万TEU），配套2座栈桥和139.3米引堤。主要装卸货物为水泥、石材、钢材等。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 267,
+      "style": "normal",
+      "text": "环保措施要点：污水处理回用、散货粉尘封闭治理、设备噪声按工业企业3类标准管控、固废分类利用、制定环境风险应急预案。",
+      "runs": [
+        {
+          "text": "环保措施要点",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：污水处理回用、散货粉尘封闭治理、设备噪声按工业企业3类标准管控、固废分类利用、制定环境风险应急预案。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 268,
+      "style": "normal",
+      "text": "关于中华白海豚：2025年5月的新闻报道转述过环评内容，提到\"环评显示，一年内施工区域没有观测到中华白海豚\"。同一批报道也提到：工程区西南侧约6.08公里，是厦门珍稀海洋物种国家级自然保护区的外围保护地带；围头湾本身没有被划为自然保护区。",
+      "runs": [
+        {
+          "text": "关于中华白海豚",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：2025年5月的新闻报道转述过环评内容，提到\"环评显示，一年内施工区域没有观测到中华白海豚\"。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "同一批报道也提到：工程区西南侧约6.08公里，是厦门珍稀海洋物种国家级自然保护区的外围保护地带；围头湾本身",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "没有",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "被划为自然保护区。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 269,
+      "style": "normal",
+      "text": "2025年5月的新闻转述：\"环评显示，一年内施工区域没有观测到中华白海豚\"2；工程区西南侧约6.08公里是厦门珍稀海洋物种国家级自然保护区的外围保护地带，围头湾本身没有被划为自然保护区3。",
+      "runs": [
+        {
+          "text": "2025年5月的新闻转述：\"环评显示，一年内施工区域没有观测到中华白海豚\"",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "2",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "；工程区西南侧约6.08公里是厦门珍稀海洋物种国家级自然保护区的外围保护地带，围头湾本身没有被划为自然保护区",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "3",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 270,
+      "style": "normal",
+      "text": "环保组织自然之友在其官网文章中明确指出，环评报告仅评价了项目附近自然保护区外围保护地带的中华白海豚，未依法客观评价在评价范围内紧邻泊位工程施工区域的中华白海豚及栖息地。",
+      "runs": [
+        {
+          "text": "环保组织自然之友在其官网文章中明确指出，环评报告仅评价了项目附近自然保护区外围保护地带的中华白海豚，未依法客观评价在评价范围内紧邻泊位工程施工区域的中华白海豚及栖息地。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 271,
+      "style": "normal",
+      "text": "自然之友同时单方面指出，环评\"未依法律规范对中华白海豚优先采取避让方案、或提出有效的生态保护措施\"4",
+      "runs": [
+        {
+          "text": "自然之友同时单方面指出，环评\"未依法律规范对中华白海豚优先采取避让方案、或提出有效的生态保护措施\"",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "4",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 272,
+      "style": "normal",
+      "text": "白海豚数量与种群趋势：根据自然之友所言，围头湾现有约20头中华白海豚；整个厦门-漳州-泉州-金门海域（厦漳泉金海域）种群数量，从2004年的86头下降到2022年的44头。",
+      "runs": [
+        {
+          "text": "白海豚数量与种群趋势",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：根据自然之友所言，围头湾现有约20头中华白海豚；整个厦门-漳州-泉州-金门海域（厦漳泉金海域）种群数量，从2004年的86头下降到2022年的44头。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 273,
+      "style": "normal",
+      "text": "以上自然之友之言论均已在附件中注明，根据客群画像之年龄，应有分辨其为环保组织一方之言之能力，因此未做出显著注明。以上数据，环保评估未作出任何回应或反驳，其关于围头湾之调查细节未向公开渠道开放，无法核实。详情见参考文献之《泉州港围头湾港区石井作业区11号 12号泊位工程海域使用论证报告书公示》“3.2 海洋生态概况”一栏。",
+      "runs": [
+        {
+          "text": "以上自然之友之言论均已在附件中注明，根据客群画像之年龄，应有分辨其为环保组织一方之言之能力，因此未做出显著注明。以上数据，环保评估未作出任何回应或反驳，其关于围头湾之调查细节未向公开渠道开放，无法核实。详情见参考文献之《",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        },
+        {
+          "text": "泉州港围头湾港区石井作业区11号 12号泊位工程海域使用论证报告书公示》“3.2 海洋生态概况”一栏。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 275,
+      "style": "Heading 2",
+      "text": "2. 施工区域地图",
+      "runs": [
+        {
+          "text": "2. 施工区域地图",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 276,
+      "style": "normal",
+      "text": "位置：泉州港围头湾港区石井作业区11号、12号泊位，位于南安市石井镇东南侧海域，即\"围头湾石井作业区11-12#泊位码头附近水域\"。",
+      "runs": [
+        {
+          "text": "位置",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：泉州港围头湾港区石井作业区11号、12号泊位，位于南安市石井镇东南侧海域，即\"围头湾石井作业区11-12#泊位码头附近水域\"。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 277,
+      "style": "normal",
+      "text": "参照距离：工程区西南侧约6.08公里为厦门珍稀海洋物种国家级自然保护区外围保护地带；围头湾水域本身不在任何自然保护区范围内。",
+      "runs": [
+        {
+          "text": "参照距离",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：工程区西南侧约6.08公里为厦门珍稀海洋物种国家级自然保护区外围保护地带；围头湾水域本身不在任何自然保护区范围内。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 278,
+      "style": "normal",
+      "text": "坐标：",
+      "runs": [
+        {
+          "text": "坐标",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 279,
+      "style": "normal",
+      "text": "海域征用范围：南北向距离 25.13 公里，东西向距离约 30.35 公里 论证范围海域面积约为 328 平方公里。",
+      "runs": [
+        {
+          "text": "海域征用范围：",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "南北向距离 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "25.13 公里，东西向距离约 30.35 公里 论证范围海域面积约为 328 平方公里。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 280,
+      "style": "normal",
+      "text": "以下表格之文本系依评论意见所增列。惟考量中国现行教育课纲之相关内容，以及经纬度与精确至秒之坐标表达方式，对于10岁以上玩家而言或有过于晦涩之虞，故相关呈现方式仍有进一步评估之必要，谨于此处以批注形式列明，供各位同僚斟酌。",
+      "runs": [
+        {
+          "text": "以下表格之文本系依评论意见所增列。惟考量中国现行教育课纲之相关内容，以及经纬度与精确至秒之坐标表达方式，对于10岁以上玩家而言或有过于晦涩之虞，故相关呈现方式仍有进一步评估之必要，谨于此处以批注形式列明，供各位同僚斟酌。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 282,
+      "style": "normal",
+      "text": "项目位于泉州港围头湾港区石井作业区，南安市石井镇东南侧海域，地理坐标为东经 118° 25′51″，北纬24° 37′11″。本项目周边区域水陆交通便利， 水路至厦门港35 海里、泉州港石湖作业区42 海里、福州港180 海里、金门港6 海里、高雄港170 海里、香港港322 海里。陆路至324 国道福厦干线的水头镇10 公里、至福厦高速公路 11 公里、至南安市区 40 公里、至泉州 52 公里、至厦门东渡港区35 公里。外部条件及地理位置十分优越。",
+      "runs": [
+        {
+          "text": "项目位于泉州港围头湾港区石井作业区，南安市石井镇东南侧海域，地理",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "坐标为东经 118° 25′51″，北纬24° 37′11″",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "。本项目周边区域水陆交通便利， 水路至厦门港",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "35 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里、泉州港石湖作业区",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "42 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里、福州港",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "180 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里、金门港",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "6 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里、高雄港",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "170 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里、香港港",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "322 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "海里。陆路至",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "324 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "国道福厦干线的水头镇",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "10 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "公里、至福厦高速公路 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "11 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "公里、至南安市区 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "40 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "公里、至泉州 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "52 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "公里、至厦门东渡港区",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "35 ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "公里。外部条件及地理位置十分优越。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 285,
+      "style": "Heading 2",
+      "text": "3. 白海豚历史目击记录",
+      "runs": [
+        {
+          "text": "3. 白海豚历史目击记录",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 286,
+      "style": "normal",
+      "text": "白海豚数量稀少，只有零散的目击记录。",
+      "runs": [
+        {
+          "text": "白海豚数量稀少，只有零散的目击记录。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 287,
+      "style": "normal",
+      "text": "参考文献：",
+      "runs": [
+        {
+          "text": "参考文献：",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 290,
+      "style": "normal",
+      "text": "泉州市生态环境局2022年12月22日拟作出审批意见的建设项目公开（泉州港围头湾港区石井作业区11号、12号泊位工程）. https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/hjbh/jsxmhjyxpjxx/jsxmhjyxpjxx/202212/t20221222_2831275.htm ",
+      "runs": [
+        {
+          "text": "泉州市生态环境局2022年12月22日拟作出审批意见的建设项目公开（泉州港围头湾港区石井作业区11号、12号泊位工程）. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 292,
+      "style": "normal",
+      "text": "泉州市生态环境局关于泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书的批复. https://sthjj.quanzhou.gov.cn/xxgk/zfxxgkzl/zfxxgkml/wryjdgl/202301/t20230103_2833680.htm ",
+      "runs": [
+        {
+          "text": "泉州市生态环境局关于泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书的批复. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 294,
+      "style": "normal",
+      "text": "泉州港围头湾港区石井作业区11号、12号泊位工程海域使用论证报告书公示. 泉州市自然资源和规划局, 2021年7月7日. ",
+      "runs": [
+        {
+          "text": "泉州港围头湾港区石井作业区11号、12号泊位工程海域使用论证报告书公示. 泉州市自然资源和规划局, 2021年7月7日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 295,
+      "style": "normal",
+      "text": "http://zyghj.quanzhou.gov.cn/xxgk/zdxxgk/hdsygsggl/202107/t20210707_2584525.htm",
+      "runs": []
+    },
+    {
+      "i": 297,
+      "style": "normal",
+      "text": "福建省交通运输厅关于泉州港围头湾港区石井作业区11号、12号泊位工程初步设计的批复. 福建省泉州港口发展中心, 2023年1月12日http://jtyst.fujian.gov.cn/qzg/zfxxgk/zfxxgkml/xzxkyqr/202301/t20230112_6093650.html  ",
+      "runs": [
+        {
+          "text": "福建省交通运输厅关于泉州港围头湾港区石井作业区11号、12号泊位工程初步设计的批复. 福建省泉州港口发展中心, 2023年1月12日",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": "  ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 299,
+      "style": "normal",
+      "text": "泉州港围头湾港区石井作业区11号、12号泊位工程预制沉箱顺利完成. 中华网, 2025年9月23日. https://mtz.china.com/touzi/2025/0923/193178.html ",
+      "runs": [
+        {
+          "text": "泉州港围头湾港区石井作业区11号、12号泊位工程预制沉箱顺利完成. 中华网, 2025年9月23日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 301,
+      "style": "normal",
+      "text": "泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日. https://www.163.com/dy/article/JVN1ECHL054572GV.html ",
+      "runs": [
+        {
+          "text": "泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 303,
+      "style": "normal",
+      "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日. https://news.qq.com/rain/a/20250522A054WT00 ",
+      "runs": [
+        {
+          "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 305,
+      "style": "normal",
+      "text": "我所组织召开\"泉州围头湾中华白海豚及其栖息地保护\"研讨会. 福建省水产研究所, 2025年8月8日. https://www.fjscs.ac.cn/notice_details-714.html ",
+      "runs": [
+        {
+          "text": "我所组织召开\"泉州围头湾中华白海豚及其栖息地保护\"研讨会. 福建省水产研究所, 2025年8月8日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 307,
+      "style": "normal",
+      "text": "跟踪报道：泉州围头湾炸礁被叫停后续，中华白海豚生存如何保护？. 北京日报, 2025年8月21日. https://xinwen.bjd.com.cn/content/s68a6649ce4b0221b9bebc305.html ",
+      "runs": [
+        {
+          "text": "跟踪报道：泉州围头湾炸礁被叫停后续，中华白海豚生存如何保护？. 北京日报, 2025年8月21日. ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 309,
+      "style": "normal",
+      "text": "自然之友，\"起诉！用公益诉讼拯救中华白海豚\"，2025年7月29日，fon.org.cn",
+      "runs": [
+        {
+          "text": "自然之友，\"起诉！用公益诉讼拯救中华白海豚\"，2025年7月29日，",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 311,
+      "style": "Subtitle",
+      "text": "附件B",
+      "runs": [
+        {
+          "text": "附件B",
+          "highlight": null,
+          "color": "000000",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 312,
+      "style": "normal",
+      "text": "水下爆破作业通告",
+      "runs": [
+        {
+          "text": "水下爆破作业通告",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 313,
+      "style": "normal",
+      "text": "据先前版本之评论意见，相关参考文献链接已附于本页角注中，谨供查阅。",
+      "runs": [
+        {
+          "text": "据先前版本之评论意见，相关参考文献链接已附于本页角注中，谨供查阅。",
+          "highlight": null,
+          "color": "0000ff",
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 314,
+      "style": "normal",
+      "text": "发布机构：泉州海事局",
+      "runs": [
+        {
+          "text": "发布机构",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：泉州海事局",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 315,
+      "style": "normal",
+      "text": "发布日期：2025年5月12日",
+      "runs": [
+        {
+          "text": "发布日期",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：2025年5月12日",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 317,
+      "style": "normal",
+      "text": "定于2025年5月13日，在围头湾石井作业区11号、12号泊位",
+      "runs": [
+        {
+          "text": "定于2025年5月13日，在围头湾石井作业区11号、12号泊位",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 318,
+      "style": "normal",
+      "text": "附近水域进行水下爆破施工，作业时段：",
+      "runs": [
+        {
+          "text": "附近水域进行水下爆破施工，作业时段：",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 319,
+      "style": "normal",
+      "text": "    中午  12:00—14:00",
+      "runs": [
+        {
+          "text": "    中午  12:00—14:00",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 320,
+      "style": "normal",
+      "text": "    傍晚  16:00—18:00",
+      "runs": [
+        {
+          "text": "    傍晚  16:00—18:00",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 321,
+      "style": "normal",
+      "text": "作业期间过往船舶请保持安全距离，注意避让。",
+      "runs": [
+        {
+          "text": "作业期间过往船舶请保持安全距离，注意避让。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 323,
+      "style": "normal",
+      "text": "证据等级：官方公告，可证明爆破计划，不能证明爆破行为是否已经发生，需要配合后续通报。",
+      "runs": [
+        {
+          "text": "证据等级",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：官方公告，可证明爆破计划，不能证明爆破行为是否已经发生，需要配合后续通报。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 325,
+      "style": "normal",
+      "text": "施工进展通报",
+      "runs": [
+        {
+          "text": "施工进展通报",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 327,
+      "style": "normal",
+      "text": "发布机构：福建省海洋局渔业出工作人员告知澎湃新闻",
+      "runs": [
+        {
+          "text": "发布机构",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：福建省海洋局渔业出工作人员告知澎湃新闻",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 329,
+      "style": "normal",
+      "text": "2025年5月13日按公告计划，实施了两次水下爆破作业，",
+      "runs": [
+        {
+          "text": "2025年5月13日按公告计划，实施了两次水下爆破作业，",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 330,
+      "style": "normal",
+      "text": "作业时段与公告一致。",
+      "runs": [
+        {
+          "text": "作业时段与公告一致。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 331,
+      "style": "normal",
+      "text": "5月14日，部门已派人到现场",
+      "runs": [
+        {
+          "text": "5月14日，部门已派人到现场",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 332,
+      "style": "normal",
+      "text": "了解情况，后续炸礁作业暂停，将重新评估。",
+      "runs": [
+        {
+          "text": "了解情况，后续炸礁作业暂停，将重新评估。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 334,
+      "style": "normal",
+      "text": "证据等级：官方通报，可证明爆破行为。",
+      "runs": [
+        {
+          "text": "证据等级",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "：官方通报，可证明爆破行为。",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 335,
+      "style": "normal",
+      "text": "参考文献",
+      "runs": [
+        {
+          "text": "参考文献",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 337,
+      "style": "normal",
+      "text": "\"泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日.https://www.163.com/dy/article/JVN1ECHL054572GV.html ",
+      "runs": [
+        {
+          "text": "\"泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 339,
+      "style": "normal",
+      "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日.https://news.qq.com/rain/a/20250522A054WT00 ",
+      "runs": [
+        {
+          "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        },
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 341,
+      "style": "normal",
+      "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业通告.https://www.msa.gov.cn/page/article.do?articleId=40948B44-5D92-4A35-ABB7-F23D6BE5C9A7&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164",
+      "runs": [
+        {
+          "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业通告.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 343,
+      "style": "normal",
+      "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业船舶变更通告",
+      "runs": [
+        {
+          "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业船舶变更通告",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 344,
+      "style": "normal",
+      "text": "https://www.msa.gov.cn/page/article.do?articleId=668A5B4C-D4A4-4663-8EFC-18B",
+      "runs": []
+    },
+    {
+      "i": 345,
+      "style": "normal",
+      "text": "986C29316&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164 ",
+      "runs": [
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 347,
+      "style": "normal",
+      "text": "中华白海豚栖息地炸礁作业被叫停，海岸边的人兽冲突如何解决？. 新京报, 2025年6月19日.",
+      "runs": [
+        {
+          "text": "中华白海豚栖息地炸礁作业被叫停，海岸边的人兽冲突如何解决？. 新京报, 2025年6月19日.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 348,
+      "style": "normal",
+      "text": "https://m.bjnews.com.cn/detail/1750311496168254.html ",
+      "runs": [
+        {
+          "text": " ",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 350,
+      "style": "normal",
+      "text": "中华人民共和国海事局／泉州海事局.《泉州围头湾石井作业区11-12号泊位工程水下爆破作业的通告》. 2025年5月12日发布.https://www.msa.gov.cn/page/article.do?articleId=558E160F-9EB0-436E-B157-26EAD90BCC8E&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164",
+      "runs": [
+        {
+          "text": "中华人民共和国海事局／泉州海事局.《泉州围头湾石井作业区11-12号泊位工程水下爆破作业的通告》. 2025年5月12日发布.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 352,
+      "style": "normal",
+      "text": "澎湃新闻.《泉州围头湾一港区项目炸礁被指影响中华白海豚，官方：已叫停，重新评估》. 2025年5月16日.",
+      "runs": [
+        {
+          "text": "澎湃新闻.《泉州围头湾一港区项目炸礁被指影响中华白海豚，官方：已叫停，重新评估》. 2025年5月16日.",
+          "highlight": null,
+          "color": null,
+          "bold": null
+        }
+      ]
+    },
+    {
+      "i": 353,
+      "style": "normal",
+      "text": "https://m.thepaper.cn/newsDetail_forward_30827546",
+      "runs": []
+    }
+  ],
+  "tables": [
+    {
+      "i": 0,
+      "rows": [
+        [
+          "点号",
+          "北纬",
+          "东经"
+        ],
+        [
+          "A",
+          "24°27′42.59″",
+          "118°22′48.45″"
+        ],
+        [
+          "B",
+          "24°27′20.66″",
+          "118°27′48.01″"
+        ],
+        [
+          "C",
+          "24°30′41.80″",
+          "118°34′16.04″"
+        ],
+        [
+          "D",
+          "24°33′18.81″",
+          "118°16′40.54″"
+        ]
+      ]
+    },
+    {
+      "i": 1,
+      "rows": [
+        [
+          "时间",
+          "目击方",
+          "地点"
+        ],
+        [
+          "2024年2月15日",
+          "泉州海警局",
+          "泉州湾附近海域"
+        ],
+        [
+          "未标注具体日期，\"数次\"",
+          "泉州海警局执法人员",
+          "泉州湾、围头湾等海域"
+        ],
+        [
+          "2025年1月11日",
+          "泉州海事局南安海事处",
+          "泉州湾成功大桥附近水域"
+        ]
+      ]
+    }
+  ],
+  "zip_flags": {
+    "comments": false,
+    "footnotes": true,
+    "endnotes": false,
+    "tracked_insertions": true,
+    "tracked_deletions": false
+  },
+  "xml_paragraphs": [
+    {
+      "i": 0,
+      "text": "第三章：暗礁忧鸣",
+      "deleted": ""
+    },
+    {
+      "i": 2,
+      "text": "备注：【UI】 （旁白）“自白”",
+      "deleted": ""
+    },
+    {
+      "i": 4,
+      "text": "【制作说明：本作品中的环境评估报告、调查范围地图、白海豚目击记录均为游戏化模拟数据，不是真实报告的原文内容，不代表真实的调查结论。】",
+      "deleted": ""
+    },
+    {
+      "i": 5,
+      "text": "若日后拟将现有资料替换为真实材料，则相关资料尚需进一步补齐，包括报告名称、版本及具体页码、目击记录之原始来源、坐标资料之精度，以及调查范围之绘制方式；另亦应于呈现时明确说明，玩家角色于单次调查中所得之观察结果，仅属个别观察记录，不宜直接视为正式之物种分布数据。以上事项拟于资料正式替换时一并核实及补充，以确保相关内容之来源、呈现方式及数据性质均有明确交代。",
+      "deleted": ""
+    },
+    {
+      "i": 6,
+      "text": "场景零：身份说明",
+      "deleted": ""
+    },
+    {
+      "i": 8,
+      "text": "【你是\"潮汐观察站\"的一名田野调查志愿者。这是一家独立的民间环境监测组织，不隶属于任何政府部门，也并非执法机构。】",
+      "deleted": ""
+    },
+    {
+      "i": 9,
+      "text": "【能做的事：在合法、公开的场所记录你看到、听到的情况；在对方知情同意的前提下记录居民的口述；查阅政府或企业公开发布的资料，比如施工公告、环境评估报告。】",
+      "deleted": ""
+    },
+    {
+      "i": 10,
+      "text": "【不能做的事：进入非公开区域或私人场所；强迫任何人接受采访；调取没有公开的内部文件；认定某项工程\"违法\"或要求它停工——这些判断和权力属于监管部门和法院，不属于你。】",
+      "deleted": ""
+    },
+    {
+      "i": 11,
+      "text": "【整理的资料会提交给\"潮汐观察站\"内部存档，也可能被分享给其他持续关注这件事的环保组织，作为他们判断是否行动的参考材料之一，但具体会不会被用上、怎么用，不由你决定。】",
+      "deleted": ""
+    },
+    {
+      "i": 13,
+      "text": "场景一：海岸边缘 （2025年5月13日）",
+      "deleted": ""
+    },
+    {
+      "i": 15,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 17,
+      "text": "【有些声音，你我未必听得见。】",
+      "deleted": ""
+    },
+    {
+      "i": 18,
+      "text": "【在海水之下，在引擎的轰鸣声中，在不曾言语的生命里。】",
+      "deleted": ""
+    },
+    {
+      "i": 21,
+      "text": "（闪屏）",
+      "deleted": ""
+    },
+    {
+      "i": 22,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 24,
+      "text": "“我，在哪”",
+      "deleted": ""
+    },
+    {
+      "i": 25,
+      "text": "台词说话者暂予留白，旨在暗示其声音或源自白海豚，或由环境本身所发出；声音设计上则拟采用水下闷响、混响等处理，与调查员的清晰人声加以区分。惟若各位成员认为此设计或可能造成玩家理解上的困惑，亦可考虑予以删减，并改由调查员视角直接展开。此项设计仅为艺术表达上的尝试，并无意推卸叙事责任，亦希望听取各方意见，以在艺术表达与信息清晰度之间作出妥适取舍。若有不周之处，尚祈各位同僚理解，并惠予指正。",
+      "deleted": ""
+    },
+    {
+      "i": 26,
+      "text": "（画面引入：天朦朦亮，海面没有一丝波澜，远处看得到施工的船只，你手中拿着相机和记录本。）",
+      "deleted": ""
+    },
+    {
+      "i": 28,
+      "text": "“这是你来到围头湾的第三个小时，这里似乎有一项大型的海上工程。”",
+      "deleted": ""
+    },
+    {
+      "i": 29,
+      "text": "“泉州海事局于昨日发布公告，计划于今日在附近海域进行爆破施工，中午与傍晚各一次。”",
+      "deleted": ""
+    },
+    {
+      "i": 30,
+      "text": "“先前，观察站已记录过一次渔民的反映，具体次数与时间尚待核实”",
+      "deleted": ""
+    },
+    {
+      "i": 32,
+      "text": "【新任务：查看现场情况，对当地居民进行采访】",
+      "deleted": ""
+    },
+    {
+      "i": 34,
+      "text": "（机器轰鸣声）",
+      "deleted": ""
+    },
+    {
+      "i": 36,
+      "text": "“那是什么？”",
+      "deleted": ""
+    },
+    {
+      "i": 38,
+      "text": "（视角转向海面）",
+      "deleted": ""
+    },
+    {
+      "i": 40,
+      "text": "【新任务：请记录现场情况】",
+      "deleted": ""
+    },
+    {
+      "i": 41,
+      "text": "【注意：请维持在安全，合法的公共区域范围内】",
+      "deleted": ""
+    },
+    {
+      "i": 42,
+      "text": "【记录本提醒：时间，地点，证人，证词】",
+      "deleted": ""
+    },
+    {
+      "i": 44,
+      "text": "【交互：拍摄施工船】",
+      "deleted": ""
+    },
+    {
+      "i": 46,
+      "text": "（视角切换至相机镜头）",
+      "deleted": ""
+    },
+    {
+      "i": 47,
+      "text": "【交互：旋转视角至正确角度，画面中出现施工船，海面及远处的施工区域】",
+      "deleted": ""
+    },
+    {
+      "i": 48,
+      "text": "【记录完成】",
+      "deleted": ""
+    },
+    {
+      "i": 49,
+      "text": "【时间： 2025年5月13日 早8:20】",
+      "deleted": ""
+    },
+    {
+      "i": 50,
+      "text": "【地点：围头湾石井作业区附近岸线，营前村沿海岸线】",
+      "deleted": ""
+    },
+    {
+      "i": 51,
+      "text": "【观察：施工船作业中】",
+      "deleted": ""
+    },
+    {
+      "i": 52,
+      "text": "【证据等级：现场观察】",
+      "deleted": ""
+    },
+    {
+      "i": 53,
+      "text": "【待核实：是否确有爆破作业，需要结合官方公告，声音记录或其他证词进行进一步确认】",
+      "deleted": ""
+    },
+    {
+      "i": 55,
+      "text": "【交互：拍摄公告】",
+      "deleted": ""
+    },
+    {
+      "i": 56,
+      "text": "（视角切换至摄像机镜头，画面中出现张贴的施工公告）",
+      "deleted": ""
+    },
+    {
+      "i": 57,
+      "text": "【记录完成】",
+      "deleted": ""
+    },
+    {
+      "i": 58,
+      "text": "【时间：2025年5月13日 09:10（上午）】 ",
+      "deleted": ""
+    },
+    {
+      "i": 59,
+      "text": "【地点：围头湾石井作业区附近公示栏】 ",
+      "deleted": ""
+    },
+    {
+      "i": 60,
+      "text": "【观察：泉州海事局于5月12日公告，预告5月13日进行爆破施工，中午、傍晚各一个作业时段】 ",
+      "deleted": ""
+    },
+    {
+      "i": 61,
+      "text": "【证据等级：官方公告原文，目前能确认\"是否会有爆破\"最直接的证据】",
+      "deleted": ""
+    },
+    {
+      "i": 63,
+      "text": "【思考：已核实爆破情况】 ",
+      "deleted": ""
+    },
+    {
+      "i": 64,
+      "text": "场景二：营前村",
+      "deleted": ""
+    },
+    {
+      "i": 66,
+      "text": "“光这样还不够，去听听居民怎么说吧”",
+      "deleted": ""
+    },
+    {
+      "i": 68,
+      "text": "【交互：进入营前村】",
+      "deleted": ""
+    },
+    {
+      "i": 69,
+      "text": "（画面引入：沿岸可以看到红砖古厝依山而建、房屋密集错落，涨潮前的早上海边是大片的滩涂）",
+      "deleted": ""
+    },
+    {
+      "i": 70,
+      "text": "“那里有个人，去问问他发生了什么吧。”",
+      "deleted": ""
+    },
+    {
+      "i": 72,
+      "text": "【交互：搭讪】",
+      "deleted": ""
+    },
+    {
+      "i": 74,
+      "text": "“您好，请问可以问您关于最近海上施工的几个问题吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 75,
+      "text": "“你是来查那个爆破的哦？”",
+      "deleted": ""
+    },
+    {
+      "i": 76,
+      "text": "“是的，如果您愿意，我想请您接受一个简单的采访。我会记录下您说的内容，如果哪里记不清楚，也请直接告诉我，我会照实记下来。”",
+      "deleted": ""
+    },
+    {
+      "i": 77,
+      "text": "“可以是可以，我看到的也不一定准，你自己拿捏吧。”",
+      "deleted": ""
+    },
+    {
+      "i": 79,
+      "text": "【记录本打开】",
+      "deleted": ""
+    },
+    {
+      "i": 80,
+      "text": "【采访前已确认：对方同意接受采访，并已被告知记录内容代表其个人观察与回忆，不代表已核实的事实。】",
+      "deleted": ""
+    },
+    {
+      "i": 81,
+      "text": "【记录身份：当地渔民 （匿名）】",
+      "deleted": ""
+    },
+    {
+      "i": 83,
+      "text": "“请问您上一次看到爆破是什么时候？”",
+      "deleted": ""
+    },
+    {
+      "i": 84,
+      "text": "“上个拜三还是礼拜四吧，中午过后没多久，好像是下午，我记得那天收工比较早。” （具体时间未知）",
+      "deleted": ""
+    },
+    {
+      "i": 85,
+      "text": "2025年5月13日前，围头湾11、12号泊位工程已持续施工近一年；据公开资料，该项目早于2024年初即已开工。此处所呈现之回忆声音设定为施工噪音，并非炸礁作业所产生之爆破声。",
+      "deleted": ""
+    },
+    {
+      "i": 87,
+      "text": "“请问是您亲眼所见吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 88,
+      "text": "“应该是吧，海面上突然传来很大的一声响声，和平常船开过去的声音不一样，闷闷的一下子。”",
+      "deleted": ""
+    },
+    {
+      "i": 89,
+      "text": "“容我确认一下，请问您是听到了这个声音，还是亲眼看到有东西在爆破？”",
+      "deleted": ""
+    },
+    {
+      "i": 90,
+      "text": "“没看到，就听到声而已，声音那么大，好像是去年开始，就偶尔听人讲有听到这种声音，我自己倒是头一回听到，我也没敢多看，就赶快走了。”",
+      "deleted": ""
+    },
+    {
+      "i": 91,
+      "text": "“我了解了，那请问您有看见白海豚吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 92,
+      "text": "“有，就在附近，响声过后没多久，附近浮起来几只。”",
+      "deleted": ""
+    },
+    {
+      "i": 93,
+      "text": "“请问您确定那是白海豚吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 94,
+      "text": "“我在这里讨海几十年了，白色的、背上一个鳍，我认得出来。不过具体几只、有没有受伤，我没看清楚。”",
+      "deleted": ""
+    },
+    {
+      "i": 95,
+      "text": "“请问，在施工开始之前，您有听说过当地部门的评估行动吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 96,
+      "text": "“没，没听说过评估，我不太注意这些事。”",
+      "deleted": ""
+    },
+    {
+      "i": 97,
+      "text": "“好的，谢谢您愿意告诉我这些。”",
+      "deleted": ""
+    },
+    {
+      "i": 99,
+      "text": "【思考】",
+      "deleted": ""
+    },
+    {
+      "i": 100,
+      "text": "“渔民听到了巨响，随后看到白海豚浮出水面，爆破，这三件事之间，是巧合，还是有关系？”",
+      "deleted": ""
+    },
+    {
+      "i": 101,
+      "text": "【交互：1. 记录：这证明了工程一直在偷偷爆破】",
+      "deleted": ""
+    },
+    {
+      "i": 102,
+      "text": "【记录本提示：这段证词说的是另一次、更早发生的事，没有信息能证明它和明天要进行的这次作业属于同一系列。不要把两件事混为一谈，再想想吧。】",
+      "deleted": ""
+    },
+    {
+      "i": 103,
+      "text": "交互：2. 记录为独立的历史事件，与5月13日的爆破分开标注】（正确）",
+      "deleted": ""
+    },
+    {
+      "i": 104,
+      "text": "【记录完毕】 【时间：2025年5月13日 10:40（上午），本次采访记录时间】",
+      "deleted": ""
+    },
+    {
+      "i": 105,
+      "text": "【事件发生时间：渔民描述的事发生在采访前的星期三或星期四，约中午过后（具体日期与钟点未知）2025年5月13日官方公告的爆破是两个不同的事件，不能互相印证】 ",
+      "deleted": ""
+    },
+    {
+      "i": 106,
+      "text": "【来源：当地渔民口述，单一证人，未公开身份，巨响为本人听到；爆破本身未目视；本人称目视白海豚浮出水面】 ",
+      "deleted": ""
+    },
+    {
+      "i": 107,
+      "text": "【待核实：声音是否确为爆破所致；具体发生日期；白海豚出现与声响的时间间隔；是否有其他证人可交叉印证；白海豚数量与状态未确认】 ",
+      "deleted": ""
+    },
+    {
+      "i": 108,
+      "text": "【证据等级：单一证人证词，关于一次独立的历史事件；部分内容有本人直接观察支持，部分为回忆与推测，尚未交叉验证】",
+      "deleted": ""
+    },
+    {
+      "i": 110,
+      "text": "场景三：回到海边",
+      "deleted": ""
+    },
+    {
+      "i": 112,
+      "text": "“证据还是不足吗”",
+      "deleted": ""
+    },
+    {
+      "i": 113,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 114,
+      "text": "（画面引入：海浪在乌云下平静地拍在礁石上，远处工程声似乎并没有停止）",
+      "deleted": ""
+    },
+    {
+      "i": 116,
+      "text": "【生态观察】",
+      "deleted": ""
+    },
+    {
+      "i": 117,
+      "text": "【交互：1. 白海豚的食物来源】",
+      "deleted": ""
+    },
+    {
+      "i": 118,
+      "text": "“主要以鱼类和其他海洋生物为食，其生活的海域也是许多底栖生物和鱼类的栖息地。”",
+      "deleted": ""
+    },
+    {
+      "i": 120,
+      "text": "【交互：2. 白海豚感知世界的方式】",
+      "deleted": ""
+    },
+    {
+      "i": 121,
+      "text": "“主要依靠声音感知周围环境，以回声定位的方式寻找食物，判断距离，及判定周围环境。”",
+      "deleted": ""
+    },
+    {
+      "i": 122,
+      "text": "“水下噪声可能干扰海洋哺乳动物的正常活动，而水下爆破会产生强烈的声音压力变化”",
+      "deleted": ""
+    },
+    {
+      "i": 124,
+      "text": "【交互：3. 白海豚的栖息地】",
+      "deleted": ""
+    },
+    {
+      "i": 125,
+      "text": "“船只活动，水质变化，以及海底环境的改变，都可能持续影响白海豚的活动范围和生存环境”",
+      "deleted": ""
+    },
+    {
+      "i": 126,
+      "text": "“栖息地保护：保护野生动物不止拯救受伤个体，也需要保护它们赖以生存的生存环境”",
+      "deleted": ""
+    },
+    {
+      "i": 128,
+      "text": "（傍晚）",
+      "deleted": ""
+    },
+    {
+      "i": 129,
+      "text": "（海面越来越暗，云层压得低）",
+      "deleted": ""
+    },
+    {
+      "i": 130,
+      "text": "（你已经等了很久）",
+      "deleted": ""
+    },
+    {
+      "i": 131,
+      "text": "（没人知道白海豚何时出现）",
+      "deleted": ""
+    },
+    {
+      "i": 132,
+      "text": "（也没有人应该为了拍到它们而靠近）",
+      "deleted": ""
+    },
+    {
+      "i": 133,
+      "text": "（不知过了多久）",
+      "deleted": ""
+    },
+    {
+      "i": 134,
+      "text": "（一望无际的海面上，出现些许白色的身影）",
+      "deleted": ""
+    },
+    {
+      "i": 135,
+      "text": "（一只，两只，然后是更多）",
+      "deleted": ""
+    },
+    {
+      "i": 137,
+      "text": "【观测到野生动物】 ",
+      "deleted": ""
+    },
+    {
+      "i": 138,
+      "text": "【请保持距离，请勿投喂，请勿追逐，请勿接触】",
+      "deleted": ""
+    },
+    {
+      "i": 139,
+      "text": "（它们从未注意过你，只是如风一般 从海面游过，如同千百年来的轮回，这片海不是风景，是觅食，休憩，繁衍，是追逐之地，是家）",
+      "deleted": ""
+    },
+    {
+      "i": 141,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 143,
+      "text": "“如果有一日，这里不再有它们的身影...”",
+      "deleted": ""
+    },
+    {
+      "i": 145,
+      "text": "场景四：家",
+      "deleted": ""
+    },
+    {
+      "i": 147,
+      "text": "“今天先这样吧，回家还有很多事要做。”",
+      "deleted": ""
+    },
+    {
+      "i": 149,
+      "text": "【交互：回家】",
+      "deleted": ""
+    },
+    {
+      "i": 150,
+      "text": "“现场资料已经有一些了，还必须知道施工活动的环境考量。”",
+      "deleted": ""
+    },
+    {
+      "i": 151,
+      "text": "（坐到电脑前)  ",
+      "deleted": ""
+    },
+    {
+      "i": 152,
+      "text": "（电脑屏幕亮起）",
+      "deleted": ""
+    },
+    {
+      "i": 154,
+      "text": "【资料库：可查看1. 环境评估报告，2. 施工区域地图， 3. 海豚调查记录， 4. 现场观察记录】",
+      "deleted": ""
+    },
+    {
+      "i": 155,
+      "text": "【交互：打开】",
+      "deleted": ""
+    },
+    {
+      "i": 156,
+      "text": "（报告中列出了调查区域和相关的生态资料） （附件A）",
+      "deleted": ""
+    },
+    {
+      "i": 157,
+      "text": "【交互：标记调查范围】",
+      "deleted": ""
+    },
+    {
+      "i": 158,
+      "text": "【交互：对比目击位置】",
+      "deleted": ""
+    },
+    {
+      "i": 160,
+      "text": "（两个区域有部分重叠）",
+      "deleted": ""
+    },
+    {
+      "i": 161,
+      "text": "【新线索：部分白海豚目击记录位于环境评估调查范围之外】",
+      "deleted": ""
+    },
+    {
+      "i": 162,
+      "text": "【记录本：目击地点与评估调查范围存在差异，具体原因不明（调查范围本身有限，或者白海豚活动范围发生了变化）】",
+      "deleted": ""
+    },
+    {
+      "i": 164,
+      "text": "场景五：证据墙",
+      "deleted": ""
+    },
+    {
+      "i": 166,
+      "text": "（明天去协会里再调查一下吧）",
+      "deleted": ""
+    },
+    {
+      "i": 167,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 168,
+      "text": "（画面引入：走向一处写字楼的路上，进入电梯，进入组织，来到证据墙前）",
+      "deleted": ""
+    },
+    {
+      "i": 170,
+      "text": "【新任务：整理所有资料，将每个主张链接到一项直接证据，标记证据等级】",
+      "deleted": ""
+    },
+    {
+      "i": 171,
+      "text": "【系统提醒：不要猜测】",
+      "deleted": ""
+    },
+    {
+      "i": 173,
+      "text": "【交互：主张1: 2025年5月，围头湾附近发生了爆破施工】",
+      "deleted": ""
+    },
+    {
+      "i": 174,
+      "text": "【链接：现场照片，海事局公告及后续通报】（附件B）",
+      "deleted": ""
+    },
+    {
+      "i": 175,
+      "text": "【证据状态：多来源指向统一情况，官方报告与通告可以确认爆破实施进度。】",
+      "deleted": ""
+    },
+    {
+      "i": 176,
+      "text": "【多方印证，证据充分】",
+      "deleted": ""
+    },
+    {
+      "i": 178,
+      "text": "【交互：主张2: 爆破发生在白海豚繁殖季】",
+      "deleted": ""
+    },
+    {
+      "i": 179,
+      "text": "【链接：生态资料，施工日期】",
+      "deleted": ""
+    },
+    {
+      "i": 180,
+      "text": "【相关研究显示，中华白海豚全年都可能繁殖，幼崽全年都可能出生，但春夏两季的出生数量通常高于秋冬；不同海域种群的高峰期并不完全一致（地理位置较近的厦门湾种群，出生高峰集中在3至8月）。围头湾种群的具体规律，需要引用当地研究进一步确认。 5月13日处于多数南方种群繁殖较活跃的季节内。但\"围头湾种群此时正处于繁殖高峰\"这一具体说法，目前没有本地研究支持。】",
+      "deleted": ""
+    },
+    {
+      "i": 181,
+      "text": "【证据状态：主张有资料支持，证据充分，细节待查。】",
+      "deleted": ""
+    },
+    {
+      "i": 183,
+      "text": "【交互：主张3: 爆破导致了白海豚的死亡】",
+      "deleted": ""
+    },
+    {
+      "i": 184,
+      "text": "【链接：白海豚目击记录】（附件A）  ",
+      "deleted": ""
+    },
+    {
+      "i": 185,
+      "text": "【交互：A：标记为：已证实】",
+      "deleted": ""
+    },
+    {
+      "i": 186,
+      "text": "【记录本提示：再想想看吧，目前的资料只能证明有人在响声后看到白海豚出现，无法证明白海豚因此受伤或死亡，缺少伤亡报告。】",
+      "deleted": ""
+    },
+    {
+      "i": 187,
+      "text": "【交互：B：标记为：证据不足，需要进一步调查】",
+      "deleted": ""
+    },
+    {
+      "i": 188,
+      "text": "【证据状态：因果关系尚未证实，需要专业机构的数据调查】",
+      "deleted": ""
+    },
+    {
+      "i": 190,
+      "text": "【交互：主张4: 部分白海豚目击地点位于调查范围之外】",
+      "deleted": ""
+    },
+    {
+      "i": 191,
+      "text": "【链接：白海豚目击记录，环境评估地图】（附件A）",
+      "deleted": ""
+    },
+    {
+      "i": 192,
+      "text": "【证据状态：有资料支持，值得关注；但目击记录来自渔民和你自己有限次数的观察，不代表白海豚完整的活动范围，建议后续开展更长期、更大范围的调查。】",
+      "deleted": ""
+    },
+    {
+      "i": 194,
+      "text": "【交互：主张5：施工方的事前环境评估】",
+      "deleted": ""
+    },
+    {
+      "i": 195,
+      "text": "【链接：渔民主张“没听说过评估”， 当地部门此前公开回应”此前对施工进行过评估和风险考量】",
+      "deleted": ""
+    },
+    {
+      "i": 196,
+      "text": "【系统提示：这两种说法不一定互相矛盾——一个人不知道某份文件存在，不等于这份文件不存在。这里应该拆成三个分别核实的问题，而不是简单判定\"矛盾\"，需要查明这份评估是否充分调查了白海豚及其栖息地；以及当地居民是否真的被告知、是否有机会参与相关的公众意见程序。 建议标记为：待查】",
+      "deleted": ""
+    },
+    {
+      "i": 197,
+      "text": "【证据状态：待查】",
+      "deleted": ""
+    },
+    {
+      "i": 198,
+      "text": "【系统提示：证据包完成：现场记录（证据等级及局限性说明）、采访记录（知情同意，观察与推测）、环境评估资料对比、白海豚目击记录；待查内容已如是标注，待持续跟进。】",
+      "deleted": ""
+    },
+    {
+      "i": 199,
+      "text": "【调查报告已提交】",
+      "deleted": ""
+    },
+    {
+      "i": 201,
+      "text": "场景六：海面",
+      "deleted": ""
+    },
+    {
+      "i": 203,
+      "text": "（2025年5月14日清晨，你来到了海边  ",
+      "deleted": ""
+    },
+    {
+      "i": 204,
+      "text": "（施工船停在原处，但没有作业的声音，几名工作人员和一辆公务车停在岸边】",
+      "deleted": ""
+    },
+    {
+      "i": 206,
+      "text": "“停了？”",
+      "deleted": ""
+    },
+    {
+      "i": 207,
+      "text": "【系统提示：新消息：据当地相关部门通报，已暂停此次炸礁作业，原因是接到多方反映后，将对施工是否影响中华白海豚栖息地重新进行评估】",
+      "deleted": ""
+    },
+    {
+      "i": 208,
+      "text": "【记录本提醒：这次暂停，是渔民们长期反映、社交媒体上的关注、以及监管部门介入共同促成的结果。】",
+      "deleted": ""
+    },
+    {
+      "i": 210,
+      "text": "“原来是这样啊”",
+      "deleted": ""
+    },
+    {
+      "i": 211,
+      "text": "（直觉告诉你事情不会这么简单就结束）",
+      "deleted": ""
+    },
+    {
+      "i": 213,
+      "text": "（日子照常过去了，太阳一天天地升起来，又平静地落下，施工船仍停留在原地，似乎再也不会动起来，但没有人知道接下来会怎样）",
+      "deleted": ""
+    },
+    {
+      "i": 215,
+      "text": "（黑屏）",
+      "deleted": ""
+    },
+    {
+      "i": 217,
+      "text": "【交互：观察】",
+      "deleted": ""
+    },
+    {
+      "i": 218,
+      "text": "（船只依然停在原地，附近偶尔有别的渔船经过，工程区域没有恢复动静） ",
+      "deleted": ""
+    },
+    {
+      "i": 219,
+      "text": "（一次暂停，不代表白海豚会立刻回到原来的活动范围，也不代表爆破不会在评估之后重新开始）",
+      "deleted": ""
+    },
+    {
+      "i": 221,
+      "text": "场景七：几周后",
+      "deleted": ""
+    },
+    {
+      "i": 223,
+      "text": "【新的环境信息：施工方申请重新评估，评估结果尚未公开】",
+      "deleted": ""
+    },
+    {
+      "i": 225,
+      "text": "“果然，是这样吗？”",
+      "deleted": ""
+    },
+    {
+      "i": 226,
+      "text": "（已经结束的事情，总像是不歇的潮汐般，一次接一次地打来）",
+      "deleted": ""
+    },
+    {
+      "i": 228,
+      "text": "【新任务：了解情况】",
+      "deleted": ""
+    },
+    {
+      "i": 229,
+      "text": "（黑屏） ",
+      "deleted": ""
+    },
+    {
+      "i": 230,
+      "text": "（画面切入：电脑屏幕出现新闻资料）",
+      "deleted": ""
+    },
+    {
+      "i": 231,
+      "text": "（随着争议的扩大，更多的环保组织开始介入）",
+      "deleted": ""
+    },
+    {
+      "i": 232,
+      "text": "【记录本：2025年7月，环保组织自然之友就泉州港围头湾石井作业区11号、12号泊位工程涉及的生态问题，向泉州市中级人民法院提交了生态破坏民事公益诉讼材料。该组织同时认为，六月发生了新一轮的炸礁，这也作为其提起诉讼的原因之一。相关材料法院已签收】 ",
+      "deleted": ""
+    },
+    {
+      "i": 233,
+      "text": "【信息来源：自然之友官方网站，发布于2025年7月29日】 ",
+      "deleted": ""
+    },
+    {
+      "i": 234,
+      "text": "【记录本提醒：\"法院签收材料\"是指法院收到了诉讼材料，不等于案件已经正式立案审理。后续是否立案、何时开庭，需要持续关注官方或自然之友后续公布的消息，目前不能提前下结论。】",
+      "deleted": ""
+    },
+    {
+      "i": 236,
+      "text": "（保护环境，并不能得到一个即刻的答案，有的时候，人只得等待。）",
+      "deleted": ""
+    },
+    {
+      "i": 238,
+      "text": "场景八：一个月后",
+      "deleted": ""
+    },
+    {
+      "i": 240,
+      "text": "（电脑屏幕逐渐暗淡）",
+      "deleted": ""
+    },
+    {
+      "i": 241,
+      "text": "【记录本更新：截至你目前能查到的公开资料，还没有找到这起公益诉讼是否正式立案、是否进入实体审理的最新消息】 ",
+      "deleted": ""
+    },
+    {
+      "i": 242,
+      "text": "【记录本提醒：在过去不少类似案件中，环保组织提起公益诉讼时，诉讼资格等程序性问题是比较常见的难点，但这不代表这起案件一定会遇到同样的情况。法律程序推进往往需要很长时间。在没有新的官方或自然之友公告之前，不能把\"暂时没有下文\"当成\"败诉\"或\"不了了之\"，也不能当成\"一定会赢\"】",
+      "deleted": ""
+    },
+    {
+      "i": 243,
+      "text": "（人们发现了问题，但发现问题和解决问题之间，有时隔着不短的距离。）",
+      "deleted": ""
+    },
+    {
+      "i": 244,
+      "text": "（环境保护面对的困难有很多种：有时是污染，有时是栖息地的改变，有时是来自人们对发展，利益，和保护所作出的不同选择。）",
+      "deleted": ""
+    },
+    {
+      "i": 245,
+      "text": "“一个人无法保护一整片海，但一个人的关注，总可以成为更多人开始行动的起点。”",
+      "deleted": ""
+    },
+    {
+      "i": 247,
+      "text": "尾声",
+      "deleted": ""
+    },
+    {
+      "i": 249,
+      "text": "2026年，码头仍在往前建，海面上的设施逐渐成形。 即使有人提出质疑，即使有人在研究保护方案，人类的建设仍然在继续。 眼前的海湾，已经和你第一次来这里的时候不一样了——多了码头，多了船只，多了人类的痕迹。 但海水下面，仍然是另一个世界。",
+      "deleted": ""
+    },
+    {
+      "i": 251,
+      "text": "（画面引入：海面）",
+      "deleted": ""
+    },
+    {
+      "i": 253,
+      "text": "“今天会有白海豚吗”",
+      "deleted": ""
+    },
+    {
+      "i": 254,
+      "text": "（你如此思考着）",
+      "deleted": ""
+    },
+    {
+      "i": 255,
+      "text": "你不知道，白海豚今天会不会出现。 你也不知道，几年以后，它们还会不会在这里出现。 你甚至不知道，自己今天做的这一件小事，究竟能不能改变什么？",
+      "deleted": ""
+    },
+    {
+      "i": 256,
+      "text": "但至少，你依然在这里，依然做着符合你意愿的事，至少依然有志同道合的伙伴。只要你们还在，这个世界就还有人在意它们的存亡。直至下一次调查开始之前，你们都会一直在这里。",
+      "deleted": ""
+    },
+    {
+      "i": 257,
+      "text": "海风吹过，又静了下来。",
+      "deleted": ""
+    },
+    {
+      "i": 259,
+      "text": "【感谢游玩】",
+      "deleted": ""
+    },
+    {
+      "i": 260,
+      "text": "附件A",
+      "deleted": ""
+    },
+    {
+      "i": 261,
+      "text": "1. 环境评估报告",
+      "deleted": ""
+    },
+    {
+      "i": 262,
+      "text": "报告名称：泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书 ",
+      "deleted": ""
+    },
+    {
+      "i": 263,
+      "text": "环评单位：福建海洋工程咨询服务有限公司 ",
+      "deleted": ""
+    },
+    {
+      "i": 264,
+      "text": "建设单位：福建天龙轮船有限公司 ",
+      "deleted": ""
+    },
+    {
+      "i": 265,
+      "text": "公示时间：2022年12月22日—12月28日（拟批复公示，5个工作日）；泉州市生态环境局的批复公开于2023年1月3日前后",
+      "deleted": ""
+    },
+    {
+      "i": 266,
+      "text": "工程规模：在南安市石井镇东南侧海域新建2个2万吨级多用途泊位，总长430米，年通过能力340万吨（其中集装箱10.5万TEU），配套2座栈桥和139.3米引堤。主要装卸货物为水泥、石材、钢材等。",
+      "deleted": ""
+    },
+    {
+      "i": 267,
+      "text": "环保措施要点：污水处理回用、散货粉尘封闭治理、设备噪声按工业企业3类标准管控、固废分类利用、制定环境风险应急预案。",
+      "deleted": ""
+    },
+    {
+      "i": 268,
+      "text": "关于中华白海豚：2025年5月的新闻报道转述过环评内容，提到\"环评显示，一年内施工区域没有观测到中华白海豚\"。同一批报道也提到：工程区西南侧约6.08公里，是厦门珍稀海洋物种国家级自然保护区的外围保护地带；围头湾本身没有被划为自然保护区。",
+      "deleted": ""
+    },
+    {
+      "i": 269,
+      "text": "2025年5月的新闻转述：\"环评显示，一年内施工区域没有观测到中华白海豚\"2；工程区西南侧约6.08公里是厦门珍稀海洋物种国家级自然保护区的外围保护地带，围头湾本身没有被划为自然保护区3。",
+      "deleted": ""
+    },
+    {
+      "i": 270,
+      "text": "环保组织自然之友在其官网文章中明确指出，环评报告仅评价了项目附近自然保护区外围保护地带的中华白海豚，未依法客观评价在评价范围内紧邻泊位工程施工区域的中华白海豚及栖息地。",
+      "deleted": ""
+    },
+    {
+      "i": 271,
+      "text": "自然之友同时单方面指出，环评\"未依法律规范对中华白海豚优先采取避让方案、或提出有效的生态保护措施\"4",
+      "deleted": ""
+    },
+    {
+      "i": 272,
+      "text": "白海豚数量与种群趋势：根据自然之友所言，围头湾现有约20头中华白海豚；整个厦门-漳州-泉州-金门海域（厦漳泉金海域）种群数量，从2004年的86头下降到2022年的44头。",
+      "deleted": ""
+    },
+    {
+      "i": 273,
+      "text": "以上自然之友之言论均已在附件中注明，根据客群画像之年龄，应有分辨其为环保组织一方之言之能力，因此未做出显著注明。以上数据，环保评估未作出任何回应或反驳，其关于围头湾之调查细节未向公开渠道开放，无法核实。详情见参考文献之《泉州港围头湾港区石井作业区11号 12号泊位工程海域使用论证报告书公示》“3.2 海洋生态概况”一栏。",
+      "deleted": ""
+    },
+    {
+      "i": 275,
+      "text": "2. 施工区域地图",
+      "deleted": ""
+    },
+    {
+      "i": 276,
+      "text": "位置：泉州港围头湾港区石井作业区11号、12号泊位，位于南安市石井镇东南侧海域，即\"围头湾石井作业区11-12#泊位码头附近水域\"。",
+      "deleted": ""
+    },
+    {
+      "i": 277,
+      "text": "参照距离：工程区西南侧约6.08公里为厦门珍稀海洋物种国家级自然保护区外围保护地带；围头湾水域本身不在任何自然保护区范围内。",
+      "deleted": ""
+    },
+    {
+      "i": 278,
+      "text": "坐标：",
+      "deleted": ""
+    },
+    {
+      "i": 279,
+      "text": "海域征用范围：南北向距离 25.13 公里，东西向距离约 30.35 公里 论证范围海域面积约为 328 平方公里。",
+      "deleted": ""
+    },
+    {
+      "i": 280,
+      "text": "以下表格之文本系依评论意见所增列。惟考量中国现行教育课纲之相关内容，以及经纬度与精确至秒之坐标表达方式，对于10岁以上玩家而言或有过于晦涩之虞，故相关呈现方式仍有进一步评估之必要，谨于此处以批注形式列明，供各位同僚斟酌。",
+      "deleted": ""
+    },
+    {
+      "i": 281,
+      "text": "点号",
+      "deleted": ""
+    },
+    {
+      "i": 282,
+      "text": "北纬",
+      "deleted": ""
+    },
+    {
+      "i": 283,
+      "text": "东经",
+      "deleted": ""
+    },
+    {
+      "i": 284,
+      "text": "A",
+      "deleted": ""
+    },
+    {
+      "i": 285,
+      "text": "24°27′42.59″",
+      "deleted": ""
+    },
+    {
+      "i": 286,
+      "text": "118°22′48.45″",
+      "deleted": ""
+    },
+    {
+      "i": 287,
+      "text": "B",
+      "deleted": ""
+    },
+    {
+      "i": 288,
+      "text": "24°27′20.66″",
+      "deleted": ""
+    },
+    {
+      "i": 289,
+      "text": "118°27′48.01″",
+      "deleted": ""
+    },
+    {
+      "i": 290,
+      "text": "C",
+      "deleted": ""
+    },
+    {
+      "i": 291,
+      "text": "24°30′41.80″",
+      "deleted": ""
+    },
+    {
+      "i": 292,
+      "text": "118°34′16.04″",
+      "deleted": ""
+    },
+    {
+      "i": 293,
+      "text": "D",
+      "deleted": ""
+    },
+    {
+      "i": 294,
+      "text": "24°33′18.81″",
+      "deleted": ""
+    },
+    {
+      "i": 295,
+      "text": "118°16′40.54″",
+      "deleted": ""
+    },
+    {
+      "i": 297,
+      "text": "项目位于泉州港围头湾港区石井作业区，南安市石井镇东南侧海域，地理坐标为东经 118° 25′51″，北纬24° 37′11″。本项目周边区域水陆交通便利， 水路至厦门港35 海里、泉州港石湖作业区42 海里、福州港180 海里、金门港6 海里、高雄港170 海里、香港港322 海里。陆路至324 国道福厦干线的水头镇10 公里、至福厦高速公路 11 公里、至南安市区 40 公里、至泉州 52 公里、至厦门东渡港区35 公里。外部条件及地理位置十分优越。",
+      "deleted": ""
+    },
+    {
+      "i": 300,
+      "text": "3. 白海豚历史目击记录",
+      "deleted": ""
+    },
+    {
+      "i": 301,
+      "text": "白海豚数量稀少，只有零散的目击记录。",
+      "deleted": ""
+    },
+    {
+      "i": 302,
+      "text": "时间",
+      "deleted": ""
+    },
+    {
+      "i": 303,
+      "text": "目击方",
+      "deleted": ""
+    },
+    {
+      "i": 304,
+      "text": "地点",
+      "deleted": ""
+    },
+    {
+      "i": 305,
+      "text": "2024年2月15日",
+      "deleted": ""
+    },
+    {
+      "i": 306,
+      "text": "泉州海警局",
+      "deleted": ""
+    },
+    {
+      "i": 307,
+      "text": "泉州湾附近海域",
+      "deleted": ""
+    },
+    {
+      "i": 308,
+      "text": "未标注具体日期，\"数次\"",
+      "deleted": ""
+    },
+    {
+      "i": 309,
+      "text": "泉州海警局执法人员",
+      "deleted": ""
+    },
+    {
+      "i": 310,
+      "text": "泉州湾、围头湾等海域",
+      "deleted": ""
+    },
+    {
+      "i": 311,
+      "text": "2025年1月11日",
+      "deleted": ""
+    },
+    {
+      "i": 312,
+      "text": "泉州海事局南安海事处",
+      "deleted": ""
+    },
+    {
+      "i": 313,
+      "text": "泉州湾成功大桥附近水域",
+      "deleted": ""
+    },
+    {
+      "i": 314,
+      "text": "参考文献：",
+      "deleted": ""
+    },
+    {
+      "i": 317,
+      "text": "泉州市生态环境局2022年12月22日拟作出审批意见的建设项目公开（泉州港围头湾港区石井作业区11号、12号泊位工程）. https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/hjbh/jsxmhjyxpjxx/jsxmhjyxpjxx/202212/t20221222_2831275.htm ",
+      "deleted": ""
+    },
+    {
+      "i": 319,
+      "text": "泉州市生态环境局关于泉州港围头湾港区石井作业区11号、12号泊位工程环境影响报告书的批复. https://sthjj.quanzhou.gov.cn/xxgk/zfxxgkzl/zfxxgkml/wryjdgl/202301/t20230103_2833680.htm ",
+      "deleted": ""
+    },
+    {
+      "i": 321,
+      "text": "泉州港围头湾港区石井作业区11号、12号泊位工程海域使用论证报告书公示. 泉州市自然资源和规划局, 2021年7月7日. ",
+      "deleted": ""
+    },
+    {
+      "i": 322,
+      "text": "http://zyghj.quanzhou.gov.cn/xxgk/zdxxgk/hdsygsggl/202107/t20210707_2584525.htm",
+      "deleted": ""
+    },
+    {
+      "i": 324,
+      "text": "福建省交通运输厅关于泉州港围头湾港区石井作业区11号、12号泊位工程初步设计的批复. 福建省泉州港口发展中心, 2023年1月12日http://jtyst.fujian.gov.cn/qzg/zfxxgk/zfxxgkml/xzxkyqr/202301/t20230112_6093650.html  ",
+      "deleted": ""
+    },
+    {
+      "i": 326,
+      "text": "泉州港围头湾港区石井作业区11号、12号泊位工程预制沉箱顺利完成. 中华网, 2025年9月23日. https://mtz.china.com/touzi/2025/0923/193178.html ",
+      "deleted": ""
+    },
+    {
+      "i": 328,
+      "text": "泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日. https://www.163.com/dy/article/JVN1ECHL054572GV.html ",
+      "deleted": ""
+    },
+    {
+      "i": 330,
+      "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日. https://news.qq.com/rain/a/20250522A054WT00 ",
+      "deleted": ""
+    },
+    {
+      "i": 332,
+      "text": "我所组织召开\"泉州围头湾中华白海豚及其栖息地保护\"研讨会. 福建省水产研究所, 2025年8月8日. https://www.fjscs.ac.cn/notice_details-714.html ",
+      "deleted": ""
+    },
+    {
+      "i": 334,
+      "text": "跟踪报道：泉州围头湾炸礁被叫停后续，中华白海豚生存如何保护？. 北京日报, 2025年8月21日. https://xinwen.bjd.com.cn/content/s68a6649ce4b0221b9bebc305.html ",
+      "deleted": ""
+    },
+    {
+      "i": 336,
+      "text": "自然之友，\"起诉！用公益诉讼拯救中华白海豚\"，2025年7月29日，fon.org.cn",
+      "deleted": ""
+    },
+    {
+      "i": 338,
+      "text": "附件B",
+      "deleted": ""
+    },
+    {
+      "i": 339,
+      "text": "水下爆破作业通告",
+      "deleted": ""
+    },
+    {
+      "i": 340,
+      "text": "据先前版本之评论意见，相关参考文献链接已附于本页角注中，谨供查阅。",
+      "deleted": ""
+    },
+    {
+      "i": 341,
+      "text": "发布机构：泉州海事局",
+      "deleted": ""
+    },
+    {
+      "i": 342,
+      "text": "发布日期：2025年5月12日",
+      "deleted": ""
+    },
+    {
+      "i": 344,
+      "text": "定于2025年5月13日，在围头湾石井作业区11号、12号泊位",
+      "deleted": ""
+    },
+    {
+      "i": 345,
+      "text": "附近水域进行水下爆破施工，作业时段：",
+      "deleted": ""
+    },
+    {
+      "i": 346,
+      "text": "    中午  12:00—14:00",
+      "deleted": ""
+    },
+    {
+      "i": 347,
+      "text": "    傍晚  16:00—18:00",
+      "deleted": ""
+    },
+    {
+      "i": 348,
+      "text": "作业期间过往船舶请保持安全距离，注意避让。",
+      "deleted": ""
+    },
+    {
+      "i": 350,
+      "text": "证据等级：官方公告，可证明爆破计划，不能证明爆破行为是否已经发生，需要配合后续通报。",
+      "deleted": ""
+    },
+    {
+      "i": 352,
+      "text": "施工进展通报",
+      "deleted": ""
+    },
+    {
+      "i": 354,
+      "text": "发布机构：福建省海洋局渔业出工作人员告知澎湃新闻",
+      "deleted": ""
+    },
+    {
+      "i": 356,
+      "text": "2025年5月13日按公告计划，实施了两次水下爆破作业，",
+      "deleted": ""
+    },
+    {
+      "i": 357,
+      "text": "作业时段与公告一致。",
+      "deleted": ""
+    },
+    {
+      "i": 358,
+      "text": "5月14日，部门已派人到现场",
+      "deleted": ""
+    },
+    {
+      "i": 359,
+      "text": "了解情况，后续炸礁作业暂停，将重新评估。",
+      "deleted": ""
+    },
+    {
+      "i": 361,
+      "text": "证据等级：官方通报，可证明爆破行为。",
+      "deleted": ""
+    },
+    {
+      "i": 362,
+      "text": "参考文献",
+      "deleted": ""
+    },
+    {
+      "i": 364,
+      "text": "\"泉州一水域炸礁施工或伤害中华白海豚\"事件后续：已叫停. 网易, 2025年5月16日.https://www.163.com/dy/article/JVN1ECHL054572GV.html ",
+      "deleted": ""
+    },
+    {
+      "i": 366,
+      "text": "泉州某码头炸礁施工缘何被叫停？. 腾讯新闻, 2025年5月22日.https://news.qq.com/rain/a/20250522A054WT00 ",
+      "deleted": ""
+    },
+    {
+      "i": 368,
+      "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业通告.https://www.msa.gov.cn/page/article.do?articleId=40948B44-5D92-4A35-ABB7-F23D6BE5C9A7&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164",
+      "deleted": ""
+    },
+    {
+      "i": 370,
+      "text": "中华人民共和国海事局. 泉州围头湾石井航道二期工程（先期工程）水下爆破作业船舶变更通告",
+      "deleted": ""
+    },
+    {
+      "i": 371,
+      "text": "https://www.msa.gov.cn/page/article.do?articleId=668A5B4C-D4A4-4663-8EFC-18B",
+      "deleted": ""
+    },
+    {
+      "i": 372,
+      "text": "986C29316&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164 ",
+      "deleted": ""
+    },
+    {
+      "i": 374,
+      "text": "中华白海豚栖息地炸礁作业被叫停，海岸边的人兽冲突如何解决？. 新京报, 2025年6月19日.",
+      "deleted": ""
+    },
+    {
+      "i": 375,
+      "text": "https://m.bjnews.com.cn/detail/1750311496168254.html ",
+      "deleted": ""
+    },
+    {
+      "i": 377,
+      "text": "中华人民共和国海事局／泉州海事局.《泉州围头湾石井作业区11-12号泊位工程水下爆破作业的通告》. 2025年5月12日发布.https://www.msa.gov.cn/page/article.do?articleId=558E160F-9EB0-436E-B157-26EAD90BCC8E&channelId=3D725583-AC13-4DFC-B74A-A8C47B14A164",
+      "deleted": ""
+    },
+    {
+      "i": 379,
+      "text": "澎湃新闻.《泉州围头湾一港区项目炸礁被指影响中华白海豚，官方：已叫停，重新评估》. 2025年5月16日.",
+      "deleted": ""
+    },
+    {
+      "i": 380,
+      "text": "https://m.thepaper.cn/newsDetail_forward_30827546",
+      "deleted": ""
+    }
+  ]
+}

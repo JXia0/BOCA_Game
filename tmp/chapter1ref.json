@@ -1,0 +1,1535 @@
+{
+  "path": "C:\\GameProjects\\BOCA_Game\\output\\docx\\BOCA 游戏剧本_玳瑁古筝义甲_修改版_v3.docx",
+  "sections": [
+    {
+      "width": 7772400,
+      "height": 10058400,
+      "top": 914400,
+      "bottom": 914400,
+      "left": 914400,
+      "right": 914400
+    }
+  ],
+  "paragraphs": [
+    {
+      "i": 0,
+      "style": "Normal",
+      "text": "Hawksbill Guzheng Finger Pick Case, China (2025)",
+      "runs": [
+        {
+          "text": "Hawksbill Guzheng Finger Pick Case, China (2025)",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "style": "Normal",
+      "text": "Revised gameplay script based on the original student draft - v3",
+      "runs": [
+        {
+          "text": "Revised gameplay script based on the original student draft - v3",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "style": "Normal",
+      "text": "FORMAT KEY: yellow highlight = player action; turquoise highlight = player choice; green = verified/safe conclusion; purple = system or research information; red = warning or unsupported assumption.",
+      "runs": [
+        {
+          "text": "FORMAT KEY: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "yellow highlight",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": " = player action; ",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": "turquoise highlight",
+          "highlight": "cyan",
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": " = player choice; ",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": "green",
+          "highlight": null,
+          "color": "00B050",
+          "bold": false
+        },
+        {
+          "text": " = verified/safe conclusion; ",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": "purple",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        },
+        {
+          "text": " = system or research information; ",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        },
+        {
+          "text": "red",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": false
+        },
+        {
+          "text": " = warning or unsupported assumption.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "style": "Normal",
+      "text": "[PRODUCTION NOTE] Use a fictional marketplace interface in the final game. Do not reproduce a real seller, store name, listing, order number, or private account.",
+      "runs": [
+        {
+          "text": "[PRODUCTION NOTE] ",
+          "highlight": null,
+          "color": "666666",
+          "bold": true
+        },
+        {
+          "text": "Use a fictional marketplace interface in the final game. Do not reproduce a real seller, store name, listing, order number, or private account.",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "style": "Normal",
+      "text": "Scene 1: Concert Hall - 18 June 2025, Evening",
+      "runs": [
+        {
+          "text": "Scene 1: Concert Hall - 18 June 2025, Evening",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "style": "Normal",
+      "text": "The player's gaze moves from their hands to the audience beyond the stage. The last notes of the guzheng solo fade into the concert hall. Applause rises, then dissolves into the soft sound of a phone notification.",
+      "runs": [
+        {
+          "text": "The player's gaze moves from their hands to the audience beyond the stage. The last notes of the guzheng solo fade into the concert hall. Applause rises, then dissolves into the soft sound of a phone notification.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "style": "Normal",
+      "text": "The image changes from the concert hall to the player's bedroom. The guzheng case is open beside the desk. Several worn synthetic finger picks rest on a folded cloth.",
+      "runs": [
+        {
+          "text": "The image changes from the concert hall to the player's bedroom. The guzheng case is open beside the desk. Several worn synthetic finger picks rest on a folded cloth.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "style": "Normal",
+      "text": "Click the phone notification.",
+      "runs": [
+        {
+          "text": "Click the phone notification.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "style": "Normal",
+      "text": "TEACHER: Reminder: please prepare a reliable new set of guzheng finger picks before next month's examination. Comfort and fit matter more than appearance.",
+      "runs": [
+        {
+          "text": "TEACHER: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Reminder: please prepare a reliable new set of guzheng finger picks before next month's examination. Comfort and fit matter more than appearance.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "style": "Normal",
+      "text": "The player opens a marketplace app and searches for guzheng finger picks.",
+      "runs": [
+        {
+          "text": "The player opens a marketplace app and searches for guzheng finger picks.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "style": "Normal",
+      "text": "Enter the search words: 古筝义甲.",
+      "runs": [
+        {
+          "text": "Enter the search words: 古筝义甲.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "style": "Normal",
+      "text": "Most results are labelled as synthetic resin, plastic, or imitation tortoiseshell. One heavily advertised listing uses the words “玳瑁古筝义甲” and claims that the material is genuine.",
+      "runs": [
+        {
+          "text": "Most results are labelled as synthetic resin, plastic, or imitation tortoiseshell. One heavily advertised listing uses the words “玳瑁古筝义甲” and claims that the material is genuine.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 12,
+      "style": "Normal",
+      "text": "Scene 2: Marketplace Listing",
+      "runs": [
+        {
+          "text": "Scene 2: Marketplace Listing",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 13,
+      "style": "Normal",
+      "text": "Two routes appear. At this point, the player is shopping normally and does not yet know what “玳瑁” means.",
+      "runs": [
+        {
+          "text": "Two routes appear. At this point, the player is shopping normally and does not yet know what “玳瑁” means.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 14,
+      "style": "Normal",
+      "text": "Choice A: Buy the seller-recommended “玳瑁古筝义甲” set.",
+      "runs": [
+        {
+          "text": "Choice A: ",
+          "highlight": "cyan",
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Buy the seller-recommended “玳瑁古筝义甲” set.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 15,
+      "style": "Normal",
+      "text": "Choice B: Buy a clearly labelled synthetic set instead.",
+      "runs": [
+        {
+          "text": "Choice B: ",
+          "highlight": "cyan",
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Buy a clearly labelled synthetic set instead.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 16,
+      "style": "Normal",
+      "text": "ROUTE A",
+      "runs": [
+        {
+          "text": "ROUTE A",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 17,
+      "style": "Normal",
+      "text": "The product page presents “genuine hawksbill” as a premium traditional material recommended for serious students. The player understands it only as the name of a material and does not examine wildlife documents or traceability information.",
+      "runs": [
+        {
+          "text": "The product page presents “genuine hawksbill” as a premium traditional material recommended for serious students. The player understands it only as the name of a material and does not examine wildlife documents or traceability information.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 18,
+      "style": "Normal",
+      "text": "Open the seller chat. Ask whether the set is comfortable, durable, and suitable for the upcoming examination.",
+      "runs": [
+        {
+          "text": "Open the seller chat. Ask whether the set is comfortable, durable, and suitable for the upcoming examination.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 19,
+      "style": "Normal",
+      "text": "SELLER: It is genuine hawksbill, a traditional material. Customers often choose it for its firm feel. This size should suit you.",
+      "runs": [
+        {
+          "text": "SELLER: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "It is genuine hawksbill, a traditional material. Customers often choose it for its firm feel. This size should suit you.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 20,
+      "style": "Normal",
+      "text": "[SYSTEM] The player has not researched the word “玳瑁” and does not interpret the purchase as risky or unusual.",
+      "runs": [
+        {
+          "text": "[SYSTEM] ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "The player has not researched the word “玳瑁” and does not interpret the purchase as risky or unusual.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "style": "Normal",
+      "text": "Confirm the purchase.",
+      "runs": [
+        {
+          "text": "Confirm the purchase.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "style": "Normal",
+      "text": "Several days later, the package arrives. The material name “玳瑁” is printed on the label inside the box.",
+      "runs": [
+        {
+          "text": "Several days later, the package arrives. The material name “玳瑁” is printed on the label inside the box.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "style": "Normal",
+      "text": "Open the package and try on the finger picks.",
+      "runs": [
+        {
+          "text": "Open the package and try on the finger picks.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "style": "Normal",
+      "text": "The picks feel firm and unfamiliar. Out of simple curiosity about what the material name means, the player decides to look it up online.",
+      "runs": [
+        {
+          "text": "The picks feel firm and unfamiliar. Out of simple curiosity about what the material name means, the player decides to look it up online.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "style": "Normal",
+      "text": "ROUTE B",
+      "runs": [
+        {
+          "text": "ROUTE B",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "style": "Normal",
+      "text": "The player selects a synthetic set with a clear material description. Later that evening, a friend casually sends a photo of the new finger picks they have just bought, followed by the listing screenshot. The message reads: “I just got this set! Tried it during practice today - it feels pretty good. The listing calls it ‘玳瑁’. Have you tried this kind?”",
+      "runs": [
+        {
+          "text": "The player selects a synthetic set with a clear material description. Later that evening, a friend casually sends a photo of the new finger picks they have just bought, followed by the listing screenshot. The message reads: “I just got this set! Tried it during practice today - it feels pretty good. The listing calls it ‘玳瑁’. Have you tried this kind?”",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "style": "Normal",
+      "text": "Save the friend's screenshot so the player can remember the unfamiliar material name.",
+      "runs": [
+        {
+          "text": "Save the friend's screenshot so the player can remember the unfamiliar material name.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "style": "Normal",
+      "text": "[SYSTEM] In both routes, curiosity - not suspicion - leads the player to search for the meaning of “玳瑁”.",
+      "runs": [
+        {
+          "text": "[SYSTEM] ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "In both routes, curiosity - not suspicion - leads the player to search for the meaning of “玳瑁”.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "style": "Normal",
+      "text": "Scene 3: Research at the Computer",
+      "runs": [
+        {
+          "text": "Scene 3: Research at the Computer",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "style": "Normal",
+      "text": "The computer screen lights the room. In Route A, the product label rests beside the keyboard. In Route B, the friend's screenshot remains open on the phone.",
+      "runs": [
+        {
+          "text": "The computer screen lights the room. In Route A, the product label rests beside the keyboard. In Route B, the friend's screenshot remains open on the phone.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "style": "Normal",
+      "text": "Drag the unfamiliar word “玳瑁” into the search bar.",
+      "runs": [
+        {
+          "text": "Drag the unfamiliar word “玳瑁” into the search bar.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "style": "Normal",
+      "text": "SEARCH RESULT: “玳瑁” is the Chinese name for the hawksbill turtle (Eretmochelys imbricata), a marine animal whose shell has historically been used to make decorative objects and small accessories.",
+      "runs": [
+        {
+          "text": "SEARCH RESULT: ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "“玳瑁” is the Chinese name for the hawksbill turtle (Eretmochelys imbricata), a marine animal whose shell has historically been used to make decorative objects and small accessories.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "style": "Normal",
+      "text": "Open official sources and search “国家重点保护野生动物名录” and “野生动物制品 专用标识”.",
+      "runs": [
+        {
+          "text": "Open official sources and search “国家重点保护野生动物名录” and “野生动物制品 专用标识”.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "style": "Normal",
+      "text": "RESEARCH RESULT: The hawksbill turtle is listed as a Class I national key protected wild animal in China. National rules generally prohibit the sale, purchase, and use of products made from nationally protected wildlife; special lawful uses require approval and traceability under the applicable rules.",
+      "runs": [
+        {
+          "text": "RESEARCH RESULT: ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "The hawksbill turtle is listed as a Class I national key protected wild animal in China. National rules generally prohibit the sale, purchase, and use of products made from nationally protected wildlife; special lawful uses require approval and traceability under the applicable rules.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "style": "Normal",
+      "text": "IMPORTANT DISTINCTION: The discovery makes the listing a potential wildlife-trade lead, but an online photograph and seller claim still cannot prove that the item is genuine hawksbill. The report must separate claims from verified facts.",
+      "runs": [
+        {
+          "text": "IMPORTANT DISTINCTION: ",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": true
+        },
+        {
+          "text": "The discovery makes the listing a potential wildlife-trade lead, but an online photograph and seller claim still cannot prove that the item is genuine hawksbill. The report must separate claims from verified facts.",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "style": "Normal",
+      "text": "The player's breathing slows. The task is no longer to decide whether the seller is guilty. The task is to preserve accurate information for people with authority and expertise to assess it.",
+      "runs": [
+        {
+          "text": "The player's breathing slows. The task is no longer to decide whether the seller is guilty. The task is to preserve accurate information for people with authority and expertise to assess it.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "style": "Normal",
+      "text": "Scene 4: Preserve Evidence",
+      "runs": [
+        {
+          "text": "Scene 4: Preserve Evidence",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "style": "Normal",
+      "text": "[SYSTEM] New task: preserve what already happened. In Route A, the player has bought the item. In Route B, the friend has bought a set, but the player has only the shared photo, messages, and listing. Do not make another transaction or confront the seller.",
+      "runs": [
+        {
+          "text": "[SYSTEM] ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "New task: preserve what already happened. In Route A, the player has bought the item. In Route B, the friend has bought a set, but the player has only the shared photo, messages, and listing. Do not make another transaction or confront the seller.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "style": "Normal",
+      "text": "Capture the full product page, including the listing title, stated material, price, product images, store account, page address, and the date and time.",
+      "runs": [
+        {
+          "text": "Capture the full product page, including the listing title, stated material, price, product images, store account, page address, and the date and time.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "style": "Normal",
+      "text": "Route A: capture the existing seller conversation. Route B: save the friend's original messages, photo, and listing screenshot; the player has no seller chat of their own.",
+      "runs": [
+        {
+          "text": "Route A: capture the existing seller conversation. Route B: save the friend's original messages, photo, and listing screenshot; the player has no seller chat of their own.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "style": "Normal",
+      "text": "Save the official source showing the hawksbill turtle's protected status.",
+      "runs": [
+        {
+          "text": "Save the official source showing the hawksbill turtle's protected status.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "style": "Normal",
+      "text": "Record which statements are verified facts and which are only claims requiring investigation.",
+      "runs": [
+        {
+          "text": "Record which statements are verified facts and which are only claims requiring investigation.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "style": "Normal",
+      "text": "EVIDENCE LOG",
+      "runs": [
+        {
+          "text": "EVIDENCE LOG",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "style": "Normal",
+      "text": "Marketplace page address and store account - direct record of what appeared online.",
+      "runs": [
+        {
+          "text": "Marketplace page address and store account - direct record of what appeared online.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "style": "Normal",
+      "text": "Timestamped screenshots - direct record of the page at the time captured.",
+      "runs": [
+        {
+          "text": "Timestamped screenshots - direct record of the page at the time captured.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "style": "Normal",
+      "text": "Conversation records - Route A: the seller's material claim; Route B: the friend's purchase and use account. Neither independently verifies the material.",
+      "runs": [
+        {
+          "text": "Conversation records - Route A: the seller's material claim; Route B: the friend's purchase and use account. Neither independently verifies the material.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "style": "Normal",
+      "text": "Official protected-species source - supports the animal's protection status.",
+      "runs": [
+        {
+          "text": "Official protected-species source - supports the animal's protection status.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "style": "Normal",
+      "text": "Player notes - personal record; must not be presented as expert identification.",
+      "runs": [
+        {
+          "text": "Player notes - personal record; must not be presented as expert identification.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "style": "Normal",
+      "text": "ROUTE A - PURCHASE RECORDS",
+      "runs": [
+        {
+          "text": "ROUTE A - PURCHASE RECORDS",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "style": "Normal",
+      "text": "Add the order number, payment record, logistics information, full packaging, and labels to the evidence folder.",
+      "runs": [
+        {
+          "text": "Add the order number, payment record, logistics information, full packaging, and labels to the evidence folder.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "style": "Normal",
+      "text": "[SYSTEM] Stop using the item. Keep it and its packaging secure. Do not discard, resell, mail, or return it until a verified authority gives instructions.",
+      "runs": [
+        {
+          "text": "[SYSTEM] ",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": true
+        },
+        {
+          "text": "Stop using the item. Keep it and its packaging secure. Do not discard, resell, mail, or return it until a verified authority gives instructions.",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "style": "Normal",
+      "text": "[PRODUCTION NOTE] This route reflects the real 2023 case pattern: the student bought the recommended set, received it, then searched the unfamiliar material name out of curiosity and reported the discovery. The game must show that the player had no informed suspicion before buying.",
+      "runs": [
+        {
+          "text": "[PRODUCTION NOTE] ",
+          "highlight": null,
+          "color": "666666",
+          "bold": true
+        },
+        {
+          "text": "This route reflects the real 2023 case pattern: the student bought the recommended set, received it, then searched the unfamiliar material name out of curiosity and reported the discovery. The game must show that the player had no informed suspicion before buying.",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "style": "Normal",
+      "text": "ROUTE B - PLAYER HAS NOT PURCHASED",
+      "runs": [
+        {
+          "text": "ROUTE B - PLAYER HAS NOT PURCHASED",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "style": "Normal",
+      "text": "Attach the friend's shared messages, photo, screenshot, and the listing records. Do not buy the product to obtain additional evidence.",
+      "runs": [
+        {
+          "text": "Attach the friend's shared messages, photo, screenshot, and the listing records. Do not buy the product to obtain additional evidence.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "style": "Normal",
+      "text": "Scene 5: Prepare the Report",
+      "runs": [
+        {
+          "text": "Scene 5: Prepare the Report",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "style": "Normal",
+      "text": "A report form opens beside the evidence folder. The form does not write an accusation automatically. It asks the player to enter only what the evidence supports.",
+      "runs": [
+        {
+          "text": "A report form opens beside the evidence folder. The form does not write an accusation automatically. It asks the player to enter only what the evidence supports.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "style": "Normal",
+      "text": "Select the platform's report function and the verified local reporting channel appropriate to the player's region.",
+      "runs": [
+        {
+          "text": "Select the platform's report function and the verified local reporting channel appropriate to the player's region.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "style": "Normal",
+      "text": "[PRODUCTION NOTE] Reporting channels must be checked and localized before release. Do not hard-code an invented police email address.",
+      "runs": [
+        {
+          "text": "[PRODUCTION NOTE] ",
+          "highlight": null,
+          "color": "666666",
+          "bold": true
+        },
+        {
+          "text": "Reporting channels must be checked and localized before release. Do not hard-code an invented police email address.",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "style": "Normal",
+      "text": "Attach the listing screenshots, page address, timestamps, official wildlife source, and the conversation records available in the selected route.",
+      "runs": [
+        {
+          "text": "Attach the listing screenshots, page address, timestamps, official wildlife source, and the conversation records available in the selected route.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "style": "Normal",
+      "text": "For Route A, attach the player's order, payment, logistics, packaging, and label records. For Route B, attach only the messages and images the friend has shared; do not invent or automatically access the friend's private order records.",
+      "runs": [
+        {
+          "text": "For Route A, attach the player's order, payment, logistics, packaging, and label records. For Route B, attach only the messages and images the friend has shared; do not invent or automatically access the friend's private order records.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "style": "Normal",
+      "text": "DRAFT REPORT - ROUTE A (PURCHASED ITEM)",
+      "runs": [
+        {
+          "text": "DRAFT REPORT - ROUTE A (PURCHASED ITEM)",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 62,
+      "style": "Normal",
+      "text": "At 19:42 on 18 June 2025, I purchased guzheng finger picks advertised and recommended as “genuine hawksbill.” After receiving the item, I searched the material name out of curiosity and learned that the hawksbill turtle is nationally protected. I have stopped using the item. I have not independently verified its material. The attached files preserve the listing, seller statements, order, payment, logistics, packaging, labels, and relevant official species information. I am submitting these records for assessment and instructions on handling the item.",
+      "runs": [
+        {
+          "text": "At 19:42 on 18 June 2025, I purchased guzheng finger picks advertised and recommended as “genuine hawksbill.” After receiving the item, I searched the material name out of curiosity and learned that the hawksbill turtle is nationally protected. I have stopped using the item. I have not independently verified its material. The attached files preserve the listing, seller statements, order, payment, logistics, packaging, labels, and relevant official species information. I am submitting these records for assessment and instructions on handling the item.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "style": "Normal",
+      "text": "DRAFT REPORT - ROUTE B (LISTING ONLY)",
+      "runs": [
+        {
+          "text": "DRAFT REPORT - ROUTE B (LISTING ONLY)",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "style": "Normal",
+      "text": "At 20:06 on 18 June 2025, a friend sent me a photo and an online listing for finger picks advertised as “genuine hawksbill.” My friend said they had bought the set and found it good to use. After searching the unfamiliar material name, I learned that the hawksbill turtle is nationally protected. I did not purchase the product and have not independently verified its material or my friend's purchase. The attached files preserve the shared messages, photo, listing screenshot, page address, store account, and relevant official species information. I am submitting these records for assessment.",
+      "runs": [
+        {
+          "text": "At 20:06 on 18 June 2025, a friend sent me a photo and an online listing for finger picks advertised as “genuine hawksbill.” My friend said they had bought the set and found it good to use. After searching the unfamiliar material name, I learned that the hawksbill turtle is nationally protected. I did not purchase the product and have not independently verified its material or my friend's purchase. The attached files preserve the shared messages, photo, listing screenshot, page address, store account, and relevant official species information. I am submitting these records for assessment.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 65,
+      "style": "Normal",
+      "text": "Do not write: “This seller killed hawksbill turtles and must be arrested.” The available evidence does not prove the source of the material, the supply chain, or a criminal offence.",
+      "runs": [
+        {
+          "text": "Do not write: ",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": true
+        },
+        {
+          "text": "“This seller killed hawksbill turtles and must be arrested.” The available evidence does not prove the source of the material, the supply chain, or a criminal offence.",
+          "highlight": null,
+          "color": "EE0000",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "style": "Normal",
+      "text": "Review the report for accuracy, then press Submit.",
+      "runs": [
+        {
+          "text": "Review the report for accuracy, then press Submit.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 67,
+      "style": "Normal",
+      "text": "[SYSTEM] Report submitted. Save the reference number and keep the evidence unchanged.",
+      "runs": [
+        {
+          "text": "[SYSTEM] ",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": true
+        },
+        {
+          "text": "Report submitted. Save the reference number and keep the evidence unchanged.",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "style": "Normal",
+      "text": "Scene 6: Follow-up - Several Weeks Later",
+      "runs": [
+        {
+          "text": "Scene 6: Follow-up - Several Weeks Later",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "style": "Normal",
+      "text": "A notification appears on the computer. The player opens it.",
+      "runs": [
+        {
+          "text": "A notification appears on the computer. The player opens it.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "style": "Normal",
+      "text": "Click the new message.",
+      "runs": [
+        {
+          "text": "Click the new message.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 71,
+      "style": "Normal",
+      "text": "RESPONSE: Your report has been received. The information may be reviewed or forwarded to the relevant department. This acknowledgement does not confirm the material, establish wrongdoing, or guarantee a particular enforcement outcome.",
+      "runs": [
+        {
+          "text": "RESPONSE: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Your report has been received. The information may be reviewed or forwarded to the relevant department. This acknowledgement does not confirm the material, establish wrongdoing, or guarantee a particular enforcement outcome.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "style": "Normal",
+      "text": "The player closes the message. The dark screen reflects their face and the guzheng behind them.",
+      "runs": [
+        {
+          "text": "The player closes the message. The dark screen reflects their face and the guzheng behind them.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 73,
+      "style": "Normal",
+      "text": "A safe synthetic set rests beside the strings. The player puts it on and begins to play. The sound is ordinary, clear, and enough.",
+      "runs": [
+        {
+          "text": "A safe synthetic set rests beside the strings. The player puts it on and begins to play. The sound is ordinary, clear, and enough.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "style": "Normal",
+      "text": "Press Next.",
+      "runs": [
+        {
+          "text": "Press Next.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "style": "Normal",
+      "text": "Scene 7: The Seller - Elsewhere, Around the Same Time",
+      "runs": [
+        {
+          "text": "Scene 7: The Seller - Elsewhere, Around the Same Time",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "style": "Normal",
+      "text": "[PRODUCTION NOTE] This is an audience-only, fictionalized cutaway inspired by the case, not footage viewed by the protagonist or evidence in their report. Use a fictional shop interface. The scene is not an exact reconstruction of the real arrest.",
+      "runs": [
+        {
+          "text": "[PRODUCTION NOTE] This is an audience-only, fictionalized cutaway inspired by the case, not footage viewed by the protagonist or evidence in their report. Use a fictional shop interface. The scene is not an exact reconstruction of the real arrest.",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "style": "Normal",
+      "text": "The last guzheng note fades into the clicking of a keyboard. The camera cuts to a cramped packing room, behind a man at his desk. The shop avatar matches the listing seen earlier. His desktop shows a buyer conversation; labelled packets of finger picks lie beside the keyboard.",
+      "runs": [
+        {
+          "text": "The last guzheng note fades into the clicking of a keyboard. The camera cuts to a cramped packing room, behind a man at his desk. The shop avatar matches the listing seen earlier. His desktop shows a buyer conversation; labelled packets of finger picks lie beside the keyboard.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 78,
+      "style": "Normal",
+      "text": "He types to another anonymous buyer. On the right, new orders join a queue. Payment-received notices alternate with outgoing stock and shipping entries. Another payment notification sounds a few seconds later. No total profit figure is shown.",
+      "runs": [
+        {
+          "text": "He types to another anonymous buyer. On the right, new orders join a queue. Payment-received notices alternate with outgoing stock and shipping entries. Another payment notification sounds a few seconds later. No total profit figure is shown.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "style": "Normal",
+      "text": "BUYER: Is this the same material as the one in your listing?",
+      "runs": [
+        {
+          "text": "BUYER: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Is this the same material as the one in your listing?",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 80,
+      "style": "Normal",
+      "text": "SELLER: Yes, genuine hawksbill. It is in stock. I can send it tomorrow.",
+      "runs": [
+        {
+          "text": "SELLER: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "Yes, genuine hawksbill. It is in stock. I can send it tomorrow.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 81,
+      "style": "Normal",
+      "text": "He sends the reply, seals another packet, and places it on a growing stack. A new order arrives before he finishes. The camera stays on the hands, packages, and screen; there is no villain monologue.",
+      "runs": [
+        {
+          "text": "He sends the reply, seals another packet, and places it on a growing stack. A new order arrives before he finishes. The camera stays on the hands, packages, and screen; there is no villain monologue.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 82,
+      "style": "Normal",
+      "text": "Press Next.",
+      "runs": [
+        {
+          "text": "Press Next.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 83,
+      "style": "Normal",
+      "text": "Scene 8: Police Intervention - Months Later",
+      "runs": [
+        {
+          "text": "Scene 8: Police Intervention - Months Later",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 84,
+      "style": "Normal",
+      "text": "The screen fades to black. A time card reads: “MONTHS LATER”. Brief, silent shots show investigators comparing transaction records, a specialist examining seized material, and an evidence folder being closed. These shots establish a separate investigation over time.",
+      "runs": [
+        {
+          "text": "The screen fades to black. A time card reads: “MONTHS LATER”. Brief, silent shots show investigators comparing transaction records, a specialist examining seized material, and an evidence folder being closed. These shots establish a separate investigation over time.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 85,
+      "style": "Normal",
+      "text": "Cut back to the packing room. Police officers are present. The seller has stopped typing; an unfinished buyer reply remains on the monitor. In close-up, an officer closes handcuffs around his wrists. The metal click cuts through the silence.",
+      "runs": [
+        {
+          "text": "Cut back to the packing room. Police officers are present. The seller has stopped typing; an unfinished buyer reply remains on the monitor. In close-up, an officer closes handcuffs around his wrists. The metal click cuts through the silence.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 86,
+      "style": "Normal",
+      "text": "The camera holds on the abandoned keyboard. A payment notification sounds once more, but nobody answers. Fade to black.",
+      "runs": [
+        {
+          "text": "The camera holds on the abandoned keyboard. A payment notification sounds once more, but nobody answers. Fade to black.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 87,
+      "style": "Normal",
+      "text": "[PRODUCTION NOTE] The handcuff shot depicts the fictional seller being taken into custody, not a conviction or the automatic result of one report. Both routes reach this epilogue; the protagonist never controls the seller or the police.",
+      "runs": [
+        {
+          "text": "[PRODUCTION NOTE] The handcuff shot depicts the fictional seller being taken into custody, not a conviction or the automatic result of one report. Both routes reach this epilogue; the protagonist never controls the seller or the police.",
+          "highlight": null,
+          "color": "666666",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 88,
+      "style": "Normal",
+      "text": "Press Next to view the ending information card.",
+      "runs": [
+        {
+          "text": "Press Next to view the ending information card.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 89,
+      "style": "Normal",
+      "text": "Ending Information Card",
+      "runs": [
+        {
+          "text": "Ending Information Card",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 90,
+      "style": "Normal",
+      "text": "HAWKSBILL TURTLE / 玳瑁\nThe hawksbill turtle is a protected marine animal. A product description or visual resemblance cannot by itself establish what a product is made from. When an unfamiliar animal-derived material appears in a product description, pause and check official sources. If a concern is discovered after purchase, stop using the item, preserve accurate records, and seek instructions through verified reporting channels.",
+      "runs": [
+        {
+          "text": "HAWKSBILL TURTLE / 玳瑁",
+          "highlight": null,
+          "color": "00B050",
+          "bold": true
+        },
+        {
+          "text": "\nThe hawksbill turtle is a protected marine animal. A product description or visual resemblance cannot by itself establish what a product is made from. When an unfamiliar animal-derived material appears in a product description, pause and check official sources. If a concern is discovered after purchase, stop using the item, preserve accurate records, and seek instructions through verified reporting channels.",
+          "highlight": null,
+          "color": "00B050",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 91,
+      "style": "Normal",
+      "text": "One report may not end an illegal trade. It can still provide a useful lead when it is accurate, complete, and responsibly submitted.",
+      "runs": [
+        {
+          "text": "One report may not end an illegal trade. It can still provide a useful lead when it is accurate, complete, and responsibly submitted.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 92,
+      "style": "Normal",
+      "text": "Press End.",
+      "runs": [
+        {
+          "text": "Press End.",
+          "highlight": "yellow",
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 93,
+      "style": "Normal",
+      "text": "Source Notes for the Production Team",
+      "runs": [
+        {
+          "text": "Source Notes for the Production Team",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        }
+      ]
+    },
+    {
+      "i": 94,
+      "style": "Normal",
+      "text": "REAL CASE INSPIRATION: In March 2023, a guzheng student in Xuzhou bought a seller-recommended hawksbill finger-pick set for an examination. After delivery, the student searched the material out of curiosity, discovered the wildlife-protection concern, and reported it to police. The cited report also describes later investigation and court proceedings. This script keeps a fictional 2025 setting; the friend, dialogue, order notifications, investigation montage, and handcuff staging are dramatized, not verified details of the real incident.",
+      "runs": [
+        {
+          "text": "REAL CASE INSPIRATION: ",
+          "highlight": null,
+          "color": null,
+          "bold": true
+        },
+        {
+          "text": "In March 2023, a guzheng student in Xuzhou bought a seller-recommended hawksbill finger-pick set for an examination. After delivery, the student searched the material out of curiosity, discovered the wildlife-protection concern, and reported it to police. The cited report also describes later investigation and court proceedings. This script keeps a fictional 2025 setting; the friend, dialogue, order notifications, investigation montage, and handcuff staging are dramatized, not verified details of the real incident.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 95,
+      "style": "Normal",
+      "text": "https://www.jsjc.gov.cn/zl/6736/202506/t20250624_189512.shtml",
+      "runs": [
+        {
+          "text": "https://www.jsjc.gov.cn/zl/6736/202506/t20250624_189512.shtml",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "style": "Normal",
+      "text": "National Key Protected Wild Animal List (国家重点保护野生动物名录), National Forestry and Grassland Administration / Ministry of Agriculture and Rural Affairs. The list identifies 玳瑁 (Eretmochelys imbricata) as Class I protected wildlife.",
+      "runs": [
+        {
+          "text": "National Key Protected Wild Animal List (国家重点保护野生动物名录), National Forestry and Grassland Administration / Ministry of Agriculture and Rural Affairs. The list identifies 玳瑁 (Eretmochelys imbricata) as Class I protected wildlife.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 97,
+      "style": "Normal",
+      "text": "https://yyj.moa.gov.cn/gzdt/202102/P020210205564727206658.pdf",
+      "runs": [
+        {
+          "text": "https://yyj.moa.gov.cn/gzdt/202102/P020210205564727206658.pdf",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 98,
+      "style": "Normal",
+      "text": "Wildlife-protection rules in force during the 2025 story period: Wildlife Protection Law of the People's Republic of China, including rules on sale, purchase, use, approval, traceability, advertising, and online-platform services.",
+      "runs": [
+        {
+          "text": "Wildlife-protection rules in force during the 2025 story period: Wildlife Protection Law of the People's Republic of China, including rules on sale, purchase, use, approval, traceability, advertising, and online-platform services.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 99,
+      "style": "Normal",
+      "text": "https://www.npc.gov.cn/c2/c30834/202212/t20221230_321016.html",
+      "runs": [
+        {
+          "text": "https://www.npc.gov.cn/c2/c30834/202212/t20221230_321016.html",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "style": "Normal",
+      "text": "Legal and reporting text must be reviewed again before release. China's Ecological and Environmental Code took effect on 15 August 2026 and incorporates wildlife-protection provisions. The game should display an information cutoff date and avoid presenting itself as legal advice.",
+      "runs": [
+        {
+          "text": "Legal and reporting text must be reviewed again before release. China's Ecological and Environmental Code took effect on 15 August 2026 and incorporates wildlife-protection provisions. The game should display an information cutoff date and avoid presenting itself as legal advice.",
+          "highlight": null,
+          "color": null,
+          "bold": false
+        }
+      ]
+    },
+    {
+      "i": 101,
+      "style": "Normal",
+      "text": "https://www.npc.gov.cn/npc/c1773/c1848/c21114/sthjfdlf/",
+      "runs": [
+        {
+          "text": "https://www.npc.gov.cn/npc/c1773/c1848/c21114/sthjfdlf/",
+          "highlight": null,
+          "color": "A02B93",
+          "bold": false
+        }
+      ]
+    }
+  ],
+  "tables": [],
+  "zip_flags": {
+    "comments": true,
+    "footnotes": false,
+    "endnotes": false,
+    "tracked_insertions": false,
+    "tracked_deletions": false
+  }
+}
