@@ -1,0 +1,92 @@
+{
+  "chapterId": "chapter-01",
+  "localizationTable": "chapter-01",
+  "titleKey": "ch01.title",
+  "startBeatId": "ch01.archive.01",
+  "beats": [
+    {
+      "id": "ch01.archive.01",
+      "sceneLabelKey": "ch01.scene.archive",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.archive.01",
+      "backgroundKey": "C1_ENV_01_archive",
+      "portraitKey": "",
+      "nextBeatId": "ch01.beach.01"
+    },
+    {
+      "id": "ch01.beach.01",
+      "sceneLabelKey": "ch01.scene.beach",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.beach.01",
+      "backgroundKey": "C1_ENV_02_beach",
+      "portraitKey": "",
+      "nextBeatId": "ch01.beach.choice",
+      "choices": []
+    },
+    {
+      "id": "ch01.beach.choice",
+      "sceneLabelKey": "ch01.scene.beach",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch01.beach.choice",
+      "backgroundKey": "C1_ENV_02_beach",
+      "portraitKey": "C1_POR_00_player",
+      "choices": [
+        {
+          "id": "observe",
+          "labelKey": "ch01.choice.observe",
+          "nextBeatId": "ch01.beach.observe"
+        },
+        {
+          "id": "approach",
+          "labelKey": "ch01.choice.approach",
+          "nextBeatId": "ch01.beach.consequence"
+        }
+      ]
+    },
+    {
+      "id": "ch01.beach.consequence",
+      "sceneLabelKey": "ch01.scene.beach",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.beach.consequence",
+      "backgroundKey": "C1_ENV_02_beach",
+      "portraitKey": "",
+      "nextBeatId": "ch01.beach.observe"
+    },
+    {
+      "id": "ch01.beach.observe",
+      "sceneLabelKey": "ch01.scene.beach",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.beach.observe",
+      "backgroundKey": "C1_ENV_02_beach",
+      "portraitKey": "",
+      "nextBeatId": "ch01.handoff.01"
+    },
+    {
+      "id": "ch01.handoff.01",
+      "sceneLabelKey": "ch01.scene.handoff",
+      "speakerKey": "shared.speaker.rescuer",
+      "textKey": "ch01.handoff.01",
+      "backgroundKey": "C1_ENV_03_handoff",
+      "portraitKey": "C1_POR_01_rescuer",
+      "nextBeatId": "ch01.rehab.01"
+    },
+    {
+      "id": "ch01.rehab.01",
+      "sceneLabelKey": "ch01.scene.rehab",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.rehab.01",
+      "backgroundKey": "C1_ENV_04_rehab",
+      "portraitKey": "",
+      "nextBeatId": "ch01.release.01"
+    },
+    {
+      "id": "ch01.release.01",
+      "sceneLabelKey": "ch01.scene.release",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch01.release.01",
+      "backgroundKey": "C1_ENV_05_release",
+      "portraitKey": "",
+      "nextBeatId": ""
+    }
+  ]
+}

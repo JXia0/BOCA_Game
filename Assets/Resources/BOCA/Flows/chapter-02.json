@@ -1,0 +1,91 @@
+{
+  "chapterId": "chapter-02",
+  "localizationTable": "chapter-02",
+  "titleKey": "ch02.title",
+  "startBeatId": "ch02.command.01",
+  "beats": [
+    {
+      "id": "ch02.command.01",
+      "sceneLabelKey": "ch02.scene.command",
+      "speakerKey": "shared.speaker.commander",
+      "textKey": "ch02.command.01",
+      "backgroundKey": "C2_ENV_01_command",
+      "portraitKey": "C2_POR_01_commander",
+      "nextBeatId": "ch02.mudflat.01"
+    },
+    {
+      "id": "ch02.mudflat.01",
+      "sceneLabelKey": "ch02.scene.mudflat",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch02.mudflat.01",
+      "backgroundKey": "C2_ENV_02_mudflat",
+      "portraitKey": "",
+      "nextBeatId": "ch02.wait.choice"
+    },
+    {
+      "id": "ch02.wait.choice",
+      "sceneLabelKey": "ch02.scene.wait",
+      "speakerKey": "shared.speaker.commander",
+      "textKey": "ch02.wait.choice",
+      "backgroundKey": "C2_ENV_03_waiting",
+      "portraitKey": "C2_POR_01_commander",
+      "choices": [
+        {
+          "id": "wait",
+          "labelKey": "ch02.choice.wait",
+          "nextBeatId": "ch02.wait.good"
+        },
+        {
+          "id": "rush",
+          "labelKey": "ch02.choice.rush",
+          "nextBeatId": "ch02.wait.risk"
+        }
+      ]
+    },
+    {
+      "id": "ch02.wait.risk",
+      "sceneLabelKey": "ch02.scene.wait",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch02.wait.risk",
+      "backgroundKey": "C2_ENV_03_waiting",
+      "portraitKey": "",
+      "nextBeatId": "ch02.wait.good"
+    },
+    {
+      "id": "ch02.wait.good",
+      "sceneLabelKey": "ch02.scene.wait",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch02.wait.good",
+      "backgroundKey": "C2_ENV_03_waiting",
+      "portraitKey": "",
+      "nextBeatId": "ch02.tow.01"
+    },
+    {
+      "id": "ch02.tow.01",
+      "sceneLabelKey": "ch02.scene.tow",
+      "speakerKey": "shared.speaker.commander",
+      "textKey": "ch02.tow.01",
+      "backgroundKey": "C2_ENV_04_tow",
+      "portraitKey": "C2_POR_01_commander",
+      "nextBeatId": "ch02.deep.01"
+    },
+    {
+      "id": "ch02.deep.01",
+      "sceneLabelKey": "ch02.scene.deep",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch02.deep.01",
+      "backgroundKey": "C2_ENV_05_deep_water",
+      "portraitKey": "",
+      "nextBeatId": "ch02.release.01"
+    },
+    {
+      "id": "ch02.release.01",
+      "sceneLabelKey": "ch02.scene.release",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch02.release.01",
+      "backgroundKey": "C2_ENV_06_release",
+      "portraitKey": "",
+      "nextBeatId": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "entries": [
+    { "key": "ch03.title", "value": "CHAPTER 3  WARNING BENEATH THE REEF" },
+    { "key": "ch03.scene.office", "value": "OFFICE BRIEFING" },
+    { "key": "ch03.scene.shore", "value": "PUBLIC SHORELINE" },
+    { "key": "ch03.scene.interview", "value": "CONSENTED INTERVIEW" },
+    { "key": "ch03.scene.research", "value": "SOURCE REVIEW" },
+    { "key": "ch03.scene.evidence", "value": "EVIDENCE WALL" },
+    { "key": "ch03.scene.report", "value": "INTERNAL REPORT" },
+    { "key": "ch03.scene.followup", "value": "ONE YEAR LATER" },
+    { "key": "ch03.office.01", "value": "The assignment is to document changes near the reef without trespassing, accusing people, or treating an observation as proof." },
+    { "key": "ch03.shore.01", "value": "From a public shoreline, the player records fixed landmarks, distant activity, weather, time, and the limits of what the camera can show." },
+    { "key": "ch03.fisher.01", "value": "You may record my description, but do not turn my memory into a measurement. I am telling you what I noticed, not proving the cause." },
+    { "key": "ch03.source.01", "value": "Public records, environmental data, interviews, and simulated comparison images are kept separate so their different strengths remain visible." },
+    { "key": "ch03.claim.choice", "value": "How should the report describe the distant activity and the later environmental change?" },
+    { "key": "ch03.choice.qualified", "value": "State the observations, sources, and limits; request further assessment." },
+    { "key": "ch03.choice.overclaim", "value": "State that the distant activity definitely caused the change." },
+    { "key": "ch03.report.revision", "value": "That sentence goes beyond the evidence. Revise it so the reader can see what was observed, what was reported by others, and what remains uncertain." },
+    { "key": "ch03.report.01", "value": "The report is accepted because its claims are traceable to sources and its limitations are visible. Accuracy matters more than a dramatic conclusion." },
+    { "key": "ch03.followup.01", "value": "The same viewpoint is revisited a year later. The comparison documents change, but it still does not turn correlation into proof of a single cause." }
+  ]
+}

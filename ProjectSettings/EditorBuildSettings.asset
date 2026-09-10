@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/Chapters/Chapter01_OilTide.unity
+    guid: 670ea73e3a98af8459ee89551dd8fe42
+  - enabled: 1
+    path: Assets/Scenes/Chapters/Chapter02_SpermWhaleRescue.unity
+    guid: d227091a69cf3f54e97c455f004ad83f
+  - enabled: 1
+    path: Assets/Scenes/Chapters/Chapter03_ReefWarning.unity
+    guid: 4d53b5e1aa93d7044866085ceba56def
+  - enabled: 1
+    path: Assets/Scenes/Chapters/Chapter04_HawksbillGuzheng.unity
+    guid: a36df068a56a0e7418d7e1d51d3b6142
   m_configObjects: {}

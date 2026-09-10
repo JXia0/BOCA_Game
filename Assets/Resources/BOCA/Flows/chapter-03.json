@@ -1,0 +1,91 @@
+{
+  "chapterId": "chapter-03",
+  "localizationTable": "chapter-03",
+  "titleKey": "ch03.title",
+  "startBeatId": "ch03.office.01",
+  "beats": [
+    {
+      "id": "ch03.office.01",
+      "sceneLabelKey": "ch03.scene.office",
+      "speakerKey": "shared.speaker.manager",
+      "textKey": "ch03.office.01",
+      "backgroundKey": "C3_ENV_01_office",
+      "portraitKey": "C3_POR_01_manager",
+      "nextBeatId": "ch03.shore.01"
+    },
+    {
+      "id": "ch03.shore.01",
+      "sceneLabelKey": "ch03.scene.shore",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch03.shore.01",
+      "backgroundKey": "C3_ENV_02_shore_2025",
+      "portraitKey": "",
+      "nextBeatId": "ch03.fisher.01"
+    },
+    {
+      "id": "ch03.fisher.01",
+      "sceneLabelKey": "ch03.scene.interview",
+      "speakerKey": "shared.speaker.fisher",
+      "textKey": "ch03.fisher.01",
+      "backgroundKey": "C3_ENV_02_shore_2025",
+      "portraitKey": "C3_POR_02_fisher",
+      "nextBeatId": "ch03.source.01"
+    },
+    {
+      "id": "ch03.source.01",
+      "sceneLabelKey": "ch03.scene.research",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch03.source.01",
+      "backgroundKey": "C3_ENV_03_office_research",
+      "portraitKey": "",
+      "nextBeatId": "ch03.claim.choice"
+    },
+    {
+      "id": "ch03.claim.choice",
+      "sceneLabelKey": "ch03.scene.evidence",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch03.claim.choice",
+      "backgroundKey": "C3_ENV_04_evidence_wall",
+      "portraitKey": "C3_POR_00_player",
+      "choices": [
+        {
+          "id": "qualified",
+          "labelKey": "ch03.choice.qualified",
+          "nextBeatId": "ch03.report.01"
+        },
+        {
+          "id": "overclaim",
+          "labelKey": "ch03.choice.overclaim",
+          "nextBeatId": "ch03.report.revision"
+        }
+      ]
+    },
+    {
+      "id": "ch03.report.revision",
+      "sceneLabelKey": "ch03.scene.evidence",
+      "speakerKey": "shared.speaker.manager",
+      "textKey": "ch03.report.revision",
+      "backgroundKey": "C3_ENV_04_evidence_wall",
+      "portraitKey": "C3_POR_01_manager",
+      "nextBeatId": "ch03.report.01"
+    },
+    {
+      "id": "ch03.report.01",
+      "sceneLabelKey": "ch03.scene.report",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch03.report.01",
+      "backgroundKey": "C3_ENV_04_evidence_wall",
+      "portraitKey": "",
+      "nextBeatId": "ch03.followup.01"
+    },
+    {
+      "id": "ch03.followup.01",
+      "sceneLabelKey": "ch03.scene.followup",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch03.followup.01",
+      "backgroundKey": "C3_ENV_05_shore_2026",
+      "portraitKey": "",
+      "nextBeatId": ""
+    }
+  ]
+}

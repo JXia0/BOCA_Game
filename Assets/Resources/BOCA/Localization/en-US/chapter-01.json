@@ -1,0 +1,20 @@
+{
+  "entries": [
+    { "key": "ch01.title", "value": "CHAPTER 1  OIL ON THE TIDE" },
+    { "key": "ch01.scene.archive", "value": "ARCHIVE" },
+    { "key": "ch01.scene.beach", "value": "THE BEACH" },
+    { "key": "ch01.scene.handoff", "value": "PROFESSIONAL HANDOFF" },
+    { "key": "ch01.scene.rehab", "value": "RECOVERY" },
+    { "key": "ch01.scene.release", "value": "RETURN TO THE SEA" },
+    { "key": "ch01.archive.01", "value": "A rescued penguin becomes the starting point for a lesson about distance, careful observation, and professional wildlife care." },
+    { "key": "ch01.beach.01", "value": "A weak penguin lies near the tide line. Oil darkens the feathers around its chest. People are beginning to gather." },
+    { "key": "ch01.beach.choice", "value": "What should I do first?" },
+    { "key": "ch01.choice.observe", "value": "Keep my distance, record the location, and contact trained rescuers." },
+    { "key": "ch01.choice.approach", "value": "Move closer so I can clean the feathers myself." },
+    { "key": "ch01.beach.consequence", "value": "Moving closer increases stress and risks spreading contamination. The safest useful action is to step back and report what can be observed." },
+    { "key": "ch01.beach.observe", "value": "The record notes the animal's position, visible condition, tide, nearby hazards, and the growing crowd without claiming a diagnosis." },
+    { "key": "ch01.handoff.01", "value": "Thank you for keeping the area quiet. We will assess the penguin and decide what treatment is appropriate." },
+    { "key": "ch01.rehab.01", "value": "Recovery takes time. A cleaner appearance is not enough; trained staff continue to assess health, behavior, and feather condition." },
+    { "key": "ch01.release.01", "value": "When the professional team is ready, the route to the water is cleared. The penguin returns to the sea without being treated as a pet or a prize." }
+  ]
+}

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BOCA.Chapter1
 {
@@ -114,7 +115,17 @@ namespace BOCA.Chapter1
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Bootstrap()
         {
-            if (FindFirstObjectByType<Chapter1PlayablePrototype>() != null)
+            // Keep the old IMGUI horizontal slice isolated to its prototype scene.
+            // Production chapter scenes use the shared narrative framework instead.
+            if (!string.Equals(
+                    SceneManager.GetActiveScene().path,
+                    "Assets/Scenes/SampleScene.unity",
+                    StringComparison.Ordinal))
+            {
+                return;
+            }
+
+            if (FindAnyObjectByType<Chapter1PlayablePrototype>() != null)
             {
                 return;
             }

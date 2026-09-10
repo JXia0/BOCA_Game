@@ -1,0 +1,21 @@
+{
+  "entries": [
+    { "key": "ch02.title", "value": "CHAPTER 2  SPERM WHALE STRANDING RESCUE" },
+    { "key": "ch02.scene.command", "value": "FIELD COMMAND" },
+    { "key": "ch02.scene.mudflat", "value": "MUDFLAT" },
+    { "key": "ch02.scene.wait", "value": "WAITING FOR THE TIDE" },
+    { "key": "ch02.scene.tow", "value": "TOW CORRIDOR" },
+    { "key": "ch02.scene.deep", "value": "DEEP WATER" },
+    { "key": "ch02.scene.release", "value": "DAWN" },
+    { "key": "ch02.command.01", "value": "The response plan is shared across trained teams. The player observes decisions, records updates, and supports communication rather than controlling the rescue alone." },
+    { "key": "ch02.mudflat.01", "value": "The stranded sperm whale is kept wet while the team checks breathing, body position, tide, equipment, and the safest route away from the mudflat." },
+    { "key": "ch02.wait.choice", "value": "The tide is still too low. Which plan should the team support?" },
+    { "key": "ch02.choice.wait", "value": "Maintain support and wait for the agreed tidal window." },
+    { "key": "ch02.choice.rush", "value": "Begin pulling immediately before the tide changes." },
+    { "key": "ch02.wait.risk", "value": "Rushing would increase strain and reduce the margin for error. The plan returns to monitoring and coordinated preparation." },
+    { "key": "ch02.wait.good", "value": "Waiting is active work: teams monitor the whale, prepare several small boats, and keep the tow path clear." },
+    { "key": "ch02.tow.01", "value": "The boats hold a coordinated formation. No single vessel is presented as the hero, and the player does not control force or speed in real time." },
+    { "key": "ch02.deep.01", "value": "Radio contact weakens in deeper water, but the illustration and dialogue preserve the final confirmed instructions without turning uncertainty into a crisis minigame." },
+    { "key": "ch02.release.01", "value": "At dawn, the whale submerges in deeper water. The chapter records what was observed and what remains uncertain." }
+  ]
+}
