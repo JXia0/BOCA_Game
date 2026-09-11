@@ -99,7 +99,10 @@ namespace BOCA.Narrative
             var beat = session.CurrentBeat;
             if (NarrativeSession.HasChoices(beat))
             {
-                var selectedIndex = 0;
+                var selectedIndex = string.Equals(preferredRoute, "B", System.StringComparison.OrdinalIgnoreCase) &&
+                                    beat.choices.Length > 1
+                    ? 1
+                    : 0;
                 for (var i = 0; i < beat.choices.Length; i++)
                 {
                     if (string.Equals(beat.choices[i].setRoute, preferredRoute, System.StringComparison.OrdinalIgnoreCase))

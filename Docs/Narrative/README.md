@@ -1,7 +1,7 @@
 # Narrative source rules
 
 - Chapter 4 uses `BOCA 游戏剧本_玳瑁古筝义甲_修改版_v3.docx` as its locked narrative authority.
-- Chapters 1 to 3 currently use replaceable English staging text while students complete revisions.
+- Chapter 1 still uses replaceable English staging text. Chapters 2 and 3 use the student revisions received on 2026-09-11, including full production flows and persistent choice consequences.
 - Runtime scenes reference localization keys, never final prose typed directly into Unity objects.
 - The `Flows` JSON files control sequence, branches, speaker keys, and art keys.
 - The `Localization` JSON files control player-facing language.

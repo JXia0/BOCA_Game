@@ -11,8 +11,8 @@ The title screen and settings screen are deliberately not part of this milestone
 | Scene | Current status | Narrative authority |
 | --- | --- | --- |
 | `Chapter01_OilTide` | Production hierarchy and replaceable English staging flow | Student revision still expected |
-| `Chapter02_SpermWhaleRescue` | Production hierarchy and replaceable English staging flow | Student revision still expected |
-| `Chapter03_ReefWarning` | Production hierarchy and replaceable English staging flow | Student revision still expected |
+| `Chapter02_SpermWhaleRescue` | Student revision implemented as a 71-beat English production flow | Student revision received 2026-09-11 |
+| `Chapter03_ReefWarning` | Student revision implemented as a 73-beat English production flow | Student revision received 2026-09-11 |
 | `Chapter04_HawksbillGuzheng` | Production hierarchy and implemented English flow with Route A and Route B | Locked v3 DOCX |
 
 The older `SampleScene` and `Chapter1PlayablePrototype` remain as a historical horizontal slice. The prototype now runs only inside `SampleScene` and cannot appear over the production chapters.
@@ -23,7 +23,7 @@ The older `SampleScene` and `Chapter1PlayablePrototype` remain as a historical h
 - `ChapterFlowFile` stores stable beat IDs, branches, art keys, and localization keys.
 - English text lives in `Assets/Resources/BOCA/Localization/en-US`.
 - Future Chinese files use the same filenames and keys in `Assets/Resources/BOCA/Localization/zh-CN`.
-- `NarrativeSession` advances beats and preserves the Chapter 4 route choice.
+- `NarrativeSession` advances beats, preserves the Chapter 4 route choice, and records choice flags so later audits can expose earlier mistakes.
 - `ChapterSceneController` connects flow data, localization, art catalogs, and the scene view.
 - `ChapterView` owns the shared 16:9 scene area, lower dialogue panel, portrait, continue control, and up to three short choices.
 - `ArtCatalog` maps stable asset keys to imported sprites. The editor rebuild command scans the controlled art folders.
@@ -72,6 +72,6 @@ Before a production commit is accepted:
 
 1. Replace the staging UI blocks with the first approved shared pixel UI sample.
 2. Integrate Chapter 4 P0 backgrounds, portraits, and the hawksbill information CG.
-3. Review the final student revisions for Chapters 1 to 3, then update localization text and any affected branches.
+3. Review the final Chapter 1 student revision, then update localization text and any affected branches.
 4. Add save progress, chapter selection, title screen, settings, and language controls after the four chapter loops are stable.
 5. Complete an accessibility pass for font size, contrast, keyboard navigation, reduced motion, and text speed.
