@@ -23,6 +23,10 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
+# Local extraction, rendering, and visual-QA artifacts.
+# Durable deliverables belong under Docs/, Assets/, or output/ instead.
+/tmp/
+
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
 *.blend1.meta

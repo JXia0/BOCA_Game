@@ -135,7 +135,8 @@ def hyperlink(paragraph_obj, text, url):
 def source(doc, title, url, use):
     p = paragraph(doc, [(title + "  ", {"bold": True})], after=1)
     hyperlink(p, url, url)
-    paragraph(doc, [(use, {"color": GRAY, "size": 9.5})], after=5)
+    p.paragraph_format.keep_with_next = True
+    paragraph(doc, [(use, {"color": GRAY, "size": 9.5})], after=5, keep=True)
 
 
 def add_page_number(section):
@@ -178,6 +179,10 @@ def build():
         style.font.name = "Microsoft YaHei"
         style.font.color.rgb = BLACK
         style._element.rPr.rFonts.set(qn("w:eastAsia"), "Microsoft YaHei")
+        ppr = style._element.get_or_add_pPr()
+        border = ppr.find(qn("w:pBdr"))
+        if border is not None:
+            ppr.remove(border)
     doc.styles["Title"].font.size = Pt(18)
     doc.styles["Title"].font.bold = True
 
@@ -386,7 +391,7 @@ def build():
     )
     colored(doc, "[安全结论]", "当前对比只能提出复核问题，不能宣布评估无效或工程违法。", GREEN)
 
-    heading(doc, "场景五 证据墙", page_break=True)
+    heading(doc, "场景五 证据墙")
     plain(doc, "第二天，玩家站在证据墙前。左侧是主张，右侧是来源卡；每张卡都显示取得时间、来源类型和局限。")
     colored(
         doc,
@@ -472,7 +477,7 @@ def build():
     colored(
         doc,
         "[系统]",
-        "内部证据包已保存。它可能帮助组织决定是否继续核实或向有权限的部门反映，但不自动证明违法，也不保证产生某个结果。",
+        "内部证据包已保存。它可能帮助组织决定是否继续核实或向有权限的部门反映。这份证据包不能证明违法，也不保证产生某个结果。",
     )
 
     heading(doc, "场景七 后续发展", page_break=True)
@@ -512,11 +517,11 @@ def build():
 
     heading(doc, "场景八 回到海边")
     plain(doc, "时间卡：2026年9月")
-    plain(doc, "玩家再次站在同一处公共岸线。码头设施比上次更完整，海面传来施工与船舶的声音。")
+    plain(doc, "玩家再次站在同一处公共岸线。码头设施已经成形，一艘船从远处经过。")
     colored(
         doc,
         "[现实更新]",
-        "泉州市海洋与渔业局2026年3月的公开信息仍将11号、12号泊位工程称为在建海洋工程，并记载了现场检查与水下作业环保指导。工程继续建设不等于争议已经解决，也不能反向证明此前所有质疑成立或不成立。",
+        "泉州市海洋与渔业局2026年3月的公开信息将11号、12号泊位工程称为在建海洋工程；南安市人力资源和社会保障局2026年5月的工资专户销户公示则称该工程已竣工。两项信息对应不同时间和行政事项，均不能说明生态争议已经得到实体裁判。",
     )
     action(doc, "架好相机，填写新的观察日期、位置、天气和能见度。")
     plain(doc, "水下传来清晰的回声定位声。画面切到浑浊的蓝绿色海水，一道浅色背影从远处掠过。")
@@ -615,6 +620,12 @@ def build():
         "泉州市海洋与渔业局 海洋工程联合检查",
         "https://hyj.quanzhou.gov.cn/zwgk/zfxxgkml/gzdt/202603/t20260309_3272571.htm",
         "2026年3月7日公开信息。用于确认2026年3月官方仍将该泊位工程列为在建海洋工程，并开展检查和环保指导。",
+    )
+    source(
+        doc,
+        "南安市人力资源和社会保障局 泊位项目工资专户销户公示",
+        "https://www.nanan.gov.cn/zwgk/xwzx/tzgg/202605/t20260522_3293824.htm",
+        "2026年5月22日公开信息。公示称该工程已竣工并提交工资支付资料；该表述服务于工资专户销户，不等于生态争议已有裁判结论。",
     )
     source(
         doc,
