@@ -24,6 +24,7 @@ namespace BOCA.Narrative
         public string nextBeatId;
         public string nextBeatIdRouteA;
         public string nextBeatIdRouteB;
+        public string requiredFlag;
         public NarrativeChoiceFile[] choices;
     }
 
@@ -34,5 +35,6 @@ namespace BOCA.Narrative
         public string labelKey;
         public string nextBeatId;
         public string setRoute;
+        public string setFlag;
     }
 }

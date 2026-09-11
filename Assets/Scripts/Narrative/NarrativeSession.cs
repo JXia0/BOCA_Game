@@ -11,9 +11,11 @@ namespace BOCA.Narrative
     {
         private readonly ChapterFlowFile flow;
         private readonly Dictionary<string, NarrativeBeatFile> beats;
+        private readonly HashSet<string> flags = new(StringComparer.Ordinal);
 
         public NarrativeBeatFile CurrentBeat { get; private set; }
         public string SelectedRoute { get; private set; }
+        public IReadOnlyCollection<string> Flags => flags;
         public bool IsComplete => CurrentBeat == null;
 
         public NarrativeSession(ChapterFlowFile flow)
@@ -39,7 +41,7 @@ namespace BOCA.Narrative
                 }
             }
 
-            CurrentBeat = Resolve(flow.startBeatId);
+            CurrentBeat = ResolveVisible(flow.startBeatId);
         }
 
         public bool Advance()
@@ -61,7 +63,7 @@ namespace BOCA.Narrative
                 nextBeatId = CurrentBeat.nextBeatIdRouteB;
             }
 
-            CurrentBeat = string.IsNullOrWhiteSpace(nextBeatId) ? null : Resolve(nextBeatId);
+            CurrentBeat = string.IsNullOrWhiteSpace(nextBeatId) ? null : ResolveVisible(nextBeatId);
             return true;
         }
 
@@ -78,7 +80,12 @@ namespace BOCA.Narrative
                 SelectedRoute = choice.setRoute;
             }
 
-            CurrentBeat = Resolve(choice.nextBeatId);
+            if (!string.IsNullOrWhiteSpace(choice.setFlag))
+            {
+                flags.Add(choice.setFlag);
+            }
+
+            CurrentBeat = ResolveVisible(choice.nextBeatId);
             return true;
         }
 
@@ -95,6 +102,44 @@ namespace BOCA.Narrative
             }
 
             return beat;
+        }
+
+        private NarrativeBeatFile ResolveVisible(string beatId)
+        {
+            var candidateId = beatId;
+            for (var guard = 0; guard <= beats.Count; guard++)
+            {
+                var beat = Resolve(candidateId);
+                if (string.IsNullOrWhiteSpace(beat.requiredFlag) || flags.Contains(beat.requiredFlag))
+                {
+                    return beat;
+                }
+
+                candidateId = NextIdForCurrentRoute(beat);
+                if (string.IsNullOrWhiteSpace(candidateId))
+                {
+                    return null;
+                }
+            }
+
+            throw new InvalidOperationException($"Chapter '{flow.chapterId}' exceeded the conditional-beat guard. Check for a cycle among skipped beats.");
+        }
+
+        private string NextIdForCurrentRoute(NarrativeBeatFile beat)
+        {
+            if (string.Equals(SelectedRoute, "A", StringComparison.OrdinalIgnoreCase) &&
+                !string.IsNullOrWhiteSpace(beat.nextBeatIdRouteA))
+            {
+                return beat.nextBeatIdRouteA;
+            }
+
+            if (string.Equals(SelectedRoute, "B", StringComparison.OrdinalIgnoreCase) &&
+                !string.IsNullOrWhiteSpace(beat.nextBeatIdRouteB))
+            {
+                return beat.nextBeatIdRouteB;
+            }
+
+            return beat.nextBeatId;
         }
     }
 }

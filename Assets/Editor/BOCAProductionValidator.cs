@@ -60,6 +60,7 @@ namespace BOCA.Editor
 
             var chapterKeys = LoadLocalizationKeys(flow.localizationTable, errors);
             var beats = new Dictionary<string, NarrativeBeatFile>(StringComparer.Ordinal);
+            var setFlags = new HashSet<string>(StringComparer.Ordinal);
             if (flow.beats == null || flow.beats.Length == 0)
             {
                 errors.Add($"{spec.chapterId} has no beats");
@@ -93,7 +94,19 @@ namespace BOCA.Editor
                     foreach (var choice in beat.choices)
                     {
                         ValidateKey(spec.chapterId, choice.labelKey, chapterKeys, sharedKeys, errors);
+                        if (!string.IsNullOrWhiteSpace(choice.setFlag))
+                        {
+                            setFlags.Add(choice.setFlag);
+                        }
                     }
+                }
+            }
+
+            foreach (var beat in flow.beats)
+            {
+                if (!string.IsNullOrWhiteSpace(beat.requiredFlag) && !setFlags.Contains(beat.requiredFlag))
+                {
+                    errors.Add($"{beat.id} requires flag {beat.requiredFlag}, but no choice sets it");
                 }
             }
 

@@ -13,6 +13,10 @@
     { "key": "shared.speaker.rescuer", "value": "RESCUE COORDINATOR" },
     { "key": "shared.speaker.commander", "value": "FIELD COMMANDER" },
     { "key": "shared.speaker.manager", "value": "PROJECT MANAGER" },
-    { "key": "shared.speaker.fisher", "value": "FISHER" }
+    { "key": "shared.speaker.fisher", "value": "FISHER" },
+    { "key": "shared.speaker.caller", "value": "CALLER" },
+    { "key": "shared.speaker.expert", "value": "WHALE RESCUE EXPERT" },
+    { "key": "shared.speaker.scout_boat", "value": "SCOUT BOAT" },
+    { "key": "shared.speaker.tow_boat", "value": "TOW BOAT" }
   ]
 }
