@@ -81,10 +81,21 @@ namespace BOCA.Diagnostics
                 yield return null;
             }
 
-            Debug.Log(File.Exists(capturePath)
+            var succeeded = File.Exists(capturePath);
+            var exitCode = succeeded ? 0 : 2;
+            Debug.Log(succeeded
                 ? $"BOCA_VISUAL_CAPTURE_PASS: {capturePath}"
                 : $"BOCA_VISUAL_CAPTURE_FAIL: {capturePath}");
-            Application.Quit(File.Exists(capturePath) ? 0 : 2);
+
+            Application.Quit(exitCode);
+
+#if !UNITY_EDITOR
+            // Some Windows development players can leave the process alive after
+            // the screenshot is written. This hook is opt-in QA infrastructure,
+            // so force a deterministic exit if the normal quit request stalls.
+            yield return new WaitForSecondsRealtime(1f);
+            Environment.Exit(exitCode);
+#endif
         }
 
         private static string ReadArgument(string prefix)
