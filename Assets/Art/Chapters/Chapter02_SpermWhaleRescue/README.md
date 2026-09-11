@@ -1,23 +1,11 @@
-# Chapter 2 priority art keys
+# Chapter 2 technical asset slots
 
-## Backgrounds and CG
+This folder is a technical handoff area. Story meaning, composition, character identity, and final art direction belong to the student creators.
 
-- `C2_ENV_01_emergency_desk`
-- `C2_ENV_02_mudflat_morning`
-- `C2_ENV_03_mudflat_afternoon`
-- `C2_ENV_04_command_evening`
-- `C2_ENV_05_night_tow`
-- `C2_ENV_06_deep_water_radio`
-- `C2_ENV_07_release_dawn`
-- `C2_ENV_08_command_log`
-- `C2_CG_01_sperm_whale_info`
+## Runtime keys
 
-## Portraits
+- Backgrounds: `GB_C02_BG_01` through `GB_C02_BG_07`
+- Player portrait: `GB_C02_POR_PLAYER`
+- Supporting portraits: `GB_C02_POR_NPC_01`, `GB_C02_POR_NPC_02`
 
-- `C2_POR_00_player`
-- `C2_POR_01_commander`
-- `C2_POR_02_fisher`
-- `C2_POR_03_expert`
-- `C2_POR_04_tow_crew`
-
-Do not draw exaggerated blood, death, crowd pushing, water entering the blowhole, or a high-speed single-vessel tow as successful rescue imagery.
+Place final files in the matching `Backgrounds`, `Portraits`, `Characters`, `Props`, `CG`, or `UI` subfolder. The technical team may import, slice, compress, and connect files, but must not redraw or reinterpret the submitted work without creator approval.

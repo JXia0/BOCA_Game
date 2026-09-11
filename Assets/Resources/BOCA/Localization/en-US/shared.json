@@ -2,21 +2,9 @@
   "entries": [
     { "key": "shared.continue", "value": "Continue" },
     { "key": "shared.chapter_complete", "value": "Chapter complete" },
-    { "key": "shared.chapter_complete_body", "value": "This chapter is ready to return to the chapter menu when that screen is added." },
-    { "key": "shared.speaker.narrator", "value": "NARRATOR" },
-    { "key": "shared.speaker.system", "value": "SYSTEM" },
-    { "key": "shared.speaker.player", "value": "PLAYER" },
-    { "key": "shared.speaker.teacher", "value": "TEACHER" },
-    { "key": "shared.speaker.friend", "value": "FRIEND" },
-    { "key": "shared.speaker.seller", "value": "SELLER" },
-    { "key": "shared.speaker.buyer", "value": "BUYER" },
-    { "key": "shared.speaker.rescuer", "value": "RESCUE COORDINATOR" },
-    { "key": "shared.speaker.commander", "value": "FIELD COMMANDER" },
-    { "key": "shared.speaker.manager", "value": "PROJECT MANAGER" },
-    { "key": "shared.speaker.fisher", "value": "FISHER" },
-    { "key": "shared.speaker.caller", "value": "CALLER" },
-    { "key": "shared.speaker.expert", "value": "WHALE RESCUE EXPERT" },
-    { "key": "shared.speaker.scout_boat", "value": "SCOUT BOAT" },
-    { "key": "shared.speaker.tow_boat", "value": "TOW BOAT" }
+    { "key": "shared.chapter_complete_body", "value": "The technical greybox sequence completed. No narrative content is loaded." },
+    { "key": "shared.speaker.narrator", "value": "WRITER CONTENT SLOT" },
+    { "key": "shared.speaker.system", "value": "SYSTEM TEST" },
+    { "key": "shared.speaker.player", "value": "PLAYER INPUT TEST" }
   ]
 }

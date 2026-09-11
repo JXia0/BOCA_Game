@@ -1,10 +1,20 @@
-# Narrative source rules
+# Student-authored narrative boundary
 
-- Chapter 4 uses `BOCA 游戏剧本_玳瑁古筝义甲_修改版_v3.docx` as its locked narrative authority.
-- Chapter 1 still uses replaceable English staging text. Chapters 2 and 3 use the student revisions received on 2026-09-11, including full production flows and persistent choice consequences.
-- Runtime scenes reference localization keys, never final prose typed directly into Unity objects.
-- The `Flows` JSON files control sequence, branches, speaker keys, and art keys.
-- The `Localization` JSON files control player-facing language.
-- Production notes, legal review notes, and source URLs do not appear as protagonist knowledge unless the script explicitly makes them player-facing.
+The four Unity chapters currently contain technical greybox placeholders only. No final story, dialogue, factual claim, character interpretation, or dramatic direction is implemented in the runtime.
 
-Before release, legal and reporting-channel text must be checked again for the release date and region. The game must not present itself as legal advice.
+## Ownership rule
+
+- Student creators own the literary content and its revisions.
+- The technical team must not rewrite, expand, shorten, translate, or reinterpret submitted narrative text without explicit creator approval.
+- Source DOCX files are retained as author documents and are not automatically imported.
+- When a chapter script is approved, the technical team may copy the approved text verbatim into localization data and connect it to stable scene slots.
+- Any requested text correction must be returned to the creator for approval before implementation.
+
+## Technical files
+
+- `Assets/Resources/BOCA/Flows` controls sequence, branches, state flags, and asset slots.
+- `Assets/Resources/BOCA/Localization/en-US` currently contains visible greybox labels only.
+- `Assets/Resources/BOCA/Localization/zh-CN` remains reserved for later creator-approved localization.
+- Unity scenes contain reusable presentation objects and do not contain final prose.
+
+The placeholder IDs are technical contracts, not story instructions. Writers may change the number or function of scenes later; the technical team will adapt the flow only after receiving an approved content map.

@@ -1,21 +1,11 @@
-# Chapter 3 priority art keys
+# Chapter 3 technical asset slots
 
-## Backgrounds and CG
+This folder is a technical handoff area. Story meaning, composition, character identity, and final art direction belong to the student creators.
 
-- `C3_ENV_01_office_night`
-- `C3_ENV_02_public_shore_2025`
-- `C3_ENV_03_office_sources`
-- `C3_ENV_04_simulated_map`
-- `C3_ENV_05_evidence_wall`
-- `C3_ENV_06_internal_report`
-- `C3_ENV_07_public_update`
-- `C3_ENV_08_shore_2026`
-- `C3_CG_01_white_dolphin_underwater`
+## Runtime keys
 
-## Portraits
+- Backgrounds: `GB_C03_BG_01` through `GB_C03_BG_07`
+- Player portrait: `GB_C03_POR_PLAYER`
+- Supporting portraits: `GB_C03_POR_NPC_01`, `GB_C03_POR_NPC_02`
 
-- `C3_POR_00_player`
-- `C3_POR_01_manager`
-- `C3_POR_02_fisher`
-
-Every map, survey boundary, sighting point and coordinate must visibly read as gameplay simulation data. Do not depict a blast striking a dolphin, dolphin injury, blood, death, or stranding.
+Place final files in the matching `Backgrounds`, `Portraits`, `Characters`, `Props`, `CG`, or `UI` subfolder. The technical team may import, slice, compress, and connect files, but must not redraw or reinterpret the submitted work without creator approval.

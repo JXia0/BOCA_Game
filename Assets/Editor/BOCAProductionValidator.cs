@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using BOCA.Narrative;
 using UnityEditor;
 using UnityEditor.Build;
@@ -127,7 +128,64 @@ namespace BOCA.Editor
             }
 
             ValidateReachability(spec.chapterId, flow.startBeatId, beats, errors);
+            ValidateRouteCompletion(flow, "A", errors);
+            ValidateRouteCompletion(flow, "B", errors);
             ValidateScene(spec, flowAsset, errors);
+        }
+
+        private static void ValidateRouteCompletion(ChapterFlowFile flow, string route, List<string> errors)
+        {
+            try
+            {
+                var session = new NarrativeSession(flow);
+                var guard = (flow.beats?.Length ?? 0) * 3 + 1;
+                var usedNamedRoute = false;
+
+                for (var step = 0; step < guard && !session.IsComplete; step++)
+                {
+                    var beat = session.CurrentBeat;
+                    if (!string.IsNullOrWhiteSpace(beat.requiredFlag) && !session.Flags.Contains(beat.requiredFlag))
+                    {
+                        errors.Add($"{flow.chapterId} route {route} displayed conditional beat {beat.id} without flag {beat.requiredFlag}");
+                        return;
+                    }
+
+                    if (!NarrativeSession.HasChoices(beat))
+                    {
+                        session.Advance();
+                        continue;
+                    }
+
+                    var choiceIndex = 0;
+                    for (var i = 0; i < beat.choices.Length; i++)
+                    {
+                        if (!string.Equals(beat.choices[i].setRoute, route, StringComparison.OrdinalIgnoreCase))
+                        {
+                            continue;
+                        }
+
+                        choiceIndex = i;
+                        usedNamedRoute = true;
+                        break;
+                    }
+
+                    session.Choose(choiceIndex);
+                }
+
+                if (!session.IsComplete)
+                {
+                    errors.Add($"{flow.chapterId} route {route} did not reach chapter completion");
+                }
+
+                if (!usedNamedRoute)
+                {
+                    errors.Add($"{flow.chapterId} has no choice that selects route {route}");
+                }
+            }
+            catch (Exception exception)
+            {
+                errors.Add($"{flow.chapterId} route {route} failed during simulation: {exception.Message}");
+            }
         }
 
         private static void ValidateScene(ValidationSpec spec, TextAsset expectedFlow, List<string> errors)

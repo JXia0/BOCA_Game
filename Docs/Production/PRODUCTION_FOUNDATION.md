@@ -1,77 +1,56 @@
-# BOCA production foundation
+# BOCA technical production foundation
 
-## Current decision
+## Current scope
 
-BOCA is now a production Unity project, not a disposable sandbox. The game is an English-first pixel-art educational narrative with dialogue, scene illustrations, portraits, key CGs, hotspots, and short consequence-bearing choices. It does not use combat, platforming, reaction challenges, physics puzzles, or complex resource management.
+BOCA is an English-first Unity 6000.5.3f1 project with a shared pixel-game presentation framework. The current milestone is technical greyboxing only. Literary writing and visual authorship remain with the student creators.
 
-The title screen and settings screen are deliberately not part of this milestone. Language selection is already supported by the runtime so a future Settings control can switch between English and Simplified Chinese without duplicating scenes.
+The title screen and settings screen are not part of this milestone. Runtime language selection remains available so a later Settings screen can switch between English and Simplified Chinese without duplicating chapter scenes.
 
-## Scene status
+## Chapter status
 
-| Scene | Current status | Narrative authority |
+| Unity scene | Technical status | Creative content |
 | --- | --- | --- |
-| `Chapter01_OilTide` | Production hierarchy and replaceable English staging flow | Student revision still expected |
-| `Chapter02_SpermWhaleRescue` | Student revision implemented as a 71-beat English production flow | Student revision received 2026-09-11 |
-| `Chapter03_ReefWarning` | Student revision implemented as a 73-beat English production flow | Student revision received 2026-09-11 |
-| `Chapter04_HawksbillGuzheng` | Production hierarchy and implemented English flow with Route A and Route B | Locked v3 DOCX |
+| `Chapter01_OilTide` | Seven scene slots, portrait test, A/B branch, merge, state check, completion | Not loaded |
+| `Chapter02_SpermWhaleRescue` | Seven scene slots, portrait test, A/B branch, merge, state check, completion | Not loaded |
+| `Chapter03_ReefWarning` | Seven scene slots, portrait test, A/B branch, merge, state check, completion | Not loaded |
+| `Chapter04_HawksbillGuzheng` | Seven scene slots, portrait test, A/B branch, merge, state check, completion | Not loaded |
 
-The older `SampleScene` and `Chapter1PlayablePrototype` remain as a historical horizontal slice. The prototype now runs only inside `SampleScene` and cannot appear over the production chapters.
+The scene filenames are stable project identifiers. They do not mean the technical team has authority to edit the corresponding story.
 
 ## Runtime structure
 
-- `LocalizationService` owns the selected language and saves it in `PlayerPrefs` under `boca.settings.language`.
-- `ChapterFlowFile` stores stable beat IDs, branches, art keys, and localization keys.
-- English text lives in `Assets/Resources/BOCA/Localization/en-US`.
-- Future Chinese files use the same filenames and keys in `Assets/Resources/BOCA/Localization/zh-CN`.
-- `NarrativeSession` advances beats, preserves the Chapter 4 route choice, and records choice flags so later audits can expose earlier mistakes.
+- `LocalizationService` owns the selected language and stores it in `PlayerPrefs` under `boca.settings.language`.
+- `ChapterFlowFile` stores stable beat IDs, branch links, flags, and art keys.
+- `NarrativeSession` advances beats and preserves route and flag state.
 - `ChapterSceneController` connects flow data, localization, art catalogs, and the scene view.
-- `ChapterView` owns the shared 16:9 scene area, lower dialogue panel, portrait, continue control, and up to three short choices.
-- `ArtCatalog` maps stable asset keys to imported sprites. The editor rebuild command scans the controlled art folders.
+- `ChapterView` owns the shared 16:9 background area, dialogue panel, portrait, continue control, and up to three choices.
+- `ArtCatalog` maps stable asset keys to imported sprites.
+- Missing art displays a labelled placeholder instead of failing silently.
 
-This separation is intentional: dialogue can change without rebuilding a scene, translation can change without editing flow, and artwork can be replaced without changing code.
+## Creator-approved integration process
 
-## Updating student dialogue
-
-When Chapters 1 to 3 are approved:
-
-1. Keep existing scene and beat IDs whenever the dramatic function is unchanged.
-2. Replace English values in the chapter localization JSON.
-3. Add or remove beats only when staging or branching actually changes.
-4. Run `BOCA > Production > Rebuild All Chapter Scenes` only if the shared scene hierarchy or serialized references intentionally change. This command replaces all four generated scene files and asks for confirmation in the editor.
-5. Run `BOCA > Production > Validate Production Foundation` before committing.
-
-Do not paste final dialogue directly into scene objects. That would break localization and make student revisions expensive.
-
-## Language plan
-
-The game currently defaults to English. Missing Chinese entries fall back to English rather than displaying blank text. Later, the title-screen Settings UI should call one of these methods:
-
-```csharp
-LocalizationService.SetLanguage(GameLanguage.English);
-LocalizationService.SetLanguage(GameLanguage.ChineseSimplified);
-```
-
-Every active chapter view listens for the language-changed event and redraws the current line immediately.
+1. Receive an approved script and a creator-supplied content map.
+2. Record each line exactly as supplied; do not rewrite it during import.
+3. Map the supplied lines to stable beat IDs or add technical beats when requested.
+4. Connect creator-supplied art keys without changing the artwork.
+5. Return a playable build to the creator for content approval.
+6. Apply only approved corrections, then run the automated validator and route checks.
 
 ## Quality gates
 
-Before a production commit is accepted:
-
-- all four chapter scenes open without compile errors;
-- every flow starts at a valid beat and every branch target exists;
-- every player-facing key has English text;
+- all four chapter scenes open without compiler errors;
+- both branches in every greybox reach the merge and completion states;
+- branch flags persist and display the correct state-check slot;
+- all referenced localization keys and branch targets exist;
 - no screen presents more than three choices;
-- art keys are unique;
-- unavailable Chinese text falls back to English;
-- missing art shows a labelled staging placeholder instead of a null reference;
-- Chapter 4 Route A and Route B preserve different evidence boundaries;
-- fictional marketplace and privacy rules remain visible in implementation;
-- the Unity project is validated in version 6000.5.3f1.
+- missing images display labelled placeholders;
+- unavailable Chinese text falls back safely to English;
+- runtime JSON contains no unapproved creative prose;
+- the project validates in Unity 6000.5.3f1.
 
-## Next production priorities
+## Next technical priorities
 
-1. Replace the staging UI blocks with the first approved shared pixel UI sample.
-2. Integrate Chapter 4 P0 backgrounds, portraits, and the hawksbill information CG.
-3. Review the final Chapter 1 student revision, then update localization text and any affected branches.
-4. Add save progress, chapter selection, title screen, settings, and language controls after the four chapter loops are stable.
-5. Complete an accessibility pass for font size, contrast, keyboard navigation, reduced motion, and text speed.
+1. Test all four greyboxes at the target aspect ratios.
+2. Add chapter selection, save progress, title screen, settings, and language controls after the chapter loops are stable.
+3. Prepare a non-destructive import checklist for creator-approved scripts and art.
+4. Complete keyboard navigation, text-size, contrast, reduced-motion, and text-speed accessibility passes.

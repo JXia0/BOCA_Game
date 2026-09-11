@@ -2,128 +2,27 @@
   "chapterId": "chapter-02",
   "localizationTable": "chapter-02",
   "titleKey": "ch02.title",
-  "startBeatId": "ch02.intake.01",
+  "startBeatId": "ch02.gb.01",
   "beats": [
-    { "id": "ch02.intake.01", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.intake.01", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "", "nextBeatId": "ch02.intake.02" },
-    { "id": "ch02.intake.02", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.caller", "textKey": "ch02.intake.02", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "C2_POR_02_fisher", "nextBeatId": "ch02.intake.03" },
-    { "id": "ch02.intake.03", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.player", "textKey": "ch02.intake.03", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "C2_POR_00_player", "nextBeatId": "ch02.intake.04" },
-    { "id": "ch02.intake.04", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.caller", "textKey": "ch02.intake.04", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "C2_POR_02_fisher", "nextBeatId": "ch02.intake.05" },
-    { "id": "ch02.intake.05", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.system", "textKey": "ch02.intake.05", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "", "nextBeatId": "ch02.intake.choice" },
+    { "id": "ch02.gb.01", "sceneLabelKey": "ch02.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.01", "backgroundKey": "GB_C02_BG_01", "portraitKey": "", "nextBeatId": "ch02.gb.02" },
+    { "id": "ch02.gb.02", "sceneLabelKey": "ch02.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.02", "backgroundKey": "GB_C02_BG_02", "portraitKey": "GB_C02_POR_NPC_01", "nextBeatId": "ch02.gb.choice" },
     {
-      "id": "ch02.intake.choice", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.player", "textKey": "ch02.intake.choice", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "C2_POR_00_player",
+      "id": "ch02.gb.choice",
+      "sceneLabelKey": "ch02.scene.03",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch02.gb.choice",
+      "backgroundKey": "GB_C02_BG_03",
+      "portraitKey": "GB_C02_POR_PLAYER",
       "choices": [
-        { "id": "overclaim", "labelKey": "ch02.choice.intake_overclaim", "nextBeatId": "ch02.intake.overclaim", "setFlag": "ch02.flag.intake_overclaim" },
-        { "id": "bounded", "labelKey": "ch02.choice.intake_bounded", "nextBeatId": "ch02.intake.bounded" }
+        { "id": "route_a", "labelKey": "ch02.choice.route_a", "nextBeatId": "ch02.gb.branch_a", "setRoute": "A", "setFlag": "ch02.gb.flag.route_a" },
+        { "id": "route_b", "labelKey": "ch02.choice.route_b", "nextBeatId": "ch02.gb.branch_b", "setRoute": "B", "setFlag": "ch02.gb.flag.route_b" }
       ]
     },
-    { "id": "ch02.intake.overclaim", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.system", "textKey": "ch02.intake.overclaim", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "", "nextBeatId": "ch02.intake.dispatch" },
-    { "id": "ch02.intake.bounded", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.system", "textKey": "ch02.intake.bounded", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "", "nextBeatId": "ch02.intake.dispatch" },
-    { "id": "ch02.intake.dispatch", "sceneLabelKey": "ch02.scene.intake", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.intake.dispatch", "backgroundKey": "C2_ENV_01_emergency_desk", "portraitKey": "", "nextBeatId": "ch02.perimeter.01" },
-
-    { "id": "ch02.perimeter.01", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.perimeter.01", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "", "nextBeatId": "ch02.perimeter.02" },
-    { "id": "ch02.perimeter.02", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.commander", "textKey": "ch02.perimeter.02", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "C2_POR_01_commander", "nextBeatId": "ch02.perimeter.03" },
-    { "id": "ch02.perimeter.03", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.system", "textKey": "ch02.perimeter.03", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "", "nextBeatId": "ch02.perimeter.choice" },
-    {
-      "id": "ch02.perimeter.choice", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.player", "textKey": "ch02.perimeter.choice", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "push", "labelKey": "ch02.choice.perimeter_push", "nextBeatId": "ch02.perimeter.unsafe", "setFlag": "ch02.flag.unsafe_crowd" },
-        { "id": "secure", "labelKey": "ch02.choice.perimeter_secure", "nextBeatId": "ch02.perimeter.safe" }
-      ]
-    },
-    { "id": "ch02.perimeter.unsafe", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.system", "textKey": "ch02.perimeter.unsafe", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "", "nextBeatId": "ch02.perimeter.fisher" },
-    { "id": "ch02.perimeter.safe", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.system", "textKey": "ch02.perimeter.safe", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "", "nextBeatId": "ch02.perimeter.fisher" },
-    { "id": "ch02.perimeter.fisher", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.fisher", "textKey": "ch02.perimeter.fisher", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "C2_POR_02_fisher", "nextBeatId": "ch02.perimeter.player" },
-    { "id": "ch02.perimeter.player", "sceneLabelKey": "ch02.scene.perimeter", "speakerKey": "shared.speaker.player", "textKey": "ch02.perimeter.player", "backgroundKey": "C2_ENV_02_mudflat_morning", "portraitKey": "C2_POR_00_player", "nextBeatId": "ch02.support.01" },
-
-    { "id": "ch02.support.01", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.support.01", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "", "nextBeatId": "ch02.support.02" },
-    { "id": "ch02.support.02", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.system", "textKey": "ch02.support.02", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "", "nextBeatId": "ch02.support.03" },
-    { "id": "ch02.support.03", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.expert", "textKey": "ch02.support.03", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "C2_POR_03_expert", "nextBeatId": "ch02.support.04" },
-    { "id": "ch02.support.04", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.system", "textKey": "ch02.support.04", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "", "nextBeatId": "ch02.support.choice" },
-    {
-      "id": "ch02.support.choice", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.player", "textKey": "ch02.support.choice", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "diagnose", "labelKey": "ch02.choice.support_diagnose", "nextBeatId": "ch02.support.overreach", "setFlag": "ch02.flag.medical_overreach" },
-        { "id": "record", "labelKey": "ch02.choice.support_record", "nextBeatId": "ch02.support.evidence" }
-      ]
-    },
-    { "id": "ch02.support.overreach", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.system", "textKey": "ch02.support.overreach", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "", "nextBeatId": "ch02.prepare.01" },
-    { "id": "ch02.support.evidence", "sceneLabelKey": "ch02.scene.support", "speakerKey": "shared.speaker.system", "textKey": "ch02.support.evidence", "backgroundKey": "C2_ENV_03_mudflat_afternoon", "portraitKey": "", "nextBeatId": "ch02.prepare.01" },
-
-    { "id": "ch02.prepare.01", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.prepare.01", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.prepare.02" },
-    { "id": "ch02.prepare.02", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.system", "textKey": "ch02.prepare.02", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.prepare.03" },
-    { "id": "ch02.prepare.03", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.system", "textKey": "ch02.prepare.03", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.prepare.choice" },
-    {
-      "id": "ch02.prepare.choice", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.player", "textKey": "ch02.prepare.choice", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "force", "labelKey": "ch02.choice.prepare_force", "nextBeatId": "ch02.prepare.force", "setFlag": "ch02.flag.tow_force" },
-        { "id": "coordinate", "labelKey": "ch02.choice.prepare_coordinate", "nextBeatId": "ch02.prepare.coordinated" },
-        { "id": "idle", "labelKey": "ch02.choice.prepare_idle", "nextBeatId": "ch02.prepare.idle", "setFlag": "ch02.flag.unprepared_wait" }
-      ]
-    },
-    { "id": "ch02.prepare.force", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.system", "textKey": "ch02.prepare.force", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.tow.01" },
-    { "id": "ch02.prepare.coordinated", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.system", "textKey": "ch02.prepare.coordinated", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.tow.01" },
-    { "id": "ch02.prepare.idle", "sceneLabelKey": "ch02.scene.prepare", "speakerKey": "shared.speaker.system", "textKey": "ch02.prepare.idle", "backgroundKey": "C2_ENV_04_command_evening", "portraitKey": "", "nextBeatId": "ch02.tow.01" },
-
-    { "id": "ch02.tow.01", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.tow.01", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "", "nextBeatId": "ch02.tow.02" },
-    { "id": "ch02.tow.02", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.system", "textKey": "ch02.tow.02", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "", "nextBeatId": "ch02.tow.03" },
-    { "id": "ch02.tow.03", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.tow_boat", "textKey": "ch02.tow.03", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "C2_POR_04_tow_crew", "nextBeatId": "ch02.tow.04" },
-    { "id": "ch02.tow.04", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.expert", "textKey": "ch02.tow.04", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "C2_POR_03_expert", "nextBeatId": "ch02.tow.choice" },
-    {
-      "id": "ch02.tow.choice", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.player", "textKey": "ch02.tow.choice", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "rush", "labelKey": "ch02.choice.tow_rush", "nextBeatId": "ch02.tow.rush", "setFlag": "ch02.flag.ignored_expert" },
-        { "id": "pause", "labelKey": "ch02.choice.tow_pause", "nextBeatId": "ch02.tow.pause" }
-      ]
-    },
-    { "id": "ch02.tow.rush", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.system", "textKey": "ch02.tow.rush", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "", "nextBeatId": "ch02.radio.01" },
-    { "id": "ch02.tow.pause", "sceneLabelKey": "ch02.scene.tow", "speakerKey": "shared.speaker.system", "textKey": "ch02.tow.pause", "backgroundKey": "C2_ENV_05_night_tow", "portraitKey": "", "nextBeatId": "ch02.radio.01" },
-
-    { "id": "ch02.radio.01", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.radio.01", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "", "nextBeatId": "ch02.radio.02" },
-    { "id": "ch02.radio.02", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.scout_boat", "textKey": "ch02.radio.02", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "C2_POR_04_tow_crew", "nextBeatId": "ch02.radio.03" },
-    { "id": "ch02.radio.03", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.player", "textKey": "ch02.radio.03", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "C2_POR_00_player", "nextBeatId": "ch02.radio.04" },
-    { "id": "ch02.radio.04", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.system", "textKey": "ch02.radio.04", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "", "nextBeatId": "ch02.radio.choice" },
-    {
-      "id": "ch02.radio.choice", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.player", "textKey": "ch02.radio.choice", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "stale", "labelKey": "ch02.choice.radio_stale", "nextBeatId": "ch02.radio.stale", "setFlag": "ch02.flag.stale_coordinate" },
-        { "id": "unknown", "labelKey": "ch02.choice.radio_unknown", "nextBeatId": "ch02.radio.unknown" }
-      ]
-    },
-    { "id": "ch02.radio.stale", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.system", "textKey": "ch02.radio.stale", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "", "nextBeatId": "ch02.radio.lesson" },
-    { "id": "ch02.radio.unknown", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.system", "textKey": "ch02.radio.unknown", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "", "nextBeatId": "ch02.radio.lesson" },
-    { "id": "ch02.radio.lesson", "sceneLabelKey": "ch02.scene.radio", "speakerKey": "shared.speaker.system", "textKey": "ch02.radio.lesson", "backgroundKey": "C2_ENV_06_deep_water_radio", "portraitKey": "", "nextBeatId": "ch02.release.01" },
-
-    { "id": "ch02.release.01", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.release.01", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.02" },
-    { "id": "ch02.release.02", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.release.02", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.03" },
-    { "id": "ch02.release.03", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.expert", "textKey": "ch02.release.03", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "C2_POR_03_expert", "nextBeatId": "ch02.release.04" },
-    { "id": "ch02.release.04", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.system", "textKey": "ch02.release.04", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.05" },
-    { "id": "ch02.release.05", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.release.05", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.choice" },
-    {
-      "id": "ch02.release.choice", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.player", "textKey": "ch02.release.choice", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "C2_POR_00_player",
-      "choices": [
-        { "id": "recovered", "labelKey": "ch02.choice.release_recovered", "nextBeatId": "ch02.release.overclaim", "setFlag": "ch02.flag.overstate_recovery" },
-        { "id": "observed", "labelKey": "ch02.choice.release_observed", "nextBeatId": "ch02.release.bounded" }
-      ]
-    },
-    { "id": "ch02.release.overclaim", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.system", "textKey": "ch02.release.overclaim", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.conclusion" },
-    { "id": "ch02.release.bounded", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.system", "textKey": "ch02.release.bounded", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.release.conclusion" },
-    { "id": "ch02.release.conclusion", "sceneLabelKey": "ch02.scene.release", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.release.conclusion", "backgroundKey": "C2_ENV_07_release_dawn", "portraitKey": "", "nextBeatId": "ch02.log.01" },
-
-    { "id": "ch02.log.01", "sceneLabelKey": "ch02.scene.log", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.log.01", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.log.02" },
-    { "id": "ch02.log.02", "sceneLabelKey": "ch02.scene.log", "speakerKey": "shared.speaker.commander", "textKey": "ch02.log.02", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "C2_POR_01_commander", "nextBeatId": "ch02.log.03" },
-    { "id": "ch02.log.03", "sceneLabelKey": "ch02.scene.log", "speakerKey": "shared.speaker.player", "textKey": "ch02.log.03", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "C2_POR_00_player", "nextBeatId": "ch02.audit.intake" },
-    { "id": "ch02.audit.intake", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.intake", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.crowd", "requiredFlag": "ch02.flag.intake_overclaim" },
-    { "id": "ch02.audit.crowd", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.crowd", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.medical", "requiredFlag": "ch02.flag.unsafe_crowd" },
-    { "id": "ch02.audit.medical", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.medical", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.force", "requiredFlag": "ch02.flag.medical_overreach" },
-    { "id": "ch02.audit.force", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.force", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.wait", "requiredFlag": "ch02.flag.tow_force" },
-    { "id": "ch02.audit.wait", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.wait", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.expert", "requiredFlag": "ch02.flag.unprepared_wait" },
-    { "id": "ch02.audit.expert", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.expert", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.coordinate", "requiredFlag": "ch02.flag.ignored_expert" },
-    { "id": "ch02.audit.coordinate", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.coordinate", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.audit.recovery", "requiredFlag": "ch02.flag.stale_coordinate" },
-    { "id": "ch02.audit.recovery", "sceneLabelKey": "ch02.scene.audit", "speakerKey": "shared.speaker.system", "textKey": "ch02.audit.recovery", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.log.04", "requiredFlag": "ch02.flag.overstate_recovery" },
-    { "id": "ch02.log.04", "sceneLabelKey": "ch02.scene.log", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.log.04", "backgroundKey": "C2_ENV_08_command_log", "portraitKey": "", "nextBeatId": "ch02.info.01" },
-    { "id": "ch02.info.01", "sceneLabelKey": "ch02.scene.info", "speakerKey": "shared.speaker.system", "textKey": "ch02.info.01", "backgroundKey": "C2_CG_01_sperm_whale_info", "portraitKey": "", "nextBeatId": "ch02.info.02" },
-    { "id": "ch02.info.02", "sceneLabelKey": "ch02.scene.info", "speakerKey": "shared.speaker.system", "textKey": "ch02.info.02", "backgroundKey": "C2_CG_01_sperm_whale_info", "portraitKey": "", "nextBeatId": "ch02.info.03" },
-    { "id": "ch02.info.03", "sceneLabelKey": "ch02.scene.info", "speakerKey": "shared.speaker.system", "textKey": "ch02.info.03", "backgroundKey": "C2_CG_01_sperm_whale_info", "portraitKey": "", "nextBeatId": "ch02.end" },
-    { "id": "ch02.end", "sceneLabelKey": "ch02.scene.info", "speakerKey": "shared.speaker.system", "textKey": "ch02.end", "backgroundKey": "C2_CG_01_sperm_whale_info", "portraitKey": "", "nextBeatId": "" }
+    { "id": "ch02.gb.branch_a", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_a", "backgroundKey": "GB_C02_BG_04", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
+    { "id": "ch02.gb.branch_b", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_b", "backgroundKey": "GB_C02_BG_04", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
+    { "id": "ch02.gb.merge", "sceneLabelKey": "ch02.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.merge", "backgroundKey": "GB_C02_BG_05", "portraitKey": "GB_C02_POR_NPC_02", "nextBeatId": "ch02.gb.check_a" },
+    { "id": "ch02.gb.check_a", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_a", "backgroundKey": "GB_C02_BG_06", "portraitKey": "", "nextBeatId": "ch02.gb.check_b", "requiredFlag": "ch02.gb.flag.route_a" },
+    { "id": "ch02.gb.check_b", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_b", "backgroundKey": "GB_C02_BG_06", "portraitKey": "", "nextBeatId": "ch02.gb.end", "requiredFlag": "ch02.gb.flag.route_b" },
+    { "id": "ch02.gb.end", "sceneLabelKey": "ch02.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.end", "backgroundKey": "GB_C02_BG_07", "portraitKey": "", "nextBeatId": "" }
   ]
 }
