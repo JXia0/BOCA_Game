@@ -81,4 +81,25 @@ Provide one exact Background or CG stable key for each `GB_C03_BG_*` slot, the s
 
 ## Chapter 4 — Hawksbill Guzheng
 
-Pending chapter-by-chapter review.
+**Status: blocked on creator mapping, at least one missing/reuse decision, and all portrait assets. No Chapter 4 flow key has been changed.**
+
+The chapter catalog contains six production sprites: four backgrounds and two event CGs. The current greybox requires seven background slots, one player portrait slot, and two supporting portrait slots. No Character or Portrait asset exists.
+
+| Greybox key | Production binding | Status | Evidence and required decision |
+| --- | --- | --- | --- |
+| `GB_C04_BG_01` … `GB_C04_BG_07` | none | missing / ambiguous | Six semantically different visual assets are available for seven slots. The repository contains no approved Chapter 4 script or shot list, and no instruction identifies a missing seventh image or approves reusing a named stable key. The two CGs are event-specific compositions, not interchangeable room backgrounds. |
+| `GB_C04_POR_NPC_01` | none | missing | No NPC Portrait asset exists. |
+| `GB_C04_POR_PLAYER` | none | missing | No Player Portrait asset exists. |
+| `GB_C04_POR_NPC_02` | none | missing | No NPC Portrait asset exists. |
+
+The six visual sources range from 136 × 76 to 228 × 128 and are close to 16:9 without being identical. The shared fitter centres each source in the common 16:9 area and chooses the largest whole-number enlargement that fits. It does not stretch each image to a different aspect ratio.
+
+Visual inspection confirms that `C04_CG_INVESTIGATION_MONTAGE` is a three-panel investigation sequence and `C04_CG_PACKING_ROOM_POLICE_ARRIVAL` is a specific event composition. They will be connected only to creator-approved beats, not used as anonymous filler backgrounds.
+
+### Creator handoff needed
+
+Provide one exact Background or CG stable key for every `GB_C04_BG_*` slot, including an explicit decision for the seventh slot (new asset or approved reuse). Supply a Player portrait and two NPC portrait keys, or explicitly approve named alternatives designed for the portrait frame.
+
+## Overall integration boundary
+
+The shared Unity presentation and exact-key validation work is complete. Actual production-art wiring remains intentionally unchanged because all four chapters lack the creator-supplied slot map required by the project handoff contract. Chapter 1 also lacks all seven backgrounds; Chapters 2 and 3 lack NPC portraits; Chapter 4 lacks all portraits and one background/reuse decision. Once those exact mappings and missing assets are supplied, the flow keys can be replaced without changing narrative text, branch structure, or source image bytes.
