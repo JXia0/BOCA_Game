@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392f04b6f2df3f7479ef937872f84e37, type: 3}
   m_Name: Chapter04ArtCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BOCA.Art.ArtCatalog
-  entries: []
+  entries:
+  - key: C04_BG_CONCERT_STAGE_NIGHT
+    sprite: {fileID: 21300000, guid: e6615bf527e0ec14ba4416452a63af75, type: 3}
+  - key: C04_BG_PLAYER_BEDROOM_DAY
+    sprite: {fileID: 21300000, guid: b445f1aaed67c33408c28eac6d11ed82, type: 3}
+  - key: C04_BG_PLAYER_BEDROOM_NIGHT
+    sprite: {fileID: 21300000, guid: d15933cd3b7be094db442b73d30c2d38, type: 3}
+  - key: C04_BG_SELLER_PACKING_ROOM
+    sprite: {fileID: 21300000, guid: ba6dd8ddedabc7842970f18ed1f961ce, type: 3}
+  - key: C04_CG_INVESTIGATION_MONTAGE
+    sprite: {fileID: 21300000, guid: 8ce66cee31164a446be91b8a55b839f2, type: 3}
+  - key: C04_CG_PACKING_ROOM_POLICE_ARRIVAL
+    sprite: {fileID: 21300000, guid: 0f4a17f11649c5942baa4054453e8cef, type: 3}
