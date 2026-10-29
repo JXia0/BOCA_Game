@@ -58,7 +58,26 @@ Provide one exact stable background key for every `GB_C02_BG_*` slot, the select
 
 ## Chapter 3 — Reef Warning
 
-Pending chapter-by-chapter review. `Characters/PlayerFullbody` remains concept art and is excluded from automatic production-player binding.
+**Status: blocked on creator mapping, missing NPC portraits, and undefined character/UI placement. No Chapter 3 flow key has been changed.**
+
+The chapter catalog contains 37 production sprites: 9 backgrounds, 6 CGs, 3 Penguin character states, 9 production Player character sprites, 5 PlayerFullbody concept images, 4 player portraits, and 1 Penguin status UI image. The current greybox requires seven background slots, one player portrait slot, and two supporting portrait slots. It has no independent scene-character or UI-overlay presentation field.
+
+| Greybox key | Production binding | Status | Evidence and required decision |
+| --- | --- | --- | --- |
+| `GB_C03_BG_01` … `GB_C03_BG_07` | none | ambiguous | Fifteen semantically different Background and CG images are available for seven slots. No approved shot list defines which seven images are used or their order. |
+| `GB_C03_POR_NPC_01` | none | missing | No NPC Portrait asset exists. Penguin states are full scene-character images, not dialogue portraits. |
+| `GB_C03_POR_PLAYER` | none | ambiguous | Four exact player portrait keys exist (`NEUTRAL`, `POUT`, `TALK_01_CONFUSED`, `TALK_02_SURPRISED`), but no approved beat-to-expression map selects one. |
+| `GB_C03_POR_NPC_02` | none | missing | No NPC Portrait asset exists. |
+
+The correct production player set is `Characters/Player`: nine 50 × 50 RGBA sprites. `Characters/PlayerFullbody` contains five incompatible 2048 × 2048 concept images. `BOCAProductionValidator` now rejects any Chapter 3 beat whose background or portrait key starts with `C03_CHAR_PLAYER_FULLBODY_`; the concept images remain safely available in the catalog for reference.
+
+The three Penguin states are 1728 × 2304, and the Penguin status UI is 2064 × 1136. The current flow and view have no independent character/UI key, placement, or draw-order contract. They will not be flattened into a background or substituted into a portrait slot without creator direction.
+
+Background and CG sources range from 2048 × 1152 to 2720 × 1536. The shared fitter reduces them proportionally inside the common 16:9 area and leaves unused space as chapter fallback colour; it does not resample the source files.
+
+### Creator handoff needed
+
+Provide one exact Background or CG stable key for each `GB_C03_BG_*` slot, the selected player expression, and two NPC portrait keys. For each Penguin state, production Player character sprite, or UI image intended to appear independently, provide its beat ID plus approved anchor, scale, and draw order. `PlayerFullbody` keys are not accepted as production player bindings.
 
 ## Chapter 4 — Hawksbill Guzheng
 

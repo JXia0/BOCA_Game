@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BOCA.Art;
 using BOCA.Narrative;
 using UnityEditor;
 using UnityEditor.Build;
@@ -13,10 +14,10 @@ namespace BOCA.Editor
     {
         private static readonly ValidationSpec[] Chapters =
         {
-            new ValidationSpec("chapter-01", "Assets/Resources/BOCA/Flows/chapter-01.json", "Assets/Scenes/Chapters/Chapter01_OilTide.unity"),
-            new ValidationSpec("chapter-02", "Assets/Resources/BOCA/Flows/chapter-02.json", "Assets/Scenes/Chapters/Chapter02_SpermWhaleRescue.unity"),
-            new ValidationSpec("chapter-03", "Assets/Resources/BOCA/Flows/chapter-03.json", "Assets/Scenes/Chapters/Chapter03_ReefWarning.unity"),
-            new ValidationSpec("chapter-04", "Assets/Resources/BOCA/Flows/chapter-04.json", "Assets/Scenes/Chapters/Chapter04_HawksbillGuzheng.unity")
+            new ValidationSpec(1, "chapter-01", "Assets/Resources/BOCA/Flows/chapter-01.json", "Assets/Scenes/Chapters/Chapter01_OilTide.unity"),
+            new ValidationSpec(2, "chapter-02", "Assets/Resources/BOCA/Flows/chapter-02.json", "Assets/Scenes/Chapters/Chapter02_SpermWhaleRescue.unity"),
+            new ValidationSpec(3, "chapter-03", "Assets/Resources/BOCA/Flows/chapter-03.json", "Assets/Scenes/Chapters/Chapter03_ReefWarning.unity"),
+            new ValidationSpec(4, "chapter-04", "Assets/Resources/BOCA/Flows/chapter-04.json", "Assets/Scenes/Chapters/Chapter04_HawksbillGuzheng.unity")
         };
 
         [MenuItem("BOCA/Production/Validate Production Foundation")]
@@ -24,10 +25,11 @@ namespace BOCA.Editor
         {
             var errors = new List<string>();
             var sharedKeys = LoadLocalizationKeys("shared", errors);
+            var sharedArtCatalog = AssetDatabase.LoadAssetAtPath<ArtCatalog>(BOCAArtCatalogBuilder.SharedCatalogPath);
 
             foreach (var spec in Chapters)
             {
-                ValidateChapter(spec, sharedKeys, errors);
+                ValidateChapter(spec, sharedKeys, sharedArtCatalog, errors);
             }
 
             if (errors.Count > 0)
@@ -43,7 +45,8 @@ namespace BOCA.Editor
             Debug.Log($"BOCA_PRODUCTION_VALIDATION_PASS: chapters={Chapters.Length}");
         }
 
-        private static void ValidateChapter(ValidationSpec spec, HashSet<string> sharedKeys, List<string> errors)
+        private static void ValidateChapter(ValidationSpec spec, HashSet<string> sharedKeys,
+            ArtCatalog sharedArtCatalog, List<string> errors)
         {
             var flowAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(spec.flowPath);
             if (flowAsset == null)
@@ -60,6 +63,7 @@ namespace BOCA.Editor
             }
 
             var chapterKeys = LoadLocalizationKeys(flow.localizationTable, errors);
+            var chapterArtCatalog = BOCAArtCatalogBuilder.LoadChapterCatalog(spec.chapterNumber);
             var beats = new Dictionary<string, NarrativeBeatFile>(StringComparer.Ordinal);
             var setFlags = new HashSet<string>(StringComparer.Ordinal);
             if (flow.beats == null || flow.beats.Length == 0)
@@ -84,6 +88,10 @@ namespace BOCA.Editor
                 ValidateKey(spec.chapterId, beat.sceneLabelKey, chapterKeys, sharedKeys, errors);
                 ValidateKey(spec.chapterId, beat.speakerKey, chapterKeys, sharedKeys, errors);
                 ValidateKey(spec.chapterId, beat.textKey, chapterKeys, sharedKeys, errors);
+                ValidateArtKey(spec, beat.id, "background", beat.backgroundKey, chapterArtCatalog,
+                    sharedArtCatalog, errors);
+                ValidateArtKey(spec, beat.id, "portrait", beat.portraitKey, chapterArtCatalog,
+                    sharedArtCatalog, errors);
 
                 if (beat.choices != null && beat.choices.Length > 3)
                 {
@@ -265,6 +273,37 @@ namespace BOCA.Editor
             }
         }
 
+        private static void ValidateArtKey(ValidationSpec spec, string beatId, string slot, string key,
+            ArtCatalog chapterCatalog, ArtCatalog sharedCatalog, List<string> errors)
+        {
+            if (string.IsNullOrWhiteSpace(key) || key.StartsWith("GB_", StringComparison.Ordinal))
+            {
+                return;
+            }
+
+            if (spec.chapterNumber == 3 &&
+                key.StartsWith("C03_CHAR_PLAYER_FULLBODY_", StringComparison.Ordinal))
+            {
+                errors.Add($"{beatId} {slot} key {key} references Chapter 3 concept art; use Characters/Player production pixel art instead");
+                return;
+            }
+
+            var expectedPrefix = $"C{spec.chapterNumber:00}_";
+            if (key.StartsWith("C0", StringComparison.Ordinal) &&
+                !key.StartsWith(expectedPrefix, StringComparison.Ordinal))
+            {
+                errors.Add($"{beatId} {slot} key {key} does not belong to {spec.chapterId}");
+                return;
+            }
+
+            var sprite = chapterCatalog == null ? null : chapterCatalog.Resolve(key);
+            sprite ??= sharedCatalog == null ? null : sharedCatalog.Resolve(key);
+            if (sprite == null)
+            {
+                errors.Add($"{beatId} {slot} references missing exact art key {key}");
+            }
+        }
+
         private static void ValidateLink(string chapterId, string source, string target,
             Dictionary<string, NarrativeBeatFile> beats, List<string> errors)
         {
@@ -345,12 +384,14 @@ namespace BOCA.Editor
 
         private readonly struct ValidationSpec
         {
+            public readonly int chapterNumber;
             public readonly string chapterId;
             public readonly string flowPath;
             public readonly string scenePath;
 
-            public ValidationSpec(string chapterId, string flowPath, string scenePath)
+            public ValidationSpec(int chapterNumber, string chapterId, string flowPath, string scenePath)
             {
+                this.chapterNumber = chapterNumber;
                 this.chapterId = chapterId;
                 this.flowPath = flowPath;
                 this.scenePath = scenePath;
