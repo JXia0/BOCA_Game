@@ -12,4 +12,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392f04b6f2df3f7479ef937872f84e37, type: 3}
   m_Name: Chapter02ArtCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BOCA.Art.ArtCatalog
-  entries: []
+  entries:
+  - key: C02_BG_BRAZIL_STREET
+    sprite: {fileID: 21300000, guid: 0eb89cd521638ff41acfbf0614736a6f, type: 3}
+  - key: C02_BG_COMMAND_VEHICLE_INTERIOR
+    sprite: {fileID: 21300000, guid: 6edab22ecda1edd4c96deaa0fe36f8ed, type: 3}
+  - key: C02_BG_DAWN_RELEASE
+    sprite: {fileID: 21300000, guid: c43c4577f51cdb44cab91dd0a31b67f1, type: 3}
+  - key: C02_BG_DEEP_WATER_ROUTE
+    sprite: {fileID: 21300000, guid: 0303604ce62231d4db20e2298560e773, type: 3}
+  - key: C02_BG_EMERGENCY_DESK
+    sprite: {fileID: 21300000, guid: a2b3dc5b6478d484aba9a0c6ccbf989d, type: 3}
+  - key: C02_BG_FUJIAN_FISHING_VILLAGE
+    sprite: {fileID: 21300000, guid: f1a18ba3e5c34494f9e08c7fdf81e937, type: 3}
+  - key: C02_BG_NIGHT_TOWING
+    sprite: {fileID: 21300000, guid: 6f30d728cd3a6a54dbc920a9eb461523, type: 3}
+  - key: C02_BG_OFFICE
+    sprite: {fileID: 21300000, guid: b122e28990e0b1540aa2793e3728743b, type: 3}
+  - key: C02_BG_ROOM_LIGHTS_OFF
+    sprite: {fileID: 21300000, guid: cad46d0f42b7cb34e80f2b0ea43bf3f4, type: 3}
+  - key: C02_BG_ROOM_LIGHTS_ON
+    sprite: {fileID: 21300000, guid: dea0569d00952bd4a9eb19b515723d6d, type: 3}
+  - key: C02_BG_SUNSET_SEA
+    sprite: {fileID: 21300000, guid: 238c20bab712fe148b9b1caea410f5fc, type: 3}
+  - key: C02_BG_UNDERSEA_ARCHIVE
+    sprite: {fileID: 21300000, guid: 3710b471b7283f545ab7bce54eb42806, type: 3}
+  - key: C02_BG_WHALE_MUDFLAT_FLOODED
+    sprite: {fileID: 21300000, guid: 3f254128358d9c44bb8913d9613c3be3, type: 3}
+  - key: C02_BG_WHALE_MUDFLAT_LOW_TIDE
+    sprite: {fileID: 21300000, guid: 5dad16273ea0d404db83007bc131f4ab, type: 3}
+  - key: C02_CHAR_FISHERMAN_IDLE_01
+    sprite: {fileID: 21300000, guid: 6e678ad9d195e0c4298fbcdf52d8c0ff, type: 3}
+  - key: C02_CHAR_FISHERMAN_IDLE_02
+    sprite: {fileID: 21300000, guid: da23e4c5fcddfcf41acb97f61dc193f8, type: 3}
+  - key: C02_CHAR_FISHERMAN_TALK
+    sprite: {fileID: 21300000, guid: 8aeaecc215d004e43bda6ab238872d54, type: 3}
+  - key: C02_CHAR_FISHERMAN_WALK_01
+    sprite: {fileID: 21300000, guid: d030406c369a1984a9963280cfd6b4a7, type: 3}
+  - key: C02_CHAR_FISHERMAN_WALK_02
+    sprite: {fileID: 21300000, guid: c98516f53d5b23c409192c3767c96ec7, type: 3}
+  - key: C02_POR_PLAYER_DETERMINED
+    sprite: {fileID: 21300000, guid: 428278e0887047844a64a2332191b021, type: 3}
+  - key: C02_POR_PLAYER_NEUTRAL
+    sprite: {fileID: 21300000, guid: 84c6bb0aff6af604392d6ac46f802ecf, type: 3}
+  - key: C02_POR_PLAYER_THINKING
+    sprite: {fileID: 21300000, guid: 4e3a815022f44a844b35a81082ef1e6a, type: 3}
+  - key: C02_POR_PLAYER_WORRIED
+    sprite: {fileID: 21300000, guid: 209ac17dd59acac419b832e86e529baf, type: 3}
+  - key: C02_PROP_BAMBOO_BASKET
+    sprite: {fileID: 21300000, guid: 42dacf9fa3f1c124a831467e69b5e50a, type: 3}
+  - key: C02_PROP_BUOYS
+    sprite: {fileID: 21300000, guid: afc200b675792a340aead00782b16158, type: 3}
+  - key: C02_PROP_CLIPBOARD
+    sprite: {fileID: 21300000, guid: 6025f18694919674b8e7d794eeca2c10, type: 3}
+  - key: C02_PROP_FILE_FOLDER
+    sprite: {fileID: 21300000, guid: 7e9aa6fffbd483048bbd6a179e7f65ce, type: 3}
+  - key: C02_PROP_FISHING_NET
+    sprite: {fileID: 21300000, guid: a4eb3d75eb36b5a4a94c04895c28ec5d, type: 3}
+  - key: C02_PROP_FISH_RACK
+    sprite: {fileID: 21300000, guid: 28e2cca6b86ff634fac6dc99b1b01a42, type: 3}
+  - key: C02_PROP_MUG
+    sprite: {fileID: 21300000, guid: 5f48b398d1e80384db6b098255aa173e, type: 3}
+  - key: C02_PROP_PRINTER
+    sprite: {fileID: 21300000, guid: 741002d59bd019e4ab4f1122fc13d057, type: 3}
+  - key: C02_PROP_SAMPAN
+    sprite: {fileID: 21300000, guid: 70106bc2b9ee3f441bd9158f2a795f35, type: 3}
+  - key: C02_PROP_WHITEBOARD
+    sprite: {fileID: 21300000, guid: 16933523c39fe6948a6f764d2c0f4692, type: 3}
