@@ -12,4 +12,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392f04b6f2df3f7479ef937872f84e37, type: 3}
   m_Name: Chapter03ArtCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BOCA.Art.ArtCatalog
-  entries: []
+  entries:
+  - key: C03_BG_BEACH_SURVEY
+    sprite: {fileID: 21300000, guid: f02a34fde0497a8459bcbc356ff636fd, type: 3}
+  - key: C03_BG_INVESTIGATION_DESK_INITIAL
+    sprite: {fileID: 21300000, guid: e1ae686d920700844911774863860207, type: 3}
+  - key: C03_BG_INVESTIGATION_DESK_MAP
+    sprite: {fileID: 21300000, guid: af258f2cc6ad5b24d9bc401b3511261d, type: 3}
+  - key: C03_BG_INVESTIGATION_DESK_REPORT
+    sprite: {fileID: 21300000, guid: 20cce3d2e1c1b054b816ccc74b5db57e, type: 3}
+  - key: C03_BG_INVESTIGATION_DESK_SPECIMEN
+    sprite: {fileID: 21300000, guid: d17713c431c038149871cf18dafb5acd, type: 3}
+  - key: C03_BG_LAB_INTERIOR
+    sprite: {fileID: 21300000, guid: 116fec35dcc2b8546bdd62b4a4bfbff5, type: 3}
+  - key: C03_BG_LAB_RESEARCHER
+    sprite: {fileID: 21300000, guid: 1e8d72d164029ef45bba86a8446e275e, type: 3}
+  - key: C03_BG_NIGHT_OFFICE
+    sprite: {fileID: 21300000, guid: de8e4902f90dc4948a542241dc2c9bef, type: 3}
+  - key: C03_BG_VESSEL_DECK
+    sprite: {fileID: 21300000, guid: 2b662c1d4dd2f614e88092166f4ec9d3, type: 3}
+  - key: C03_CG_COASTAL_OBSERVATION
+    sprite: {fileID: 21300000, guid: 875d5b2f8e759c14090d373acce46524, type: 3}
+  - key: C03_CG_EVIDENCE_REVIEW
+    sprite: {fileID: 21300000, guid: b0307b5a3d1cab34fa3627391f8640f8, type: 3}
+  - key: C03_CG_SUNSET_01
+    sprite: {fileID: 21300000, guid: f14cd10f09430a347be12ff938f1a002, type: 3}
+  - key: C03_CG_SUNSET_02
+    sprite: {fileID: 21300000, guid: 4f30b97b27a15fb47b2551abfba9b382, type: 3}
+  - key: C03_CG_SUNSET_03
+    sprite: {fileID: 21300000, guid: 0ae2dedc9b00133459a5a75d53846af5, type: 3}
+  - key: C03_CG_SUNSET_04
+    sprite: {fileID: 21300000, guid: bc3d76139a08f5f4c951584e19166c73, type: 3}
+  - key: C03_CHAR_PENGUIN_STATE_01
+    sprite: {fileID: 21300000, guid: 8dd1b094f1921d0459e84002b4af1e26, type: 3}
+  - key: C03_CHAR_PENGUIN_STATE_02
+    sprite: {fileID: 21300000, guid: ebc56eb6083385e4cb7d1d94ba734dae, type: 3}
+  - key: C03_CHAR_PENGUIN_STATE_03
+    sprite: {fileID: 21300000, guid: 51c35155e5c38b346b19bd595b746da9, type: 3}
+  - key: C03_CHAR_PLAYER_FULLBODY_BLINK
+    sprite: {fileID: 21300000, guid: 7eb56e59016e2134b8a8c9c674e1ad44, type: 3}
+  - key: C03_CHAR_PLAYER_FULLBODY_IDLE
+    sprite: {fileID: 21300000, guid: 0c258157d71af194d85374126606fcff, type: 3}
+  - key: C03_CHAR_PLAYER_FULLBODY_SMILE
+    sprite: {fileID: 21300000, guid: e78732fd0e5308b44a21710b730ac26b, type: 3}
+  - key: C03_CHAR_PLAYER_FULLBODY_WALK_01
+    sprite: {fileID: 21300000, guid: c7297c1bb1ceba140beb37f8c1866470, type: 3}
+  - key: C03_CHAR_PLAYER_FULLBODY_WALK_02
+    sprite: {fileID: 21300000, guid: d85332578cc8b794b9c753aa8754af4c, type: 3}
+  - key: C03_CHAR_PLAYER_IDLE_BUCKET
+    sprite: {fileID: 21300000, guid: a8ef610d8d17b9241a87900b3b8bc4a9, type: 3}
+  - key: C03_CHAR_PLAYER_STOP_GESTURE
+    sprite: {fileID: 21300000, guid: d377ed5e8054a5e49b6c024415b0d49d, type: 3}
+  - key: C03_CHAR_PLAYER_TALK_01
+    sprite: {fileID: 21300000, guid: cf1f55790ce84fd48adbb83fed5848ca, type: 3}
+  - key: C03_CHAR_PLAYER_TALK_02
+    sprite: {fileID: 21300000, guid: e2d4e427566f21640ac429656c14cf93, type: 3}
+  - key: C03_CHAR_PLAYER_WALK_LEFT_01
+    sprite: {fileID: 21300000, guid: 7ad3ae231a9f07941a20b3bc36b76323, type: 3}
+  - key: C03_CHAR_PLAYER_WALK_LEFT_02
+    sprite: {fileID: 21300000, guid: 062d3fd05acf7a148804de42211e8be7, type: 3}
+  - key: C03_CHAR_PLAYER_WALK_RIGHT_01
+    sprite: {fileID: 21300000, guid: 8d54f1463f9bced49876f6177c9b28af, type: 3}
+  - key: C03_CHAR_PLAYER_WALK_RIGHT_02
+    sprite: {fileID: 21300000, guid: 0db87ccd5fa0ec4489cf175f2addb179, type: 3}
+  - key: C03_CHAR_PLAYER_WORRIED
+    sprite: {fileID: 21300000, guid: 148ab08e2a917d14db4538a1a26ac988, type: 3}
+  - key: C03_POR_PLAYER_NEUTRAL
+    sprite: {fileID: 21300000, guid: f0e73066cdb75e544b68ba5d54b98c59, type: 3}
+  - key: C03_POR_PLAYER_POUT
+    sprite: {fileID: 21300000, guid: be6db998dc14f064b99094db57d97303, type: 3}
+  - key: C03_POR_PLAYER_TALK_01_CONFUSED
+    sprite: {fileID: 21300000, guid: 9e54be272c90a4c41acd8059d6285873, type: 3}
+  - key: C03_POR_PLAYER_TALK_02_SURPRISED
+    sprite: {fileID: 21300000, guid: 645a1ca276b64f5498ffa4b26f808a94, type: 3}
+  - key: C03_UI_PENGUIN_STATUS
+    sprite: {fileID: 21300000, guid: 3dd82f51d8a790245b1b0bf8531c392b, type: 3}
