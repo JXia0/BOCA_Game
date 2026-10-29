@@ -20,7 +20,7 @@ This document records the technical migration of the four student art deliveries
 
 ## Integration warnings
 
-- **Unity import is still required.** Unity 6000.5.3f1 could not run because the local Unity Hub session had no valid Editor entitlement. Open Unity Hub, sign in or activate the license, then open this project once. Commit every generated `.meta` file before scene wiring.
+- **Unity import is complete.** Unity 6000.5.3f1 imported all 138 images through `BOCAArtTexturePostprocessor`. A second independent check confirmed that every image is a Point-filtered, uncompressed Single Sprite at 16 PPU, with mipmaps disabled and max texture size set to 8192.
 - **Chapter 2 has mixed source resolutions.** Backgrounds range from 320 × 180 to 2730 × 1535, while props range from 24 × 24 to 508 × 552. Fit them in Unity without resampling the source files.
 - **Chapter 3 contains two incompatible player sets.** `Characters/Player` is the 32–50 px production pixel set. `Characters/PlayerFullbody` contains 2048 px full-body concept images and must not overwrite the production player binding.
 - **Chapter 3 backgrounds are oversized.** Several are 2048 × 1152 or 2720 × 1536. Keep them as source material but use camera fit/letterboxing until the art team supplies 320 × 180 exports.
@@ -187,9 +187,11 @@ This document records the technical migration of the four student art deliveries
 | `第四章场景assets/调查蒙太奇三个小画面.png` | `C04_CG_INVESTIGATION_MONTAGE` | `Assets/Art/Chapters/Chapter04_HawksbillGuzheng/CG/C04_CG_INVESTIGATION_MONTAGE.png` |
 | `第四章场景assets/打包间·警察到场.png` | `C04_CG_PACKING_ROOM_POLICE_ARRIVAL` | `Assets/Art/Chapters/Chapter04_HawksbillGuzheng/CG/C04_CG_PACKING_ROOM_POLICE_ARRIVAL.png` |
 
-## Required next milestone
+## Unity verification
 
-1. Activate Unity 6000.5.3f1 through Unity Hub.
-2. Open the project once and verify that `BOCAArtTexturePostprocessor` imports every file as a Point-filtered, uncompressed Single Sprite with mipmaps disabled.
-3. Run `BOCA > Art > Rebuild Art Catalogs` and resolve any duplicate-key error before editing scenes.
-4. Commit and push the generated `.meta` files as a separate milestone.
+1. Unity 6000.5.3f1 opened successfully through Unity Hub with a valid Personal license.
+2. `BOCA > Art > Reimport Production Art` reimported all 138 images and rebuilt all four chapter catalogs.
+3. The four catalogs contain exactly 62, 33, 37, and 6 entries respectively, matching the source inventory.
+4. No duplicate-key, C# compilation, or asset-import error was reported.
+
+The production art is ready for scene wiring. Use the stable keys above and follow the integration warnings rather than selecting assets by folder order.
