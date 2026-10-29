@@ -37,7 +37,24 @@ Provide one exact stable key for every `GB_C01_*` slot intended to display produ
 
 ## Chapter 2 — Sperm Whale Rescue
 
-Pending chapter-by-chapter review.
+**Status: blocked on creator mapping, missing NPC portraits, and undefined prop placement. No Chapter 2 flow key has been changed.**
+
+The chapter catalog contains 33 production sprites: 14 backgrounds, 5 Fisherman scene-character sprites, 4 player portraits, and 10 props. The current greybox requires seven background slots, one player portrait slot, and two supporting portrait slots. It has no independent character or prop presentation field.
+
+| Greybox key | Production binding | Status | Evidence and required decision |
+| --- | --- | --- | --- |
+| `GB_C02_BG_01` … `GB_C02_BG_07` | none | ambiguous | Fourteen semantically different locations and times are available for seven slots. The repository contains no approved Chapter 2 script or shot list that defines the seven-key sequence. Alphabetical order is not narrative order. |
+| `GB_C02_POR_NPC_01` | none | missing / unsuitable | No NPC Portrait asset exists. Fisherman art is a 50 × 50 full-body scene character and will not be substituted into a dialogue portrait slot. |
+| `GB_C02_POR_PLAYER` | none | ambiguous | Four exact player portrait keys exist (`DETERMINED`, `NEUTRAL`, `THINKING`, `WORRIED`), but no approved beat-to-expression map selects one. |
+| `GB_C02_POR_NPC_02` | none | missing / unsuitable | No NPC Portrait asset exists. Fisherman scene-character frames are not portrait replacements. |
+
+Background sources range from 123 × 69 to 2730 × 1535. The shared fitter handles this range without source resampling: 16:9 art is centred, enlarged at whole-number scale when possible, or reduced proportionally when oversized.
+
+The ten Props are registered in the catalog but the current `NarrativeBeatFile` and `ChapterView` have no independent prop key, placement, or draw-order contract. Adding a generic prop layer before the creator identifies the beat, anchor, scale, and overlap rules would invent composition. Those decisions remain pending.
+
+### Creator handoff needed
+
+Provide one exact stable background key for every `GB_C02_BG_*` slot, the selected player expression, and two purpose-built NPC portrait keys (or explicit approval of named alternatives). For each Prop intended to appear independently, provide its beat ID plus approved anchor, scale, and draw order.
 
 ## Chapter 3 — Reef Warning
 
