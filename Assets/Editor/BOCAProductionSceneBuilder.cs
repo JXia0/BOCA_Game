@@ -81,7 +81,10 @@ namespace BOCA.Editor
             scaler.matchWidthOrHeight = 0.5f;
 
             var font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-            var background = CreateImage("SceneArtwork", canvasObject.transform, Vector2.zero, Vector2.one, Vector2.zero, Vector2.zero, chapter.fallbackColor);
+            var backgroundFrame = CreateImage("SceneArtworkFrame", canvasObject.transform, Vector2.zero, Vector2.one,
+                Vector2.zero, Vector2.zero, chapter.fallbackColor);
+            var background = CreateImage("SceneArtwork", backgroundFrame.transform, Vector2.zero, Vector2.one,
+                Vector2.zero, Vector2.zero, chapter.fallbackColor);
             var backgroundKey = CreateText("BackgroundArtKey", background.transform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
                 new Vector2(-500f, -45f), new Vector2(500f, 45f), font, 28, FontStyle.Bold, new Color(1f, 1f, 1f, 0.52f), TextAnchor.MiddleCenter);
 

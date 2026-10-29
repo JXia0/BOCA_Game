@@ -22,6 +22,8 @@ namespace BOCA.UI
         private Action continueAction;
         private Action<int> choiceAction;
 
+        private const float ReferencePixelsPerUnit = 16f;
+
         public void Configure(
             Text title,
             Text scene,
@@ -84,8 +86,8 @@ namespace BOCA.UI
             dialogueBody.text = body;
             continueButtonLabel.text = continueLabel;
 
-            ApplySprite(backgroundImage, background, new Color(0.08f, 0.16f, 0.21f, 1f));
-            ApplySprite(portraitImage, portrait, new Color(0.16f, 0.27f, 0.31f, 1f));
+            ApplySprite(backgroundImage, background, new Color(0.08f, 0.16f, 0.21f, 1f), true);
+            ApplySprite(portraitImage, portrait, new Color(0.16f, 0.27f, 0.31f, 1f), true);
             var hasPortraitSlot = !string.IsNullOrWhiteSpace(portraitKey);
             portraitImage.transform.parent.gameObject.SetActive(hasPortraitSlot);
             SetLeftOffset(speakerLabel.rectTransform, hasPortraitSlot ? 360f : 60f);
@@ -122,8 +124,8 @@ namespace BOCA.UI
             dialogueBody.text = body;
             backgroundKeyLabel.text = string.Empty;
             portraitKeyLabel.text = string.Empty;
-            ApplySprite(backgroundImage, null, new Color(0.035f, 0.09f, 0.12f, 1f));
-            ApplySprite(portraitImage, null, new Color(0.10f, 0.16f, 0.18f, 1f));
+            ApplySprite(backgroundImage, null, new Color(0.035f, 0.09f, 0.12f, 1f), true);
+            ApplySprite(portraitImage, null, new Color(0.10f, 0.16f, 0.18f, 1f), true);
             portraitImage.transform.parent.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
 
@@ -133,11 +135,57 @@ namespace BOCA.UI
             }
         }
 
-        private static void ApplySprite(Image image, Sprite sprite, Color fallbackColor)
+        private static void ApplySprite(Image image, Sprite sprite, Color fallbackColor, bool useIntegerScale)
         {
             image.sprite = sprite;
             image.color = sprite == null ? fallbackColor : Color.white;
-            image.preserveAspect = false;
+            image.preserveAspect = sprite != null;
+            image.type = Image.Type.Simple;
+            image.SetNativeSize();
+
+            if (sprite == null)
+            {
+                StretchToParent(image.rectTransform);
+                return;
+            }
+
+            FitInsideParent(image.rectTransform, sprite, useIntegerScale);
+        }
+
+        private static void FitInsideParent(RectTransform rect, Sprite sprite, bool useIntegerScale)
+        {
+            if (!(rect.parent is RectTransform parent))
+            {
+                return;
+            }
+
+            var sourceSize = sprite.rect.size * (ReferencePixelsPerUnit / sprite.pixelsPerUnit);
+            var available = parent.rect.size;
+            if (sourceSize.x <= 0f || sourceSize.y <= 0f || available.x <= 0f || available.y <= 0f)
+            {
+                return;
+            }
+
+            var scale = Mathf.Min(available.x / sourceSize.x, available.y / sourceSize.y);
+            if (useIntegerScale && scale >= 1f)
+            {
+                scale = Mathf.Max(1f, Mathf.Floor(scale));
+            }
+
+            rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = Vector2.zero;
+            rect.sizeDelta = sourceSize * scale;
+        }
+
+        private static void StretchToParent(RectTransform rect)
+        {
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = Vector2.zero;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
         }
 
         private static void SetLeftOffset(RectTransform rect, float left)
