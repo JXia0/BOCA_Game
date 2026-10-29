@@ -12,4 +12,128 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392f04b6f2df3f7479ef937872f84e37, type: 3}
   m_Name: Chapter01ArtCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BOCA.Art.ArtCatalog
-  entries: []
+  entries:
+  - key: C01_CHAR_ARCHIVIST_IDLE_01
+    sprite: {fileID: 21300000, guid: 98a1f245fb070a546b4d45be457d5659, type: 3}
+  - key: C01_CHAR_ARCHIVIST_IDLE_02
+    sprite: {fileID: 21300000, guid: 17235638090595f4fb9ef4c6a170629c, type: 3}
+  - key: C01_CHAR_ARCHIVIST_WALK_LEFT_01
+    sprite: {fileID: 21300000, guid: ae9984a202e25514ab584ebad9c526a3, type: 3}
+  - key: C01_CHAR_ARCHIVIST_WALK_LEFT_02
+    sprite: {fileID: 21300000, guid: 4cefbeb61d894074390d5aa509816f9c, type: 3}
+  - key: C01_CHAR_ARCHIVIST_WALK_RIGHT_01
+    sprite: {fileID: 21300000, guid: b805c5ef007f3d44fa5940ac374b584f, type: 3}
+  - key: C01_CHAR_ARCHIVIST_WALK_RIGHT_02
+    sprite: {fileID: 21300000, guid: 7902e735c9a214a4384d4e07162f5ccd, type: 3}
+  - key: C01_CHAR_MARINA_GREET
+    sprite: {fileID: 21300000, guid: 340a7868d8817d74f874cfc73a340952, type: 3}
+  - key: C01_CHAR_MARINA_IDLE_01
+    sprite: {fileID: 21300000, guid: df2429bb3a818f7449ab1c1bd6ae4e42, type: 3}
+  - key: C01_CHAR_MARINA_IDLE_02
+    sprite: {fileID: 21300000, guid: 840a95eba7b2311458cccf2968d74b11, type: 3}
+  - key: C01_CHAR_MARINA_SEARCH
+    sprite: {fileID: 21300000, guid: 723ec7cb0ac63b54795053a28e2ff7a1, type: 3}
+  - key: C01_CHAR_MARINA_TALK_01
+    sprite: {fileID: 21300000, guid: 642ca69a45ddb6644977d96f4bee0aa2, type: 3}
+  - key: C01_CHAR_MARINA_TALK_02
+    sprite: {fileID: 21300000, guid: 9b8cd22ffc300d5469d5f0ffc95853fe, type: 3}
+  - key: C01_CHAR_MARINA_WALK_LEFT_01
+    sprite: {fileID: 21300000, guid: e43c8071b9fa5064284b83309e47a65f, type: 3}
+  - key: C01_CHAR_MARINA_WALK_LEFT_02
+    sprite: {fileID: 21300000, guid: 9ef3d336691ee13438f2cf13c2a76e2f, type: 3}
+  - key: C01_CHAR_MARINA_WALK_RIGHT_01
+    sprite: {fileID: 21300000, guid: 86a1d241fae7b7845b58dc61e7a3c0ae, type: 3}
+  - key: C01_CHAR_MARINA_WALK_RIGHT_02
+    sprite: {fileID: 21300000, guid: 67900c00d7a955e469585c533db7f163, type: 3}
+  - key: C01_CHAR_PLAYER_CAMERA
+    sprite: {fileID: 21300000, guid: 109467dfce0e9d341be8730a8b66bc28, type: 3}
+  - key: C01_CHAR_PLAYER_IDLE_01
+    sprite: {fileID: 21300000, guid: 3ff4933be6f48ce489b7a4a884e01771, type: 3}
+  - key: C01_CHAR_PLAYER_IDLE_02
+    sprite: {fileID: 21300000, guid: 21069ee0f038be04dadce438bd56ee3d, type: 3}
+  - key: C01_CHAR_PLAYER_PHONE
+    sprite: {fileID: 21300000, guid: 2a2a3a8afa69fae4fa1d7cb82e27b7f1, type: 3}
+  - key: C01_CHAR_PLAYER_TALK_01
+    sprite: {fileID: 21300000, guid: b9f9445805801e34581205ca0d2809d7, type: 3}
+  - key: C01_CHAR_PLAYER_TALK_02
+    sprite: {fileID: 21300000, guid: 9c006421ed6cb4c4fbf83e3931ca4e56, type: 3}
+  - key: C01_CHAR_PLAYER_WALK_LEFT_01
+    sprite: {fileID: 21300000, guid: 5084acab125390945a0b0041b448375e, type: 3}
+  - key: C01_CHAR_PLAYER_WALK_LEFT_02
+    sprite: {fileID: 21300000, guid: 5b0121e5407bbe941a883948be7a8965, type: 3}
+  - key: C01_CHAR_PLAYER_WALK_RIGHT_01
+    sprite: {fileID: 21300000, guid: 62a8f53c162d0734aaee3dbe0363aad2, type: 3}
+  - key: C01_CHAR_PLAYER_WALK_RIGHT_02
+    sprite: {fileID: 21300000, guid: 9cbb4db59cf12d448adde65640973e8b, type: 3}
+  - key: C01_CHAR_RESCUEWORKER01_IDLE_01
+    sprite: {fileID: 21300000, guid: 2015509ed54cd0b4ebf6c9fbed703a20, type: 3}
+  - key: C01_CHAR_RESCUEWORKER01_IDLE_02
+    sprite: {fileID: 21300000, guid: 758eb63ef86c1f54c90a39ed5957b968, type: 3}
+  - key: C01_CHAR_RESCUEWORKER02_IDLE_01
+    sprite: {fileID: 21300000, guid: bace2e3f0c261ce458e1782d702593e6, type: 3}
+  - key: C01_CHAR_RESCUEWORKER02_IDLE_02
+    sprite: {fileID: 21300000, guid: 8911b250c579e0a418e2c63258ca32eb, type: 3}
+  - key: C01_CHAR_TOURIST01_IDLE_01
+    sprite: {fileID: 21300000, guid: 57acb2c13eed62c4b947e7ef07193125, type: 3}
+  - key: C01_CHAR_TOURIST01_IDLE_02
+    sprite: {fileID: 21300000, guid: 7a024e2b2c5aebb47aece4dfedb15704, type: 3}
+  - key: C01_CHAR_TOURIST01_WALK_01
+    sprite: {fileID: 21300000, guid: 7c17d2f2e14fcc14c9f633249ad6dd10, type: 3}
+  - key: C01_CHAR_TOURIST01_WALK_02
+    sprite: {fileID: 21300000, guid: aa0ce0e3e819ccf4094a3aa3cccb511a, type: 3}
+  - key: C01_CHAR_TOURIST01_WALK_03
+    sprite: {fileID: 21300000, guid: 82ef7447960d04a40a901479689f6d59, type: 3}
+  - key: C01_CHAR_TOURIST01_WALK_04
+    sprite: {fileID: 21300000, guid: b0aef383487b0554ba2c7ed17a206c89, type: 3}
+  - key: C01_CHAR_TOURIST02_IDLE_01
+    sprite: {fileID: 21300000, guid: fffc853a62408b0429591805b35d6794, type: 3}
+  - key: C01_CHAR_TOURIST02_IDLE_02
+    sprite: {fileID: 21300000, guid: 048c6c4179fa1aa4ca3d4b50f5884e62, type: 3}
+  - key: C01_CHAR_TOURIST02_WALK_01
+    sprite: {fileID: 21300000, guid: dd7f0ee1e4d9d4d4fbde6808b6a46f30, type: 3}
+  - key: C01_CHAR_TOURIST02_WALK_02
+    sprite: {fileID: 21300000, guid: 3e8b072c6a0a26647a93a6b02b57be1b, type: 3}
+  - key: C01_CHAR_TOURIST02_WALK_03
+    sprite: {fileID: 21300000, guid: a7361a573f0656945bfe950f4a338157, type: 3}
+  - key: C01_CHAR_TOURIST02_WALK_04
+    sprite: {fileID: 21300000, guid: bb62a7af8ecf86547824007627fa25a5, type: 3}
+  - key: C01_CHAR_TOURIST03_IDLE_01
+    sprite: {fileID: 21300000, guid: 8ce0fdeddc265934e9487c0a4c2f0351, type: 3}
+  - key: C01_CHAR_TOURIST03_IDLE_02
+    sprite: {fileID: 21300000, guid: 893e98d6db945124da9e28fd5e70fd59, type: 3}
+  - key: C01_CHAR_TOURIST03_WALK_01
+    sprite: {fileID: 21300000, guid: 093f5ad4a1a4d13448b07d58559c62d5, type: 3}
+  - key: C01_CHAR_TOURIST03_WALK_02
+    sprite: {fileID: 21300000, guid: c7cffcfaba24c6d48a5b1cd00dbafc08, type: 3}
+  - key: C01_CHAR_TOURIST03_WALK_03
+    sprite: {fileID: 21300000, guid: 0627dba6c47cc544d9be6cc922be8112, type: 3}
+  - key: C01_CHAR_TOURIST03_WALK_04
+    sprite: {fileID: 21300000, guid: a4e67bca1beaac0438c146da6d87bfcf, type: 3}
+  - key: C01_POR_ARCHIVIST_SMILE
+    sprite: {fileID: 21300000, guid: b8301475d1eee924d90d91c908d6acf5, type: 3}
+  - key: C01_POR_ARCHIVIST_TALK_01
+    sprite: {fileID: 21300000, guid: 2d06a49da53ef2f4fbb5dea24467634e, type: 3}
+  - key: C01_POR_ARCHIVIST_TALK_02
+    sprite: {fileID: 21300000, guid: 3e006399a3e055141aab34c0704580ee, type: 3}
+  - key: C01_POR_MARINA_NEUTRAL
+    sprite: {fileID: 21300000, guid: 2969cd45ed5816f47a3564d6c909bc61, type: 3}
+  - key: C01_POR_MARINA_SMILE
+    sprite: {fileID: 21300000, guid: 82b13a3d2d4ad6e4885dbe90e2e92522, type: 3}
+  - key: C01_POR_MARINA_TALK_01_SURPRISED
+    sprite: {fileID: 21300000, guid: 17d2c12cc194240458ea9f7393c1ab71, type: 3}
+  - key: C01_POR_MARINA_TALK_02_CONFUSED
+    sprite: {fileID: 21300000, guid: c3ec3be547edfb64c96ae1f75e21c481, type: 3}
+  - key: C01_POR_PLAYER_NEUTRAL
+    sprite: {fileID: 21300000, guid: 039a39b399ae3a04ca85b0bf9238285b, type: 3}
+  - key: C01_POR_PLAYER_SURPRISED
+    sprite: {fileID: 21300000, guid: fb5b8c17632d55d438e103e582013100, type: 3}
+  - key: C01_POR_PLAYER_TALK_01
+    sprite: {fileID: 21300000, guid: 89e73078f63153c40ae7e876bfb5cff3, type: 3}
+  - key: C01_POR_PLAYER_TALK_02
+    sprite: {fileID: 21300000, guid: a86ff7a7690198c4097245b3850d1dd2, type: 3}
+  - key: C01_POR_RESCUEWORKER01_TALK_01
+    sprite: {fileID: 21300000, guid: da6a5f55cd3660b4a80e62a029b6a43f, type: 3}
+  - key: C01_POR_RESCUEWORKER01_TALK_02
+    sprite: {fileID: 21300000, guid: c3b52060bef5fcb40822ef8d4658aed5, type: 3}
+  - key: C01_POR_RESCUEWORKER01_THINK
+    sprite: {fileID: 21300000, guid: d5961d43f685ef1489fcaa2ce51b80a4, type: 3}
