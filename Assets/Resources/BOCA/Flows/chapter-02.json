@@ -4,25 +4,25 @@
   "titleKey": "ch02.title",
   "startBeatId": "ch02.gb.01",
   "beats": [
-    { "id": "ch02.gb.01", "sceneLabelKey": "ch02.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.01", "backgroundKey": "GB_C02_BG_01", "portraitKey": "", "nextBeatId": "ch02.gb.02" },
-    { "id": "ch02.gb.02", "sceneLabelKey": "ch02.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.02", "backgroundKey": "GB_C02_BG_02", "portraitKey": "GB_C02_POR_NPC_01", "nextBeatId": "ch02.gb.choice" },
+    { "id": "ch02.gb.01", "sceneLabelKey": "ch02.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.01", "backgroundKey": "C02_BG_UNDERSEA_ARCHIVE", "portraitKey": "", "nextBeatId": "ch02.gb.02" },
+    { "id": "ch02.gb.02", "sceneLabelKey": "ch02.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.02", "backgroundKey": "C02_BG_FUJIAN_FISHING_VILLAGE", "portraitKey": "C02_POR_FISHERMAN_NEUTRAL", "nextBeatId": "ch02.gb.choice" },
     {
       "id": "ch02.gb.choice",
       "sceneLabelKey": "ch02.scene.03",
       "speakerKey": "shared.speaker.player",
       "textKey": "ch02.gb.choice",
-      "backgroundKey": "GB_C02_BG_03",
-      "portraitKey": "GB_C02_POR_PLAYER",
+      "backgroundKey": "C02_BG_WHALE_MUDFLAT_LOW_TIDE",
+      "portraitKey": "C02_POR_PLAYER_WORRIED",
       "choices": [
         { "id": "route_a", "labelKey": "ch02.choice.route_a", "nextBeatId": "ch02.gb.branch_a", "setRoute": "A", "setFlag": "ch02.gb.flag.route_a" },
         { "id": "route_b", "labelKey": "ch02.choice.route_b", "nextBeatId": "ch02.gb.branch_b", "setRoute": "B", "setFlag": "ch02.gb.flag.route_b" }
       ]
     },
-    { "id": "ch02.gb.branch_a", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_a", "backgroundKey": "GB_C02_BG_04", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
-    { "id": "ch02.gb.branch_b", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_b", "backgroundKey": "GB_C02_BG_04", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
-    { "id": "ch02.gb.merge", "sceneLabelKey": "ch02.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.merge", "backgroundKey": "GB_C02_BG_05", "portraitKey": "GB_C02_POR_NPC_02", "nextBeatId": "ch02.gb.check_a" },
-    { "id": "ch02.gb.check_a", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_a", "backgroundKey": "GB_C02_BG_06", "portraitKey": "", "nextBeatId": "ch02.gb.check_b", "requiredFlag": "ch02.gb.flag.route_a" },
-    { "id": "ch02.gb.check_b", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_b", "backgroundKey": "GB_C02_BG_06", "portraitKey": "", "nextBeatId": "ch02.gb.end", "requiredFlag": "ch02.gb.flag.route_b" },
-    { "id": "ch02.gb.end", "sceneLabelKey": "ch02.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.end", "backgroundKey": "GB_C02_BG_07", "portraitKey": "", "nextBeatId": "" }
+    { "id": "ch02.gb.branch_a", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_a", "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
+    { "id": "ch02.gb.branch_b", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_b", "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
+    { "id": "ch02.gb.merge", "sceneLabelKey": "ch02.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.merge", "backgroundKey": "C02_BG_NIGHT_TOWING", "portraitKey": "C02_POR_FISHERMAN_TALK", "nextBeatId": "ch02.gb.check_a" },
+    { "id": "ch02.gb.check_a", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_a", "backgroundKey": "C02_BG_DEEP_WATER_ROUTE", "portraitKey": "", "nextBeatId": "ch02.gb.check_b", "requiredFlag": "ch02.gb.flag.route_a" },
+    { "id": "ch02.gb.check_b", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_b", "backgroundKey": "C02_BG_DEEP_WATER_ROUTE", "portraitKey": "", "nextBeatId": "ch02.gb.end", "requiredFlag": "ch02.gb.flag.route_b" },
+    { "id": "ch02.gb.end", "sceneLabelKey": "ch02.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.end", "backgroundKey": "C02_BG_DAWN_RELEASE", "portraitKey": "", "nextBeatId": "" }
   ]
 }
