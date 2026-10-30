@@ -13,6 +13,20 @@ MonoBehaviour:
   m_Name: Chapter01ArtCatalog
   m_EditorClassIdentifier: Assembly-CSharp::BOCA.Art.ArtCatalog
   entries:
+  - key: C01_BG_OIL_TIDE_BEACH
+    sprite: {fileID: 21300000, guid: 79d8388b401b0ca42ae576a5e5e52beb, type: 3}
+  - key: C01_BG_RECOVERY_RECORDS
+    sprite: {fileID: 21300000, guid: 1a59dafecc05fd741abf72b83298c463, type: 3}
+  - key: C01_BG_RESCUE_HANDOFF
+    sprite: {fileID: 21300000, guid: 4588cd3cb003a4c4e9e6cabe4c8cffa0, type: 3}
+  - key: C01_BG_SEASIDE_RELEASE
+    sprite: {fileID: 21300000, guid: ea5ceb0e0439e2b4aab4f10e602dd656, type: 3}
+  - key: C01_BG_UNDERSEA_ARCHIVE_OPENING
+    sprite: {fileID: 21300000, guid: 968739b3efa95224792179ee3681dca4, type: 3}
+  - key: C01_BG_UNDERSEA_ARCHIVE_RETURN
+    sprite: {fileID: 21300000, guid: 60d8559eacf91684491b52cda7bc0f74, type: 3}
+  - key: C01_BG_WILDLIFE_CARE_CENTER
+    sprite: {fileID: 21300000, guid: 3b0b353172b5c334e8f262262d8540e9, type: 3}
   - key: C01_CHAR_ARCHIVIST_IDLE_01
     sprite: {fileID: 21300000, guid: 98a1f245fb070a546b4d45be457d5659, type: 3}
   - key: C01_CHAR_ARCHIVIST_IDLE_02

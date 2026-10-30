@@ -51,6 +51,10 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: d030406c369a1984a9963280cfd6b4a7, type: 3}
   - key: C02_CHAR_FISHERMAN_WALK_02
     sprite: {fileID: 21300000, guid: c98516f53d5b23c409192c3767c96ec7, type: 3}
+  - key: C02_POR_FISHERMAN_NEUTRAL
+    sprite: {fileID: 21300000, guid: 2ebf48cc345ee5a49ae4d33b339aa757, type: 3}
+  - key: C02_POR_FISHERMAN_TALK
+    sprite: {fileID: 21300000, guid: eb367210103607c4aaaa3f6d95279e9a, type: 3}
   - key: C02_POR_PLAYER_DETERMINED
     sprite: {fileID: 21300000, guid: 428278e0887047844a64a2332191b021, type: 3}
   - key: C02_POR_PLAYER_NEUTRAL

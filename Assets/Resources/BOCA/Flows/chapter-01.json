@@ -9,7 +9,7 @@
       "sceneLabelKey": "ch01.scene.01",
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.01",
-      "backgroundKey": "GB_C01_BG_01",
+      "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_OPENING",
       "portraitKey": "",
       "nextBeatId": "ch01.gb.02"
     },
@@ -18,7 +18,7 @@
       "sceneLabelKey": "ch01.scene.02",
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.02",
-      "backgroundKey": "GB_C01_BG_02",
+      "backgroundKey": "C01_BG_OIL_TIDE_BEACH",
       "portraitKey": "GB_C01_POR_NPC_01",
       "nextBeatId": "ch01.gb.choice"
     },
@@ -27,7 +27,7 @@
       "sceneLabelKey": "ch01.scene.03",
       "speakerKey": "shared.speaker.player",
       "textKey": "ch01.gb.choice",
-      "backgroundKey": "GB_C01_BG_03",
+      "backgroundKey": "C01_BG_RESCUE_HANDOFF",
       "portraitKey": "GB_C01_POR_PLAYER",
       "choices": [
         {
@@ -51,7 +51,7 @@
       "sceneLabelKey": "ch01.scene.04",
       "speakerKey": "shared.speaker.system",
       "textKey": "ch01.gb.branch_a",
-      "backgroundKey": "GB_C01_BG_04",
+      "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER",
       "portraitKey": "",
       "nextBeatId": "ch01.gb.merge"
     },
@@ -60,7 +60,7 @@
       "sceneLabelKey": "ch01.scene.04",
       "speakerKey": "shared.speaker.system",
       "textKey": "ch01.gb.branch_b",
-      "backgroundKey": "GB_C01_BG_04",
+      "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER",
       "portraitKey": "",
       "nextBeatId": "ch01.gb.merge"
     },
@@ -69,7 +69,7 @@
       "sceneLabelKey": "ch01.scene.05",
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.merge",
-      "backgroundKey": "GB_C01_BG_05",
+      "backgroundKey": "C01_BG_RECOVERY_RECORDS",
       "portraitKey": "GB_C01_POR_NPC_02",
       "nextBeatId": "ch01.gb.check_a"
     },
@@ -78,7 +78,7 @@
       "sceneLabelKey": "ch01.scene.06",
       "speakerKey": "shared.speaker.system",
       "textKey": "ch01.gb.check_a",
-      "backgroundKey": "GB_C01_BG_06",
+      "backgroundKey": "C01_BG_SEASIDE_RELEASE",
       "portraitKey": "",
       "nextBeatId": "ch01.gb.check_b",
       "requiredFlag": "ch01.gb.flag.route_a"
@@ -88,7 +88,7 @@
       "sceneLabelKey": "ch01.scene.06",
       "speakerKey": "shared.speaker.system",
       "textKey": "ch01.gb.check_b",
-      "backgroundKey": "GB_C01_BG_06",
+      "backgroundKey": "C01_BG_SEASIDE_RELEASE",
       "portraitKey": "",
       "nextBeatId": "ch01.gb.end",
       "requiredFlag": "ch01.gb.flag.route_b"
@@ -98,7 +98,7 @@
       "sceneLabelKey": "ch01.scene.07",
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.end",
-      "backgroundKey": "GB_C01_BG_07",
+      "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_RETURN",
       "portraitKey": "",
       "nextBeatId": ""
     }
