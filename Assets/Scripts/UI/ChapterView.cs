@@ -32,6 +32,11 @@ namespace BOCA.UI
 
         private const float ReferencePixelsPerUnit = 16f;
 
+        private void Awake()
+        {
+            ApplyReadableHeaderAndChoices();
+        }
+
         public void Configure(
             Text title,
             Text scene,
@@ -90,6 +95,58 @@ namespace BOCA.UI
                 var capturedIndex = i;
                 choiceButtons[i].onClick.RemoveAllListeners();
                 choiceButtons[i].onClick.AddListener(() => choiceAction?.Invoke(capturedIndex));
+            }
+        }
+
+        private void ApplyReadableHeaderAndChoices()
+        {
+            if (chapterTitle != null)
+            {
+                var titleOffsets = chapterTitle.rectTransform.offsetMax;
+                titleOffsets.x = -1120f;
+                chapterTitle.rectTransform.offsetMax = titleOffsets;
+            }
+
+            if (sceneLabel != null)
+            {
+                sceneLabel.rectTransform.offsetMin = new Vector2(820f, sceneLabel.rectTransform.offsetMin.y);
+                sceneLabel.rectTransform.offsetMax = new Vector2(-470f, sceneLabel.rectTransform.offsetMax.y);
+                sceneLabel.fontSize = 20;
+                sceneLabel.resizeTextForBestFit = true;
+                sceneLabel.resizeTextMinSize = 14;
+                sceneLabel.resizeTextMaxSize = 20;
+                sceneLabel.horizontalOverflow = HorizontalWrapMode.Wrap;
+                sceneLabel.verticalOverflow = VerticalWrapMode.Truncate;
+                sceneLabel.lineSpacing = 0.9f;
+            }
+
+            if (choiceButtons == null || choiceButtonLabels == null)
+            {
+                return;
+            }
+
+            for (var index = 0; index < Mathf.Min(choiceButtons.Length, choiceButtonLabels.Length); index++)
+            {
+                var button = choiceButtons[index];
+                var label = choiceButtonLabels[index];
+                if (button != null)
+                {
+                    var offsets = button.GetComponent<RectTransform>();
+                    offsets.offsetMax = new Vector2(offsets.offsetMax.x, offsets.offsetMin.y + 68f);
+                }
+
+                if (label == null)
+                {
+                    continue;
+                }
+
+                label.fontSize = 22;
+                label.resizeTextForBestFit = true;
+                label.resizeTextMinSize = 17;
+                label.resizeTextMaxSize = 22;
+                label.horizontalOverflow = HorizontalWrapMode.Wrap;
+                label.verticalOverflow = VerticalWrapMode.Truncate;
+                label.lineSpacing = 0.9f;
             }
         }
 

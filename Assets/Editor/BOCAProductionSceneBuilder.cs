@@ -205,9 +205,13 @@ namespace BOCA.Editor
 
             var topBar = CreateImage("ChapterHeader", canvasObject.transform, new Vector2(0f, 0.91f), Vector2.one, Vector2.zero, Vector2.zero, new Color(Navy.r, Navy.g, Navy.b, 0.94f));
             var chapterTitle = CreateText("ChapterTitle", topBar.transform, Vector2.zero, Vector2.one,
-                new Vector2(42f, 8f), new Vector2(-920f, -8f), font, 28, FontStyle.Bold, LightText, TextAnchor.MiddleLeft);
+                new Vector2(42f, 8f), new Vector2(-1120f, -8f), font, 28, FontStyle.Bold, LightText, TextAnchor.MiddleLeft);
             var sceneLabel = CreateText("SceneLabel", topBar.transform, Vector2.zero, Vector2.one,
-                new Vector2(1000f, 8f), new Vector2(-330f, -8f), font, 20, FontStyle.Bold, MutedText, TextAnchor.MiddleRight);
+                new Vector2(820f, 8f), new Vector2(-470f, -8f), font, 20, FontStyle.Bold, MutedText, TextAnchor.MiddleRight);
+            sceneLabel.resizeTextForBestFit = true;
+            sceneLabel.resizeTextMinSize = 14;
+            sceneLabel.resizeTextMaxSize = 20;
+            sceneLabel.lineSpacing = 0.9f;
             var continueButton = CreateButton("ContinueButton", topBar.transform, new Vector2(1f, 0f), Vector2.one,
                 new Vector2(-300f, 14f), new Vector2(-34f, -14f), font, 21, "CONTINUE");
             var menuButton = CreateButton("MenuButton", topBar.transform, new Vector2(1f, 0f), Vector2.one,
@@ -253,8 +257,12 @@ namespace BOCA.Editor
                 var xMax = xMin + width;
                 var bottom = row == 0 ? 94f : 24f;
                 choiceButtons[i] = CreateButton($"ChoiceButton{i + 1}", dialoguePanel.transform, Vector2.zero, Vector2.zero,
-                    new Vector2(xMin, bottom), new Vector2(xMax, bottom + 60f), font, 17, string.Empty);
+                    new Vector2(xMin, bottom), new Vector2(xMax, bottom + 68f), font, 22, string.Empty);
                 choiceLabels[i] = choiceButtons[i].GetComponentInChildren<Text>();
+                choiceLabels[i].resizeTextForBestFit = true;
+                choiceLabels[i].resizeTextMinSize = 17;
+                choiceLabels[i].resizeTextMaxSize = 22;
+                choiceLabels[i].lineSpacing = 0.9f;
                 choiceButtons[i].gameObject.SetActive(false);
             }
 
