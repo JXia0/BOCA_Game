@@ -1,0 +1,76 @@
+{
+  "entries": [
+    { "key": "ch01.title", "value": "第一章  油潮之下" },
+    { "key": "ch01.scene.01", "value": "场景一  档案馆：缺失的关怀" },
+    { "key": "ch01.scene.02", "value": "场景二  海滩：先看清楚发生了什么" },
+    { "key": "ch01.scene.03", "value": "场景三  联络记录：观察不是诊断" },
+    { "key": "ch01.scene.04", "value": "场景四  专业接手：把完整现场交出去" },
+    { "key": "ch01.scene.05", "value": "场景五  护理站：先稳定，不追求立刻变干净" },
+    { "key": "ch01.scene.06", "value": "场景六  康复记录：外表干净不等于可以放归" },
+    { "key": "ch01.scene.07", "value": "场景七  海边：放归不是保证" },
+    { "key": "ch01.scene.08", "value": "场景八  档案馆：CARE 碎片与最终审核" },
+
+    { "key": "ch01.review.safety", "value": "安全边界" },
+    { "key": "ch01.review.record", "value": "记录可信度" },
+    { "key": "ch01.review.care", "value": "耐心护理" },
+    { "key": "ch01.review.recovery", "value": "恢复证据" },
+
+    { "key": "ch01.speaker.archivist", "value": "档案管理员" },
+    { "key": "ch01.speaker.tourist", "value": "游客" },
+    { "key": "ch01.speaker.rescuer", "value": "玛丽娜 / 救援热线" },
+
+    { "key": "ch01.archive.opening", "value": "一枚缺失四角的徽章悬在玻璃台上。第一处空位泛起琥珀色微光，远处传来海浪和短促鸟鸣。" },
+    { "key": "ch01.archive.mission", "value": "第一块碎片记录的不是把生命抱在怀里，而是知道什么时候应该退后。\n\n你将进入虚构救援流程；历史事实与创作部分会分开标记。任务是观察、隔离、联络、记录，并等待专业判断。" },
+    { "key": "ch01.beach.observe", "value": "潮线旁，一只黑白色海鸟伏在岩石边。部分羽毛黏成深色块，身体仍有轻微起伏。两名游客正在靠近，一只未牵绳的狗朝它吠叫。\n\n只能从安全距离记录可见事实；物种、体温、饥饿程度、受伤原因与污染来源尚未确认。" },
+    { "key": "ch01.beach.boundary", "value": "游客：是不是把它抱到水里就好了？它看起来很冷。\n\n错误处理不会被系统抹掉。接近方式会改变现场秩序，并在专业交接时留下可追溯后果。" },
+    { "key": "ch01.record.title", "value": "游客：它肯定是冻坏了，而且已经饿了很多天。\n\n系统要求把“亲眼观察”“他人转述”和“尚未确认”分栏。事件标题会影响后续人员如何理解这份记录。" },
+    { "key": "ch01.record.sources", "value": "对每项信息标注来源。可以保留“不知道”，不要把推测变成事实。调度已受理；记录质量将在专业交接时接受审核。" },
+    { "key": "ch01.handoff.arrival", "value": "救援车辆抵达。玛丽娜与工作人员穿戴防护装备，先查看边界和事件卡，再从低干扰方向接近。\n\n玛丽娜：谁最先发现？动物有没有被碰过、喂过、清洗过或推回水里？你看到的是事实，还是别人猜的？" },
+    { "key": "ch01.handoff.package", "value": "把完整现场交出去：发现时间、设置边界、联系机构、现场变化，以及仍然不确定的项目。原始附件和来源标签应随记录一起交接。" },
+    { "key": "ch01.care.station", "value": "玩家隔着观察窗协助后勤。状态板显示：体力低、应激偏高、羽毛污染明显。\n\n玛丽娜：清洗是专业流程的一部分，不是越快越好。动物先要完成接收、临床评估和稳定；否则护理本身可能增加负担。玩家界面不会显示药物、剂量、清洗剂、浓度或温度。" },
+    { "key": "ch01.care.communication", "value": "社交平台上出现“为什么还不马上洗”的质问。信息、资源和等待管理也是护理的一部分；不能把专业救助简化成家务或公开表演。" },
+    { "key": "ch01.recovery.records", "value": "数日以蒙太奇压缩。三次由专业人员签署的恢复记录显示：\nR1：仍有污染，体力低，防水功能未评估。\nR2：外观明显改善，体力改善，防水功能部分恢复。\nR3：无明显油污，体力稳定，防水功能与游泳表现通过专业检查。\n\n外观改善不能代替专业检查。" },
+    { "key": "ch01.recovery.release_request", "value": "申请放归前，玩家必须决定报告依据。把“看起来开心”“应该想家”等拟人化判断留在报告外；结论应依赖多日记录、功能检查和专业签署。" },
+    { "key": "ch01.release.scene", "value": "专业团队完成最后评估，并选择没有已知污染、符合处置要求的地点。玩家站在标线外，核对记录与公众距离。\n\n企鹅停顿片刻后走入浪中；它不回头、不挥翅，也没有人追上去拥抱。\n\n玛丽娜：我们完成了今天能负责的部分。放归给它重新生活的机会，不等于我们能保证以后发生什么。" },
+    { "key": "ch01.archive.review", "value": "画面回到深海档案馆。琥珀色碎片中浮现一只企鹅与一圈留出距离的警戒线。\n\n关怀不是占有，也不是证明自己救过谁。它是让正确的人接手，并在看不见变化的时间里继续负责。" },
+
+    { "key": "ch01.prompt.observe", "value": "选择应写入第一份远距离观察的内容。越界操作也会被记录。" },
+    { "key": "ch01.action.save_observation", "value": "保存观察记录" },
+    { "key": "ch01.prompt.boundary", "value": "决定如何控制人群、宠物与动物之间的距离。" },
+    { "key": "ch01.prompt.title", "value": "为事件卡选择不超出证据的标题。" },
+    { "key": "ch01.prompt.sources", "value": "按“直接观察 → 他人转述 → 尚未确认”建立来源栏。" },
+    { "key": "ch01.action.file_record", "value": "提交来源分类" },
+    { "key": "ch01.prompt.handoff", "value": "选择要随动物交给专业团队的记录。" },
+    { "key": "ch01.action.complete_handoff", "value": "完成交接" },
+    { "key": "ch01.prompt.communication", "value": "选择对外沟通方式。" },
+    { "key": "ch01.prompt.release", "value": "决定放归申请应依据什么。" },
+
+    { "key": "ch01.observe.location_time", "value": "定位、发现时间与远距离照片" },
+    { "key": "ch01.observe.visible_condition", "value": "可见油污、呼吸或活动反应" },
+    { "key": "ch01.observe.people_pets", "value": "附近人群、宠物与噪声" },
+    { "key": "ch01.observe.tide_ground", "value": "潮线、地面与撤离风险" },
+    { "key": "ch01.observe.diagnose", "value": "诊断物种、体温与饥饿程度" },
+    { "key": "ch01.observe.touch_feathers", "value": "靠近并触摸羽毛确认油污" },
+
+    { "key": "ch01.choice.rush_in", "value": "冲到动物旁边，先处理眼前问题" },
+    { "key": "ch01.choice.keep_distance", "value": "保持距离，带离人群与宠物并联系救援机构" },
+    { "key": "ch01.choice.title_overclaim", "value": "油污麦哲伦企鹅严重失温并长期饥饿" },
+    { "key": "ch01.choice.title_observed", "value": "发现活动中的疑似油污海鸟；游客说法列为现场转述" },
+
+    { "key": "ch01.source.direct", "value": "亲眼可见：活动反应、位置、时间与照片" },
+    { "key": "ch01.source.reported", "value": "游客转述：她认为动物很冷、很饿" },
+    { "key": "ch01.source.unknown", "value": "尚未确认：物种、体温、饥饿程度、受伤原因与污染来源" },
+    { "key": "ch01.source.diagnosis", "value": "把游客判断并入已核实事实" },
+
+    { "key": "ch01.handoff.originals", "value": "原始照片、时间与定位附件" },
+    { "key": "ch01.handoff.source_labels", "value": "每条内容的来源标签" },
+    { "key": "ch01.handoff.timeline", "value": "发现、设界、联络与现场变化时间线" },
+    { "key": "ch01.handoff.unknowns", "value": "仍未确认的物种、状态和污染来源" },
+    { "key": "ch01.handoff.verbal_only", "value": "只口头说“它很虚弱”，不交原始附件" },
+
+    { "key": "ch01.choice.livestream", "value": "把清洗画面排到直播首页，回应质疑" },
+    { "key": "ch01.choice.process_update", "value": "发布不含动物近景的流程说明：已接收、先稳定、后续仅公布经批准信息" },
+    { "key": "ch01.choice.release_appearance", "value": "依据 R2 外观改善，宣布已经康复并马上回海" },
+    { "key": "ch01.choice.release_evidence", "value": "比较 R1—R3，提交专业放归评估申请，不替专家宣布结果" }
+  ]
+}
