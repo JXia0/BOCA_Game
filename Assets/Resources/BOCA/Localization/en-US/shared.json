@@ -1,8 +1,15 @@
 {
   "entries": [
     { "key": "shared.continue", "value": "Continue" },
+    { "key": "shared.submit", "value": "Submit record" },
+    { "key": "shared.case_status", "value": "CASE FILE  •  Decisions {0}  •  Evidence {1}" },
     { "key": "shared.chapter_complete", "value": "Chapter complete" },
-    { "key": "shared.chapter_complete_body", "value": "The technical greybox sequence completed. No narrative content is loaded." },
+    { "key": "shared.chapter_complete_body", "value": "The chapter record has been saved." },
+    { "key": "shared.review_heading", "value": "FINAL RECORD REVIEW" },
+    { "key": "shared.review.strong", "value": "Strong" },
+    { "key": "shared.review.documented", "value": "Documented" },
+    { "key": "shared.review.needs_attention", "value": "Needs attention" },
+    { "key": "shared.review_totals", "value": "{0} decisions recorded • {1} evidence items preserved" },
     { "key": "shared.speaker.narrator", "value": "WRITER CONTENT SLOT" },
     { "key": "shared.speaker.system", "value": "SYSTEM TEST" },
     { "key": "shared.speaker.player", "value": "PLAYER INPUT TEST" }

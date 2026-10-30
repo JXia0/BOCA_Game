@@ -90,11 +90,16 @@ namespace BOCA.Editor
 
             var topBar = CreateImage("ChapterHeader", canvasObject.transform, new Vector2(0f, 0.91f), Vector2.one, Vector2.zero, Vector2.zero, new Color(Navy.r, Navy.g, Navy.b, 0.94f));
             var chapterTitle = CreateText("ChapterTitle", topBar.transform, Vector2.zero, Vector2.one,
-                new Vector2(42f, 8f), new Vector2(-620f, -8f), font, 28, FontStyle.Bold, LightText, TextAnchor.MiddleLeft);
+                new Vector2(42f, 8f), new Vector2(-920f, -8f), font, 28, FontStyle.Bold, LightText, TextAnchor.MiddleLeft);
             var sceneLabel = CreateText("SceneLabel", topBar.transform, Vector2.zero, Vector2.one,
-                new Vector2(1180f, 8f), new Vector2(-42f, -8f), font, 20, FontStyle.Bold, MutedText, TextAnchor.MiddleRight);
+                new Vector2(1000f, 8f), new Vector2(-330f, -8f), font, 20, FontStyle.Bold, MutedText, TextAnchor.MiddleRight);
+            var continueButton = CreateButton("ContinueButton", topBar.transform, new Vector2(1f, 0f), Vector2.one,
+                new Vector2(-300f, 14f), new Vector2(-34f, -14f), font, 21, "CONTINUE");
 
-            var dialoguePanel = CreateImage("DialoguePanel", canvasObject.transform, Vector2.zero, new Vector2(1f, 0.35f),
+            var caseStatus = CreateText("CaseStatus", canvasObject.transform, new Vector2(0.58f, 0.855f), new Vector2(0.98f, 0.905f),
+                Vector2.zero, Vector2.zero, font, 17, FontStyle.Bold, new Color(0.82f, 0.94f, 0.90f, 0.94f), TextAnchor.MiddleRight);
+
+            var dialoguePanel = CreateImage("DialoguePanel", canvasObject.transform, Vector2.zero, new Vector2(1f, 0.43f),
                 Vector2.zero, Vector2.zero, new Color(Navy.r, Navy.g, Navy.b, 0.98f));
             CreateImage("DialogueTopBorder", dialoguePanel.transform, new Vector2(0f, 1f), Vector2.one,
                 new Vector2(0f, -6f), Vector2.zero, SeaGreen);
@@ -108,29 +113,38 @@ namespace BOCA.Editor
                 new Vector2(18f, 18f), new Vector2(-18f, -18f), font, 16, FontStyle.Bold, new Color(1f, 1f, 1f, 0.5f), TextAnchor.MiddleCenter);
 
             var speaker = CreateText("Speaker", dialoguePanel.transform, Vector2.zero, Vector2.one,
-                new Vector2(360f, 292f), new Vector2(-250f, -20f), font, 25, FontStyle.Bold, SeaGreen, TextAnchor.MiddleLeft);
+                new Vector2(360f, 405f), new Vector2(-80f, -18f), font, 25, FontStyle.Bold, SeaGreen, TextAnchor.MiddleLeft);
             var body = CreateText("DialogueBody", dialoguePanel.transform, Vector2.zero, Vector2.one,
-                new Vector2(360f, 110f), new Vector2(-120f, -68f), font, 29, FontStyle.Normal, LightText, TextAnchor.UpperLeft);
+                new Vector2(360f, 90f), new Vector2(-80f, -70f), font, 27, FontStyle.Normal, LightText, TextAnchor.UpperLeft);
             body.resizeTextForBestFit = true;
-            body.resizeTextMinSize = 19;
-            body.resizeTextMaxSize = 29;
+            body.resizeTextMinSize = 18;
+            body.resizeTextMaxSize = 27;
 
-            var continueButton = CreateButton("ContinueButton", dialoguePanel.transform, new Vector2(1f, 0f), new Vector2(1f, 0f),
-                new Vector2(-270f, 24f), new Vector2(-35f, 92f), font, 23, "CONTINUE");
+            var interactionPrompt = CreateText("InteractionPrompt", dialoguePanel.transform, Vector2.zero, Vector2.one,
+                new Vector2(360f, 190f), new Vector2(-80f, -250f), font, 18, FontStyle.Bold, MutedText, TextAnchor.MiddleLeft);
 
-            var choiceButtons = new Button[3];
-            var choiceLabels = new Text[3];
+            var choiceButtons = new Button[6];
+            var choiceLabels = new Text[6];
             for (var i = 0; i < choiceButtons.Length; i++)
             {
-                var bottom = 20f + (choiceButtons.Length - 1 - i) * 62f;
-                choiceButtons[i] = CreateButton($"ChoiceButton{i + 1}", dialoguePanel.transform, Vector2.zero, new Vector2(1f, 0f),
-                    new Vector2(360f, bottom), new Vector2(-120f, bottom + 54f), font, 20, string.Empty);
+                var column = i % 3;
+                var row = i / 3;
+                const float left = 360f;
+                const float right = 80f;
+                const float gap = 14f;
+                var availableWidth = 1920f - left - right;
+                var width = (availableWidth - gap * 2f) / 3f;
+                var xMin = left + column * (width + gap);
+                var xMax = xMin + width;
+                var bottom = row == 0 ? 94f : 24f;
+                choiceButtons[i] = CreateButton($"ChoiceButton{i + 1}", dialoguePanel.transform, Vector2.zero, Vector2.zero,
+                    new Vector2(xMin, bottom), new Vector2(xMax, bottom + 60f), font, 17, string.Empty);
                 choiceLabels[i] = choiceButtons[i].GetComponentInChildren<Text>();
                 choiceButtons[i].gameObject.SetActive(false);
             }
 
             var view = canvasObject.AddComponent<ChapterView>();
-            view.Configure(chapterTitle, sceneLabel, speaker, body, backgroundKey, portraitKey, background, portrait,
+            view.Configure(chapterTitle, sceneLabel, speaker, body, backgroundKey, portraitKey, interactionPrompt, caseStatus, background, portrait,
                 continueButton, continueButton.GetComponentInChildren<Text>(), choiceButtons, choiceLabels);
 
             var controllerObject = new GameObject("ChapterSceneController");
