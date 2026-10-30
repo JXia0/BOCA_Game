@@ -19,7 +19,7 @@
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.02",
       "backgroundKey": "C01_BG_OIL_TIDE_BEACH",
-      "portraitKey": "GB_C01_POR_NPC_01",
+      "portraitKey": "C01_POR_MARINA_NEUTRAL",
       "nextBeatId": "ch01.gb.choice"
     },
     {
@@ -28,7 +28,7 @@
       "speakerKey": "shared.speaker.player",
       "textKey": "ch01.gb.choice",
       "backgroundKey": "C01_BG_RESCUE_HANDOFF",
-      "portraitKey": "GB_C01_POR_PLAYER",
+      "portraitKey": "C01_POR_PLAYER_NEUTRAL",
       "choices": [
         {
           "id": "route_a",
@@ -70,7 +70,7 @@
       "speakerKey": "shared.speaker.narrator",
       "textKey": "ch01.gb.merge",
       "backgroundKey": "C01_BG_RECOVERY_RECORDS",
-      "portraitKey": "GB_C01_POR_NPC_02",
+      "portraitKey": "C01_POR_RESCUEWORKER01_TALK_01",
       "nextBeatId": "ch01.gb.check_a"
     },
     {
