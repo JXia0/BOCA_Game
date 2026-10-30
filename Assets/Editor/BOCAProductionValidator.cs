@@ -66,6 +66,26 @@ namespace BOCA.Editor
             var chapterArtCatalog = BOCAArtCatalogBuilder.LoadChapterCatalog(spec.chapterNumber);
             var beats = new Dictionary<string, NarrativeBeatFile>(StringComparer.Ordinal);
             var setFlags = new HashSet<string>(StringComparer.Ordinal);
+            var reviewDimensions = new HashSet<string>(StringComparer.Ordinal);
+            if (flow.reviewDimensions != null)
+            {
+                foreach (var dimension in flow.reviewDimensions)
+                {
+                    if (dimension == null || string.IsNullOrWhiteSpace(dimension.id))
+                    {
+                        errors.Add($"{spec.chapterId} contains a review dimension without an id");
+                        continue;
+                    }
+
+                    if (!reviewDimensions.Add(dimension.id))
+                    {
+                        errors.Add($"{spec.chapterId} contains duplicate review dimension {dimension.id}");
+                    }
+
+                    ValidateKey(spec.chapterId, dimension.labelKey, chapterKeys, sharedKeys, errors);
+                }
+            }
+
             if (flow.beats == null || flow.beats.Length == 0)
             {
                 errors.Add($"{spec.chapterId} has no beats");
@@ -88,6 +108,8 @@ namespace BOCA.Editor
                 ValidateKey(spec.chapterId, beat.sceneLabelKey, chapterKeys, sharedKeys, errors);
                 ValidateKey(spec.chapterId, beat.speakerKey, chapterKeys, sharedKeys, errors);
                 ValidateKey(spec.chapterId, beat.textKey, chapterKeys, sharedKeys, errors);
+                ValidateKey(spec.chapterId, beat.promptKey, chapterKeys, sharedKeys, errors);
+                ValidateKey(spec.chapterId, beat.submitLabelKey, chapterKeys, sharedKeys, errors);
                 ValidateArtKey(spec, beat.id, "background", beat.backgroundKey, chapterArtCatalog,
                     sharedArtCatalog, errors);
                 ValidateArtKey(spec, beat.id, "portrait", beat.portraitKey, chapterArtCatalog,
@@ -98,21 +120,36 @@ namespace BOCA.Editor
                     errors.Add($"{beat.id} is a character dialogue beat but has no production portrait");
                 }
 
-                if (beat.choices != null && beat.choices.Length > 3)
+                if (beat.choices != null && beat.choices.Length > 6)
                 {
-                    errors.Add($"{beat.id} has {beat.choices.Length} choices; the production UI supports at most 3");
+                    errors.Add($"{beat.id} has {beat.choices.Length} choices; the production UI supports at most 6");
                 }
 
                 if (beat.choices != null)
                 {
+                    ValidateInteraction(spec.chapterId, beat, errors);
                     foreach (var choice in beat.choices)
                     {
                         ValidateKey(spec.chapterId, choice.labelKey, chapterKeys, sharedKeys, errors);
+                        ValidateKey(spec.chapterId, choice.feedbackKey, chapterKeys, sharedKeys, errors);
                         if (!string.IsNullOrWhiteSpace(choice.setFlag))
                         {
                             setFlags.Add(choice.setFlag);
                         }
+
+                        if (choice.setFlags != null)
+                        {
+                            foreach (var flag in choice.setFlags.Where(flag => !string.IsNullOrWhiteSpace(flag)))
+                            {
+                                setFlags.Add(flag);
+                            }
+                        }
+
+                        ValidateEffects(spec.chapterId, beat.id, choice.effects, reviewDimensions, errors);
                     }
+
+                    ValidateEffects(spec.chapterId, beat.id, beat.successEffects, reviewDimensions, errors);
+                    ValidateEffects(spec.chapterId, beat.id, beat.failureEffects, reviewDimensions, errors);
                 }
             }
 
@@ -182,7 +219,37 @@ namespace BOCA.Editor
                         break;
                     }
 
-                    session.Choose(choiceIndex);
+                    if (NarrativeSession.RequiresSubmission(beat))
+                    {
+                        var selectedIndices = new List<int>();
+                        if (beat.expectedChoiceIds != null && beat.expectedChoiceIds.Length > 0)
+                        {
+                            foreach (var expectedId in beat.expectedChoiceIds)
+                            {
+                                var expectedIndex = Array.FindIndex(beat.choices,
+                                    choice => string.Equals(choice.id, expectedId, StringComparison.Ordinal));
+                                if (expectedIndex >= 0)
+                                {
+                                    selectedIndices.Add(expectedIndex);
+                                }
+                            }
+                        }
+
+                        var minimum = Math.Max(1, beat.minimumSelections);
+                        for (var i = 0; selectedIndices.Count < minimum && i < beat.choices.Length; i++)
+                        {
+                            if (!selectedIndices.Contains(i))
+                            {
+                                selectedIndices.Add(i);
+                            }
+                        }
+
+                        session.CommitSelections(selectedIndices);
+                    }
+                    else
+                    {
+                        session.Choose(choiceIndex);
+                    }
                 }
 
                 if (!session.IsComplete)
@@ -198,6 +265,73 @@ namespace BOCA.Editor
             catch (Exception exception)
             {
                 errors.Add($"{flow.chapterId} route {route} failed during simulation: {exception.Message}");
+            }
+        }
+
+        private static void ValidateInteraction(string chapterId, NarrativeBeatFile beat, List<string> errors)
+        {
+            var mode = string.IsNullOrWhiteSpace(beat.interactionMode) ? "single" : beat.interactionMode;
+            if (!string.Equals(mode, "single", StringComparison.OrdinalIgnoreCase) &&
+                !string.Equals(mode, "checklist", StringComparison.OrdinalIgnoreCase) &&
+                !string.Equals(mode, "sequence", StringComparison.OrdinalIgnoreCase))
+            {
+                errors.Add($"{chapterId} beat {beat.id} uses unsupported interaction mode {beat.interactionMode}");
+            }
+
+            var minimum = Math.Max(1, beat.minimumSelections);
+            var maximum = beat.maximumSelections > 0 ? beat.maximumSelections : beat.choices.Length;
+            if (minimum > maximum || maximum > beat.choices.Length)
+            {
+                errors.Add($"{chapterId} beat {beat.id} has invalid selection range {minimum}-{maximum}");
+            }
+
+            var choiceIds = new HashSet<string>(StringComparer.Ordinal);
+            foreach (var choice in beat.choices)
+            {
+                if (choice == null || string.IsNullOrWhiteSpace(choice.id))
+                {
+                    errors.Add($"{chapterId} beat {beat.id} contains a choice without an id");
+                    continue;
+                }
+
+                if (!choiceIds.Add(choice.id))
+                {
+                    errors.Add($"{chapterId} beat {beat.id} contains duplicate choice {choice.id}");
+                }
+            }
+
+            if (beat.expectedChoiceIds == null)
+            {
+                return;
+            }
+
+            foreach (var expectedId in beat.expectedChoiceIds)
+            {
+                if (!choiceIds.Contains(expectedId))
+                {
+                    errors.Add($"{chapterId} beat {beat.id} expects missing choice {expectedId}");
+                }
+            }
+        }
+
+        private static void ValidateEffects(string chapterId, string beatId, NarrativeScoreEffectFile[] effects,
+            HashSet<string> reviewDimensions, List<string> errors)
+        {
+            if (effects == null)
+            {
+                return;
+            }
+
+            foreach (var effect in effects)
+            {
+                if (effect == null || string.IsNullOrWhiteSpace(effect.dimensionId))
+                {
+                    errors.Add($"{chapterId} beat {beatId} contains a score effect without a dimension id");
+                }
+                else if (!reviewDimensions.Contains(effect.dimensionId))
+                {
+                    errors.Add($"{chapterId} beat {beatId} affects undeclared review dimension {effect.dimensionId}");
+                }
             }
         }
 
