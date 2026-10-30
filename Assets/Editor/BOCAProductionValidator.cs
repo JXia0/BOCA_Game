@@ -185,8 +185,24 @@ namespace BOCA.Editor
             }
 
             ValidateReachability(spec.chapterId, flow.startBeatId, beats, errors);
-            ValidateRouteCompletion(flow, "A", errors);
-            ValidateRouteCompletion(flow, "B", errors);
+            var namedRoutes = flow.beats
+                .Where(beat => beat?.choices != null)
+                .SelectMany(beat => beat.choices)
+                .Where(choice => choice != null && !string.IsNullOrWhiteSpace(choice.setRoute))
+                .Select(choice => choice.setRoute)
+                .Distinct(StringComparer.OrdinalIgnoreCase)
+                .ToArray();
+            if (namedRoutes.Length == 0)
+            {
+                ValidateRouteCompletion(flow, null, errors);
+            }
+            else
+            {
+                foreach (var route in namedRoutes)
+                {
+                    ValidateRouteCompletion(flow, route, errors);
+                }
+            }
             ValidateScene(spec, flowAsset, errors);
         }
 
@@ -197,13 +213,14 @@ namespace BOCA.Editor
                 var session = new NarrativeSession(flow);
                 var guard = (flow.beats?.Length ?? 0) * 3 + 1;
                 var usedNamedRoute = false;
+                var routeLabel = string.IsNullOrWhiteSpace(route) ? "default" : route;
 
                 for (var step = 0; step < guard && !session.IsComplete; step++)
                 {
                     var beat = session.CurrentBeat;
                     if (!string.IsNullOrWhiteSpace(beat.requiredFlag) && !session.Flags.Contains(beat.requiredFlag))
                     {
-                        errors.Add($"{flow.chapterId} route {route} displayed conditional beat {beat.id} without flag {beat.requiredFlag}");
+                        errors.Add($"{flow.chapterId} route {routeLabel} displayed conditional beat {beat.id} without flag {beat.requiredFlag}");
                         return;
                     }
 
@@ -216,7 +233,8 @@ namespace BOCA.Editor
                     var choiceIndex = 0;
                     for (var i = 0; i < beat.choices.Length; i++)
                     {
-                        if (!string.Equals(beat.choices[i].setRoute, route, StringComparison.OrdinalIgnoreCase))
+                        if (string.IsNullOrWhiteSpace(route) ||
+                            !string.Equals(beat.choices[i].setRoute, route, StringComparison.OrdinalIgnoreCase))
                         {
                             continue;
                         }
@@ -261,17 +279,18 @@ namespace BOCA.Editor
 
                 if (!session.IsComplete)
                 {
-                    errors.Add($"{flow.chapterId} route {route} did not reach chapter completion");
+                    errors.Add($"{flow.chapterId} route {routeLabel} did not reach chapter completion");
                 }
 
-                if (!usedNamedRoute)
+                if (!string.IsNullOrWhiteSpace(route) && !usedNamedRoute)
                 {
-                    errors.Add($"{flow.chapterId} has no choice that selects route {route}");
+                    errors.Add($"{flow.chapterId} has no choice that selects route {routeLabel}");
                 }
             }
             catch (Exception exception)
             {
-                errors.Add($"{flow.chapterId} route {route} failed during simulation: {exception.Message}");
+                var routeLabel = string.IsNullOrWhiteSpace(route) ? "default" : route;
+                errors.Add($"{flow.chapterId} route {routeLabel} failed during simulation: {exception.Message}");
             }
         }
 

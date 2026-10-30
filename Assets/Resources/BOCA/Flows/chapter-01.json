@@ -2,105 +2,148 @@
   "chapterId": "chapter-01",
   "localizationTable": "chapter-01",
   "titleKey": "ch01.title",
-  "startBeatId": "ch01.gb.01",
+  "startBeatId": "ch01.archive.opening",
+  "reviewDimensions": [
+    { "id": "safety", "labelKey": "ch01.review.safety", "startingScore": 0 },
+    { "id": "record", "labelKey": "ch01.review.record", "startingScore": 0 },
+    { "id": "care", "labelKey": "ch01.review.care", "startingScore": 0 },
+    { "id": "recovery", "labelKey": "ch01.review.recovery", "startingScore": 0 }
+  ],
   "beats": [
+    { "id": "ch01.archive.opening", "sceneLabelKey": "ch01.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch01.archive.opening", "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_OPENING", "portraitKey": "", "nextBeatId": "ch01.archive.mission" },
+    { "id": "ch01.archive.mission", "sceneLabelKey": "ch01.scene.01", "speakerKey": "ch01.speaker.archivist", "textKey": "ch01.archive.mission", "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_OPENING", "portraitKey": "C01_POR_ARCHIVIST_TALK_01", "nextBeatId": "ch01.beach.observe" },
     {
-      "id": "ch01.gb.01",
-      "sceneLabelKey": "ch01.scene.01",
-      "speakerKey": "shared.speaker.narrator",
-      "textKey": "ch01.gb.01",
-      "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_OPENING",
-      "portraitKey": "",
-      "nextBeatId": "ch01.gb.02"
-    },
-    {
-      "id": "ch01.gb.02",
+      "id": "ch01.beach.observe",
       "sceneLabelKey": "ch01.scene.02",
-      "speakerKey": "shared.speaker.narrator",
-      "textKey": "ch01.gb.02",
-      "backgroundKey": "C01_BG_OIL_TIDE_BEACH",
-      "portraitKey": "C01_POR_MARINA_NEUTRAL",
-      "nextBeatId": "ch01.gb.choice"
-    },
-    {
-      "id": "ch01.gb.choice",
-      "sceneLabelKey": "ch01.scene.03",
       "speakerKey": "shared.speaker.player",
-      "textKey": "ch01.gb.choice",
-      "backgroundKey": "C01_BG_RESCUE_HANDOFF",
+      "textKey": "ch01.beach.observe",
+      "backgroundKey": "C01_BG_OIL_TIDE_BEACH",
       "portraitKey": "C01_POR_PLAYER_NEUTRAL",
+      "interactionMode": "checklist",
+      "promptKey": "ch01.prompt.observe",
+      "submitLabelKey": "ch01.action.save_observation",
+      "minimumSelections": 4,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["location_time", "visible_condition", "people_pets", "tide_ground"],
+      "successEffects": [{ "dimensionId": "record", "delta": 2 }, { "dimensionId": "safety", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "record", "delta": -1 }],
+      "nextBeatId": "ch01.beach.boundary",
       "choices": [
-        {
-          "id": "route_a",
-          "labelKey": "ch01.choice.route_a",
-          "nextBeatId": "ch01.gb.branch_a",
-          "setRoute": "A",
-          "setFlag": "ch01.gb.flag.route_a"
-        },
-        {
-          "id": "route_b",
-          "labelKey": "ch01.choice.route_b",
-          "nextBeatId": "ch01.gb.branch_b",
-          "setRoute": "B",
-          "setFlag": "ch01.gb.flag.route_b"
-        }
+        { "id": "location_time", "labelKey": "ch01.observe.location_time", "evidenceIds": ["ch01.location_time"] },
+        { "id": "visible_condition", "labelKey": "ch01.observe.visible_condition", "evidenceIds": ["ch01.visible_condition"] },
+        { "id": "people_pets", "labelKey": "ch01.observe.people_pets", "evidenceIds": ["ch01.people_pets"] },
+        { "id": "tide_ground", "labelKey": "ch01.observe.tide_ground", "evidenceIds": ["ch01.tide_ground"] },
+        { "id": "diagnose", "labelKey": "ch01.observe.diagnose", "effects": [{ "dimensionId": "record", "delta": -2 }] },
+        { "id": "touch_feathers", "labelKey": "ch01.observe.touch_feathers", "effects": [{ "dimensionId": "safety", "delta": -3 }] }
       ]
     },
     {
-      "id": "ch01.gb.branch_a",
-      "sceneLabelKey": "ch01.scene.04",
-      "speakerKey": "shared.speaker.system",
-      "textKey": "ch01.gb.branch_a",
-      "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER",
-      "portraitKey": "",
-      "nextBeatId": "ch01.gb.merge"
+      "id": "ch01.beach.boundary",
+      "sceneLabelKey": "ch01.scene.02",
+      "speakerKey": "ch01.speaker.tourist",
+      "textKey": "ch01.beach.boundary",
+      "backgroundKey": "C01_BG_OIL_TIDE_BEACH",
+      "portraitKey": "C01_POR_MARINA_TALK_02_CONFUSED",
+      "interactionMode": "single",
+      "promptKey": "ch01.prompt.boundary",
+      "choices": [
+        { "id": "rush_in", "labelKey": "ch01.choice.rush_in", "nextBeatId": "ch01.record.title", "setFlags": ["ch01.unsafe_approach"], "effects": [{ "dimensionId": "safety", "delta": -3 }, { "dimensionId": "care", "delta": -1 }] },
+        { "id": "keep_distance", "labelKey": "ch01.choice.keep_distance", "nextBeatId": "ch01.record.title", "setFlags": ["ch01.safe_boundary"], "effects": [{ "dimensionId": "safety", "delta": 2 }] }
+      ]
     },
     {
-      "id": "ch01.gb.branch_b",
-      "sceneLabelKey": "ch01.scene.04",
-      "speakerKey": "shared.speaker.system",
-      "textKey": "ch01.gb.branch_b",
-      "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER",
-      "portraitKey": "",
-      "nextBeatId": "ch01.gb.merge"
+      "id": "ch01.record.title",
+      "sceneLabelKey": "ch01.scene.03",
+      "speakerKey": "ch01.speaker.tourist",
+      "textKey": "ch01.record.title",
+      "backgroundKey": "C01_BG_RESCUE_HANDOFF",
+      "portraitKey": "C01_POR_MARINA_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch01.prompt.title",
+      "choices": [
+        { "id": "overclaim", "labelKey": "ch01.choice.title_overclaim", "nextBeatId": "ch01.record.sources", "setFlags": ["ch01.overclaim"], "effects": [{ "dimensionId": "record", "delta": -3 }] },
+        { "id": "observed", "labelKey": "ch01.choice.title_observed", "nextBeatId": "ch01.record.sources", "setFlags": ["ch01.observation_limited"], "effects": [{ "dimensionId": "record", "delta": 2 }] }
+      ]
     },
     {
-      "id": "ch01.gb.merge",
+      "id": "ch01.record.sources",
+      "sceneLabelKey": "ch01.scene.03",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch01.record.sources",
+      "backgroundKey": "C01_BG_RESCUE_HANDOFF",
+      "portraitKey": "",
+      "interactionMode": "sequence",
+      "promptKey": "ch01.prompt.sources",
+      "submitLabelKey": "ch01.action.file_record",
+      "minimumSelections": 3,
+      "maximumSelections": 3,
+      "expectedChoiceIds": ["direct", "reported", "unknown"],
+      "successEffects": [{ "dimensionId": "record", "delta": 2 }],
+      "failureEffects": [{ "dimensionId": "record", "delta": -1 }],
+      "nextBeatId": "ch01.handoff.arrival",
+      "choices": [
+        { "id": "direct", "labelKey": "ch01.source.direct", "evidenceIds": ["ch01.direct_observation"] },
+        { "id": "reported", "labelKey": "ch01.source.reported", "evidenceIds": ["ch01.reported_account"] },
+        { "id": "unknown", "labelKey": "ch01.source.unknown", "evidenceIds": ["ch01.unknown_items"] },
+        { "id": "diagnosis", "labelKey": "ch01.source.diagnosis", "effects": [{ "dimensionId": "record", "delta": -2 }] }
+      ]
+    },
+    { "id": "ch01.handoff.arrival", "sceneLabelKey": "ch01.scene.04", "speakerKey": "ch01.speaker.rescuer", "textKey": "ch01.handoff.arrival", "backgroundKey": "C01_BG_RESCUE_HANDOFF", "portraitKey": "C01_POR_RESCUEWORKER01_TALK_01", "nextBeatId": "ch01.handoff.package" },
+    {
+      "id": "ch01.handoff.package",
+      "sceneLabelKey": "ch01.scene.04",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch01.handoff.package",
+      "backgroundKey": "C01_BG_RESCUE_HANDOFF",
+      "portraitKey": "C01_POR_PLAYER_TALK_01",
+      "interactionMode": "checklist",
+      "promptKey": "ch01.prompt.handoff",
+      "submitLabelKey": "ch01.action.complete_handoff",
+      "minimumSelections": 3,
+      "maximumSelections": 5,
+      "expectedChoiceIds": ["originals", "source_labels", "timeline", "unknowns"],
+      "successEffects": [{ "dimensionId": "record", "delta": 2 }, { "dimensionId": "care", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "record", "delta": -1 }],
+      "nextBeatId": "ch01.care.station",
+      "choices": [
+        { "id": "originals", "labelKey": "ch01.handoff.originals", "evidenceIds": ["ch01.original_attachments"] },
+        { "id": "source_labels", "labelKey": "ch01.handoff.source_labels", "evidenceIds": ["ch01.source_labels"] },
+        { "id": "timeline", "labelKey": "ch01.handoff.timeline", "evidenceIds": ["ch01.timeline"] },
+        { "id": "unknowns", "labelKey": "ch01.handoff.unknowns", "evidenceIds": ["ch01.unknowns"] },
+        { "id": "verbal_only", "labelKey": "ch01.handoff.verbal_only", "effects": [{ "dimensionId": "record", "delta": -2 }] }
+      ]
+    },
+    { "id": "ch01.care.station", "sceneLabelKey": "ch01.scene.05", "speakerKey": "ch01.speaker.rescuer", "textKey": "ch01.care.station", "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER", "portraitKey": "C01_POR_RESCUEWORKER01_THINK", "nextBeatId": "ch01.care.communication" },
+    {
+      "id": "ch01.care.communication",
       "sceneLabelKey": "ch01.scene.05",
-      "speakerKey": "shared.speaker.narrator",
-      "textKey": "ch01.gb.merge",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch01.care.communication",
+      "backgroundKey": "C01_BG_WILDLIFE_CARE_CENTER",
+      "portraitKey": "C01_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch01.prompt.communication",
+      "choices": [
+        { "id": "livestream", "labelKey": "ch01.choice.livestream", "nextBeatId": "ch01.recovery.records", "effects": [{ "dimensionId": "care", "delta": -2 }, { "dimensionId": "safety", "delta": -1 }] },
+        { "id": "process_update", "labelKey": "ch01.choice.process_update", "nextBeatId": "ch01.recovery.records", "effects": [{ "dimensionId": "care", "delta": 2 }] }
+      ]
+    },
+    { "id": "ch01.recovery.records", "sceneLabelKey": "ch01.scene.06", "speakerKey": "ch01.speaker.rescuer", "textKey": "ch01.recovery.records", "backgroundKey": "C01_BG_RECOVERY_RECORDS", "portraitKey": "C01_POR_RESCUEWORKER01_TALK_02", "nextBeatId": "ch01.recovery.release_request" },
+    {
+      "id": "ch01.recovery.release_request",
+      "sceneLabelKey": "ch01.scene.06",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch01.recovery.release_request",
       "backgroundKey": "C01_BG_RECOVERY_RECORDS",
-      "portraitKey": "C01_POR_RESCUEWORKER01_TALK_01",
-      "nextBeatId": "ch01.gb.check_a"
+      "portraitKey": "C01_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch01.prompt.release",
+      "choices": [
+        { "id": "appearance", "labelKey": "ch01.choice.release_appearance", "nextBeatId": "ch01.release.scene", "effects": [{ "dimensionId": "recovery", "delta": -3 }] },
+        { "id": "multi_day", "labelKey": "ch01.choice.release_evidence", "nextBeatId": "ch01.release.scene", "evidenceIds": ["ch01.multi_day_recovery"], "effects": [{ "dimensionId": "recovery", "delta": 3 }, { "dimensionId": "care", "delta": 1 }] }
+      ]
     },
-    {
-      "id": "ch01.gb.check_a",
-      "sceneLabelKey": "ch01.scene.06",
-      "speakerKey": "shared.speaker.system",
-      "textKey": "ch01.gb.check_a",
-      "backgroundKey": "C01_BG_SEASIDE_RELEASE",
-      "portraitKey": "",
-      "nextBeatId": "ch01.gb.check_b",
-      "requiredFlag": "ch01.gb.flag.route_a"
-    },
-    {
-      "id": "ch01.gb.check_b",
-      "sceneLabelKey": "ch01.scene.06",
-      "speakerKey": "shared.speaker.system",
-      "textKey": "ch01.gb.check_b",
-      "backgroundKey": "C01_BG_SEASIDE_RELEASE",
-      "portraitKey": "",
-      "nextBeatId": "ch01.gb.end",
-      "requiredFlag": "ch01.gb.flag.route_b"
-    },
-    {
-      "id": "ch01.gb.end",
-      "sceneLabelKey": "ch01.scene.07",
-      "speakerKey": "shared.speaker.narrator",
-      "textKey": "ch01.gb.end",
-      "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_RETURN",
-      "portraitKey": "",
-      "nextBeatId": ""
-    }
+    { "id": "ch01.release.scene", "sceneLabelKey": "ch01.scene.07", "speakerKey": "ch01.speaker.rescuer", "textKey": "ch01.release.scene", "backgroundKey": "C01_BG_SEASIDE_RELEASE", "portraitKey": "C01_POR_RESCUEWORKER01_TALK_01", "nextBeatId": "ch01.archive.review" },
+    { "id": "ch01.archive.review", "sceneLabelKey": "ch01.scene.08", "speakerKey": "ch01.speaker.archivist", "textKey": "ch01.archive.review", "backgroundKey": "C01_BG_UNDERSEA_ARCHIVE_RETURN", "portraitKey": "C01_POR_ARCHIVIST_SMILE", "nextBeatId": "" }
   ]
 }
