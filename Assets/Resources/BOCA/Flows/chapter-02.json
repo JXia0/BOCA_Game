@@ -2,27 +2,201 @@
   "chapterId": "chapter-02",
   "localizationTable": "chapter-02",
   "titleKey": "ch02.title",
-  "startBeatId": "ch02.gb.01",
+  "startBeatId": "ch02.archive.opening",
+  "reviewDimensions": [
+    { "id": "log", "labelKey": "ch02.review.log", "startingScore": 0 },
+    { "id": "site_order", "labelKey": "ch02.review.site_order", "startingScore": 0 },
+    { "id": "animal_safety", "labelKey": "ch02.review.animal_safety", "startingScore": 0 },
+    { "id": "tow_readiness", "labelKey": "ch02.review.tow_readiness", "startingScore": 0 },
+    { "id": "route_reliability", "labelKey": "ch02.review.route_reliability", "startingScore": 0 }
+  ],
   "beats": [
-    { "id": "ch02.gb.01", "sceneLabelKey": "ch02.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.01", "backgroundKey": "C02_BG_UNDERSEA_ARCHIVE", "portraitKey": "", "nextBeatId": "ch02.gb.02" },
-    { "id": "ch02.gb.02", "sceneLabelKey": "ch02.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.02", "backgroundKey": "C02_BG_FUJIAN_FISHING_VILLAGE", "portraitKey": "C02_POR_FISHERMAN_NEUTRAL", "nextBeatId": "ch02.gb.choice" },
+    { "id": "ch02.archive.opening", "sceneLabelKey": "ch02.scene.00", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.archive.opening", "backgroundKey": "C02_BG_UNDERSEA_ARCHIVE", "portraitKey": "", "nextBeatId": "ch02.report.call" },
+    { "id": "ch02.report.call", "sceneLabelKey": "ch02.scene.01", "speakerKey": "ch02.speaker.fisherman", "textKey": "ch02.report.call", "backgroundKey": "C02_BG_EMERGENCY_DESK", "portraitKey": "C02_POR_FISHERMAN_TALK", "nextBeatId": "ch02.report.title" },
     {
-      "id": "ch02.gb.choice",
-      "sceneLabelKey": "ch02.scene.03",
+      "id": "ch02.report.title",
+      "sceneLabelKey": "ch02.scene.01",
       "speakerKey": "shared.speaker.player",
-      "textKey": "ch02.gb.choice",
-      "backgroundKey": "C02_BG_WHALE_MUDFLAT_LOW_TIDE",
-      "portraitKey": "C02_POR_PLAYER_WORRIED",
+      "textKey": "ch02.report.title",
+      "backgroundKey": "C02_BG_EMERGENCY_DESK",
+      "portraitKey": "C02_POR_PLAYER_THINKING",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.title",
       "choices": [
-        { "id": "route_a", "labelKey": "ch02.choice.route_a", "nextBeatId": "ch02.gb.branch_a", "setRoute": "A", "setFlag": "ch02.gb.flag.route_a" },
-        { "id": "route_b", "labelKey": "ch02.choice.route_b", "nextBeatId": "ch02.gb.branch_b", "setRoute": "B", "setFlag": "ch02.gb.flag.route_b" }
+        { "id": "overclaim", "labelKey": "ch02.choice.title_overclaim", "nextBeatId": "ch02.site.boundary", "effects": [{ "dimensionId": "log", "delta": -3 }] },
+        { "id": "verified", "labelKey": "ch02.choice.title_verified", "nextBeatId": "ch02.site.boundary", "evidenceIds": ["ch02.initial_report"], "effects": [{ "dimensionId": "log", "delta": 2 }] }
       ]
     },
-    { "id": "ch02.gb.branch_a", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_a", "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
-    { "id": "ch02.gb.branch_b", "sceneLabelKey": "ch02.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.branch_b", "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR", "portraitKey": "", "nextBeatId": "ch02.gb.merge" },
-    { "id": "ch02.gb.merge", "sceneLabelKey": "ch02.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.merge", "backgroundKey": "C02_BG_NIGHT_TOWING", "portraitKey": "C02_POR_FISHERMAN_TALK", "nextBeatId": "ch02.gb.check_a" },
-    { "id": "ch02.gb.check_a", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_a", "backgroundKey": "C02_BG_DEEP_WATER_ROUTE", "portraitKey": "", "nextBeatId": "ch02.gb.check_b", "requiredFlag": "ch02.gb.flag.route_a" },
-    { "id": "ch02.gb.check_b", "sceneLabelKey": "ch02.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch02.gb.check_b", "backgroundKey": "C02_BG_DEEP_WATER_ROUTE", "portraitKey": "", "nextBeatId": "ch02.gb.end", "requiredFlag": "ch02.gb.flag.route_b" },
-    { "id": "ch02.gb.end", "sceneLabelKey": "ch02.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch02.gb.end", "backgroundKey": "C02_BG_DAWN_RELEASE", "portraitKey": "", "nextBeatId": "" }
+    {
+      "id": "ch02.site.boundary",
+      "sceneLabelKey": "ch02.scene.02",
+      "speakerKey": "ch02.speaker.commander",
+      "textKey": "ch02.site.boundary",
+      "backgroundKey": "C02_BG_WHALE_MUDFLAT_LOW_TIDE",
+      "portraitKey": "C02_POR_PLAYER_DETERMINED",
+      "interactionMode": "checklist",
+      "promptKey": "ch02.prompt.site_map",
+      "submitLabelKey": "ch02.action.confirm_site",
+      "minimumSelections": 4,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["rescue_lane", "public_line", "vessel_zone", "hazards"],
+      "successEffects": [{ "dimensionId": "site_order", "delta": 3 }, { "dimensionId": "animal_safety", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "site_order", "delta": -1 }],
+      "nextBeatId": "ch02.life.hourly_record",
+      "choices": [
+        { "id": "rescue_lane", "labelKey": "ch02.site.rescue_lane", "evidenceIds": ["ch02.rescue_lane"] },
+        { "id": "public_line", "labelKey": "ch02.site.public_line", "evidenceIds": ["ch02.public_line"] },
+        { "id": "vessel_zone", "labelKey": "ch02.site.vessel_zone", "evidenceIds": ["ch02.vessel_zone"] },
+        { "id": "hazards", "labelKey": "ch02.site.hazards", "evidenceIds": ["ch02.hazards"] },
+        { "id": "push_tail", "labelKey": "ch02.site.push_tail", "effects": [{ "dimensionId": "animal_safety", "delta": -3 }, { "dimensionId": "site_order", "delta": -2 }] },
+        { "id": "lights", "labelKey": "ch02.site.lights", "effects": [{ "dimensionId": "animal_safety", "delta": -1 }] }
+      ]
+    },
+    {
+      "id": "ch02.life.hourly_record",
+      "sceneLabelKey": "ch02.scene.03",
+      "speakerKey": "ch02.speaker.expert",
+      "textKey": "ch02.life.hourly_record",
+      "backgroundKey": "C02_BG_WHALE_MUDFLAT_LOW_TIDE",
+      "portraitKey": "C02_POR_PLAYER_WORRIED",
+      "interactionMode": "checklist",
+      "promptKey": "ch02.prompt.hourly_record",
+      "submitLabelKey": "ch02.action.save_hour",
+      "minimumSelections": 5,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["breathing", "posture", "visible_injury", "shade_water", "time_reporter"],
+      "successEffects": [{ "dimensionId": "log", "delta": 2 }, { "dimensionId": "animal_safety", "delta": 2 }],
+      "failureEffects": [{ "dimensionId": "log", "delta": -1 }],
+      "nextBeatId": "ch02.life.judgment",
+      "choices": [
+        { "id": "breathing", "labelKey": "ch02.life.breathing", "evidenceIds": ["ch02.breathing_record"] },
+        { "id": "posture", "labelKey": "ch02.life.posture", "evidenceIds": ["ch02.posture_record"] },
+        { "id": "visible_injury", "labelKey": "ch02.life.visible_injury", "evidenceIds": ["ch02.visible_injury_record"] },
+        { "id": "shade_water", "labelKey": "ch02.life.shade_water", "evidenceIds": ["ch02.support_record"] },
+        { "id": "time_reporter", "labelKey": "ch02.life.time_reporter", "evidenceIds": ["ch02.record_provenance"] },
+        { "id": "internal_diagnosis", "labelKey": "ch02.life.internal_diagnosis", "effects": [{ "dimensionId": "log", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch02.life.judgment",
+      "sceneLabelKey": "ch02.scene.03",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch02.life.judgment",
+      "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR",
+      "portraitKey": "C02_POR_PLAYER_THINKING",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.judgment",
+      "choices": [
+        { "id": "self_diagnose", "labelKey": "ch02.choice.self_diagnose", "nextBeatId": "ch02.tow.precheck", "effects": [{ "dimensionId": "log", "delta": -2 }, { "dimensionId": "animal_safety", "delta": -1 }] },
+        { "id": "record_and_refer", "labelKey": "ch02.choice.record_and_refer", "nextBeatId": "ch02.tow.precheck", "effects": [{ "dimensionId": "log", "delta": 1 }, { "dimensionId": "animal_safety", "delta": 1 }] }
+      ]
+    },
+    {
+      "id": "ch02.tow.precheck",
+      "sceneLabelKey": "ch02.scene.04",
+      "speakerKey": "ch02.speaker.commander",
+      "textKey": "ch02.tow.precheck",
+      "backgroundKey": "C02_BG_SUNSET_SEA",
+      "portraitKey": "C02_POR_PLAYER_DETERMINED",
+      "interactionMode": "checklist",
+      "promptKey": "ch02.prompt.tow_check",
+      "submitLabelKey": "ch02.action.review_plan",
+      "minimumSelections": 5,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["tide", "expert", "rigging", "route", "communications"],
+      "successEffects": [{ "dimensionId": "tow_readiness", "delta": 3 }, { "dimensionId": "route_reliability", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "tow_readiness", "delta": -2 }],
+      "nextBeatId": "ch02.tow.plan",
+      "choices": [
+        { "id": "tide", "labelKey": "ch02.tow.tide", "evidenceIds": ["ch02.tide_check"] },
+        { "id": "expert", "labelKey": "ch02.tow.expert", "evidenceIds": ["ch02.expert_approval"] },
+        { "id": "rigging", "labelKey": "ch02.tow.rigging", "evidenceIds": ["ch02.rigging_check"] },
+        { "id": "route", "labelKey": "ch02.tow.route", "evidenceIds": ["ch02.route_check"] },
+        { "id": "communications", "labelKey": "ch02.tow.communications", "evidenceIds": ["ch02.comms_check"] },
+        { "id": "horsepower", "labelKey": "ch02.tow.horsepower", "effects": [{ "dimensionId": "tow_readiness", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch02.tow.plan",
+      "sceneLabelKey": "ch02.scene.04",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch02.tow.plan",
+      "backgroundKey": "C02_BG_SUNSET_SEA",
+      "portraitKey": "C02_POR_PLAYER_THINKING",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.tow_plan",
+      "choices": [
+        { "id": "single_boat", "labelKey": "ch02.choice.single_boat", "nextBeatId": "ch02.night.sources", "effects": [{ "dimensionId": "tow_readiness", "delta": -3 }, { "dimensionId": "animal_safety", "delta": -2 }] },
+        { "id": "multi_vessel", "labelKey": "ch02.choice.multi_vessel", "nextBeatId": "ch02.night.sources", "effects": [{ "dimensionId": "tow_readiness", "delta": 2 }, { "dimensionId": "animal_safety", "delta": 1 }] },
+        { "id": "wait_unprepared", "labelKey": "ch02.choice.wait_unprepared", "nextBeatId": "ch02.night.sources", "effects": [{ "dimensionId": "tow_readiness", "delta": -2 }, { "dimensionId": "route_reliability", "delta": -1 }] }
+      ]
+    },
+    {
+      "id": "ch02.night.sources",
+      "sceneLabelKey": "ch02.scene.05",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch02.night.sources",
+      "backgroundKey": "C02_BG_NIGHT_TOWING",
+      "portraitKey": "",
+      "interactionMode": "sequence",
+      "promptKey": "ch02.prompt.sort_reports",
+      "submitLabelKey": "ch02.action.submit_instruction",
+      "minimumSelections": 4,
+      "maximumSelections": 4,
+      "expectedChoiceIds": ["expert_instruction", "rope_tension", "scout_route", "breathing_activity"],
+      "successEffects": [{ "dimensionId": "route_reliability", "delta": 2 }, { "dimensionId": "log", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "route_reliability", "delta": -1 }],
+      "nextBeatId": "ch02.night.decision",
+      "choices": [
+        { "id": "expert_instruction", "labelKey": "ch02.night.expert_instruction" },
+        { "id": "rope_tension", "labelKey": "ch02.night.rope_tension" },
+        { "id": "scout_route", "labelKey": "ch02.night.scout_route" },
+        { "id": "breathing_activity", "labelKey": "ch02.night.breathing_activity" },
+        { "id": "missing_time", "labelKey": "ch02.night.missing_time", "effects": [{ "dimensionId": "log", "delta": -1 }] }
+      ]
+    },
+    {
+      "id": "ch02.night.decision",
+      "sceneLabelKey": "ch02.scene.05",
+      "speakerKey": "ch02.speaker.expert",
+      "textKey": "ch02.night.decision",
+      "backgroundKey": "C02_BG_NIGHT_TOWING",
+      "portraitKey": "C02_POR_PLAYER_WORRIED",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.night_decision",
+      "choices": [
+        { "id": "accelerate", "labelKey": "ch02.choice.accelerate", "nextBeatId": "ch02.route.communication", "effects": [{ "dimensionId": "animal_safety", "delta": -3 }, { "dimensionId": "tow_readiness", "delta": -1 }] },
+        { "id": "pause", "labelKey": "ch02.choice.pause", "nextBeatId": "ch02.route.communication", "effects": [{ "dimensionId": "animal_safety", "delta": 2 }, { "dimensionId": "log", "delta": 1 }] }
+      ]
+    },
+    {
+      "id": "ch02.route.communication",
+      "sceneLabelKey": "ch02.scene.06",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch02.route.communication",
+      "backgroundKey": "C02_BG_DEEP_WATER_ROUTE",
+      "portraitKey": "C02_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.communication",
+      "choices": [
+        { "id": "fill_coordinates", "labelKey": "ch02.choice.fill_coordinates", "nextBeatId": "ch02.release.record", "effects": [{ "dimensionId": "route_reliability", "delta": -3 }, { "dimensionId": "log", "delta": -2 }] },
+        { "id": "mark_unknown", "labelKey": "ch02.choice.mark_unknown", "nextBeatId": "ch02.release.record", "effects": [{ "dimensionId": "route_reliability", "delta": 2 }, { "dimensionId": "log", "delta": 1 }] }
+      ]
+    },
+    {
+      "id": "ch02.release.record",
+      "sceneLabelKey": "ch02.scene.07",
+      "speakerKey": "ch02.speaker.expert",
+      "textKey": "ch02.release.record",
+      "backgroundKey": "C02_BG_DAWN_RELEASE",
+      "portraitKey": "C02_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch02.prompt.release_record",
+      "choices": [
+        { "id": "complete_recovery", "labelKey": "ch02.choice.complete_recovery", "nextBeatId": "ch02.log.audit", "effects": [{ "dimensionId": "log", "delta": -3 }] },
+        { "id": "observed_release", "labelKey": "ch02.choice.observed_release", "nextBeatId": "ch02.log.audit", "evidenceIds": ["ch02.release_observation"], "effects": [{ "dimensionId": "log", "delta": 2 }, { "dimensionId": "route_reliability", "delta": 1 }] }
+      ]
+    },
+    { "id": "ch02.log.audit", "sceneLabelKey": "ch02.scene.08", "speakerKey": "ch02.speaker.commander", "textKey": "ch02.log.audit", "backgroundKey": "C02_BG_COMMAND_VEHICLE_INTERIOR", "portraitKey": "C02_POR_PLAYER_DETERMINED", "nextBeatId": "" }
   ]
 }
