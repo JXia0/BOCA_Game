@@ -19,6 +19,7 @@ BOCA is a Unity 6000.5.3f1 pixel-art educational game built around dialogue, ima
 - `LocalizationService` stores the selected language in `PlayerPrefs`.
 - `GameProgressService` stores chapter completion and unlocks the next chapter.
 - `GameSettingsService` owns master volume.
+- `UiAudioService` generates original click, confirm, and chapter-complete feedback at runtime without external audio files.
 - `SceneNavigator` provides menu, chapter, replay, and quit transitions.
 - `NarrativeSession` records decisions, evidence, flags, routes, and review scores.
 - `ChapterSceneController` connects approved flow data, localization, art catalogs, save progress, and the view.
@@ -41,13 +42,14 @@ Missing production art is a validation failure. The runtime no longer displays t
 - main menu is the first enabled Build Settings scene;
 - every production scene has exactly one required controller/view and opens without compiler errors;
 - every route reaches completion without forced-correct quiz loops;
-- localization keys, beat links, expected choices, evidence IDs, and review dimensions resolve;
+- English and Simplified Chinese localization tables have matching, non-empty keys;
+- beat links, expected choices, evidence IDs, and review dimensions resolve;
 - every referenced production sprite resolves;
 - keyboard and mouse controls both work;
 - completion saves progress and unlocks the next chapter;
 - Windows development build and representative visual captures pass;
-- runtime JSON contains no unapproved translation or narrative rewrite.
+- source-language narrative records remain unchanged; authorized translations preserve their evidence and uncertainty boundaries.
 
-## Known external-content gap
+## Audio scope
 
-No audio files are currently present under `Assets`. The volume setting and Unity audio path are ready, but music, ambience, and UI sound cannot be considered complete until the team supplies approved audio assets and usage rights.
+Basic original UI feedback is complete: click, confirm, and chapter-complete sounds are generated procedurally and follow the master-volume setting. Music, ambience, and authored scene sound remain outside the current scope; add them only after the team supplies approved assets and usage rights.

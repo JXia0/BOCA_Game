@@ -423,12 +423,30 @@ namespace BOCA.Editor
 
         private static HashSet<string> LoadLocalizationKeys(string table, List<string> errors)
         {
-            var path = $"Assets/Resources/BOCA/Localization/en-US/{table}.json";
+            var englishKeys = LoadLocaleKeys("en-US", table, errors);
+            var chineseKeys = LoadLocaleKeys("zh-CN", table, errors);
+
+            foreach (var key in englishKeys.Where(key => !chineseKeys.Contains(key)))
+            {
+                errors.Add($"Simplified Chinese localization table {table} is missing key {key}");
+            }
+
+            foreach (var key in chineseKeys.Where(key => !englishKeys.Contains(key)))
+            {
+                errors.Add($"Simplified Chinese localization table {table} contains extra key {key}");
+            }
+
+            return englishKeys;
+        }
+
+        private static HashSet<string> LoadLocaleKeys(string locale, string table, List<string> errors)
+        {
+            var path = $"Assets/Resources/BOCA/Localization/{locale}/{table}.json";
             var asset = AssetDatabase.LoadAssetAtPath<TextAsset>(path);
             var keys = new HashSet<string>(StringComparer.Ordinal);
             if (asset == null)
             {
-                errors.Add($"Missing English localization table {path}");
+                errors.Add($"Missing {locale} localization table {path}");
                 return keys;
             }
 
@@ -454,7 +472,7 @@ namespace BOCA.Editor
 
                 if (string.IsNullOrWhiteSpace(entry.value))
                 {
-                    errors.Add($"Localization key {entry.key} has an empty English value");
+                    errors.Add($"Localization key {entry.key} has an empty {locale} value");
                 }
             }
 
@@ -472,7 +490,7 @@ namespace BOCA.Editor
             var set = key.StartsWith("shared.", StringComparison.Ordinal) ? sharedKeys : chapterKeys;
             if (!set.Contains(key))
             {
-                errors.Add($"{chapterId} references missing English localization key {key}");
+                errors.Add($"{chapterId} references missing runtime localization key {key}");
             }
         }
 

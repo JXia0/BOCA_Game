@@ -14,7 +14,7 @@
     { "key": "menu.back", "value": "返回" },
     { "key": "menu.volume", "value": "主音量" },
     { "key": "menu.chapter_hint", "value": "完成当前章节后解锁下一份记录。" },
-    { "key": "menu.settings_hint", "value": "章节正文只在剧本译文确认后切换。" },
+    { "key": "menu.settings_hint", "value": "语言切换适用于系统界面和全部四章内容。" },
     { "key": "menu.status.locked", "value": "未解锁" },
     { "key": "menu.status.available", "value": "可进入" },
     { "key": "menu.status.complete", "value": "已完成  ✓" },

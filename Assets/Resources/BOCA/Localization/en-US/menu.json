@@ -14,7 +14,7 @@
     { "key": "menu.back", "value": "BACK" },
     { "key": "menu.volume", "value": "MASTER VOLUME" },
     { "key": "menu.chapter_hint", "value": "Complete a chapter to unlock the next record." },
-    { "key": "menu.settings_hint", "value": "Narrative translations appear only after script approval." },
+    { "key": "menu.settings_hint", "value": "Language changes apply to system UI and all four chapter records." },
     { "key": "menu.status.locked", "value": "LOCKED" },
     { "key": "menu.status.available", "value": "AVAILABLE" },
     { "key": "menu.status.complete", "value": "COMPLETE  ✓" },

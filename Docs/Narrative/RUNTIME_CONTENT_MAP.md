@@ -11,7 +11,7 @@ This document is the technical contract between the approved chapter scripts and
 | 3 — Reef Warning | `C:\Users\Jiang\Downloads\第三章：暗礁忧鸣 (2).docx` (2026-09-11) | Simplified Chinese | Copy approved player-facing text verbatim. |
 | 4 — Hawksbill Guzheng Finger Pick Case | `剧本\BOCA 游戏剧本_玳瑁古筝义甲_修改版_v3.docx` (2026-09-03) | English | Copy approved player-facing text verbatim. |
 
-The first three scripts do not currently have creator-approved English localization, and Chapter 4 does not currently have creator-approved Chinese localization. Until those files are supplied, the runtime displays the approved source language instead of an AI-written translation. UI and data keys remain localization-ready.
+The approved Simplified Chinese source text for Chapters 1–3 and approved English source text for Chapter 4 remain unchanged in their source-language runtime tables. The project owner authorized technical translations into the other supported language. All four chapters now have complete English and Simplified Chinese tables with matching keys; translation changes do not rewrite the preserved source-language records.
 
 ## Shared interaction rules
 

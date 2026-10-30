@@ -1,5 +1,5 @@
-# Simplified Chinese localization status
+# Simplified Chinese localization
 
-`menu.json` and `shared.json` provide Simplified Chinese system UI. Chapter narrative tables are added only after creator-approved translations are supplied.
+`menu.json` and `shared.json` provide Simplified Chinese system UI. `chapter-01.json` through `chapter-04.json` provide complete Simplified Chinese chapter text.
 
-Until then, missing chapter keys fall back to the approved source-language tables in `../en-US/`. Chapters 1–3 therefore retain their approved Simplified Chinese text, while Chapter 4 retains its approved English text. Do not use machine-written narrative translations as production content without creator approval.
+Chapters 1–3 preserve their approved Simplified Chinese source text here. Chapter 4 contains the project-owner-authorized technical translation of its approved English source. The production validator requires this locale to match every English key and rejects missing, extra, duplicate, or empty entries.
