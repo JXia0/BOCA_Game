@@ -2,27 +2,306 @@
   "chapterId": "chapter-04",
   "localizationTable": "chapter-04",
   "titleKey": "ch04.title",
-  "startBeatId": "ch04.gb.01",
+  "startBeatId": "ch04.opening.concert",
+  "reviewDimensions": [
+    { "id": "source_quality", "labelKey": "ch04.review.source_quality", "startingScore": 0 },
+    { "id": "evidence_completeness", "labelKey": "ch04.review.evidence_completeness", "startingScore": 0 },
+    { "id": "claim_scope", "labelKey": "ch04.review.claim_scope", "startingScore": 0 },
+    { "id": "privacy", "labelKey": "ch04.review.privacy", "startingScore": 0 },
+    { "id": "report_accuracy", "labelKey": "ch04.review.report_accuracy", "startingScore": 0 }
+  ],
   "beats": [
-    { "id": "ch04.gb.01", "sceneLabelKey": "ch04.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.01", "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY", "portraitKey": "", "nextBeatId": "ch04.gb.02" },
-    { "id": "ch04.gb.02", "sceneLabelKey": "ch04.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.02", "backgroundKey": "C04_BG_PLAYER_BEDROOM_NIGHT", "portraitKey": "C04_POR_FRIEND_NEUTRAL", "nextBeatId": "ch04.gb.choice" },
     {
-      "id": "ch04.gb.choice",
-      "sceneLabelKey": "ch04.scene.03",
-      "speakerKey": "shared.speaker.player",
-      "textKey": "ch04.gb.choice",
-      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "id": "ch04.opening.concert",
+      "sceneLabelKey": "ch04.scene.01",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch04.opening.concert",
+      "backgroundKey": "C04_BG_CONCERT_STAGE_NIGHT",
+      "portraitKey": "",
+      "nextBeatId": "ch04.opening.notification"
+    },
+    {
+      "id": "ch04.opening.notification",
+      "sceneLabelKey": "ch04.scene.01",
+      "speakerKey": "ch04.speaker.teacher",
+      "textKey": "ch04.opening.notification",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY",
       "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.open_phone",
       "choices": [
-        { "id": "route_a", "labelKey": "ch04.choice.route_a", "nextBeatId": "ch04.gb.branch_a", "setRoute": "A", "setFlag": "ch04.gb.flag.route_a" },
-        { "id": "route_b", "labelKey": "ch04.choice.route_b", "nextBeatId": "ch04.gb.branch_b", "setRoute": "B", "setFlag": "ch04.gb.flag.route_b" }
+        { "id": "open_phone", "labelKey": "ch04.action.open_phone", "nextBeatId": "ch04.market.search", "setFlags": ["ch04.phone_opened"] }
       ]
     },
-    { "id": "ch04.gb.branch_a", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_a", "backgroundKey": "C04_BG_SELLER_PACKING_ROOM", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
-    { "id": "ch04.gb.branch_b", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_b", "backgroundKey": "C04_BG_SELLER_PACKING_ROOM", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
-    { "id": "ch04.gb.merge", "sceneLabelKey": "ch04.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.merge", "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE", "portraitKey": "C04_POR_SELLER_NEUTRAL", "nextBeatId": "ch04.gb.check_a" },
-    { "id": "ch04.gb.check_a", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_a", "backgroundKey": "C04_CG_PACKING_ROOM_POLICE_ARRIVAL", "portraitKey": "", "nextBeatId": "ch04.gb.check_b", "requiredFlag": "ch04.gb.flag.route_a" },
-    { "id": "ch04.gb.check_b", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_b", "backgroundKey": "C04_CG_PACKING_ROOM_POLICE_ARRIVAL", "portraitKey": "", "nextBeatId": "ch04.gb.end", "requiredFlag": "ch04.gb.flag.route_b" },
-    { "id": "ch04.gb.end", "sceneLabelKey": "ch04.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.end", "backgroundKey": "C04_BG_CONCERT_STAGE_NIGHT", "portraitKey": "", "nextBeatId": "" }
+    {
+      "id": "ch04.market.search",
+      "sceneLabelKey": "ch04.scene.02",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch04.market.search",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY",
+      "portraitKey": "",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.search_market",
+      "choices": [
+        { "id": "search_finger_picks", "labelKey": "ch04.action.search_finger_picks", "nextBeatId": "ch04.market.choose_product", "setFlags": ["ch04.market_searched"] }
+      ]
+    },
+    {
+      "id": "ch04.market.choose_product",
+      "sceneLabelKey": "ch04.scene.02",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.market.choose_product",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.choose_product",
+      "choices": [
+        { "id": "buy_hawksbill", "labelKey": "ch04.choice.buy_hawksbill", "nextBeatId": "ch04.route_a.seller_chat", "setRoute": "A", "setFlags": ["ch04.player_purchased"] },
+        { "id": "buy_synthetic", "labelKey": "ch04.choice.buy_synthetic", "nextBeatId": "ch04.route_b.friend_message", "setRoute": "B", "setFlags": ["ch04.player_bought_synthetic"], "effects": [{ "dimensionId": "privacy", "delta": 1 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_a.seller_chat",
+      "sceneLabelKey": "ch04.scene.02",
+      "speakerKey": "ch04.speaker.seller",
+      "textKey": "ch04.route_a.seller_chat",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY",
+      "portraitKey": "C04_POR_SELLER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.confirm_purchase",
+      "choices": [
+        { "id": "confirm_purchase", "labelKey": "ch04.action.confirm_purchase", "nextBeatId": "ch04.route_a.delivery", "setFlags": ["ch04.order_confirmed"], "evidenceIds": ["ch04.order_record", "ch04.seller_chat"] }
+      ]
+    },
+    {
+      "id": "ch04.route_a.delivery",
+      "sceneLabelKey": "ch04.scene.02",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch04.route_a.delivery",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "nextBeatId": "ch04.research.plan"
+    },
+    {
+      "id": "ch04.route_b.friend_message",
+      "sceneLabelKey": "ch04.scene.02",
+      "speakerKey": "ch04.speaker.friend",
+      "textKey": "ch04.route_b.friend_message",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_NIGHT",
+      "portraitKey": "C04_POR_FRIEND_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.save_friend_message",
+      "choices": [
+        { "id": "save_friend_message", "labelKey": "ch04.action.save_friend_message", "nextBeatId": "ch04.research.plan", "setFlags": ["ch04.friend_shared_records"], "evidenceIds": ["ch04.friend_message", "ch04.friend_photo", "ch04.friend_listing_screenshot"], "effects": [{ "dimensionId": "privacy", "delta": 1 }] }
+      ]
+    },
+    {
+      "id": "ch04.research.plan",
+      "sceneLabelKey": "ch04.scene.03",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.research.plan",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "sequence",
+      "promptKey": "ch04.prompt.research_plan",
+      "submitLabelKey": "ch04.action.run_search",
+      "minimumSelections": 3,
+      "maximumSelections": 3,
+      "expectedChoiceIds": ["material_name", "protected_species_list", "wildlife_product_rules"],
+      "successEffects": [{ "dimensionId": "source_quality", "delta": 2 }, { "dimensionId": "claim_scope", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "source_quality", "delta": -1 }],
+      "nextBeatId": "ch04.research.results",
+      "choices": [
+        { "id": "material_name", "labelKey": "ch04.research.material_name", "setFlags": ["ch04.term_researched"] },
+        { "id": "protected_species_list", "labelKey": "ch04.research.protected_species_list", "evidenceIds": ["ch04.official_species_source"] },
+        { "id": "wildlife_product_rules", "labelKey": "ch04.research.wildlife_product_rules", "evidenceIds": ["ch04.official_rules_source"] },
+        { "id": "seller_reviews", "labelKey": "ch04.research.seller_reviews", "effects": [{ "dimensionId": "source_quality", "delta": -1 }] },
+        { "id": "image_guess", "labelKey": "ch04.research.image_guess", "effects": [{ "dimensionId": "claim_scope", "delta": -1 }] }
+      ]
+    },
+    {
+      "id": "ch04.research.results",
+      "sceneLabelKey": "ch04.scene.03",
+      "speakerKey": "ch04.speaker.research",
+      "textKey": "ch04.research.results",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "",
+      "nextBeatIdRouteA": "ch04.route_a.preserve",
+      "nextBeatIdRouteB": "ch04.route_b.preserve",
+      "nextBeatId": "ch04.route_b.preserve"
+    },
+    {
+      "id": "ch04.route_a.preserve",
+      "sceneLabelKey": "ch04.scene.04",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch04.route_a.preserve",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "",
+      "interactionMode": "checklist",
+      "promptKey": "ch04.prompt.preserve_evidence",
+      "submitLabelKey": "ch04.action.save_evidence",
+      "minimumSelections": 3,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["listing", "timestamps", "seller_chat", "official_source", "purchase_records"],
+      "successEffects": [{ "dimensionId": "evidence_completeness", "delta": 3 }, { "dimensionId": "report_accuracy", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "evidence_completeness", "delta": -1 }],
+      "nextBeatId": "ch04.route_a.report_attachments",
+      "choices": [
+        { "id": "listing", "labelKey": "ch04.evidence.listing", "evidenceIds": ["ch04.full_listing"], "effects": [{ "dimensionId": "evidence_completeness", "delta": 1 }] },
+        { "id": "timestamps", "labelKey": "ch04.evidence.timestamps", "evidenceIds": ["ch04.timestamps"], "effects": [{ "dimensionId": "source_quality", "delta": 1 }] },
+        { "id": "seller_chat", "labelKey": "ch04.evidence.seller_chat", "evidenceIds": ["ch04.seller_chat"], "effects": [{ "dimensionId": "evidence_completeness", "delta": 1 }] },
+        { "id": "official_source", "labelKey": "ch04.evidence.official_source", "evidenceIds": ["ch04.official_species_source"], "effects": [{ "dimensionId": "source_quality", "delta": 1 }] },
+        { "id": "purchase_records", "labelKey": "ch04.evidence.purchase_records", "evidenceIds": ["ch04.purchase_bundle"], "effects": [{ "dimensionId": "evidence_completeness", "delta": 1 }] },
+        { "id": "buy_second_sample", "labelKey": "ch04.evidence.buy_second_sample", "effects": [{ "dimensionId": "report_accuracy", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_b.preserve",
+      "sceneLabelKey": "ch04.scene.04",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch04.route_b.preserve",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "",
+      "interactionMode": "checklist",
+      "promptKey": "ch04.prompt.preserve_evidence",
+      "submitLabelKey": "ch04.action.save_evidence",
+      "minimumSelections": 3,
+      "maximumSelections": 6,
+      "expectedChoiceIds": ["listing", "timestamps", "friend_records", "official_source"],
+      "successEffects": [{ "dimensionId": "evidence_completeness", "delta": 3 }, { "dimensionId": "privacy", "delta": 2 }],
+      "failureEffects": [{ "dimensionId": "evidence_completeness", "delta": -1 }],
+      "nextBeatId": "ch04.route_b.report_attachments",
+      "choices": [
+        { "id": "listing", "labelKey": "ch04.evidence.listing", "evidenceIds": ["ch04.full_listing"], "effects": [{ "dimensionId": "evidence_completeness", "delta": 1 }] },
+        { "id": "timestamps", "labelKey": "ch04.evidence.timestamps", "evidenceIds": ["ch04.timestamps"], "effects": [{ "dimensionId": "source_quality", "delta": 1 }] },
+        { "id": "friend_records", "labelKey": "ch04.evidence.friend_records", "evidenceIds": ["ch04.friend_shared_bundle"], "effects": [{ "dimensionId": "privacy", "delta": 1 }] },
+        { "id": "official_source", "labelKey": "ch04.evidence.official_source", "evidenceIds": ["ch04.official_species_source"], "effects": [{ "dimensionId": "source_quality", "delta": 1 }] },
+        { "id": "access_private_order", "labelKey": "ch04.evidence.access_private_order", "effects": [{ "dimensionId": "privacy", "delta": -3 }] },
+        { "id": "buy_product", "labelKey": "ch04.evidence.buy_product", "effects": [{ "dimensionId": "report_accuracy", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_a.report_attachments",
+      "sceneLabelKey": "ch04.scene.05",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.route_a.report_attachments",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "sequence",
+      "promptKey": "ch04.prompt.assemble_report",
+      "submitLabelKey": "ch04.action.attach_records",
+      "minimumSelections": 4,
+      "maximumSelections": 4,
+      "expectedChoiceIds": ["listing", "conversation", "official", "purchase"],
+      "successEffects": [{ "dimensionId": "report_accuracy", "delta": 2 }, { "dimensionId": "evidence_completeness", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "report_accuracy", "delta": -1 }],
+      "nextBeatId": "ch04.route_a.report_wording",
+      "choices": [
+        { "id": "listing", "labelKey": "ch04.report.listing" },
+        { "id": "conversation", "labelKey": "ch04.report.seller_conversation" },
+        { "id": "official", "labelKey": "ch04.report.official_source" },
+        { "id": "purchase", "labelKey": "ch04.report.purchase_records" },
+        { "id": "police_outcome", "labelKey": "ch04.report.police_outcome", "effects": [{ "dimensionId": "claim_scope", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_b.report_attachments",
+      "sceneLabelKey": "ch04.scene.05",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.route_b.report_attachments",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "sequence",
+      "promptKey": "ch04.prompt.assemble_report",
+      "submitLabelKey": "ch04.action.attach_records",
+      "minimumSelections": 3,
+      "maximumSelections": 3,
+      "expectedChoiceIds": ["friend", "listing", "official"],
+      "successEffects": [{ "dimensionId": "report_accuracy", "delta": 2 }, { "dimensionId": "privacy", "delta": 1 }],
+      "failureEffects": [{ "dimensionId": "report_accuracy", "delta": -1 }],
+      "nextBeatId": "ch04.route_b.report_wording",
+      "choices": [
+        { "id": "friend", "labelKey": "ch04.report.friend_records" },
+        { "id": "listing", "labelKey": "ch04.report.listing" },
+        { "id": "official", "labelKey": "ch04.report.official_source" },
+        { "id": "private_order", "labelKey": "ch04.report.private_order", "effects": [{ "dimensionId": "privacy", "delta": -3 }] },
+        { "id": "police_outcome", "labelKey": "ch04.report.police_outcome", "effects": [{ "dimensionId": "claim_scope", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_a.report_wording",
+      "sceneLabelKey": "ch04.scene.05",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.route_a.report_wording",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.choose_wording",
+      "choices": [
+        { "id": "accurate", "labelKey": "ch04.report_wording.a.accurate", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "claim_scope", "delta": 3 }, { "dimensionId": "report_accuracy", "delta": 2 }] },
+        { "id": "material_proven", "labelKey": "ch04.report_wording.material_proven", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "claim_scope", "delta": -2 }, { "dimensionId": "report_accuracy", "delta": -1 }] },
+        { "id": "seller_criminal", "labelKey": "ch04.report_wording.seller_criminal", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "claim_scope", "delta": -3 }, { "dimensionId": "report_accuracy", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.route_b.report_wording",
+      "sceneLabelKey": "ch04.scene.05",
+      "speakerKey": "shared.speaker.player",
+      "textKey": "ch04.route_b.report_wording",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "interactionMode": "single",
+      "promptKey": "ch04.prompt.choose_wording",
+      "choices": [
+        { "id": "accurate", "labelKey": "ch04.report_wording.b.accurate", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "claim_scope", "delta": 3 }, { "dimensionId": "report_accuracy", "delta": 2 }, { "dimensionId": "privacy", "delta": 1 }] },
+        { "id": "friend_purchase_verified", "labelKey": "ch04.report_wording.friend_verified", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "privacy", "delta": -2 }, { "dimensionId": "report_accuracy", "delta": -1 }] },
+        { "id": "seller_criminal", "labelKey": "ch04.report_wording.seller_criminal", "nextBeatId": "ch04.report.submitted", "effects": [{ "dimensionId": "claim_scope", "delta": -3 }, { "dimensionId": "report_accuracy", "delta": -2 }] }
+      ]
+    },
+    {
+      "id": "ch04.report.submitted",
+      "sceneLabelKey": "ch04.scene.05",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch04.report.submitted",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "",
+      "nextBeatId": "ch04.followup.response"
+    },
+    {
+      "id": "ch04.followup.response",
+      "sceneLabelKey": "ch04.scene.06",
+      "speakerKey": "ch04.speaker.response",
+      "textKey": "ch04.followup.response",
+      "backgroundKey": "C04_BG_PLAYER_BEDROOM_NIGHT",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
+      "nextBeatId": "ch04.epilogue.seller"
+    },
+    {
+      "id": "ch04.epilogue.seller",
+      "sceneLabelKey": "ch04.scene.07",
+      "speakerKey": "ch04.speaker.seller",
+      "textKey": "ch04.epilogue.seller",
+      "backgroundKey": "C04_BG_SELLER_PACKING_ROOM",
+      "portraitKey": "C04_POR_SELLER_NEUTRAL",
+      "nextBeatId": "ch04.epilogue.police"
+    },
+    {
+      "id": "ch04.epilogue.police",
+      "sceneLabelKey": "ch04.scene.08",
+      "speakerKey": "shared.speaker.narrator",
+      "textKey": "ch04.epilogue.police",
+      "backgroundKey": "C04_CG_PACKING_ROOM_POLICE_ARRIVAL",
+      "portraitKey": "",
+      "nextBeatId": "ch04.ending.card"
+    },
+    {
+      "id": "ch04.ending.card",
+      "sceneLabelKey": "ch04.scene.end",
+      "speakerKey": "shared.speaker.system",
+      "textKey": "ch04.ending.card",
+      "backgroundKey": "C04_BG_CONCERT_STAGE_NIGHT",
+      "portraitKey": "",
+      "nextBeatId": ""
+    }
   ]
 }

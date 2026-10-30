@@ -10,8 +10,8 @@
     { "key": "shared.review.documented", "value": "Documented" },
     { "key": "shared.review.needs_attention", "value": "Needs attention" },
     { "key": "shared.review_totals", "value": "{0} decisions recorded • {1} evidence items preserved" },
-    { "key": "shared.speaker.narrator", "value": "WRITER CONTENT SLOT" },
-    { "key": "shared.speaker.system", "value": "SYSTEM TEST" },
-    { "key": "shared.speaker.player", "value": "PLAYER INPUT TEST" }
+    { "key": "shared.speaker.narrator", "value": "NARRATOR" },
+    { "key": "shared.speaker.system", "value": "SYSTEM" },
+    { "key": "shared.speaker.player", "value": "PLAYER" }
   ]
 }

@@ -172,7 +172,14 @@ namespace BOCA.Editor
                 {
                     foreach (var choice in beat.choices)
                     {
-                        ValidateLink(spec.chapterId, beat.id + " choice " + choice.id, choice.nextBeatId, beats, errors);
+                        if (NarrativeSession.RequiresSubmission(beat))
+                        {
+                            ValidateOptionalLink(spec.chapterId, beat.id + " choice " + choice.id, choice.nextBeatId, beats, errors);
+                        }
+                        else
+                        {
+                            ValidateLink(spec.chapterId, beat.id + " choice " + choice.id, choice.nextBeatId, beats, errors);
+                        }
                     }
                 }
             }
