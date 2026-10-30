@@ -77,6 +77,10 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 0db87ccd5fa0ec4489cf175f2addb179, type: 3}
   - key: C03_CHAR_PLAYER_WORRIED
     sprite: {fileID: 21300000, guid: 148ab08e2a917d14db4538a1a26ac988, type: 3}
+  - key: C03_POR_PENGUIN_CONCERNED
+    sprite: {fileID: 21300000, guid: 39f6f6621b3e1914099081e5f26e3ad1, type: 3}
+  - key: C03_POR_PENGUIN_RELIEVED
+    sprite: {fileID: 21300000, guid: 02f03fcf0062a444c806f33afb6de455, type: 3}
   - key: C03_POR_PLAYER_NEUTRAL
     sprite: {fileID: 21300000, guid: f0e73066cdb75e544b68ba5d54b98c59, type: 3}
   - key: C03_POR_PLAYER_POUT
