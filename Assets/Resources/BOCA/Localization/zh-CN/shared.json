@@ -1,0 +1,20 @@
+{
+  "entries": [
+    { "key": "shared.continue", "value": "继续" },
+    { "key": "shared.submit", "value": "提交记录" },
+    { "key": "shared.menu", "value": "主菜单" },
+    { "key": "shared.replay", "value": "重新游玩本章" },
+    { "key": "shared.chapter_select", "value": "章节选择" },
+    { "key": "shared.case_status", "value": "档案  •  决策 {0}  •  证据 {1}" },
+    { "key": "shared.chapter_complete", "value": "章节完成" },
+    { "key": "shared.chapter_complete_body", "value": "本章记录已保存。" },
+    { "key": "shared.review_heading", "value": "最终记录审核" },
+    { "key": "shared.review.strong", "value": "可靠" },
+    { "key": "shared.review.documented", "value": "已记录" },
+    { "key": "shared.review.needs_attention", "value": "需要改进" },
+    { "key": "shared.review_totals", "value": "已记录 {0} 项决策 • 已保存 {1} 项证据" },
+    { "key": "shared.speaker.narrator", "value": "旁白" },
+    { "key": "shared.speaker.system", "value": "系统" },
+    { "key": "shared.speaker.player", "value": "玩家" }
+  ]
+}

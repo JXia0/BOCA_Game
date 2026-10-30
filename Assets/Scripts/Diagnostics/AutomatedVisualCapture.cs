@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.IO;
+using BOCA.Core;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,7 @@ namespace BOCA.Diagnostics
         private const string StepArgument = "-bocaSteps=";
         private const string RouteArgument = "-bocaRoute=";
         private const string MenuArgument = "-bocaMenu=";
+        private const string ResetProgressArgument = "-bocaResetProgress";
 
         private string capturePath;
         private int chapterBuildIndex;
@@ -31,6 +33,11 @@ namespace BOCA.Diagnostics
             if (string.IsNullOrWhiteSpace(capturePath))
             {
                 return;
+            }
+
+            if (HasArgument(ResetProgressArgument))
+            {
+                GameProgressService.ResetProgress();
             }
 
             var chapterText = ReadArgument(ChapterArgument);
@@ -120,6 +127,19 @@ namespace BOCA.Diagnostics
             }
 
             return null;
+        }
+
+        private static bool HasArgument(string expected)
+        {
+            foreach (var argument in Environment.GetCommandLineArgs())
+            {
+                if (string.Equals(argument, expected, StringComparison.OrdinalIgnoreCase))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

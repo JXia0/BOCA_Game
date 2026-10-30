@@ -105,10 +105,26 @@ namespace BOCA.UI
 
             var labels = new string[GameProgressService.ChapterCount];
             var unlocked = new bool[GameProgressService.ChapterCount];
+            var complete = new bool[GameProgressService.ChapterCount];
+            var completedCount = 0;
+            var nextChapter = GameProgressService.ChapterCount;
+            var foundNext = false;
             for (var index = 0; index < labels.Length; index++)
             {
                 var chapter = index + 1;
                 unlocked[index] = GameProgressService.IsChapterUnlocked(chapter);
+                complete[index] = GameProgressService.IsChapterComplete(chapter);
+                if (complete[index])
+                {
+                    completedCount++;
+                }
+
+                if (!foundNext && unlocked[index] && !complete[index])
+                {
+                    nextChapter = chapter;
+                    foundNext = true;
+                }
+
                 var statusKey = !unlocked[index]
                     ? "menu.status.locked"
                     : GameProgressService.IsChapterComplete(chapter)
@@ -123,12 +139,16 @@ namespace BOCA.UI
                 title = Localize("menu.title"),
                 subtitle = Localize("menu.subtitle"),
                 footer = Localize("menu.footer"),
-                panelHeading = currentScreen == MainMenuScreen.Chapters
+                panelHeading = currentScreen == MainMenuScreen.Home
+                    ? Localize("menu.home_heading")
+                    : currentScreen == MainMenuScreen.Chapters
                     ? Localize("menu.chapter_select")
                     : currentScreen == MainMenuScreen.Settings
                         ? Localize("menu.settings")
                         : string.Empty,
-                panelHint = currentScreen == MainMenuScreen.Chapters
+                panelHint = currentScreen == MainMenuScreen.Home
+                    ? Localize("menu.home_hint")
+                    : currentScreen == MainMenuScreen.Chapters
                     ? Localize("menu.chapter_hint")
                     : currentScreen == MainMenuScreen.Settings
                         ? Localize("menu.settings_hint")
@@ -143,7 +163,11 @@ namespace BOCA.UI
                 volume = Localize("menu.volume"),
                 volumeValue = GameSettingsService.MasterVolume,
                 chapterLabels = labels,
-                chapterUnlocked = unlocked
+                chapterUnlocked = unlocked,
+                chapterComplete = complete,
+                heroEyebrow = Localize("menu.current_record"),
+                currentRecord = Localize($"menu.chapter.{nextChapter}"),
+                progress = string.Format(Localize("menu.progress"), completedCount)
             });
         }
 

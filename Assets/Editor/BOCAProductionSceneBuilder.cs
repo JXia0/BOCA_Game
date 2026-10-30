@@ -108,6 +108,34 @@ namespace BOCA.Editor
             var panelHint = CreateText("PanelHint", rightPanel.transform, new Vector2(0.07f, 0.74f), new Vector2(0.93f, 0.84f),
                 Vector2.zero, Vector2.zero, font, 17, FontStyle.Normal, MutedText, TextAnchor.UpperLeft);
 
+            var homeFeature = CreateImage("HomeFeaturePanel", rightPanel.transform, new Vector2(0.06f, 0.12f), new Vector2(0.94f, 0.73f),
+                Vector2.zero, Vector2.zero, Color.white);
+            homeFeature.sprite = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Chapters/Chapter01_OilTide/Backgrounds/C01_BG_UNDERSEA_ARCHIVE_OPENING.png");
+            homeFeature.preserveAspect = false;
+            var homeOutline = homeFeature.gameObject.AddComponent<Outline>();
+            homeOutline.effectColor = new Color(SeaGreen.r, SeaGreen.g, SeaGreen.b, 0.82f);
+            homeOutline.effectDistance = new Vector2(2f, -2f);
+            var homeShade = CreateImage("HomeFeatureShade", homeFeature.transform, Vector2.zero, Vector2.one,
+                Vector2.zero, Vector2.zero, new Color(Navy.r, Navy.g, Navy.b, 0.48f));
+            homeShade.raycastTarget = false;
+            var heroEyebrow = CreateText("HeroEyebrow", homeFeature.transform, new Vector2(0.06f, 0.25f), new Vector2(0.94f, 0.36f),
+                Vector2.zero, Vector2.zero, font, 16, FontStyle.Bold, SeaGreen, TextAnchor.MiddleLeft);
+            var currentRecord = CreateText("CurrentRecord", homeFeature.transform, new Vector2(0.06f, 0.10f), new Vector2(0.94f, 0.27f),
+                Vector2.zero, Vector2.zero, font, 24, FontStyle.Bold, LightText, TextAnchor.MiddleLeft);
+            var progress = CreateText("ProgressLabel", homeFeature.transform, new Vector2(0.06f, 0.01f), new Vector2(0.55f, 0.10f),
+                Vector2.zero, Vector2.zero, font, 14, FontStyle.Bold, MutedText, TextAnchor.MiddleLeft);
+            var progressNodes = new Image[GameProgressService.ChapterCount];
+            for (var index = 0; index < progressNodes.Length; index++)
+            {
+                var xMin = 0.66f + index * 0.075f;
+                progressNodes[index] = CreateImage($"RecordNode{index + 1}", homeFeature.transform,
+                    new Vector2(xMin, 0.035f), new Vector2(xMin + 0.045f, 0.075f), Vector2.zero, Vector2.zero, DeepBlue);
+                progressNodes[index].raycastTarget = false;
+                var nodeLabel = CreateText("Label", progressNodes[index].transform, Vector2.zero, Vector2.one,
+                    Vector2.zero, Vector2.zero, font, 11, FontStyle.Bold, LightText, TextAnchor.MiddleCenter);
+                nodeLabel.text = (index + 1).ToString("00");
+            }
+
             var chapterPanel = CreatePanel("ChapterPanel", rightPanel.transform, new Vector2(0.06f, 0.12f), new Vector2(0.94f, 0.73f));
             chapterPanel.color = Color.clear;
             var chapterControls = new Button[GameProgressService.ChapterCount];
@@ -136,9 +164,10 @@ namespace BOCA.Editor
                 Vector2.zero, Vector2.zero, font, 17, "BACK");
 
             var view = canvasObject.AddComponent<MainMenuView>();
-            view.Configure(homePanel.gameObject, rightPanel.gameObject, chapterPanel.gameObject, settingsPanel.gameObject, title, subtitle, footer,
+            view.Configure(homePanel.gameObject, rightPanel.gameObject, homeFeature.gameObject, chapterPanel.gameObject, settingsPanel.gameObject, title, subtitle, footer,
                 panelHeading, panelHint, startButton, chapterButton, settingsButton, quitButton, backButton,
-                englishButton, chineseButton, chapterControls, chapterLabels, volumeLabel, volumeSlider);
+                englishButton, chineseButton, chapterControls, chapterLabels, volumeLabel, volumeSlider,
+                heroEyebrow, currentRecord, progress, progressNodes);
             var controller = new GameObject("MainMenuController").AddComponent<MainMenuController>();
             controller.Configure(view);
 
@@ -183,6 +212,8 @@ namespace BOCA.Editor
                 new Vector2(1000f, 8f), new Vector2(-330f, -8f), font, 20, FontStyle.Bold, MutedText, TextAnchor.MiddleRight);
             var continueButton = CreateButton("ContinueButton", topBar.transform, new Vector2(1f, 0f), Vector2.one,
                 new Vector2(-300f, 14f), new Vector2(-34f, -14f), font, 21, "CONTINUE");
+            var menuButton = CreateButton("MenuButton", topBar.transform, new Vector2(1f, 0f), Vector2.one,
+                new Vector2(-448f, 14f), new Vector2(-312f, -14f), font, 17, "MENU");
 
             var caseStatus = CreateText("CaseStatus", canvasObject.transform, new Vector2(0.58f, 0.855f), new Vector2(0.98f, 0.905f),
                 Vector2.zero, Vector2.zero, font, 17, FontStyle.Bold, new Color(0.82f, 0.94f, 0.90f, 0.94f), TextAnchor.MiddleRight);
@@ -231,15 +262,22 @@ namespace BOCA.Editor
                 choiceButtons[i].gameObject.SetActive(false);
             }
 
+            var replayButton = CreateButton("ReplayButton", dialoguePanel.transform, Vector2.zero, Vector2.zero,
+                new Vector2(60f, 24f), new Vector2(350f, 84f), font, 17, "REPLAY CHAPTER");
+            var chapterSelectButton = CreateButton("ChapterSelectButton", dialoguePanel.transform, Vector2.zero, Vector2.zero,
+                new Vector2(370f, 24f), new Vector2(700f, 84f), font, 17, "CHAPTER SELECT");
+            replayButton.gameObject.SetActive(false);
+            chapterSelectButton.gameObject.SetActive(false);
+
             var view = canvasObject.AddComponent<ChapterView>();
             view.Configure(chapterTitle, sceneLabel, speaker, body, backgroundKey, portraitKey, interactionPrompt, caseStatus, background, portrait,
-                continueButton, continueButton.GetComponentInChildren<Text>(), choiceButtons, choiceLabels);
+                continueButton, continueButton.GetComponentInChildren<Text>(), menuButton, replayButton, chapterSelectButton, choiceButtons, choiceLabels);
 
             var controllerObject = new GameObject("ChapterSceneController");
             var controller = controllerObject.AddComponent<ChapterSceneController>();
             var flowAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(chapter.flowPath);
             var chapterCatalog = BOCAArtCatalogBuilder.LoadChapterCatalog(chapter.number);
-            controller.Configure(chapter.chapterId, flowAsset, new[] { chapterCatalog, sharedCatalog }, view);
+            controller.Configure(chapter.number, chapter.chapterId, flowAsset, new[] { chapterCatalog, sharedCatalog }, view);
 
             var scenePath = $"{SceneFolder}/{chapter.sceneName}.unity";
             if (!EditorSceneManager.SaveScene(scene, scenePath))

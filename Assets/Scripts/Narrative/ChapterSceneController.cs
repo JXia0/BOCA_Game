@@ -1,4 +1,5 @@
 using BOCA.Art;
+using BOCA.Core;
 using BOCA.Core.Localization;
 using BOCA.UI;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace BOCA.Narrative
     public sealed class ChapterSceneController : MonoBehaviour
     {
         [SerializeField] private string chapterId;
+        [SerializeField] private int chapterNumber;
         [SerializeField] private TextAsset flowAsset;
         [SerializeField] private ArtCatalog[] artCatalogs;
         [SerializeField] private ChapterView view;
@@ -17,12 +19,14 @@ namespace BOCA.Narrative
         private ChapterFlowFile flow;
         private NarrativeSession session;
         private readonly List<int> pendingSelections = new();
+        private bool completionRecorded;
 
         public string ChapterId => chapterId;
         public TextAsset FlowAsset => flowAsset;
 
-        public void Configure(string id, TextAsset chapterFlow, ArtCatalog[] catalogs, ChapterView chapterView)
+        public void Configure(int number, string id, TextAsset chapterFlow, ArtCatalog[] catalogs, ChapterView chapterView)
         {
+            chapterNumber = number;
             chapterId = id;
             flowAsset = chapterFlow;
             artCatalogs = catalogs;
@@ -50,12 +54,18 @@ namespace BOCA.Narrative
 
             flow = JsonUtility.FromJson<ChapterFlowFile>(flowAsset.text);
             session = new NarrativeSession(flow);
-            view.Bind(HandleContinue, HandleChoice);
+            view.Bind(HandleContinue, HandleChoice, SceneNavigator.LoadMainMenu, SceneNavigator.RestartCurrentScene);
             RenderCurrentBeat();
         }
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneNavigator.LoadMainMenu();
+                return;
+            }
+
             if (session?.CurrentBeat == null)
             {
                 return;
@@ -189,9 +199,18 @@ namespace BOCA.Narrative
         {
             if (session == null || session.IsComplete)
             {
+                if (!completionRecorded && chapterNumber >= 1 && chapterNumber <= GameProgressService.ChapterCount)
+                {
+                    GameProgressService.MarkChapterComplete(chapterNumber);
+                    completionRecorded = true;
+                }
+
                 view.ShowComplete(
                     Localize("shared.chapter_complete", "Chapter complete"),
-                    BuildCompletionBody());
+                    BuildCompletionBody(),
+                    Localize("shared.replay", "Replay chapter"),
+                    Localize("shared.chapter_select", "Chapter select"),
+                    Localize("shared.menu", "Menu"));
                 return;
             }
 
@@ -238,7 +257,8 @@ namespace BOCA.Narrative
                     ? Localize(beat.submitLabelKey, Localize("shared.submit", "Submit"))
                     : Localize("shared.continue", "Continue"),
                 actionVisible = !NarrativeSession.HasChoices(beat) || requiresSubmission,
-                actionEnabled = !requiresSubmission || pendingSelections.Count >= minimum
+                actionEnabled = !requiresSubmission || pendingSelections.Count >= minimum,
+                menuLabel = Localize("shared.menu", "Menu")
             });
         }
 

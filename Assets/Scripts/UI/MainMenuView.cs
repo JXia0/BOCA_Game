@@ -8,6 +8,7 @@ namespace BOCA.UI
     {
         [SerializeField] private GameObject homePanel;
         [SerializeField] private GameObject detailPanelFrame;
+        [SerializeField] private GameObject homeFeaturePanel;
         [SerializeField] private GameObject chapterPanel;
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private Text titleLabel;
@@ -33,10 +34,15 @@ namespace BOCA.UI
         [SerializeField] private Text chineseButtonLabel;
         [SerializeField] private Text volumeLabel;
         [SerializeField] private Slider volumeSlider;
+        [SerializeField] private Text heroEyebrowLabel;
+        [SerializeField] private Text currentRecordLabel;
+        [SerializeField] private Text progressLabel;
+        [SerializeField] private Image[] progressNodes;
 
         public void Configure(
             GameObject home,
             GameObject detailFrame,
+            GameObject homeFeature,
             GameObject chapters,
             GameObject settings,
             Text title,
@@ -54,10 +60,15 @@ namespace BOCA.UI
             Button[] chapterControls,
             Text[] chapterLabels,
             Text volume,
-            Slider slider)
+            Slider slider,
+            Text heroEyebrow,
+            Text currentRecord,
+            Text progress,
+            Image[] nodes)
         {
             homePanel = home;
             detailPanelFrame = detailFrame;
+            homeFeaturePanel = homeFeature;
             chapterPanel = chapters;
             settingsPanel = settings;
             titleLabel = title;
@@ -83,6 +94,10 @@ namespace BOCA.UI
             chineseButtonLabel = chinese.GetComponentInChildren<Text>();
             volumeLabel = volume;
             volumeSlider = slider;
+            heroEyebrowLabel = heroEyebrow;
+            currentRecordLabel = currentRecord;
+            progressLabel = progress;
+            progressNodes = nodes;
         }
 
         public void Bind(
@@ -130,6 +145,9 @@ namespace BOCA.UI
             chineseButtonLabel.text = model.chinese;
             volumeLabel.text = model.volume;
             volumeSlider.SetValueWithoutNotify(model.volumeValue);
+            heroEyebrowLabel.text = model.heroEyebrow;
+            currentRecordLabel.text = model.currentRecord;
+            progressLabel.text = model.progress;
 
             for (var index = 0; index < chapterButtons.Length; index++)
             {
@@ -138,10 +156,20 @@ namespace BOCA.UI
             }
 
             homePanel.SetActive(model.screen == MainMenuScreen.Home);
-            detailPanelFrame.SetActive(model.screen != MainMenuScreen.Home);
+            detailPanelFrame.SetActive(true);
+            homeFeaturePanel.SetActive(model.screen == MainMenuScreen.Home);
             chapterPanel.SetActive(model.screen == MainMenuScreen.Chapters);
             settingsPanel.SetActive(model.screen == MainMenuScreen.Settings);
             backButton.gameObject.SetActive(model.screen != MainMenuScreen.Home);
+
+            for (var index = 0; index < progressNodes.Length; index++)
+            {
+                progressNodes[index].color = model.chapterComplete[index]
+                    ? new Color32(50, 178, 142, 255)
+                    : model.chapterUnlocked[index]
+                        ? new Color32(232, 174, 89, 255)
+                        : new Color32(55, 76, 82, 255);
+            }
         }
 
         private static void BindButton(Button button, Action action)
@@ -177,5 +205,9 @@ namespace BOCA.UI
         public float volumeValue;
         public string[] chapterLabels;
         public bool[] chapterUnlocked;
+        public bool[] chapterComplete;
+        public string heroEyebrow;
+        public string currentRecord;
+        public string progress;
     }
 }

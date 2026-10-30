@@ -18,11 +18,19 @@ namespace BOCA.UI
         [SerializeField] private Image portraitImage;
         [SerializeField] private Button continueButton;
         [SerializeField] private Text continueButtonLabel;
+        [SerializeField] private Button menuButton;
+        [SerializeField] private Text menuButtonLabel;
+        [SerializeField] private Button replayButton;
+        [SerializeField] private Text replayButtonLabel;
+        [SerializeField] private Button chapterSelectButton;
+        [SerializeField] private Text chapterSelectButtonLabel;
         [SerializeField] private Button[] choiceButtons;
         [SerializeField] private Text[] choiceButtonLabels;
 
         private Action continueAction;
         private Action<int> choiceAction;
+        private Action menuAction;
+        private Action replayAction;
 
         private const float ReferencePixelsPerUnit = 16f;
 
@@ -39,6 +47,9 @@ namespace BOCA.UI
             Image portrait,
             Button continueControl,
             Text continueLabel,
+            Button menuControl,
+            Button replayControl,
+            Button chapterSelectControl,
             Button[] choices,
             Text[] choiceLabels)
         {
@@ -54,17 +65,31 @@ namespace BOCA.UI
             portraitImage = portrait;
             continueButton = continueControl;
             continueButtonLabel = continueLabel;
+            menuButton = menuControl;
+            menuButtonLabel = menuControl.GetComponentInChildren<Text>();
+            replayButton = replayControl;
+            replayButtonLabel = replayControl.GetComponentInChildren<Text>();
+            chapterSelectButton = chapterSelectControl;
+            chapterSelectButtonLabel = chapterSelectControl.GetComponentInChildren<Text>();
             choiceButtons = choices;
             choiceButtonLabels = choiceLabels;
         }
 
-        public void Bind(Action onContinue, Action<int> onChoice)
+        public void Bind(Action onContinue, Action<int> onChoice, Action onMenu, Action onReplay)
         {
             continueAction = onContinue;
             choiceAction = onChoice;
+            menuAction = onMenu;
+            replayAction = onReplay;
 
             continueButton.onClick.RemoveAllListeners();
             continueButton.onClick.AddListener(() => continueAction?.Invoke());
+            menuButton.onClick.RemoveAllListeners();
+            menuButton.onClick.AddListener(() => menuAction?.Invoke());
+            replayButton.onClick.RemoveAllListeners();
+            replayButton.onClick.AddListener(() => replayAction?.Invoke());
+            chapterSelectButton.onClick.RemoveAllListeners();
+            chapterSelectButton.onClick.AddListener(() => menuAction?.Invoke());
 
             for (var i = 0; i < choiceButtons.Length; i++)
             {
@@ -84,6 +109,7 @@ namespace BOCA.UI
             caseStatus.text = model.caseStatus ?? string.Empty;
             continueButtonLabel.text = model.actionLabel;
             continueButton.interactable = model.actionEnabled;
+            menuButtonLabel.text = model.menuLabel;
 
             ApplySprite(backgroundImage, model.background, new Color(0.08f, 0.16f, 0.21f, 1f), true);
             ApplySprite(portraitImage, model.portrait, new Color(0.16f, 0.27f, 0.31f, 1f), true);
@@ -117,9 +143,12 @@ namespace BOCA.UI
             }
 
             continueButton.gameObject.SetActive(model.actionVisible);
+            menuButton.gameObject.SetActive(true);
+            replayButton.gameObject.SetActive(false);
+            chapterSelectButton.gameObject.SetActive(false);
         }
 
-        public void ShowComplete(string title, string body)
+        public void ShowComplete(string title, string body, string replayLabel, string chapterSelectLabel, string menuLabel)
         {
             chapterTitle.text = title;
             sceneLabel.text = string.Empty;
@@ -129,10 +158,21 @@ namespace BOCA.UI
             portraitKeyLabel.text = string.Empty;
             interactionPrompt.text = string.Empty;
             caseStatus.text = string.Empty;
-            ApplySprite(backgroundImage, null, new Color(0.035f, 0.09f, 0.12f, 1f), true);
+            // Keep the approved final-scene artwork visible as the chapter epilogue.
+            // Clearing it here made the completion screen look like an engineering panel.
             ApplySprite(portraitImage, null, new Color(0.10f, 0.16f, 0.18f, 1f), true);
             portraitImage.transform.parent.gameObject.SetActive(false);
             continueButton.gameObject.SetActive(false);
+            menuButtonLabel.text = menuLabel;
+            menuButton.gameObject.SetActive(true);
+            replayButtonLabel.text = replayLabel;
+            replayButton.gameObject.SetActive(true);
+            chapterSelectButtonLabel.text = chapterSelectLabel;
+            chapterSelectButton.gameObject.SetActive(true);
+            SetLeftOffset(dialogueBody.rectTransform, 60f);
+            var bodyOffsets = dialogueBody.rectTransform.offsetMin;
+            bodyOffsets.y = 120f;
+            dialogueBody.rectTransform.offsetMin = bodyOffsets;
 
             foreach (var button in choiceButtons)
             {
@@ -241,5 +281,6 @@ namespace BOCA.UI
         public string actionLabel;
         public bool actionVisible;
         public bool actionEnabled;
+        public string menuLabel;
     }
 }

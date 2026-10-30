@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using BOCA.Art;
 using BOCA.Narrative;
+using BOCA.UI;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace BOCA.Editor
 {
@@ -25,7 +28,10 @@ namespace BOCA.Editor
         {
             var errors = new List<string>();
             var sharedKeys = LoadLocalizationKeys("shared", errors);
+            LoadLocalizationKeys("menu", errors);
             var sharedArtCatalog = AssetDatabase.LoadAssetAtPath<ArtCatalog>(BOCAArtCatalogBuilder.SharedCatalogPath);
+
+            ValidateMainMenu(errors);
 
             foreach (var spec in Chapters)
             {
@@ -43,6 +49,38 @@ namespace BOCA.Editor
             }
 
             Debug.Log($"BOCA_PRODUCTION_VALIDATION_PASS: chapters={Chapters.Length}");
+        }
+
+        private static void ValidateMainMenu(List<string> errors)
+        {
+            const string menuPath = "Assets/Scenes/MainMenu.unity";
+            if (AssetDatabase.LoadAssetAtPath<SceneAsset>(menuPath) == null)
+            {
+                errors.Add($"Missing main menu scene {menuPath}");
+                return;
+            }
+
+            var buildScenes = EditorBuildSettings.scenes;
+            if (buildScenes.Length == 0 || !buildScenes[0].enabled ||
+                !string.Equals(buildScenes[0].path, menuPath, StringComparison.Ordinal))
+            {
+                errors.Add("Main menu must be the first enabled scene in Build Settings");
+            }
+
+            EditorSceneManager.OpenScene(menuPath, OpenSceneMode.Single);
+            ValidateSceneObjectCount<MainMenuController>(menuPath, errors);
+            ValidateSceneObjectCount<MainMenuView>(menuPath, errors);
+            ValidateSceneObjectCount<Canvas>(menuPath, errors);
+            ValidateSceneObjectCount<EventSystem>(menuPath, errors);
+        }
+
+        private static void ValidateSceneObjectCount<T>(string scenePath, List<string> errors) where T : UnityEngine.Object
+        {
+            var objects = UnityEngine.Object.FindObjectsByType<T>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+            if (objects.Length != 1)
+            {
+                errors.Add($"{scenePath} needs exactly one {typeof(T).Name}; found {objects.Length}");
+            }
         }
 
         private static void ValidateChapter(ValidationSpec spec, HashSet<string> sharedKeys,

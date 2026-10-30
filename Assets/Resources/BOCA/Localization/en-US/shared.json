@@ -2,6 +2,9 @@
   "entries": [
     { "key": "shared.continue", "value": "Continue" },
     { "key": "shared.submit", "value": "Submit record" },
+    { "key": "shared.menu", "value": "Menu" },
+    { "key": "shared.replay", "value": "Replay chapter" },
+    { "key": "shared.chapter_select", "value": "Chapter select" },
     { "key": "shared.case_status", "value": "CASE FILE  •  Decisions {0}  •  Evidence {1}" },
     { "key": "shared.chapter_complete", "value": "Chapter complete" },
     { "key": "shared.chapter_complete_body", "value": "The chapter record has been saved." },
