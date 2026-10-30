@@ -54,7 +54,7 @@ namespace BOCA.Narrative
 
             flow = JsonUtility.FromJson<ChapterFlowFile>(flowAsset.text);
             session = new NarrativeSession(flow);
-            view.Bind(HandleContinue, HandleChoice, SceneNavigator.LoadMainMenu, SceneNavigator.RestartCurrentScene);
+            view.Bind(HandleContinue, HandleChoice, ReturnToMenu, ReplayChapter);
             RenderCurrentBeat();
         }
 
@@ -62,7 +62,7 @@ namespace BOCA.Narrative
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                SceneNavigator.LoadMainMenu();
+                ReturnToMenu();
                 return;
             }
 
@@ -105,7 +105,8 @@ namespace BOCA.Narrative
                 return;
             }
 
-            if (session.CurrentBeat != null && NarrativeSession.RequiresSubmission(session.CurrentBeat))
+            var requiresSubmission = session.CurrentBeat != null && NarrativeSession.RequiresSubmission(session.CurrentBeat);
+            if (requiresSubmission)
             {
                 if (!session.CommitSelections(pendingSelections))
                 {
@@ -113,10 +114,12 @@ namespace BOCA.Narrative
                 }
 
                 pendingSelections.Clear();
+                UiAudioService.PlayConfirm();
             }
             else
             {
                 session.Advance();
+                UiAudioService.PlayClick();
             }
 
             RenderCurrentBeat();
@@ -133,6 +136,7 @@ namespace BOCA.Narrative
             if (NarrativeSession.RequiresSubmission(beat))
             {
                 TogglePendingSelection(beat, choiceIndex);
+                UiAudioService.PlayClick();
                 RenderCurrentBeat(false);
                 return;
             }
@@ -142,7 +146,20 @@ namespace BOCA.Narrative
                 return;
             }
 
+            UiAudioService.PlayClick();
             RenderCurrentBeat();
+        }
+
+        private static void ReturnToMenu()
+        {
+            UiAudioService.PlayClick();
+            SceneNavigator.LoadMainMenu();
+        }
+
+        private static void ReplayChapter()
+        {
+            UiAudioService.PlayConfirm();
+            SceneNavigator.RestartCurrentScene();
         }
 
         private void HandleLanguageChanged(GameLanguage _)
@@ -203,6 +220,7 @@ namespace BOCA.Narrative
                 {
                     GameProgressService.MarkChapterComplete(chapterNumber);
                     completionRecorded = true;
+                    UiAudioService.PlayComplete();
                 }
 
                 view.ShowComplete(

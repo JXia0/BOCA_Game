@@ -30,14 +30,26 @@ namespace BOCA.UI
         private void Start()
         {
             view.Bind(
-                StartCampaign,
-                () => ShowScreen(MainMenuScreen.Chapters),
-                () => ShowScreen(MainMenuScreen.Settings),
-                SceneNavigator.QuitGame,
-                () => ShowScreen(MainMenuScreen.Home),
-                () => LocalizationService.SetLanguage(GameLanguage.English),
-                () => LocalizationService.SetLanguage(GameLanguage.ChineseSimplified),
-                chapter => SceneNavigator.TryLoadChapter(chapter),
+                () =>
+                {
+                    UiAudioService.PlayConfirm();
+                    StartCampaign();
+                },
+                () => ShowScreenWithSound(MainMenuScreen.Chapters),
+                () => ShowScreenWithSound(MainMenuScreen.Settings),
+                () =>
+                {
+                    UiAudioService.PlayConfirm();
+                    SceneNavigator.QuitGame();
+                },
+                () => ShowScreenWithSound(MainMenuScreen.Home),
+                () => SetLanguageWithSound(GameLanguage.English),
+                () => SetLanguageWithSound(GameLanguage.ChineseSimplified),
+                chapter =>
+                {
+                    UiAudioService.PlayConfirm();
+                    SceneNavigator.TryLoadChapter(chapter);
+                },
                 GameSettingsService.SetMasterVolume);
             ShowScreen(MainMenuScreen.Home);
         }
@@ -46,7 +58,7 @@ namespace BOCA.UI
         {
             if (Input.GetKeyDown(KeyCode.Escape) && currentScreen != MainMenuScreen.Home)
             {
-                ShowScreen(MainMenuScreen.Home);
+                ShowScreenWithSound(MainMenuScreen.Home);
             }
         }
 
@@ -84,6 +96,18 @@ namespace BOCA.UI
         {
             currentScreen = screen;
             Render();
+        }
+
+        private void ShowScreenWithSound(MainMenuScreen screen)
+        {
+            UiAudioService.PlayClick();
+            ShowScreen(screen);
+        }
+
+        private static void SetLanguageWithSound(GameLanguage language)
+        {
+            UiAudioService.PlayClick();
+            LocalizationService.SetLanguage(language);
         }
 
         private void HandleLanguageChanged(GameLanguage _)
