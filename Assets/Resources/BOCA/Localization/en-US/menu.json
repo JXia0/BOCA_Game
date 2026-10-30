@@ -1,0 +1,22 @@
+{
+  "entries": [
+    { "key": "menu.title", "value": "BOCA" },
+    { "key": "menu.subtitle", "value": "MARINE RECORDS  •  RESPONSIBLE ACTION" },
+    { "key": "menu.footer", "value": "A dialogue-led environmental education game" },
+    { "key": "menu.start", "value": "START / CONTINUE" },
+    { "key": "menu.chapter_select", "value": "CHAPTER SELECT" },
+    { "key": "menu.settings", "value": "SETTINGS" },
+    { "key": "menu.quit", "value": "QUIT" },
+    { "key": "menu.back", "value": "BACK" },
+    { "key": "menu.volume", "value": "MASTER VOLUME" },
+    { "key": "menu.chapter_hint", "value": "Complete a chapter to unlock the next record." },
+    { "key": "menu.settings_hint", "value": "Narrative translations appear only after script approval." },
+    { "key": "menu.status.locked", "value": "LOCKED" },
+    { "key": "menu.status.available", "value": "AVAILABLE" },
+    { "key": "menu.status.complete", "value": "COMPLETE  ✓" },
+    { "key": "menu.chapter.1", "value": "CHAPTER 1  —  OIL TIDE" },
+    { "key": "menu.chapter.2", "value": "CHAPTER 2  —  SPERM WHALE RESCUE" },
+    { "key": "menu.chapter.3", "value": "CHAPTER 3  —  REEF WARNING" },
+    { "key": "menu.chapter.4", "value": "CHAPTER 4  —  HAWKSBILL GUZHENG PICKS" }
+  ]
+}

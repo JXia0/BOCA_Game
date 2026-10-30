@@ -1,0 +1,22 @@
+{
+  "entries": [
+    { "key": "menu.title", "value": "BOCA" },
+    { "key": "menu.subtitle", "value": "海洋记录  •  负责任的行动" },
+    { "key": "menu.footer", "value": "以对话和图片为主的环境教育游戏" },
+    { "key": "menu.start", "value": "开始 / 继续" },
+    { "key": "menu.chapter_select", "value": "章节选择" },
+    { "key": "menu.settings", "value": "设置" },
+    { "key": "menu.quit", "value": "退出游戏" },
+    { "key": "menu.back", "value": "返回" },
+    { "key": "menu.volume", "value": "主音量" },
+    { "key": "menu.chapter_hint", "value": "完成当前章节后解锁下一份记录。" },
+    { "key": "menu.settings_hint", "value": "章节正文只在剧本译文确认后切换。" },
+    { "key": "menu.status.locked", "value": "未解锁" },
+    { "key": "menu.status.available", "value": "可进入" },
+    { "key": "menu.status.complete", "value": "已完成  ✓" },
+    { "key": "menu.chapter.1", "value": "第一章  —  油潮之下" },
+    { "key": "menu.chapter.2", "value": "第二章  —  抹香鲸搁浅救援" },
+    { "key": "menu.chapter.3", "value": "第三章  —  暗礁忧鸣" },
+    { "key": "menu.chapter.4", "value": "第四章  —  玳瑁古筝义甲" }
+  ]
+}

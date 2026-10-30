@@ -16,11 +16,13 @@ namespace BOCA.Diagnostics
         private const string ChapterArgument = "-bocaChapter=";
         private const string StepArgument = "-bocaSteps=";
         private const string RouteArgument = "-bocaRoute=";
+        private const string MenuArgument = "-bocaMenu=";
 
         private string capturePath;
         private int chapterBuildIndex;
         private int advanceSteps;
         private string preferredRoute;
+        private string menuScreen;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Bootstrap()
@@ -32,15 +34,17 @@ namespace BOCA.Diagnostics
             }
 
             var chapterText = ReadArgument(ChapterArgument);
-            var chapterNumber = int.TryParse(chapterText, out var parsed) ? Mathf.Clamp(parsed, 1, 4) : 4;
+            // Build index 0 is the main menu; chapter scenes use their chapter number.
+            var chapterNumber = int.TryParse(chapterText, out var parsed) ? Mathf.Clamp(parsed, 0, 4) : 4;
 
             var host = new GameObject("Automated Visual Capture");
             DontDestroyOnLoad(host);
             var runner = host.AddComponent<AutomatedVisualCapture>();
             runner.capturePath = capturePath;
-            runner.chapterBuildIndex = chapterNumber - 1;
+            runner.chapterBuildIndex = chapterNumber;
             runner.advanceSteps = int.TryParse(ReadArgument(StepArgument), out var steps) ? Mathf.Max(0, steps) : 0;
             runner.preferredRoute = ReadArgument(RouteArgument) ?? "A";
+            runner.menuScreen = ReadArgument(MenuArgument) ?? "home";
         }
 
         private IEnumerator Start()
@@ -56,6 +60,13 @@ namespace BOCA.Diagnostics
 
             yield return null;
             yield return new WaitForEndOfFrame();
+            var menu = FindAnyObjectByType<BOCA.UI.MainMenuController>();
+            if (menu != null)
+            {
+                menu.ShowForAutomatedQa(menuScreen);
+                yield return null;
+            }
+
             var controller = FindAnyObjectByType<BOCA.Narrative.ChapterSceneController>();
             for (var step = 0; step < advanceSteps && controller != null; step++)
             {

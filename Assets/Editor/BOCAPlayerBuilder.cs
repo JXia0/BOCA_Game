@@ -22,6 +22,7 @@ namespace BOCA.Editor
             {
                 scenes = new[]
                 {
+                    "Assets/Scenes/MainMenu.unity",
                     "Assets/Scenes/Chapters/Chapter01_OilTide.unity",
                     "Assets/Scenes/Chapters/Chapter02_SpermWhaleRescue.unity",
                     "Assets/Scenes/Chapters/Chapter03_ReefWarning.unity",
