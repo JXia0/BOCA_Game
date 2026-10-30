@@ -4,25 +4,25 @@
   "titleKey": "ch04.title",
   "startBeatId": "ch04.gb.01",
   "beats": [
-    { "id": "ch04.gb.01", "sceneLabelKey": "ch04.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.01", "backgroundKey": "GB_C04_BG_01", "portraitKey": "", "nextBeatId": "ch04.gb.02" },
-    { "id": "ch04.gb.02", "sceneLabelKey": "ch04.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.02", "backgroundKey": "GB_C04_BG_02", "portraitKey": "GB_C04_POR_NPC_01", "nextBeatId": "ch04.gb.choice" },
+    { "id": "ch04.gb.01", "sceneLabelKey": "ch04.scene.01", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.01", "backgroundKey": "C04_BG_PLAYER_BEDROOM_DAY", "portraitKey": "", "nextBeatId": "ch04.gb.02" },
+    { "id": "ch04.gb.02", "sceneLabelKey": "ch04.scene.02", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.02", "backgroundKey": "C04_BG_PLAYER_BEDROOM_NIGHT", "portraitKey": "C04_POR_FRIEND_NEUTRAL", "nextBeatId": "ch04.gb.choice" },
     {
       "id": "ch04.gb.choice",
       "sceneLabelKey": "ch04.scene.03",
       "speakerKey": "shared.speaker.player",
       "textKey": "ch04.gb.choice",
-      "backgroundKey": "GB_C04_BG_03",
-      "portraitKey": "GB_C04_POR_PLAYER",
+      "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE",
+      "portraitKey": "C04_POR_PLAYER_NEUTRAL",
       "choices": [
         { "id": "route_a", "labelKey": "ch04.choice.route_a", "nextBeatId": "ch04.gb.branch_a", "setRoute": "A", "setFlag": "ch04.gb.flag.route_a" },
         { "id": "route_b", "labelKey": "ch04.choice.route_b", "nextBeatId": "ch04.gb.branch_b", "setRoute": "B", "setFlag": "ch04.gb.flag.route_b" }
       ]
     },
-    { "id": "ch04.gb.branch_a", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_a", "backgroundKey": "GB_C04_BG_04", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
-    { "id": "ch04.gb.branch_b", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_b", "backgroundKey": "GB_C04_BG_04", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
-    { "id": "ch04.gb.merge", "sceneLabelKey": "ch04.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.merge", "backgroundKey": "GB_C04_BG_05", "portraitKey": "GB_C04_POR_NPC_02", "nextBeatId": "ch04.gb.check_a" },
-    { "id": "ch04.gb.check_a", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_a", "backgroundKey": "GB_C04_BG_06", "portraitKey": "", "nextBeatId": "ch04.gb.check_b", "requiredFlag": "ch04.gb.flag.route_a" },
-    { "id": "ch04.gb.check_b", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_b", "backgroundKey": "GB_C04_BG_06", "portraitKey": "", "nextBeatId": "ch04.gb.end", "requiredFlag": "ch04.gb.flag.route_b" },
-    { "id": "ch04.gb.end", "sceneLabelKey": "ch04.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.end", "backgroundKey": "GB_C04_BG_07", "portraitKey": "", "nextBeatId": "" }
+    { "id": "ch04.gb.branch_a", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_a", "backgroundKey": "C04_BG_SELLER_PACKING_ROOM", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
+    { "id": "ch04.gb.branch_b", "sceneLabelKey": "ch04.scene.04", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.branch_b", "backgroundKey": "C04_BG_SELLER_PACKING_ROOM", "portraitKey": "", "nextBeatId": "ch04.gb.merge" },
+    { "id": "ch04.gb.merge", "sceneLabelKey": "ch04.scene.05", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.merge", "backgroundKey": "C04_CG_INVESTIGATION_MONTAGE", "portraitKey": "C04_POR_SELLER_NEUTRAL", "nextBeatId": "ch04.gb.check_a" },
+    { "id": "ch04.gb.check_a", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_a", "backgroundKey": "C04_CG_PACKING_ROOM_POLICE_ARRIVAL", "portraitKey": "", "nextBeatId": "ch04.gb.check_b", "requiredFlag": "ch04.gb.flag.route_a" },
+    { "id": "ch04.gb.check_b", "sceneLabelKey": "ch04.scene.06", "speakerKey": "shared.speaker.system", "textKey": "ch04.gb.check_b", "backgroundKey": "C04_CG_PACKING_ROOM_POLICE_ARRIVAL", "portraitKey": "", "nextBeatId": "ch04.gb.end", "requiredFlag": "ch04.gb.flag.route_b" },
+    { "id": "ch04.gb.end", "sceneLabelKey": "ch04.scene.07", "speakerKey": "shared.speaker.narrator", "textKey": "ch04.gb.end", "backgroundKey": "C04_BG_CONCERT_STAGE_NIGHT", "portraitKey": "", "nextBeatId": "" }
   ]
 }
