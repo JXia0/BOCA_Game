@@ -93,6 +93,11 @@ namespace BOCA.Editor
                 ValidateArtKey(spec, beat.id, "portrait", beat.portraitKey, chapterArtCatalog,
                     sharedArtCatalog, errors);
 
+                if (RequiresDialoguePortrait(beat.id) && string.IsNullOrWhiteSpace(beat.portraitKey))
+                {
+                    errors.Add($"{beat.id} is a character dialogue beat but has no production portrait");
+                }
+
                 if (beat.choices != null && beat.choices.Length > 3)
                 {
                     errors.Add($"{beat.id} has {beat.choices.Length} choices; the production UI supports at most 3");
@@ -276,8 +281,14 @@ namespace BOCA.Editor
         private static void ValidateArtKey(ValidationSpec spec, string beatId, string slot, string key,
             ArtCatalog chapterCatalog, ArtCatalog sharedCatalog, List<string> errors)
         {
-            if (string.IsNullOrWhiteSpace(key) || key.StartsWith("GB_", StringComparison.Ordinal))
+            if (string.IsNullOrWhiteSpace(key))
             {
+                return;
+            }
+
+            if (key.StartsWith("GB_", StringComparison.Ordinal))
+            {
+                errors.Add($"{beatId} {slot} still references greybox art key {key}");
                 return;
             }
 
@@ -302,6 +313,13 @@ namespace BOCA.Editor
             {
                 errors.Add($"{beatId} {slot} references missing exact art key {key}");
             }
+        }
+
+        private static bool RequiresDialoguePortrait(string beatId)
+        {
+            return beatId.EndsWith(".gb.02", StringComparison.Ordinal) ||
+                   beatId.EndsWith(".gb.choice", StringComparison.Ordinal) ||
+                   beatId.EndsWith(".gb.merge", StringComparison.Ordinal);
         }
 
         private static void ValidateLink(string chapterId, string source, string target,
