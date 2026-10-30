@@ -1,0 +1,542 @@
+fileFormatVersion: 2
+guid: e172fb1872cb36947ae3d86a312637ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2348766812550858162
+    second: C04_POR_FRIEND_NEUTRAL_0
+  - first:
+      213: -8552800436685171578
+    second: C04_POR_FRIEND_NEUTRAL_1
+  - first:
+      213: 7258852810279134409
+    second: C04_POR_FRIEND_NEUTRAL_2
+  - first:
+      213: 7369292588990998267
+    second: C04_POR_FRIEND_NEUTRAL_3
+  - first:
+      213: -2640084514719045359
+    second: C04_POR_FRIEND_NEUTRAL_4
+  - first:
+      213: -6777679174400407813
+    second: C04_POR_FRIEND_NEUTRAL_5
+  - first:
+      213: -1971747119297628206
+    second: C04_POR_FRIEND_NEUTRAL_6
+  - first:
+      213: -5013816054190771922
+    second: C04_POR_FRIEND_NEUTRAL_7
+  - first:
+      213: -6975140583705966682
+    second: C04_POR_FRIEND_NEUTRAL_8
+  - first:
+      213: -8390481447580740132
+    second: C04_POR_FRIEND_NEUTRAL_9
+  - first:
+      213: 1247823473462371779
+    second: C04_POR_FRIEND_NEUTRAL_10
+  - first:
+      213: -6694881448131107693
+    second: C04_POR_FRIEND_NEUTRAL_11
+  - first:
+      213: 9109956449811116301
+    second: C04_POR_FRIEND_NEUTRAL_12
+  - first:
+      213: 1199996860180786227
+    second: C04_POR_FRIEND_NEUTRAL_13
+  - first:
+      213: -8404774291816544451
+    second: C04_POR_FRIEND_NEUTRAL_14
+  - first:
+      213: -9004402097792545872
+    second: C04_POR_FRIEND_NEUTRAL_15
+  - first:
+      213: 8437067900166271577
+    second: C04_POR_FRIEND_NEUTRAL_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_0
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1180
+        width: 109
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4afdad3701876fd0800000000000000
+      internalID: -2348766812550858162
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_1
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1173
+        width: 63
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684139841595e4980800000000000000
+      internalID: -8552800436685171578
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_2
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1197
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c4a8810c20acb460800000000000000
+      internalID: 7258852810279134409
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 29
+        width: 1229
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf62ab4c09cf44660800000000000000
+      internalID: 7369292588990998267
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_4
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 846
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11969232f198c5bd0800000000000000
+      internalID: -2640084514719045359
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 790
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf60d4853b8d0f1a0800000000000000
+      internalID: -6777679174400407813
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_6
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 473
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d77d571172f2a4e0800000000000000
+      internalID: -1971747119297628206
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_7
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 272
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21fec0fcd85b6ab0800000000000000
+      internalID: -5013816054190771922
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_8
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 272
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a78bc15892533f90800000000000000
+      internalID: -6975140583705966682
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 200
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5d17ef3950f8b80800000000000000
+      internalID: -8390481447580740132
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_10
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 166
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c56e1e76d8215110800000000000000
+      internalID: 1247823473462371779
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 158
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394eace3bc00713a0800000000000000
+      internalID: -6694881448131107693
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_12
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 162
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01354edf111d6e70800000000000000
+      internalID: 9109956449811116301
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_13
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 48
+        width: 53
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ce8a659ce37a010800000000000000
+      internalID: 1199996860180786227
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_14
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 39
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3780fedf4e3c5b80800000000000000
+      internalID: -8404774291816544451
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_15
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 35
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb0b4adfffe90380800000000000000
+      internalID: -9004402097792545872
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: C04_POR_FRIEND_NEUTRAL_16
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 37
+        width: 52
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData:
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952f24fbd8c761570800000000000000
+      internalID: 8437067900166271577
+      vertices: []
+      indices:
+      edges: []
+      weights: []
+    outline: []
+    customData:
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices:
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName:
+  pSDRemoveMatte: 0
+  userData:
+  assetBundleName:
+  assetBundleVariant:
