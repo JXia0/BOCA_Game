@@ -161,6 +161,11 @@ namespace BOCA.UI
             chapterPanel.SetActive(model.screen == MainMenuScreen.Chapters);
             settingsPanel.SetActive(model.screen == MainMenuScreen.Settings);
             backButton.gameObject.SetActive(model.screen != MainMenuScreen.Home);
+#if UNITY_WEBGL && !UNITY_EDITOR
+            quitButton.gameObject.SetActive(false);
+#else
+            quitButton.gameObject.SetActive(true);
+#endif
 
             for (var index = 0; index < progressNodes.Length; index++)
             {

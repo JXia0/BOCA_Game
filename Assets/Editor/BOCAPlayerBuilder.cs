@@ -10,6 +10,7 @@ namespace BOCA.Editor
     {
         private const string VisualQaOutputPath = "tmp/BOCAVisualQA/BOCAVisualQA.exe";
         private const string WindowsReleaseOutputPath = "Builds/BOCA_Windows/BOCA.exe";
+        private const string WebGlReleaseOutputPath = "Builds/BOCA_WebGL";
 
         private static readonly string[] ProductionScenes =
         {
@@ -29,6 +30,44 @@ namespace BOCA.Editor
         {
             BOCAProductionValidator.ValidateProject();
             BuildWindowsPlayer(WindowsReleaseOutputPath, BuildOptions.None, "BOCA_WINDOWS_RELEASE_BUILD_PASS");
+        }
+
+        public static void BuildWebGlRelease()
+        {
+            BOCAProductionValidator.ValidateProject();
+            if (Directory.Exists(WebGlReleaseOutputPath))
+            {
+                Directory.Delete(WebGlReleaseOutputPath, true);
+            }
+
+            var previousCompression = PlayerSettings.WebGL.compressionFormat;
+            var previousFallback = PlayerSettings.WebGL.decompressionFallback;
+            try
+            {
+                PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Gzip;
+                PlayerSettings.WebGL.decompressionFallback = true;
+
+                var options = new BuildPlayerOptions
+                {
+                    scenes = ProductionScenes,
+                    locationPathName = WebGlReleaseOutputPath,
+                    target = BuildTarget.WebGL,
+                    options = BuildOptions.None
+                };
+
+                var report = BuildPipeline.BuildPlayer(options);
+                if (report.summary.result != BuildResult.Succeeded)
+                {
+                    throw new BuildFailedException($"BOCA WebGL player build failed: {report.summary.result}");
+                }
+
+                Debug.Log($"BOCA_WEBGL_RELEASE_BUILD_PASS: bytes={report.summary.totalSize} output={WebGlReleaseOutputPath}");
+            }
+            finally
+            {
+                PlayerSettings.WebGL.compressionFormat = previousCompression;
+                PlayerSettings.WebGL.decompressionFallback = previousFallback;
+            }
         }
 
         private static void BuildWindowsPlayer(string outputPath, BuildOptions buildOptions, string successMarker)
