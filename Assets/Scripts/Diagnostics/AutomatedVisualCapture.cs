@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.IO;
 using BOCA.Core;
+using BOCA.Core.Localization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,6 +19,7 @@ namespace BOCA.Diagnostics
         private const string StepArgument = "-bocaSteps=";
         private const string RouteArgument = "-bocaRoute=";
         private const string MenuArgument = "-bocaMenu=";
+        private const string LanguageArgument = "-bocaLanguage=";
         private const string ResetProgressArgument = "-bocaResetProgress";
 
         private string capturePath;
@@ -38,6 +40,18 @@ namespace BOCA.Diagnostics
             if (HasArgument(ResetProgressArgument))
             {
                 GameProgressService.ResetProgress();
+            }
+
+            var language = ReadArgument(LanguageArgument);
+            if (string.Equals(language, "zh", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(language, "zh-CN", StringComparison.OrdinalIgnoreCase))
+            {
+                LocalizationService.SetLanguage(GameLanguage.ChineseSimplified);
+            }
+            else if (string.Equals(language, "en", StringComparison.OrdinalIgnoreCase) ||
+                     string.Equals(language, "en-US", StringComparison.OrdinalIgnoreCase))
+            {
+                LocalizationService.SetLanguage(GameLanguage.English);
             }
 
             var chapterText = ReadArgument(ChapterArgument);
