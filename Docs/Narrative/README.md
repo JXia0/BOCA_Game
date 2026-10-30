@@ -1,20 +1,20 @@
 # Student-authored narrative boundary
 
-The four Unity chapters currently contain technical greybox placeholders only. No final story, dialogue, factual claim, character interpretation, or dramatic direction is implemented in the runtime.
+The four Unity chapters now use the approved chapter scripts listed in `RUNTIME_CONTENT_MAP.md`. The runtime contains production dialogue, images, consequential interactions, chapter-end reviews, save progress, and chapter unlocking. It is no longer a narrative greybox.
 
 ## Ownership rule
 
 - Student creators own the literary content and its revisions.
 - The technical team must not rewrite, expand, shorten, translate, or reinterpret submitted narrative text without explicit creator approval.
-- Source DOCX files are retained as author documents and are not automatically imported.
-- When a chapter script is approved, the technical team may copy the approved text verbatim into localization data and connect it to stable scene slots.
-- Any requested text correction must be returned to the creator for approval before implementation.
+- Source DOCX files remain the author documents and are not automatically imported.
+- The technical team may copy approved text verbatim into localization data and connect it to stable flow IDs.
+- Requested text corrections return to the creator for approval before runtime implementation.
 
-## Technical files
+## Runtime files
 
-- `Assets/Resources/BOCA/Flows` controls sequence, branches, state flags, and asset slots.
-- `Assets/Resources/BOCA/Localization/en-US` currently contains visible greybox labels only.
-- `Assets/Resources/BOCA/Localization/zh-CN` remains reserved for later creator-approved localization.
-- Unity scenes contain reusable presentation objects and do not contain final prose.
+- `Assets/Resources/BOCA/Flows` controls sequence, interaction modes, evidence, state flags, and review effects.
+- `Assets/Resources/BOCA/Localization/en-US` contains the approved source-language chapter text plus English system UI.
+- `Assets/Resources/BOCA/Localization/zh-CN` contains Simplified Chinese system UI. Missing creator-approved chapter translations deliberately fall back to the approved source text.
+- Unity scenes contain generated presentation objects and asset references; they do not duplicate editable story prose.
 
-The placeholder IDs are technical contracts, not story instructions. Writers may change the number or function of scenes later; the technical team will adapt the flow only after receiving an approved content map.
+Chapters 1–3 currently use their approved Simplified Chinese source scripts. Chapter 4 uses its approved English source script. Full language switching of narrative text remains blocked until creator-approved translations are supplied.

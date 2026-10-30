@@ -10,8 +10,6 @@ namespace BOCA.UI
         [SerializeField] private Text sceneLabel;
         [SerializeField] private Text speakerLabel;
         [SerializeField] private Text dialogueBody;
-        [SerializeField] private Text backgroundKeyLabel;
-        [SerializeField] private Text portraitKeyLabel;
         [SerializeField] private Text interactionPrompt;
         [SerializeField] private Text caseStatus;
         [SerializeField] private Image backgroundImage;
@@ -39,8 +37,6 @@ namespace BOCA.UI
             Text scene,
             Text speaker,
             Text body,
-            Text backgroundKey,
-            Text portraitKey,
             Text prompt,
             Text status,
             Image background,
@@ -57,8 +53,6 @@ namespace BOCA.UI
             sceneLabel = scene;
             speakerLabel = speaker;
             dialogueBody = body;
-            backgroundKeyLabel = backgroundKey;
-            portraitKeyLabel = portraitKey;
             interactionPrompt = prompt;
             caseStatus = status;
             backgroundImage = background;
@@ -118,12 +112,6 @@ namespace BOCA.UI
             SetLeftOffset(speakerLabel.rectTransform, hasPortraitSlot ? 360f : 60f);
             SetLeftOffset(dialogueBody.rectTransform, hasPortraitSlot ? 360f : 60f);
             SetLeftOffset(interactionPrompt.rectTransform, hasPortraitSlot ? 360f : 60f);
-            backgroundKeyLabel.text = model.background == null && !string.IsNullOrWhiteSpace(model.backgroundKey)
-                ? $"ART PENDING  {model.backgroundKey}"
-                : string.Empty;
-            portraitKeyLabel.text = model.portrait == null && !string.IsNullOrWhiteSpace(model.portraitKey)
-                ? $"PORTRAIT\n{model.portraitKey}"
-                : string.Empty;
 
             var choiceCount = model.choiceLabels?.Length ?? 0;
             var bodyOffsets = dialogueBody.rectTransform.offsetMin;
@@ -154,8 +142,6 @@ namespace BOCA.UI
             sceneLabel.text = string.Empty;
             speakerLabel.text = string.Empty;
             dialogueBody.text = body;
-            backgroundKeyLabel.text = string.Empty;
-            portraitKeyLabel.text = string.Empty;
             interactionPrompt.text = string.Empty;
             caseStatus.text = string.Empty;
             // Keep the approved final-scene artwork visible as the chapter epilogue.

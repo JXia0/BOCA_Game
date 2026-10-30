@@ -1,18 +1,13 @@
-# Four-chapter greybox handoff
+# Superseded greybox handoff
 
-## What is complete
+This file records that the original four-chapter greybox milestone has been replaced by the production runtime. Do not use the former `GB_C##_...` placeholder key scheme for new assets.
 
-Each chapter has a playable technical loop with the same verification path:
+## Current playable structure
 
-1. background-only opening slot;
-2. dialogue slot with a supporting portrait;
-3. player portrait and two choice buttons;
-4. separate Route A and Route B result slots;
-5. shared merge slot;
-6. route-flag state check;
-7. end slot and chapter-complete screen.
-
-The visible text explains only what the technical slot is testing. It is not draft narrative.
+- `Assets/Scenes/MainMenu.unity` provides Start/Continue, chapter selection, settings, language selection, volume, and quit.
+- Four chapter scenes use approved scripts, production art catalogs, mouse/keyboard controls, evidence state, delayed review effects, and final record reviews.
+- Completing a chapter saves progress and unlocks the next chapter.
+- Every referenced background and portrait must resolve before production validation passes.
 
 ## Scene files
 
@@ -23,25 +18,8 @@ The visible text explains only what the technical slot is testing. It is not dra
 
 ## Asset upload locations
 
-Each chapter directory under `Assets/Art/Chapters` contains these stable subfolders:
-
-- `Backgrounds`
-- `Portraits`
-- `Characters`
-- `Props`
-- `CG`
-- `UI`
-
-Creators should upload source-quality files to the matching chapter and category. The technical team will handle Unity import settings, sprite slicing, compression, catalog registration, and scene connection.
-
-## Current placeholder key pattern
-
-- Backgrounds: `GB_C##_BG_01` through `GB_C##_BG_07`
-- Player portrait: `GB_C##_POR_PLAYER`
-- Supporting portraits: `GB_C##_POR_NPC_01` and `GB_C##_POR_NPC_02`
-
-These keys may be remapped after the creator supplies the final shot list. Renaming a key does not authorize changing the submitted art.
+Each chapter directory under `Assets/Art/Chapters` retains stable category folders such as `Backgrounds`, `Portraits`, `Characters`, `Props`, `CG`, and `UI`. Creators upload source-quality art to the matching chapter/category; the technical team handles import settings, catalog registration, validation, and scene connection without altering the supplied artwork.
 
 ## Acceptance test
 
-For each scene, run Route A and Route B separately. Confirm that the selected branch appears, both branches reconnect, only the matching state check appears, and the chapter reaches the completion screen. Missing artwork is acceptable during greybox review; missing buttons, broken links, incorrect state, clipped text, or a blocked completion screen are not.
+Run every chapter to completion, including named routes. Confirm that interactions record consequences, no choice blocks progress as a forced quiz, art resolves, text remains readable at 16:9, completion writes progress, and the next chapter unlocks. Unity production validation and a Windows QA build must both pass before handoff.

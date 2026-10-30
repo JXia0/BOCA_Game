@@ -85,5 +85,5 @@ A chapter is no longer a sandbox when all of the following are true:
 - no branch is implemented as “wrong answer, try again”;
 - completion produces a chapter-specific record and unlocks the next chapter;
 - keyboard and mouse controls both work;
-- all referenced art resolves, or the runtime uses a deliberate authored UI surface rather than an `ART PENDING` label;
+- all referenced art resolves; production validation fails when a referenced sprite is missing;
 - automated validation can finish every route without exceptions or missing localization keys.

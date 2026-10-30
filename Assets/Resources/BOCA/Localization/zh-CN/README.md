@@ -1,5 +1,5 @@
-# Chinese localization placeholder
+# Simplified Chinese localization status
 
-The game currently ships English narrative tables only. When the Chinese script is approved, add files with the same names and keys as `../en-US/`. The runtime automatically falls back to English for any missing Chinese key.
+`menu.json` and `shared.json` provide Simplified Chinese system UI. Chapter narrative tables are added only after creator-approved translations are supplied.
 
-The future title-screen Settings menu should call `LocalizationService.SetLanguage(GameLanguage.ChineseSimplified)` or `LocalizationService.SetLanguage(GameLanguage.English)`.
+Until then, missing chapter keys fall back to the approved source-language tables in `../en-US/`. Chapters 1–3 therefore retain their approved Simplified Chinese text, while Chapter 4 retains its approved English text. Do not use machine-written narrative translations as production content without creator approval.

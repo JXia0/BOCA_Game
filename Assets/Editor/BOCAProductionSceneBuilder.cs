@@ -202,8 +202,6 @@ namespace BOCA.Editor
                 Vector2.zero, Vector2.zero, chapter.fallbackColor);
             var background = CreateImage("SceneArtwork", backgroundFrame.transform, Vector2.zero, Vector2.one,
                 Vector2.zero, Vector2.zero, chapter.fallbackColor);
-            var backgroundKey = CreateText("BackgroundArtKey", background.transform, new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f),
-                new Vector2(-500f, -45f), new Vector2(500f, 45f), font, 28, FontStyle.Bold, new Color(1f, 1f, 1f, 0.52f), TextAnchor.MiddleCenter);
 
             var topBar = CreateImage("ChapterHeader", canvasObject.transform, new Vector2(0f, 0.91f), Vector2.one, Vector2.zero, Vector2.zero, new Color(Navy.r, Navy.g, Navy.b, 0.94f));
             var chapterTitle = CreateText("ChapterTitle", topBar.transform, Vector2.zero, Vector2.one,
@@ -228,8 +226,6 @@ namespace BOCA.Editor
             var portrait = CreateImage("PortraitArtwork", portraitFrame.transform, Vector2.zero, Vector2.one,
                 new Vector2(6f, 6f), new Vector2(-6f, -6f), new Color32(31, 59, 68, 255));
             portrait.preserveAspect = true;
-            var portraitKey = CreateText("PortraitArtKey", portraitFrame.transform, Vector2.zero, Vector2.one,
-                new Vector2(18f, 18f), new Vector2(-18f, -18f), font, 16, FontStyle.Bold, new Color(1f, 1f, 1f, 0.5f), TextAnchor.MiddleCenter);
 
             var speaker = CreateText("Speaker", dialoguePanel.transform, Vector2.zero, Vector2.one,
                 new Vector2(360f, 405f), new Vector2(-80f, -18f), font, 25, FontStyle.Bold, SeaGreen, TextAnchor.MiddleLeft);
@@ -270,7 +266,7 @@ namespace BOCA.Editor
             chapterSelectButton.gameObject.SetActive(false);
 
             var view = canvasObject.AddComponent<ChapterView>();
-            view.Configure(chapterTitle, sceneLabel, speaker, body, backgroundKey, portraitKey, interactionPrompt, caseStatus, background, portrait,
+            view.Configure(chapterTitle, sceneLabel, speaker, body, interactionPrompt, caseStatus, background, portrait,
                 continueButton, continueButton.GetComponentInChildren<Text>(), menuButton, replayButton, chapterSelectButton, choiceButtons, choiceLabels);
 
             var controllerObject = new GameObject("ChapterSceneController");
